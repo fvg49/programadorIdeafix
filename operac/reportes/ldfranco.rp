@@ -1,0 +1,24 @@
+%ztit( today, hour, pageno, module,r_emp,r_demp,r_legd,r_dlegd,r_legh,r_dlegh, r_fecd,r_fech ) before(report,page)
+[16c                                                                                 Fecha : __/__/____
+                                                                                      Hora  :   __:__:__
+                                                                                      Página:     __,___.
+                                                                                      (_________)
+
+                             Control de Francos Teoricos y Reales por Vigilador
+                             ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+    Empresa             : ___.  ___________________________
+    Legajos desde       : ______. _________________________ al ______. _________________________
+    Periodo Consulta de : __/__/____ al __/__/____
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Legajo                        Cliente                Objetivo  Descripcion    Tipo de Puesto          Regimen   C. Dias           F r a n c o s         
+                                                                                                                  Cargados Teor Real Dif   Trab.  No.Trab 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%linea(r_leg,r_dleg,r_clie,r_clie, r_obj, r_dobj, r_tpue,r_dtpue,r_regim, r_cantd, r_frante,r_cantfr,r_frante-r_cantfr,r_fratra,r_franot)
+ ______.  ___________________  ______. _______________ ____. _________________ ______. _______________  _________  ____.   ___. ___. ___.   ___.    ___.
+%report
+use sumin;
+language "c";
+width = 120;
+flength = 72; //$FLENGTH;

@@ -1,0 +1,27 @@
+%ztitulo(today, pageno, rfecha, ropcion, rclid, robjd, rdobjd, rclih, robjh, rdobjh, rnrolegd, rapynomd, rnrolegh, rapynomh, rprovd, rdprovd, rprovh, rdprovh, rasig, rasist, rrclu, rportac, rorden) before (report, page)
+[16c[2o\$empresa														  																								     Fecha : __/__/____
+																						[4mParte de Retenes[0m													  		Página:       ____.
+        		                                                                                                                                                              (lreten)
+                Datos al día: __/__/____        Opción : ______________
+                Asignados en Cliente Desde: _______. ____. _______________________________ Hasta: _______. ____. _______________________________
+                Reten Desde:_______.  ______________________________ Hasta: _______. ______________________________
+                Alta Policial en Prov. Desde: __.  _____________________________ Hasta: __. _____________________________ 
+                Asignación: __________________  Asistencia: ____________________  CLU: __________________  Portación: ____________________  Ordenado: ______________________ 
+
+¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡ª
+ Legajo      Nombre             Regimen   Franco          Turno             Teléfono   Alt.Pol Port CLU  Asignado en                          Ausente        Pre Lleg Pta Sal Pta Lleg.Obj.  
+§¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¥
+%zlinea(rnroleg, rapynom, rregimen, rfranco, rdia1, rdia2, rdia3, rdia4, rdia5, rdia6, rdia7, rlabd, rlabh, rtelef, rpol1, rpol2, rpol3, rpol4, rport, rclu, rcliprov, robjprov, rfchd, rfchh, rcond, rcondd, rcondh, rptepta, rllegpta, rsalpta, rllegobj)
+ ________. ___________________ _________ __/__/__ _ _ _ _ _ _ _ __:__ __:__ __________ _ _ _ _  __? __? _______. ____. __/__/__ __/__/__ _ __/__/__ __/__/__ __?   __:__   __:__    __:__   
+%zentlin()                                                                                                                                                                   
+§¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¥
+%zfin() after (report, page)
+¢¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¤
+
+%report
+use operac;
+language "C";
+width   = 180;
+topmarg = 0;
+//flength=$FLENCOMP;
+flength=$FLENLANDCOMP;

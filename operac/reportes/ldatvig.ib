@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ldatvig.exe {
+	ldatvig.fm;
+	ldatvig.rp;
+	ldatvig.c;
+	ldatvig.hlp;
+
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BRIGADALIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

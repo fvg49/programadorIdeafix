@@ -1,0 +1,19 @@
+%ztitulo(pageno, today, rnrolegd, rapynomd, rnrolegh, rapynomh) before(page, report)
+[16c\$empresa                                                                                                    Página :       ____.
+                                                                                                             Fecha  : __/__/____
+                                                                                                                  (lvacfal)
+                                          Listado de Periodos de Vacaciones Faltantes
+
+                    Desde : ______. ____________________________     Hasta : ______. ____________________________
+
+                      ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡ª
+                                    V i g i l a d o r             Fecha Ingreso Fecha Egreso  Período  
+                      ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¤
+
+%zlinea(rnroleg, rapynom, rfingreso, rfegreso, rperiodo)
+                       ________. ________________________________   __/__/____    __/__/____    ____.
+%report
+language "c";
+topmarg = 0;
+width=140;
+flength = $FLENGTH;

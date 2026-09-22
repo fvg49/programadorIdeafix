@@ -1,0 +1,33 @@
+
+ Empresa : __. __________________________________
+
+ Cliente desde  :{_________. ____________________________________
+ 		 hasta  : _________.}____________________________________
+
+ Objetivo desde : ____. _________________________________________
+		  hasta : ____. _________________________________________
+
+ Imprimir Objetivos Inactivos : _?
+
+ Salida         : _ ___________________
+
+%form
+use comerc, bill, sue;
+window label "[Listado de Lugares de Pago]", border single;
+ignore add, delete, prev, next;
+
+%fields
+emp		: in sue.emps:descrip, not null, default $emp;
+demp	: sue.emps.descrip, skip;
+agrcli	: ;
+clied	: in bill.cliente:razsoc, not null;
+nombred : bill.cliente.razsoc, skip;
+clieh	: in bill.cliente:razsoc, not null, >= clied, check after agrcli;
+nombreh : bill.cliente.razsoc, skip;
+objd	: on help in objetivo(clied):descrip, not null, default 1;
+dobjd	: objetivo.descrip, skip;
+objh	: on help in objetivo(clieh):descrip, not null, default 99;
+dobjh	: objetivo.descrip, skip;
+inact   : default false;
+salida	: in ("T":"Terminal", "I":"Impresora"), not null, default "I", mask "1>A";
+dsalida : is descr(salida);

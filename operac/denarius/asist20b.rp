@@ -1,0 +1,29 @@
+%titulo (pageno, rempre, today, hour, module) before (page, report)
+[16c[8i
+                                                             Página :        __.
+___________________________________                          Fecha  : __/__/____
+                                                             Hora   :      __:__
+                                                                      (________)
+
+                                        Listado de Inasistencias
+%leg(rnroleg, rapynom) before (rnroleg)
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Legajo : _______.#  Apellido y Nombre : ____________________________________ 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea (rfecha, rcodaus,rdescraus, rtiempo, rjustif) no print
+   __/__/____    ____.      _________________________      ___.__        __    
+%finlineab (sum(rtiempo)) after rnroleg
+     Total de Ausencias : _,___.__                                                 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+//$RCSfile: asist20b.rp,v $ $Revision: 1.1.1.1 $ $Date: 1999/05/13 17:26:26 $
+use asist, sue;
+language "C";
+flength=$FLENGTH;
+width = 130;
+
+%fields
+rempre    : sue.emps.descrip;
+rnroleg   : check digit "-";
+rapynom   : sue.per.apynom;

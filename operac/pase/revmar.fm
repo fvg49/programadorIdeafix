@@ -1,0 +1,46 @@
+ Empresa        :         __.  _________________________________________
+
+ Liquidación    :  _________.  _________________________________________
+
+ Cliente  Desde : {_________.  _________________________________________
+          Hasta :  _________.} _________________________________________
+
+ Objetivo Desde :      {____.  _________________________________________
+          Hasta :       ____.} _________________________________________
+
+ [1m_____________________________________________________________[0m   _______
+
+%form
+use bill, sue, comerc;
+language "C";
+window label "[Reversión de Pasaje de Novedades de Marte a Facturación por Liquidación]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+messages
+		ERR_CLIE : "El Cliente Desde debe ser menor o igual al Cliente Hasta",
+		ERR_OBJE : "El Objetivo Desde debe ser menor o igual al Objetivo Hasta",
+		ERR_FCH  : "La Fecha Desde debe ser menor o igual a la Fecha Hasta";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+i_grupo : internal num(2);
+//nroliq  : in bill.liquid by grup(i_grupo):(descrip), not null;
+nroliq  : on help in bill.liquid by emp(emp,i_grupo):(descrip), not null;
+descliq : bill.liquid.descrip, skip;
+
+agrclie : check (clid <= clih), on error ERR_CLIE;
+clid    : on help in bill.cliente:(razsoc), default 3001;
+dclid   : bill.cliente.razsoc, skip;
+clih    : on help in bill.cliente:(razsoc), default 999999999;
+dclih   : bill.cliente.razsoc, skip;
+
+agrobje : check (objd <= objh), on error ERR_CLIE;
+objd    : on help in comerc.objetivo by est(emp, true, clid):descrip, default 0;
+dobjd   : comerc.objetivo.descrip, skip;
+objh    : on help in comerc.objetivo by est(emp, true, clih):descrip, default 99;
+dobjh   : comerc.objetivo.descrip, skip;
+
+coment  : skip;
+coment2 : skip;

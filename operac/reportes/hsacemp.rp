@@ -1,0 +1,91 @@
+%head(today, pageno, rretro, rfechad, rfechah, rclid, robjd, rdcliobjd, rclih, robjh, rdcliobjh, rdmot1, rdmot2, rdmot3, rdmot4, rdmot5) before (page, report)
+[20c[2o\$empresa                                                                                                                                                                                                  Fecha : __/__/____
+                                                                                                                                                                                                           Página:       ____.
+                                                    Listado de Control de Horas a Cargo de la Empresa por Clientes/Objetivo/Puesto (Detalle Fecha y Legajo)                                                   (hsacemp)
+                                                                                 __? considera retroactivos
+                                    Desde Fecha              __/__/____                                             Hasta Fecha              __/__/____
+                                    Desde Cliente / Objetivo ___,___,___. __,___. _______________________________   Hasta Cliente / Objetivo ___,___,___. __,___. _______________________________
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡ª
+ Cliente                                 _________________________           _________________________           _________________________          _________________________           _________________________                 
+        Objetivo         Fecha     §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥  TOTAL   
+              Puesto        Legajo    Hn       H50     H100     Total      Hn      H50      H100     Total     Hn       H50     H100    Total      Hn       H50     H100     Total     Hn       H50     H100    Total             
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¤
+%zcli(rcli, rdcli)
+
+_________. _________________________
+%zobj(robj, rdobj)
+     ____. ________________________
+%zpto(rpto, rdpto)
+     ____. _________________________
+%zfch(rfch)
+                          __/__/__
+%zleg(rnroleg, fs1hn, fs1h50, fs1h100, fs1tot, fs2hn, fs2h50, fs2h100, fs2tot, fs3hn, fs3h50, fs3h100, fs3tot, fs4hn, fs4h50, fs4h100, fs4tot, fs5hn, fs5h50, fs5h100, fs5tot, (fs1tot + fs2tot + fs3tot + fs4tot + fs5tot))
+                          ________. _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%znoprint(s1hn, s1h50, s1h100, s1tot, s2hn, s2h50, s2h100, s2tot, s3hn, s3h50, s3h100, s3tot, s4hn, s4h50, s4h100, s4tot, s5hn, s5h50, s5h100, s5tot, stotal) no print
+                                    _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotfch(rfch, sum(s1hn), sum(s1h50), sum(s1h100), sum(s1tot), sum(s2hn), sum(s2h50), sum(s2h100), sum(s2tot), sum(s3hn), sum(s3h50), sum(s3h100), sum(s3tot), sum(s4hn), sum(s4h50), sum(s4h100), sum(s4tot), sum(s5hn), sum(s5h50), sum(s5h100), sum(s5tot), sum(stotal))
+             TOTAL FECHA __/__/__   _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotpto(rpto, rdpto, sum(s1hn), sum(s1h50), sum(s1h100), sum(s1tot), sum(s2hn), sum(s2h50), sum(s2h100), sum(s2tot), sum(s3hn), sum(s3h50), sum(s3h100), sum(s3tot), sum(s4hn), sum(s4h50), sum(s4h100), sum(s4tot), sum(s5hn), sum(s5h50), sum(s5h100), sum(s5tot), sum(stotal))
+
+TOTAL ____. _______________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotobj(robj, rdobj, sum(s1hn), sum(s1h50), sum(s1h100), sum(s1tot), sum(s2hn), sum(s2h50), sum(s2h100), sum(s2tot), sum(s3hn), sum(s3h50), sum(s3h100), sum(s3tot), sum(s4hn), sum(s4h50), sum(s4h100), sum(s4tot), sum(s5hn), sum(s5h50), sum(s5h100), sum(s5tot), sum(stotal))
+
+TOTAL ____. _______________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotcli(rcli,rdcli,  sum(s1hn), sum(s1h50), sum(s1h100), sum(s1tot), sum(s2hn), sum(s2h50), sum(s2h100), sum(s2tot), sum(s3hn), sum(s3h50), sum(s3h100), sum(s3tot), sum(s4hn), sum(s4h50), sum(s4h100), sum(s4tot), sum(s5hn), sum(s5h50), sum(s5h100), sum(s5tot), sum(stotal))
+
+TOTAL _________. __________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotgen(sum(s1hn), sum(s1h50), sum(s1h100), sum(s1tot), sum(s2hn), sum(s2h50), sum(s2h100), sum(s2tot), sum(s3hn), sum(s3h50), sum(s3h100), sum(s3tot), sum(s4hn), sum(s4h50), sum(s4h100), sum(s4tot), sum(s5hn), sum(s5h50), sum(s5h100), sum(s5tot), sum(stotal))
+
+TOTAL GENERAL                       _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%report                 
+use operac;
+language"C";
+output to terminal;
+flength=$FLENLANDCOMP;
+width=253;
+topmarg = 0;
+
+%fields
+fs1hn	: null zeros;
+fs1h50  : null zeros;
+fs1h100 : null zeros;
+fs1tot  : null zeros;
+fs2hn   : null zeros;
+fs2h50  : null zeros;
+fs2h100 : null zeros;
+fs2tot  : null zeros;
+fs3hn   : null zeros;
+fs3h50  : null zeros;
+fs3h100 : null zeros;
+fs3tot  : null zeros;
+fs4hn   : null zeros;
+fs4h50  : null zeros;
+fs4h100 : null zeros;
+fs4tot  : null zeros;
+fs5hn   : null zeros;
+fs5h50  : null zeros;
+fs5h100 : null zeros;
+fs5tot  : null zeros;
+
+s1hn	: null zeros;
+s1h50  : null zeros;
+s1h100 : null zeros;
+s1tot  : null zeros;
+s2hn   : null zeros;
+s2h50  : null zeros;
+s2h100 : null zeros;
+s2tot  : null zeros;
+s3hn   : null zeros;
+s3h50  : null zeros;
+s3h100 : null zeros;
+s3tot  : null zeros;
+s4hn   : null zeros;
+s4h50  : null zeros;
+s4h100 : null zeros;
+s4tot  : null zeros;
+s5hn   : null zeros;
+s5h50  : null zeros;
+s5h100 : null zeros;
+s5tot  : null zeros;
+

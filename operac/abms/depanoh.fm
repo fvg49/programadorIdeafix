@@ -1,0 +1,33 @@
+Empresa : __. ________________________________
+Codigo  : ___. ________________________________
+Renglon : ____
+
+Fecha       Valor vigente                              Activo
+[__/__/____  __________________________________________________   _?]
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+%form(in hemp, in hcod, in hrenglon)
+use comgral;
+window label "[Historial del Renglon]", border single;
+display status;
+ignore add, update, delete;
+
+%fields
+hemp      : depano.emp, skip;
+hempdesc  : is descr(hemp);
+hcod      : depano.cod, skip;
+hcoddesc  : is descr(hcod);
+hrenglon  : skip;
+
+hmulti    : rows 500, display 10, ignore insert, ignore delete;
+hfecvig   : depano.fecvig, display only;
+hvalor    : depano.valor, display only;
+hactivo   : depano.act, display only;

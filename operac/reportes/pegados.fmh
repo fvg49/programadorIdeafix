@@ -1,0 +1,20 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRDIA          (fmfield)  2	/* GROUPED         */
+# define DIAD            (fmfield)  3	/* Date            */
+# define DIAH            (fmfield)  4	/* Date            */
+# define AGRSUP          (fmfield)  5	/* GROUPED         */
+# define VIGID           (fmfield)  6	/* Long            */
+# define APYNOMD         (fmfield)  7	/* String          */
+# define VIGIH           (fmfield)  8	/* Long            */
+# define APYNOMH         (fmfield)  9	/* String          */
+# define SALIDA          (fmfield) 10	/* String          */
+# define DESC5           (fmfield) 11	/* String          */
+# define ARCHIVO         (fmfield) 12	/* String          */
+# define COMENT          (fmfield) 13	/* String          */
+/* Form checksum	*/
+# define FM_PEGADOS_CHKSUM (long)0x01ad
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

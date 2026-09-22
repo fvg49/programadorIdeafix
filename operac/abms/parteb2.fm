@@ -1,0 +1,26 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+    Tipo   Horas                Motivo         Horas  Horas Horas    Obsevaciones    
+                                                Norm.  25%  35%yF                    
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+[{__. _______________ __. ___________________}  __.__ __.__ __.__ __________________]
+                                                                                     
+                                                                                     
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use operac;
+language "C";
+window label "Excepciones", border single;
+ignore ignore, end, add, update;
+
+%fields
+multi   : rows 6, display 3;
+agrup   : unique;
+tipfac  : excepcion.condic, in condicion:descor, not null;
+dtipfac : condicion.descor, skip;
+motivo  : excepcion.motivo, in motexc(tipfac):descrip, not null;
+valcli  : internal motexc.valcli, motexc.valcli; //esta aca para que quede dentro del agrup
+dmotiv  : motexc.descrip, skip;
+horas   : excepcion., default 0,not null;
+hs50    : excepcion., default 0,not null;
+hs100   : excepcion., default 0,not null;
+obs     : excepcion.;

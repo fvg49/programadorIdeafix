@@ -1,0 +1,35 @@
+
+			[1;4mListado de Horas por Vigilador  [0m
+
+Observaciones: 
+
+	1) Si se completa alguno de los siguientes campos : 
+			Delegación Comercial  
+		  	Delegación Operacional
+		  	Filial Operativa
+	
+	   SOLO SE MOSTRARAN LOS LEGAJOS DE LAS FILIALES PROPIAS Y 
+	   NO DE LOS PRESTADAS DE OTRAS FILIALES
+
+	2) La fecha a la que se cargan los permisos de legajos por 
+	   vigilador es la del ultimo cierre de operaciones, si en 
+	   la fecha desde del formulario se llegara a ingresar una
+	   fecha  anterior, se volveran a cargar  dichos  permisos 
+	   respetando esta fecha
+	
+	3) Al  iniciar  el  proceso, se  cargan los  permisos a la  
+	   fecha de cierre menos 30 dias.Si se ingresa un "Periodo 
+       desde" anterior, se cargaran los permiso s nuevamente a 
+       esa fecha.
+    
+    4) Se agrego  el filtro "Muestra Horas en Otras Filiales".
+       Este  determina si se ven las  horas del vigilador solo
+       en las filiales de mi perfil, o tambien en el resto  de 
+       las filiales donde haya estado. Esto es util  cuando se 
+	   cede un vigilador que va a volver a mi filial.
+
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma :[0m hsvigil.exe
+[1mVista Por:[0m Legajos Extendida

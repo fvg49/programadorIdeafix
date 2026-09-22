@@ -1,0 +1,21 @@
+
+			[1;4mCARGA DE VACACIONES[0m
+
+
+Observaciones : 
+
+	1) Cuando se cargue una fecha anterior a la de cierre 
+       se van a volver a cargar  los  permisos  desde esa 
+       fecha, y cada vez que se ingrese una  anterior, se
+       volvera a repetir este proceso.
+       
+    2) Los  valores  que  retoma  de  cantidad de días de    
+       vacaciones  en  el  periodo  son tomados del campo 
+       LICANIO de la tabla LEGANIO, en  caso  de  que  no 
+       tenga día cargados coloca por defecto 0 días.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m vacac.exe
+
+[1mProceso:[0m  Graba:  operac|vacac(Tabla donde se cargan las vacaciones por empleado)

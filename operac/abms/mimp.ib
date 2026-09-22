@@ -1,0 +1,17 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+mimp.exe {
+	mimp.hlp;
+	mimp.fm;
+	mimp.c;
+	$COMERC/lib/comerc.a;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPROLIB.a;
+	$BILL/lib/bill.a;
+	$COMERC/lib/comerc.a;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+}

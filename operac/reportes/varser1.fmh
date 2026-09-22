@@ -1,0 +1,30 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define DELEG           (fmfield)  2	/* String          */
+# define DDELEG          (fmfield)  3	/* String          */
+# define FDELEGA         (fmfield)  4	/* String          */
+# define DDELEGA         (fmfield)  5	/* String          */
+# define FFILIAL         (fmfield)  6	/* String          */
+# define DESCRIP         (fmfield)  7	/* String          */
+# define AGRUP           (fmfield)  8	/* GROUPED         */
+# define CLID            (fmfield)  9	/* Long            */
+# define DCLID           (fmfield) 10	/* String          */
+# define CLIH            (fmfield) 11	/* Long            */
+# define DCLIH           (fmfield) 12	/* String          */
+# define AGRUPO          (fmfield) 13	/* GROUPED         */
+# define OBJD            (fmfield) 14	/* Integer         */
+# define DOBJD           (fmfield) 15	/* String          */
+# define OBJH            (fmfield) 16	/* Integer         */
+# define DOBJH           (fmfield) 17	/* String          */
+# define MODELO          (fmfield) 18	/* Integer         */
+# define DMODELO         (fmfield) 19	/* String          */
+# define SALIDA          (fmfield) 20	/* String          */
+# define DSALIDA         (fmfield) 21	/* String          */
+# define NOMARCH         (fmfield) 22	/* String          */
+# define COMENT          (fmfield) 23	/* String          */
+/* Form checksum	*/
+# define FM_VARSER1_CHKSUM (long)0x0354
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

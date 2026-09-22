@@ -1,0 +1,18 @@
+%head(today, pageno) before (page, report)
+[16c\$empresa                                                                                                         Fecha  : __/__/____
+                                                                                                                  Página :       ____.
+                                           Asignación de Vigiladores en Puestos Vencidos                               (ptoven)
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡ª
+            Vigilador                      Cliente                 Objetivo          Filial              Puesto            F.Inicio F. Final 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¥
+%linea(r_legajo, r_apynom,         r_cli, r_dcli,           r_obj, r_dobj,         r_filial,            r_ptoser, r_puesto, r_dptoser,r_finicio, r_ffinal)
+ ______. ________________________ _____. __________________ __. __________________  _________  ____. ____. _______________ __/__/__ __/__/__  
+%fin() after (page, report)
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¤
+%report
+language"C";
+topmarg = 0;
+flength= $FLENGH;
+width=147;
+output to terminal;

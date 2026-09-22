@@ -1,0 +1,58 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define NROLEG          (fmfield)  2	/* Long            */
+# define NOMBRE          (fmfield)  3	/* String          */
+# define FECPARTE        (fmfield)  4	/* Date            */
+# define FECREG          (fmfield)  5	/* Date            */
+# define MULTIPAR        (fmfield)  6	/* MULTIPLE        */
+# define PCLIE           (fmfield)  7	/* Long            */
+# define POBJET          (fmfield)  8	/* Integer         */
+# define PREGIM          (fmfield)  9	/* String          */
+# define PTIPPTO         (fmfield) 10	/* Integer         */
+# define PCODINT         (fmfield) 11	/* Integer         */
+# define PNROINT         (fmfield) 12	/* Integer         */
+# define PCOND           (fmfield) 13	/* String          */
+# define PHSENTRE        (fmfield) 15	/* Time            */
+# define PHSSAL          (fmfield) 16	/* Time            */
+# define PHSTOT          (fmfield) 17	/* Integer         */
+# define PNORMAL         (fmfield) 18	/* Integer         */
+# define PEXTRAS1        (fmfield) 19	/* Integer         */
+# define PEXTRAS2        (fmfield) 20	/* Integer         */
+# define PFRANCOS        (fmfield) 21	/* Integer         */
+# define PEXCP           (fmfield) 22	/* String          */
+# define MULTIRET        (fmfield) 24	/* MULTIPLE        */
+# define AGRCLI          (fmfield) 25	/* GROUPED         */
+# define RCLIE           (fmfield) 26	/* Long            */
+# define ROBJET          (fmfield) 27	/* Integer         */
+# define RREGIM          (fmfield) 28	/* String          */
+# define RTIPPTO         (fmfield) 29	/* Integer         */
+# define RCODINT         (fmfield) 30	/* Integer         */
+# define RNROINT         (fmfield) 31	/* Integer         */
+# define I_CLINEW        (fmfield) 32	/* Integer         */
+# define RCOND           (fmfield) 33	/* String          */
+# define AGRUPHS         (fmfield) 35	/* GROUPED         */
+# define RHSENTRE        (fmfield) 36	/* Time            */
+# define RHSSAL          (fmfield) 37	/* Time            */
+# define RHSTOT          (fmfield) 38	/* Integer         */
+# define AGRUPDET        (fmfield) 39	/* GROUPED         */
+# define RNORMAL         (fmfield) 40	/* Integer         */
+# define REXTRAS1        (fmfield) 41	/* Integer         */
+# define REXTRAS2        (fmfield) 42	/* Integer         */
+# define RFRANCOS        (fmfield) 43	/* Integer         */
+# define I_DHSNOR        (fmfield) 44	/* Integer         */
+# define I_DHS50         (fmfield) 45	/* Integer         */
+# define I_DHS100F       (fmfield) 46	/* Integer         */
+# define I_DHS100FE      (fmfield) 47	/* Integer         */
+# define RDET            (fmfield) 48	/* String          */
+# define REXCP           (fmfield) 50	/* String          */
+/* Form checksum	*/
+# define FM_ORETRO_CHKSUM (long)0x27fe
+/* Subform names	*/
+# define SF_AUSENT            0
+# define SF_REXCEP            1
+# define SF_DETDIF            2
+/* Symbol names for messages */
+# define M_PRESIONEX        0
+# define M_TOTHS            1
+/* =========== End of fmh file ============ */

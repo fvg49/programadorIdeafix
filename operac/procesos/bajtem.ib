@@ -1,0 +1,7 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+bajtem.exe {
+	bajtem.c : sue.sch;
+}

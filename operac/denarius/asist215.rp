@@ -1,0 +1,32 @@
+%titulo (pageno, rempre, today, hour, module, rfechad, rfechah) before (page, report)
+                                                        Página :       ____.
+___________________________________                     Fecha  : __/__/____
+                                                        Hora   :      __:__  
+                                                                 (________)
+
+          Listado de Totales de Ausencias por Tipo de Inasistencia
+
+ Fecha Novedad Inasistencia  desde : __/__/____    hasta : __/__/____
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Cód.Inasis.     Descripción de Inasistencia           Total de Inasis.   
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea (rcodaus,rdescraus, rtotinas)
+    ____.           _________________________                 ___.__       
+%finlinea (sum(rtotinas)) after (report)
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+ 
+                                     Total Novedades :      _,___.__
+%report
+//$RCSfile: asist215.rp,v $ $Revision: 1.1.1.1 $ $Date: 1999/05/13 17:26:27 $
+use asist, sue;
+language "C";
+flength=$FLENGTH;
+width = 130;
+
+%fields
+rempre    : sue.emps.descrip;
+rfechad   : ;
+rfechah   : ;
+rcodaus   : ;
+rdescraus : ;
+rtotinas  : ;

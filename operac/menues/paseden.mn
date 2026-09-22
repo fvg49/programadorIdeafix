@@ -1,0 +1,6 @@
+"1. Periodos por Empresas"											WCMD doform -b periodos
+"2. Cierre de Operaciones"											WCMD cieroper.exe
+"3. Pasaje de Horas trabajadas, L. de Pago y C.Costo a Denarius"	WCMD paseden.exe
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"   SHELL .
+"4. Pase de clientes de operaciones a comercial"					WCMD paseaur.exe
+

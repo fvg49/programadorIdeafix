@@ -1,0 +1,19 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+oretro.exe {
+	oretro.fm;
+	ausent.fm;
+	rexcep.fm;
+	detdif.fm;
+	oretro.c : oretro.fmh ausent.fmh rexcep.fmh detdif.fmh operac.sch asist.sch;
+
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+
+}

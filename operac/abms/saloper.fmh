@@ -1,0 +1,18 @@
+/* Field names	*/
+# define SUELDO          (fmfield)  0	/* Long            */
+# define PRESEN          (fmfield)  1	/* Long            */
+# define TICCA           (fmfield)  2	/* Long            */
+# define TICRE           (fmfield)  3	/* Long            */
+# define TICREV          (fmfield)  4	/* Long            */
+# define COMIDA          (fmfield)  5	/* Long            */
+# define ADOBJ           (fmfield)  6	/* Long            */
+# define ADPRE           (fmfield)  7	/* Long            */
+# define ADTIC           (fmfield)  8	/* Long            */
+# define ADFOBJ          (fmfield)  9	/* Long            */
+# define ADFPROBJ        (fmfield) 10	/* Long            */
+# define ADFTIOBJ        (fmfield) 11	/* Long            */
+/* Form checksum	*/
+# define FM_SALOPER_CHKSUM (long)0x0270
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

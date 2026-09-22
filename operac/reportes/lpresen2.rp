@@ -1,0 +1,24 @@
+%noprint2 (rpmodo2) no print
+_.
+
+%head2(pageno, today) before (report)
+Página :____.\	Fecha: __/__/____
+Listado de Presentismo
+
+Legajo\	Apellido y Nombre\	Régimen\	Condic\	Hora Entrada\	Hora Salida\	Observaciones
+
+%svisor2(r_superv2, r_dsup2, r_fecha2) before (page, r_superv2, r_fecha2), if rpmodo2 == 1
+Presentismo:\	_______. - _________________________________________\	\	\	\	\	FECHA: __/__/____
+%lcli2(r_cli2, r_dcli2, r_std2, r_obj2, r_dobj2, r_fecha2) before (page, r_fecha2, r_cli2, r_obj2)
+Cliente:\	_______. - _________________________________________\	\	\	\	\	Std: _____.__
+Objetivo:\	     __. - _________________________________________\	\	\	\	\	Fecha: __/__/____
+%zlinea2(r_legajo2, r_apenom2, r_regim2, r_condic2, r_hdesde2, r_hhasta2)
+_,___,___.\	________________________________\	________\	_\	_____\	_____
+%zfin2() after (r_cli2, r_obj2)
+
+\	Horas Standard Trabajadas\	\	Hs. No Prest.\	\	Horas. Adicionales
+
+%report
+language"C";
+flength= 0;
+output to printer;

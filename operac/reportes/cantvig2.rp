@@ -1,0 +1,19 @@
+%titulo (today) before (report)
+Fecha  : __/__/____
+CLIENTE\	DESC.CLI.  \	OBJETIVO\	DESC. OBJ  \	CANT. VIGILADORES
+%linvig (rclie, rdclie, robj, rdobj, rcantvig) no print
+ ______. _______________________________________________   ____. _______________________________________  __,___.__
+%tvig (rclie, rdclie, robj, rdobj, sum(rcantvig)) after(rclie, robj)
+______.\	_______________________________________________\	____.\	_______________________________________\	_____.__
+%totvig (rclie, rdclie, sum(rcantvig))
+[1m TOTAL   ______. _______________________________________________                                          __,___.__[0m
+
+%fin (sum(rcantvig))
+[1m TOTAL GENERAL                                                                                            __,___.__[0m
+
+%report
+use comerc;
+language"C";
+flength=0;
+width = 120;
+output to terminal;

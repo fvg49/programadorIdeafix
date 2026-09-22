@@ -1,0 +1,38 @@
+%head(today, pageno,rcons, rdeta, rtipobj, rretro, rfechad, rfechah, rdfecha, rfecbase, rclid, robjd, rdcliobjd, rclih, robjh, rdcliobjh) before (page, report)
+[20c[2o\$empresa                                                                                                                                                                                                Fecha : __/__/____
+                                                                                                                                                                                                         Página:       ____.
+       Listado de Control de Horas por Clientes/Objetivo/Puesto (______________________)  _______________________________________________   ______________________________   __? considera retroactivos         (hscliobj)
+
+                             Fecha Desde :  __/__/____                                                              Fecha Hasta :  __/__/____                                                              [1m__________  __/__/____[0m
+                Cliente / Objetivo Desde : ___,___,___. __,___. _______________________________        Cliente / Objetivo Hasta : ___,___,___. __,___. _______________________________
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+ Delgacion Cliente                      1-Estandard Vendido                         2-Estandar Trabajado                            Diferencia 1-2                  Servicios Adicionales                  A Cargo Empresa        
+               Objetivo      §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+                   Puesto       Hn       H50     H100     Total      Hn      H50    H100 Fran H100 Fer  Total   HNpres     Hn       H50     H100    H100f      Hn       H50     H100     Total     Hn       H50     H100    Total 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%zdel(rdeleg, rddeleg)
+ [1m_____ ____________________________ [0m
+%zcli(rcli, rdcli)
+         [1m_________. ____________________________ [0m
+%zobj(robj, rdobj)
+               ____. ________________________
+%zpto(rpto, rdpto)
+                   ____. _________________________
+%zfch(rfch, fsvhn, fsvh50, fsvh100, fsvtot, fsthn, fsth50, fsth100, fsth100f, fsttot, fstnpres, fdifhn, fdifh50, fdifh100, fdifh100f, fsahn, fsah50, fsah100, fsatot, fsehn, fseh50, fseh100, fsetot)
+                 __/__/____  _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotfch(rfch, sum(fsvhn), sum(fsvh50), sum(fsvh100), sum(fsvtot), sum(fsthn), sum(fsth50), sum(fsth100), sum(fsth100f), sum(fsttot), sum(fstnpres), sum(fdifhn), sum(fdifh50), sum(fdifh100), sum(fdifh100f), sum(fsahn), sum(fsah50), sum(fsah100), sum(fsatot), sum(fsehn), sum(fseh50), sum(fseh100), sum(fsetot))
+                 __/__/____  _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotal(ttexto, fsvhn, fsvh50, fsvh100, fsvtot, fsthn, fsth50, fsth100, fsth100f, fsttot, fstnpres, fdifhn, fdifh50, fdifh100, fdifh100f, fsahn, fsah50, fsah100, fsatot, fsehn, fseh50, fseh100, fsetot) 
+TOTAL ______________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotgen(sum(fsvhn), sum(fsvh50), sum(fsvh100), sum(fsvtot), sum(fsthn), sum(fsth50), sum(fsth100), sum(fsth100f), sum(fsttot), sum(fstnpres), sum(fdifhn), sum(fdifh50), sum(fdifh100), sum(fdifh100f), sum(fsahn), sum(fsah50), sum(fsah100), sum(fsatot), sum(fsehn), sum(fseh50), sum(fseh100), sum(fsetot)) after (report)
+
+TOTAL GENERAL                _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%report
+use operac;
+language"C";
+output to terminal;
+flength=$FLENLAN;
+// flength=$FLENLANDCOMP;
+width=247;
+topmarg = 0;

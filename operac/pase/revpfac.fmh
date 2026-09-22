@@ -1,0 +1,46 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define I_GRUPO         (fmfield)  2	/* Integer         */
+# define NROLIQ          (fmfield)  3	/* Long            */
+# define DESCLIQ         (fmfield)  4	/* String          */
+# define FILTRA          (fmfield)  5	/* Integer         */
+# define AGR_FILTRO      (fmfield)  6	/* GROUPED         */
+# define CONSIDERA       (fmfield)  7	/* Integer         */
+# define DCONSIDER       (fmfield)  8	/* String          */
+# define TIPCLI          (fmfield)  9	/* Integer         */
+# define DTIPCLI         (fmfield) 10	/* String          */
+# define MULTI           (fmfield) 11	/* MULTIPLE        */
+# define CLICON          (fmfield) 12	/* Long            */
+# define DCLICON         (fmfield) 13	/* String          */
+# define OBJCON          (fmfield) 14	/* Integer         */
+# define DOBJCON         (fmfield) 15	/* String          */
+# define DTOBJCON        (fmfield) 16	/* String          */
+# define AGR_DESDE       (fmfield) 17	/* GROUPED         */
+# define CLIDESDE        (fmfield) 18	/* String          */
+# define AGRCLIE         (fmfield) 19	/* GROUPED         */
+# define CLID            (fmfield) 20	/* Long            */
+# define DCLID           (fmfield) 21	/* String          */
+# define CLIHASTA        (fmfield) 22	/* String          */
+# define CLIH            (fmfield) 23	/* Long            */
+# define DCLIH           (fmfield) 24	/* String          */
+# define OBJDESDE        (fmfield) 25	/* String          */
+# define AGROBJE         (fmfield) 26	/* GROUPED         */
+# define OBJD            (fmfield) 27	/* Integer         */
+# define DOBJD           (fmfield) 28	/* String          */
+# define OBJHASTA        (fmfield) 29	/* String          */
+# define OBJH            (fmfield) 30	/* Integer         */
+# define DOBJH           (fmfield) 31	/* String          */
+# define AGRUPF          (fmfield) 32	/* GROUPED         */
+# define FECHAD          (fmfield) 33	/* Date            */
+# define FECHAH          (fmfield) 34	/* Date            */
+# define COMENT          (fmfield) 35	/* String          */
+# define COMENT2         (fmfield) 36	/* String          */
+/* Form checksum	*/
+# define FM_REVPFAC_CHKSUM (long)0x0e52
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_CLIE         0
+# define M_ERR_OBJE         1
+# define M_ERR_FCH          2
+/* =========== End of fmh file ============ */

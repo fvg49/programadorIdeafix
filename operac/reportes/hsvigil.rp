@@ -1,0 +1,40 @@
+%head(remp, today, pageno, rfechad, rfechah, rretro, rvigild, rdvigild, rvigilh, rdvigilh) before (page, report)
+[16c[2o\__________________________________																		  				  						                        Fecha : __/__/____
+																																				                       Página:       ____.
+														Listado de Horas por Vigilador                             							  		                        (hsvigil)
+			                
+					          Desde Fecha  __/__/____  Hasta Fecha  __/__/____         __? considera retroactivos
+					          Desde Vigilador _______. _______________________________  Hasta Vigilador _______. _______________________________    					
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                                                        Estandar Trabajado           Servicios Adicionales         A Cargo Empresa      
+ Deleg Vigilador    Fecha    Cliente/Objetivo                        Cond                    §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+                                                                                                 Hn      H50    H100 Fra H100 Fer    Hn       H50     H100      Hn       H50     H100   
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%zdel(rdeleg, rddeleg)
+ _____ ______________________________
+%zvig(rvigil, rdvigil) 
+        _______. ____________________________________
+%zfch(rfch, rcli, robj, rdobj, rregim, rregimp, rcond, rhsent, rhssal, fsthn, fsth50, fsth100, fsth100f, fsahn, fsah50, fsah100, fsehn, fseh50, fseh100)
+              __/__/__ ________. ____. __________________  _________ _________  _ __:__ __:__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%znoprint(sthn, sth50, sth100, sth100f, sahn, sah50, sah100, sehn, seh50, seh100) no print
+                                                                                              _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotvig(rvigil, rdvigil, sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sahn), sum(sah50), sum(sah100), sum(sehn), sum(seh50), sum(seh100)) 
+TOTAL   _______. ________________________________                                             _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+
+%ztotdel(rdeleg, rddeleg, sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sahn), sum(sah50), sum(sah100), sum(sehn), sum(seh50), sum(seh100)) 
+TOTAL    ______  ________________________________                                             _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+
+%ztotsem(rsemd, rsemh, sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sahn), sum(sah50), sum(sah100), sum(sehn), sum(seh50), sum(seh100)) 
+       TOTAL SEMANA DEL __/__/____  AL  __/__/____                                            _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+
+%ztotgen(sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sahn), sum(sah50), sum(sah100), sum(sehn), sum(seh50), sum(seh100))
+
+TOTAL GENERAL                                                                               _______.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%report
+use operac;
+language"C";
+flength=42;
+//flength=$FLENLANDCOMP;
+width=247;
+

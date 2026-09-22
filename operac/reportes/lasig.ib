@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lasig.exe {
+	lasig.fm;
+	lasig1.rp;
+	lasig2.rp;
+	lasig.c;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

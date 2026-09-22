@@ -1,0 +1,21 @@
+/* Field names	*/
+# define EMPO            (fmfield)  0	/* Integer         */
+# define DEMPO           (fmfield)  1	/* String          */
+# define EMPD            (fmfield)  2	/* Integer         */
+# define DEMPD           (fmfield)  3	/* String          */
+# define FECMOV          (fmfield)  4	/* Date            */
+# define FILORI          (fmfield)  5	/* String          */
+# define ARCHIE          (fmfield)  6	/* String          */
+# define MULTI0          (fmfield)  7	/* MULTIPLE        */
+# define NROLEG          (fmfield)  8	/* Long            */
+# define DNROLEG         (fmfield)  9	/* String          */
+# define MODPRO          (fmfield) 10	/* Integer         */
+# define RMODPRO         (fmfield) 11	/* String          */
+# define SALIDA          (fmfield) 12	/* String          */
+# define DSALIDA         (fmfield) 13	/* String          */
+# define ARCHIVO         (fmfield) 14	/* String          */
+/* Form checksum	*/
+# define FM_MOVASI_CHKSUM (long)0x0177
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,74 @@
+ Empresa                :      __.  _________________________________________
+
+ Delegación Comercial   : _____     _________________________________
+ Delegación Operacional : _____     _________________________________   
+ Filial Operativa       : ______    _________________________________ 
+ 
+ Vigilador a desasignar : _______.| _________________________________________
+
+¨¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡ª
+ Rev  Cliente - Objetivo  Efe        Puesto          Regimen     Rol    D  F.Asig.       Días    H.Ent H.Sal 
+§¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¥
+[__? ______. ______ ____. ___ ____. ____. _________ _________ __. _. _. _ __/__/__ _-_-_-_-_-_-_ __:__ __:__]
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+¢¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¤
+
+                 ___________________________________________________
+%form()
+language "c";
+use operac, bill, sue, comerc, billpro;
+window label "[ Reversión de Asignaciones ]", border single;
+ignore delete, prev, next;
+confirm update, end;
+%fields
+emp		: in sue.emps:(descrip),
+			default $emp;
+demp	: sue.emps.descrip,
+			skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+vigila	: in sue.per(emp):(apynom),
+			not null;
+dvig	: sue.per.apynom, skip;
+
+multi  :  rows 30, display 10, ignore insert, ignore delete;
+revierte: not null, default false, autoenter;
+fcliente : asig.cliente, skip;
+dclie	: bill.cliente.razsoc, skip;
+objet   : asig.objetivo, skip;
+//dobjet  : comerc.objetivo.descrip, skip;
+efec	: skip; // asig.efect, skip
+tippto	: asig.ptoser, skip;
+fpuesto	: asig.puesto, skip;
+i_nroint: internal asig.nroint, asig.nroint;
+dpuesto : skip;
+regim   : asig. ,skip;
+codrol  : asig., skip;
+fila    : asig., skip;
+colum   : asig., skip;
+tipodia : asig., skip;
+fecasig : asig., skip;
+dia1    : asig., skip;
+dia2    : asig., skip;
+dia3    : asig., skip;
+dia4    : asig., skip;
+dia5    : asig., skip;
+dia6    : asig., skip;
+dia7    : asig., skip;
+hsent	: asig., skip;
+hssal	: asig., skip;
+coment  : skip;

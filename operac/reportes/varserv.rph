@@ -1,0 +1,30 @@
+/* Field names	*/
+# define RCLIE           ((rpfield)   0) 	/* Num */
+# define RDCLIE          ((rpfield)   1) 	/* String */
+# define ROBJ            ((rpfield)   2) 	/* Num */
+# define RDOBJ           ((rpfield)   3) 	/* String */
+# define R_CANTOP        ((rpfield)   4) 	/* Num */
+# define R_PTOSER        ((rpfield)   5) 	/* Num */
+# define R_DPTOSER       ((rpfield)   6) 	/* String */
+# define R_CATEG         ((rpfield)   7) 	/* Num */
+# define R_HDESDE        ((rpfield)   8) 	/* Time */
+# define R_HHASTA        ((rpfield)   9) 	/* Time */
+# define R_D1            ((rpfield)  10) 	/* String */
+# define R_D2            ((rpfield)  11) 	/* String */
+# define R_D3            ((rpfield)  12) 	/* String */
+# define R_D4            ((rpfield)  13) 	/* String */
+# define R_D5            ((rpfield)  14) 	/* String */
+# define R_D6            ((rpfield)  15) 	/* String */
+# define R_D7            ((rpfield)  16) 	/* String */
+# define R_REG           ((rpfield)  17) 	/* String */
+# define R_SUBR          ((rpfield)  18) 	/* String */
+# define R_TIPODIA       ((rpfield)  19) 	/* String */
+# define R_HSTOT         ((rpfield)  20) 	/* Num */
+# define R_CANTVIG       ((rpfield)  21) 	/* Num */
+/* Report Checksum	*/
+# define RP_VARSERV_CHKSUM ((long) 0x01de)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define TITCLI          ((int)   1)
+# define LINPUE          ((int)   2)
+# define FINOBJ          ((int)   3)

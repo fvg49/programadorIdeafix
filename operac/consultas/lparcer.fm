@@ -1,0 +1,36 @@
+
+   Empresa:  __. ___________________________________________
+
+   Fecha Desde :{__/__/____
+         Hasta : __/__/____ }
+
+   Cliente Desde :{_________. _________________________________
+           Hasta : _________. _________________________________}
+
+   Salida por    : _ _________ 
+
+%form
+use bill, sue;
+window label "Objetivos pendientes de cerrar", border single;
+ignore prev, delete, next, add;
+display status;
+messages
+       DESDEC: "El Cliente Desde debe ser menor o igual al Cliente Hasta",
+       DESDEF: "La Fecha Desde debe ser menor o igual a la Fecha Hasta";
+
+%fields
+emp	  : in sue.emps:(descrip), default $emp, not null;
+demp  : sue.emps.descrip, skip;
+
+agrupfe : check fechad <= fechah, on error DESDEF;
+fechad  : not null, default today;
+fechah  : not null, default today;
+
+agrupcc : check clid <= clih, on error DESDEC;
+clid    : on help in cliente:(razsoc), not null, default 0;
+dclid   : cliente.razsoc, skip;
+clih    : on help in  cliente:(razsoc), not null, default 9999;
+dclih   : cliente.razsoc, skip;
+
+salida  : not null, mask ">A", in ("I":"Impresora", "T":"Terminal"), default ("T");
+dsalida : is descr (salida);

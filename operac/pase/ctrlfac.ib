@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+//BIN="../rbinaux/";
+
+ctrlfac.exe {
+	ctrlfac.fm;
+	ctrlfac.rp;
+	ctrlfac.hlp;
+    ctrlfac.c : ctrlfac.fmh operac.sch;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;		
+	$BILLPRO/lib/billpro.a;
+}

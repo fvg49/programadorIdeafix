@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+revciefil.exe {
+	revciefil.fm;
+   	revciefil.c;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+ 	$BILL/lib/bill.a;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+}

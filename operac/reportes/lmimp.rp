@@ -1,0 +1,48 @@
+%head(today, pageno, module, rselec, rselec1, rselec2) before (page, report)
+[16c
+\$empresa                                                                                                      Fecha : __/__/____
+                                                                                                               Página:       ____.
+                                                                                                                    (______)
+												 Listado de Movimientos Improductivos
+                                                 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+__________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡©¡¡¡¡¡©¡¡¡¡¡ª
+                        Detalle                            Fecha    Fecha   Hora  Hora      Días      Regimen D F Can Cant. Motiv 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥ Inicio    Final  Inici Final                            Pue Pers.       
+                                                        §¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¥
+%zcli(rclie, rclied)
+ _____.  ________________________________________                                                                                 
+%zobj(robjet, robjetd)
+   _____.  ________________________________________                                                                               
+%zlinea(rdetalle, rfinicio, rffinal, rhinicio, rhfinal, rdia1, rdia2, rdia3 ,rdia4, rdia5, rdia6, rdia7, rregim, rtipodia, rcodfrec, rcantpue, rcantvig, rcodmot)
+   _____________________________________________________ __/__/__ __/__/__ __:__ __:__ _-_-_-_-_-_-_ ________ _ _ __. __.__ ____. 
+%zfin() after(page, report)
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡£¡£¡¡¡£¡¡¡¡¡£¡¡¡¡¡¤
+%report
+use operac;
+language"C";
+//flength=42;
+width=140;
+topmarg = 0;
+
+%fields
+
+rfinicio  : puestos.finicio;
+rffinal   : puestos.ffinal;
+rhinicio  : puestos.hinicio;
+rhfinal   : puestos.hfinal;
+rdia1     : puestos.dia1;
+rdia2     : puestos.dia2;
+rdia3     : puestos.dia3;
+rdia4     : puestos.dia4;
+rdia5     : puestos.dia5;
+rdia6     : puestos.dia6;
+rdia7     : puestos.dia7;
+rregim    : puestos.regim;
+rtipodia  : puestos.tipodia;
+rcodfrec  : puestos.codfrec ;
+rcantpue  : puestos.cantpue;
+rcantvig  : puestos.cantvig;
+rcodmot   : puestos.codmot;

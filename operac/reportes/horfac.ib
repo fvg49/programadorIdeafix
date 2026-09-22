@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+horfac.exe {
+	horfac.fm;
+	horfac.rp;
+	horfac.c : horfac.fmh horfac.rph operac.sch;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

@@ -1,0 +1,8 @@
+"1. Clientes y Objetivos     " MENU opeint200
+"2. Orden de Trabajo         " MENU opeint310
+"3. Asignación de Vigiladores" MENU opeint400
+"4. Retenes                  " MENU opeint500
+"5. Parte Diario             " MENU opeint600
+"6. Brigada                  " MENU brigint
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .
+"Z. Configuración                    " MENU  usrope

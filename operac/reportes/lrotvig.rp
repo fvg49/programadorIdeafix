@@ -1,0 +1,25 @@
+%titulo (today, pageno, rdesde, rhasta) before (report, page)
+[10c\$empresa                                   Fecha : __/__/____    Página:___.
+
+       [1mRotación de vigiladores desde __/__/____ hasta __/__/____ [0m                  
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+ CLIENTE                                                                     
+           OBJETIVO                                        ALTAS     BAJAS   
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%titcli (rclie, rdclie) before rclie
+ ______. _________________________________________ 
+%linea (robj, rdobj, raltas, rbajas)
+           ______. ______________________________________  ____.     ____.
+%totcli (rclie, rdclie, sum(raltas), sum(rbajas)) after rclie
+[1m TOTAL   ______. ________________________________________  ____.     ____.[0m
+
+%fin (sum(raltas), sum(rbajas)) after report
+[1m TOTAL GENERAL                                             ____.     ____.[0m
+
+%report
+use comerc;
+language"C";
+flength=$FLENCOMP;
+width = 120;
+output to terminal;

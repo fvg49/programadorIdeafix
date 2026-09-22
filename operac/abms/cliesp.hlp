@@ -1,0 +1,14 @@
+
+                                [1;4mCLIENTES ESPECIALES[0m
+
+Programa para agrupar los clientes.
+Un cliente puede estar en varios grupos.
+Si el objetivo se deja vacío, se interpreta como todos los objetivos de ese cliente.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m cliesp.exe
+
+[1mProceso:[0m  Graba:  billpro|cliesp  (Grupo de cliente y descripción)
+                  billpro|rcliesp (Clientes por grupo)
+

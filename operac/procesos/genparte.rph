@@ -1,0 +1,8 @@
+/* Field names	*/
+# define RMENSAJE        ((rpfield)   0) 	/* String */
+/* Report Checksum	*/
+# define RP_GENPARTE_CHKSUM ((long) 0x0002)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)
+# define FIN             ((int)   2)

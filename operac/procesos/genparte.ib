@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+genparte.exe {
+	genparte.fm;
+	genparte.rp;
+	genpart2.rp;
+	genparte.c : genparte.fmh genparte.rph genpart2.rph operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$WEBINTERLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

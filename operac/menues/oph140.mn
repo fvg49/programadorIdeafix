@@ -1,0 +1,2 @@
+"1. Feriados                        " WCMD feriado.exe !ADU
+"2. Consulta de Feriados Nacionales " WCMD execform -b cferiado iql -b cferiado

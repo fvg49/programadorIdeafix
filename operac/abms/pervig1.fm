@@ -1,0 +1,44 @@
+Empresa:     __. ______________________________________________  
+Legajo :_______. ______________________________________________
+¨¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©±±±±±±±±±±±±©¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡¡ª
+    Origen                                            Destino         Num.                 
+§¡¡¡¡¡©¡¡¡¡¡¡¥     Tipo        Inicio       Fin    §¡¡¡¡¡©¡¡¡¡¡¡¥Act       Usuar.  Fecha   
+ Deleg Filial                                       Deleg Filial     Modif                 
+§¡¡¡¡¡¦¡¡¡¡¡¡¦±±±±±±±±±±±±±±±¦¡¡¡¡¡¡¡¡¡¡¦±±±±±±±±±±¦±±±±±¦±±±±±±¦¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¥
+[_____ ______ __. ___________ __/__/____ __/__/____°_____ ______ __? ____. _____. __/__/__]
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+                                                   °                                       
+¢¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¤
+%form
+use operac, sue, billpro, comerc;
+window label "[Historico de Permisos sobre vigiladores x Delegacion/Filial]", border single;
+display status;
+ignore delete, add, update;
+%fields
+
+hemp       : pervig.emp, skip ;
+hempdesc   : sue.emps.descrip, skip;
+hnroleg    : pervig.nroleg, skip;
+hdesc0     : sue.per.apynom, skip;
+
+hmulti0    : rows 500, display 10, ignore delete, ignore insert;
+hdelori    : pervig.delori, display only;
+hfilori    : pervig.filori, skip;
+htipper    : pervig.tipper, skip;
+hdesc1     : tpermi.descrip, skip;
+hfecini    : pervig.fecini, skip;
+hfecfin    : pervig.fecfin, skip;
+hdelega    : pervig.delega, skip;
+hfilial    : pervig.filial, skip;
+hactivo    : pervig.activo, skip;
+hnummod    : pervig.nummod, skip;
+husuari    : pervig.usuari, skip;
+hfecha     : pervig.fecha,  skip;

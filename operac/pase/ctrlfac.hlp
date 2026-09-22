@@ -1,0 +1,11 @@
+
+                       [1;4mCONTROL DE PASAJE DE HORAS TRABAJADAS A FACTURACIÓN[0m
+
+Este proceso recorre el parte y los retroactivos y si alguno no tiene el pase hecho lo informa.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m ctrlfac.exe
+
+[1mProceso:[0m Recorre las tablas operac|PARTE y operac|RETRO.
+         Si el campo liqfac es null lo informa.

@@ -1,0 +1,9 @@
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Permisos por Vigilador¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"   SHELL .
+"1. Tipos de Permiso                                            "   WCMD doform -b tpermi
+"2. Permisos X Vigiladores                                      "   WCMD pervig.exe
+"¡¡¡¡¡Agrupacion de Filiales para Insercion de Vigiladores¡¡¡¡¡¡"   SHELL .
+"3. Grupos de Filiales                                          "   WCMD doform -b grufil
+"4. Filiales por Grupo                                          "   WCMD filxgrup.exe
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡Listados de Permisos por Vigilador¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"   SHELL .
+"5. Con un Usuario Obtengo los Vigiladores con Permiso          "   WCMD lpervig.exe
+"6. Con un Vigilador Obtengo que Usuarios lo Pueden Usar        "   WCMD lpervig.exe

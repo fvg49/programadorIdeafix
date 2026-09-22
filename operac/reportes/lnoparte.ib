@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lnoparte.exe {
+	lnoparte.fm;
+	lnoparte.rp;
+	lnoparte.c;
+    lnoparte.hlp;
+    
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

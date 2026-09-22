@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lvacfal.exe {
+	lvacfal.fm;
+	lvacfal.rp;
+	lvacfal.c;
+
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$OPERAC/lib/operac.a;
+	$IGRALLIB.a;
+}

@@ -1,0 +1,66 @@
+
+ Empresa        :          __. _________________________________
+
+ Desde Cliente  :{___,___,___. _________________________________
+       Objetivo :       _,___. _________________________________ 
+
+ Hasta Cliente  : ___,___,___.}_________________________________
+       Objetivo :       _,___. _________________________________
+
+ Período Desde  :{         __. __________  ____. 
+         Hasta  :          __. __________  ____.}
+
+ Detallado por Día      :  __? 
+ Detallado por Objetivo :  __?
+
+ Salida a: _  _________  ____________________ ____________
+
+            ___________________________________________________
+
+%form
+use operac, bill, sue, comerc;
+language "C";
+window label "[Listado de Horas Standard]",border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp		: in sue.emps:(descrip), default $emp, not null;
+demp	: sue.emps.descrip, skip;
+
+agrupc	: check clid <= clih;
+clid	: in bill.cliente:(razsoc), not null;
+dclid	: bill.cliente.razsoc, skip;
+objd    : on help in comerc.objetivo by est (emp, true, clid):descrip, default 1;
+dobjd   : comerc.objetivo.descrip, skip;
+clih	: in bill.cliente:(razsoc), not null;
+dclih	: bill.cliente.razsoc, skip;
+objh    : on help in comerc.objetivo by est (emp, true, clih):descrip, default 99;
+dobjh   : comerc.objetivo.descrip, skip;
+
+agrupf	:;
+mesd    : in (1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril", 5: "Mayo",
+              6: "Junio", 7: "Julio", 8: "Agosto", 9: "Septiembre", 10: "Octubre",
+             11: "Noviembre", 12: "Diciembre"), not null, default month;
+dmesd   : is descr (mesd);
+aniod   : > 1997, not null, default year;
+
+mesh    : in (1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril", 5: "Mayo",
+              6: "Junio", 7: "Julio", 8: "Agosto", 9: "Septiembre", 10: "Octubre",
+             11: "Noviembre", 12: "Diciembre"), not null, default month;
+dmesh   : is descr (mesh);
+anioh   : > 1997, not null, default year;
+unicper : internal bool, is(mesd == mesh and aniod == anioh);
+
+detdia  : not null, default false, descr "SI: Detalle dia por dia            NO: Total";
+detobj  : not null, default true, descr  "SI: Detalle por objetivo           NO: Total por cliente";
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"),
+          not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+dnomb   : is (salida != "A" ? null : "Nombre del archivo: ");
+archivo : is null when salida !="A", not null;
+
+coment  : skip;

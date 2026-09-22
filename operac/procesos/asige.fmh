@@ -1,0 +1,48 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define EMPDESC         (fmfield)  1	/* String          */
+# define CLIEOT          (fmfield)  2	/* Long            */
+# define DCLIEOT         (fmfield)  3	/* String          */
+# define OBJET           (fmfield)  4	/* Integer         */
+# define DOBJET          (fmfield)  5	/* String          */
+# define MULTI0          (fmfield)  6	/* MULTIPLE        */
+# define AGRUPLIN        (fmfield)  7	/* GROUPED         */
+# define NROLEG          (fmfield)  8	/* Long            */
+# define NOMBRE          (fmfield) 10	/* String          */
+# define I_BASE          (fmfield) 11	/* Integer         */
+# define I_NEW           (fmfield) 12	/* Integer         */
+# define I_CLIEFEC       (fmfield) 13	/* Long            */
+# define I_OBJEFEC       (fmfield) 14	/* Integer         */
+# define I_PTOEFEC       (fmfield) 15	/* Integer         */
+# define I_CODINTEFEC    (fmfield) 16	/* Integer         */
+# define I_FFINPTOEFC    (fmfield) 17	/* Date            */
+# define I_PTOASI        (fmfield) 18	/* Integer         */
+# define I_CODINASI      (fmfield) 19	/* Integer         */
+# define I_INTASI        (fmfield) 20	/* Integer         */
+# define ASIGNA          (fmfield) 21	/* Integer         */
+# define DESCASI         (fmfield) 23	/* String          */
+# define AGRASIGNA       (fmfield) 24	/* GROUPED         */
+# define IS_EFECT        (fmfield) 25	/* String          */
+# define EFECT           (fmfield) 26	/* String          */
+# define DEFECT          (fmfield) 27	/* String          */
+# define VIGILAD         (fmfield) 28	/* String          */
+# define DVIGIL          (fmfield) 29	/* String          */
+# define I_CHGEFEC0      (fmfield) 30	/* Integer         */
+# define I_FECEFEC       (fmfield) 31	/* Date            */
+# define I_FECININ       (fmfield) 32	/* Date            */
+# define I_FECFINN       (fmfield) 33	/* Date            */
+# define I_FECINI        (fmfield) 34	/* Date            */
+# define I_FECFIN        (fmfield) 35	/* Date            */
+# define HORARIO         (fmfield) 36	/* String          */
+# define LINEA           (fmfield) 38	/* String          */
+# define MENSAJE         (fmfield) 39	/* String          */
+/* Form checksum	*/
+# define FM_ASIGE_CHKSUM (long)0x190b
+/* Subform names	*/
+# define SF_ASIGE4            0
+# define SF_ASIGE2            1
+# define SF_ASIGE1            2
+/* Symbol names for messages */
+# define M_MSG_INF          0
+# define M_MSG_SUBFM        1
+/* =========== End of fmh file ============ */

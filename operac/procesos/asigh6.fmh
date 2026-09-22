@@ -1,0 +1,18 @@
+/* Field names	*/
+# define I_EMP6          (fmfield)  0	/* Integer         */
+# define I_FECHINI6      (fmfield)  1	/* Date            */
+# define I_FECHFIN6      (fmfield)  2	/* Date            */
+# define I_FECASIG26     (fmfield)  3	/* Date            */
+# define FECBAJ6         (fmfield)  4	/* Date            */
+# define MOTIVO6         (fmfield)  5	/* Integer         */
+# define DMOTVI6         (fmfield)  6	/* String          */
+# define REEMPL6         (fmfield)  7	/* Long            */
+# define NOMBRE26        (fmfield)  8	/* String          */
+# define I_ACT26         (fmfield)  9	/* Integer         */
+/* Form checksum	*/
+# define FM_ASIGH6_CHKSUM (long)0x01b2
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_FECBAJ6          0
+# define M_LEGINACT26       1
+/* =========== End of fmh file ============ */

@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+confpar.exe {
+	confpar.fm;
+	confpar.c : confpar.fmh operac.sch comerc.sch;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$WEBINTER/lib/webinter.a;
+	$DENARIUSLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

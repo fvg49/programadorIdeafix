@@ -1,0 +1,84 @@
+
+ Empresa     : __.  ______________________________________________
+
+ Fecha Desde :{__/__/____
+       Hasta : __/__/____}
+
+  Vigilador Desde :{______. _____________________________
+            Hasta : ______.}_____________________________
+
+
+ Procesos:
+ 
+    - Control de los que NO  tienen parte  pero si asignación                  __?
+    
+    - Control de Condicion de Trabajo                                          __?
+    
+    - Listado de Vigiladores de Baja pero que tienen asignacion                __?
+    
+    - Listado para Comparar Hs. Normales Trabajadas VS Hs.del Regimen          __?
+    
+ 	- Control de cargas en el parte diario                                     __?
+ 	
+ Salida         : _  _________
+ Nombre Archivo : ____________________
+
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Procesando Vigilador: _______. __________________________________________________ 
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+ ___________________________________________________________________________________
+%form
+language "c";
+use operac, sue, bill, comerc, billpro;
+window label "[Auditoria de Horas Perú]", border single;
+display status;
+ignore delete, next, prev, add, ignore;
+confirm update, end;
+
+%fields
+emp		: in sue.emps:(descrip), default $emp;
+demp	: sue.emps.descrip,	skip;
+
+agrfec	: check fdesde < fhasta;
+fdesde	: not null;
+fhasta	: >= fdesde, default today - 1, not null;
+
+agrupv  : check vigild <= vigilh;
+vigild  : on help in sue.per(emp):(apynom), default 0, not null;
+dvigild : sue.per.apynom, skip;
+vigilh  : on help in sue.per(emp):(apynom) descending, default 99999, not null;
+dvigilh : sue.per.apynom, skip;
+
+
+
+lnoparte: default true;
+ctrlcond: default false, skip;        
+vigibaj : default true;
+hsnvsreg: default false, skip;                      
+hsparte : default true;
+
+//baja    : default true;  Considera los Vigiladores de Baja? : __?
+salida  : in   ("T":"Terminal",
+				"I":"Impresora",
+				"A":"Archivo"),
+			default "T", mask ">A",	not null;
+desc5   : is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "lnoparte.txt", not null;
+procvigi: skip;
+dprocvig: skip;
+coment  : skip;
+
+
+/*
+ Delegación Comercial  : _____  _________________________________
+ Delegación Operacional: _____  _________________________________   
+ Filial Operativa      : ______ _________________________________ 
+ 
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+*/

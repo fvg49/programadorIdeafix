@@ -1,0 +1,47 @@
+
+ Empresa      : __. ______________________________________
+	
+ Opción       :  _  ________________
+
+ Vigilador Desde :{_______. ______________________________
+           Hasta : _______.}______________________________
+
+ Mes :{__. Año : _,___.
+
+ Periodo       : _,___.}
+
+ Fecha de Carga : __/__/____
+
+ Salida : _ _______________________
+ Nombre Archivo : ____________________
+
+%form
+use sue;
+language "c";
+window label "Listado de Vacaciones", border single;
+ignore add, delete, prev, next, ignore;
+confirm update;
+
+%fields
+emp		: in sue.emps:descrip, default $emp;
+demp	: sue.emps.descrip, skip;
+opcion  : in ("L":"Legajo",
+              "F":"Fecha de Carga"),
+          default "L", mask ">A";
+dopcion : is descr(opcion);
+agrleg	: ;
+nrolegd	: in per(emp):apynom, not null, is (opcion == "L") ? void : null;
+apynomd	: per.apynom, skip;
+nrolegh	: in per(emp):apynom descending, >= nrolegd, is (opcion == "L") ? void : null,
+          check after agrleg, not null;
+apynomh	: per.apynom, skip;
+agrup   : is (opcion == "L") ? void : null, not null;
+mes		: between 1 and 12, default month();
+anio	: default year(), > 1998;
+periodo : > 1998, is (mes == null) ? void : null;
+fecha   : default today, is (opcion == "F") ? void : null, not null;
+salida	: in ("T":"Terminal", "I":"Impresora", "A":"Archivo"), default "I", not null, mask ">A";
+dsalida	: is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "lvacac.txt", not null;
+
+

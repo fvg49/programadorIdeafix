@@ -1,0 +1,24 @@
+%head(empre, today, hour, pageno, r_fdesde, r_fhasta, rbaja) before(report, page)
+[16c ____________________________                                                            Fecha  : __/__/____
+                                                                                         Hora   : __:__
+                                                                                         Página :      ____.
+                                                                                         
+                                  Vigiladores asignados pero sin Parte                   (lnoparte)
+                                  ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+                        Fecha Desde : __/__/____   Fecha Hasta : __/__/____ 
+                           __? Considera los Vigiladores de Baja
+
+ ¨¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡ª
+  Empresa  Legajo     Apellido y Nombre     Día Asig.  Vigil  Cliente   Objetivo     Días        Filial  
+ §¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¥
+%linea(r_emp, r_legajo, r_apenom, r_dia, r_vigil, r_cliente, r_objetivo, r_dia1, r_dia2, r_dia3, r_dia4, r_dia5, r_dia6, r_dia7, r_filial)
+    __.   _______. ________________________ __/__/____   _   _________.   ____.  _-_-_-_-_-_-_   ______  
+%flin() after (page,report)
+ ¢¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¤
+%report
+//use operac, sue, comerc;
+language"C";
+topmarg = 0;
+flength= $FLENCOMP;
+output to terminal;

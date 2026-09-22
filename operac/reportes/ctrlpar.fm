@@ -1,0 +1,50 @@
+ Empresa        :    __. ______________________________________
+
+ Cliente  Desde :{_____. ______________________________________
+          Hasta : _____.}______________________________________
+
+ Objetivo Desde :   {__. ______________________________________
+          Hasta :    __.}______________________________________
+
+ Fecha    Desde :{__/__/____
+          Hasta : __/__/____}
+
+ Incluye detalle de horas = 0 ?  __?
+
+ Salida por     : _ ________________   ________________________
+
+                          _____________________________________
+%form
+use comerc, bill, sue;
+language "C";
+window label "[Cantidad Horas Trabajadas Vs. Cantidad Detalle de Horas]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+agrcli  : check (clied <= clieh);
+clied   : on help in bill.cliente:(razsoc);
+dclied  : bill.cliente.razsoc, skip;
+clieh   : on help in bill.cliente:(razsoc), is null when clied=null;
+dclieh  : bill.cliente.razsoc, skip;
+
+agrobj  : ;
+objetd  : on help in comerc.objetivo by est(emp, true, clied):descrip, default 1, is null when clied=null;
+dobjd   : comerc.objetivo.descrip, skip;
+objeth  : on help in comerc.objetivo by est(emp, true, clieh):descrip, default 99, is null when clied=null;
+dobjh   : comerc.objetivo.descrip, skip;
+
+agrup   : check fdesde <= fhasta;
+fdesde  : default today;
+fhasta  : default today;
+
+verhs   : not null, default false, descr (this == false ? "No se toman en cuenta los Detalles de Horas Trabajadas es cero.");
+
+salida  : in ("T": "Terminal", "I":"Impresora", "A":"Archivo"), mask ">A", autoenter, not null, default "T";
+dsalida : is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "ctrlpar.txt", not null;
+
+coment  : skip;

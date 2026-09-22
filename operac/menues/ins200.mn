@@ -1,0 +1,8 @@
+"1. Cliente                       " WCMD clibill.exe  !ADU
+"2. Objetivo                      " WCMD objetivo.exe !ADU
+"3. Inspectores por Objetivo      " WCMD supxobj.exe
+"4  Filial por Objetivo           " WCMD filxobj.exe  !ADU
+"5. Listado de Datos de Objetivos " WCMD lobjet.exe
+
+#"3. Listado de Cliente/Objetivo " WCMD execform -w -b lcliobj iql -b lcliobj
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .

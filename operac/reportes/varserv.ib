@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+varserv.exe {
+	varserv.fm;
+	varserv.rp;
+	varserv.c : varserv.fmh varserv.rph comerc.sch bill.sch;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$OPERAC/lib/operac.a;
+	$BILLLIB.a; 
+}

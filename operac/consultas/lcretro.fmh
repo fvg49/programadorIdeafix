@@ -1,0 +1,16 @@
+/* Field names	*/
+# define TITULO          (fmfield)  0	/* String          */
+# define FDESDE          (fmfield)  1	/* Date            */
+# define FHASTA          (fmfield)  2	/* Date            */
+# define FRDESDE         (fmfield)  3	/* Date            */
+# define FRHASTA         (fmfield)  4	/* Date            */
+# define SALIDA          (fmfield)  5	/* String          */
+# define DSALIDA         (fmfield)  6	/* String          */
+# define ARCHIVO         (fmfield)  7	/* String          */
+# define DUMMY           (fmfield)  8	/* String          */
+# define COMENTARIO      (fmfield)  9	/* String          */
+/* Form checksum	*/
+# define FM_LCRETRO_CHKSUM (long)0x0125
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

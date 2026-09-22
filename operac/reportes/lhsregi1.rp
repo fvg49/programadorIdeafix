@@ -1,0 +1,17 @@
+%head(today, rregim, pageno, rfechad, rfechah) before (page, report)
+[16c\$empresa                                                                              Fecha  : __/__/____
+                                                                                       Página :       ____.
+                              [1mCONTROL DE HORAS POR REGIMEN ________[0m                    (lhsregim.exe)
+
+
+                                    De __/__/____ a __/__/____
+
+              ¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡ª
+                Legajo                   Nombre y Apellido                    Horas   
+              ¢¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¤
+%linea(rnroleg, rnombre, rhoras)
+               ________. ___________________________________________________  ____.__
+%report
+use comerc;
+language "c";
+

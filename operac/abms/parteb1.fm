@@ -1,0 +1,18 @@
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡ª
+  Horas     Horas     Hs 35%      Horas    
+ Normales   al 25%  y Feriados   Francos     	
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¥
+  __.__     __.__      __.__      __.__    
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¤
+%form()
+use operac;
+language "C";
+window label "Detalle de Horas", border single;
+ignore end, update, add;
+
+%fields
+
+normal	: ; //skip;
+extras1	: ; //skip;
+extras2	: ; //skip;
+francos	: ; //skip;

@@ -1,0 +1,55 @@
+/* Field names	*/
+# define REMP            ((rpfield)   0) 	/* String */
+# define RFECHAD         ((rpfield)   1) 	/* Date */
+# define RFECHAH         ((rpfield)   2) 	/* Date */
+# define RRETRO          ((rpfield)   3) 	/* Bool */
+# define RVIGILD         ((rpfield)   4) 	/* Num */
+# define RDVIGILD        ((rpfield)   5) 	/* String */
+# define RVIGILH         ((rpfield)   6) 	/* Num */
+# define RDVIGILH        ((rpfield)   7) 	/* String */
+# define RDELEG          ((rpfield)   8) 	/* String */
+# define RDDELEG         ((rpfield)   9) 	/* String */
+# define RVIGIL          ((rpfield)  10) 	/* Num */
+# define RDVIGIL         ((rpfield)  11) 	/* String */
+# define RFCH            ((rpfield)  12) 	/* Date */
+# define RCLI            ((rpfield)  13) 	/* Num */
+# define ROBJ            ((rpfield)  14) 	/* Num */
+# define RDOBJ           ((rpfield)  15) 	/* String */
+# define RREGIM          ((rpfield)  16) 	/* String */
+# define RCOND           ((rpfield)  17) 	/* String */
+# define RHSENT          ((rpfield)  18) 	/* Time */
+# define RHSSAL          ((rpfield)  19) 	/* Time */
+# define FSTHN           ((rpfield)  20) 	/* Num */
+# define FSTH50          ((rpfield)  21) 	/* Num */
+# define FSTH100         ((rpfield)  22) 	/* Num */
+# define FSTH100F        ((rpfield)  23) 	/* Num */
+# define FSAHN           ((rpfield)  24) 	/* Num */
+# define FSAH50          ((rpfield)  25) 	/* Num */
+# define FSAH100         ((rpfield)  26) 	/* Num */
+# define FSEHN           ((rpfield)  27) 	/* Num */
+# define FSEH50          ((rpfield)  28) 	/* Num */
+# define FSEH100         ((rpfield)  29) 	/* Num */
+# define STHN            ((rpfield)  30) 	/* Num */
+# define STH50           ((rpfield)  31) 	/* Num */
+# define STH100          ((rpfield)  32) 	/* Num */
+# define STH100F         ((rpfield)  33) 	/* Num */
+# define SAHN            ((rpfield)  34) 	/* Num */
+# define SAH50           ((rpfield)  35) 	/* Num */
+# define SAH100          ((rpfield)  36) 	/* Num */
+# define SEHN            ((rpfield)  37) 	/* Num */
+# define SEH50           ((rpfield)  38) 	/* Num */
+# define SEH100          ((rpfield)  39) 	/* Num */
+# define RSEMD           ((rpfield)  40) 	/* Date */
+# define RSEMH           ((rpfield)  41) 	/* Date */
+/* Report Checksum	*/
+# define RP_CTRLDEN_CHKSUM ((long) 0x053b)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ZDEL            ((int)   1)
+# define ZVIG            ((int)   2)
+# define ZFCH            ((int)   3)
+# define ZNOPRINT        ((int)   4)
+# define ZTOTVIG         ((int)   5)
+# define ZTOTDEL         ((int)   6)
+# define ZTOTSEM         ((int)   7)
+# define ZTOTGEN         ((int)   8)

@@ -1,0 +1,56 @@
+
+ Empresa          : __. _____________________________________________
+
+ Listar por       : _ __________________
+
+ Supervisor Desde :{_,___,___. _________________________________________
+            Hasta : _,___,___.}_________________________________________
+
+ Cliente Desde    :{___,___,___. ______________________________________
+         Hasta    : ___,___,___.}______________________________________
+
+ Objetivo Desde   :{__. ______________________________________
+          Hasta   : __.}______________________________________
+
+ Fecha Límite     : __/__/____
+
+ Salida por       : _ ______________ 
+
+%form
+use comerc, bill, sue;
+language "C";
+window label "[Asignaciones de Vigiladores Provisorios]", border single;
+confirm update, end;
+ignore add, delete, ignore;
+messages
+		ERR_SUP  : "El Supervisor Desde debe ser menor o igual al Supervisor Hasta",
+		ERR_CLIE : "El Cliente Desde debe ser menor o igual al Cliente Hasta";
+
+%fields
+emp		: in sue.emps:(descrip), default $emp, not null;
+demp	: sue.emps.descrip, skip;
+opcion	: in ("C":"Cliente/Objetivo", "S":"Supervisor"), not null, default "S", mask "1>A";
+dopcion : is descr(opcion);
+agrsup	: check (superd <= superh), on error ERR_SUP;
+superd  : on help in sue.per(emp):apynom, is (opcion == 'S') ? void : null;
+apynomd : sue.per.apynom, skip;
+superh  : on help in sue.per(emp):apynom descending, is (opcion == 'S') ? void : null;
+apynomh : sue.per.apynom, skip;
+agrcli  : check (clied <= clieh), on error ERR_CLIE;
+clied	: in bill.cliente:(razsoc), is (opcion == 'C') ? void : null;
+dclied	: bill.cliente.razsoc, skip;
+clieh	: in bill.cliente:(razsoc), is (opcion == 'C') ? void : null;
+dclieh	: bill.cliente.razsoc, skip;
+agrobj  : ;
+objetd	: on help in comerc.objetivo by est(emp, true, clied):descrip, default 1,
+          is (opcion == 'C') ? void : null;
+dobjd	: comerc.objetivo.descrip, skip;
+objeth	: on help in comerc.objetivo by est(emp, true, clieh):descrip, default 99,
+          is (opcion == 'C') ? void : null;
+dobjh	: comerc.objetivo.descrip, skip;
+fhasta	: default today;
+salida	: in ("I": "Impresora",
+			  "T": "Terminal"),
+			not null,
+			default "T", mask ">A";
+saldescr: is descr(salida);

@@ -1,0 +1,32 @@
+
+  Empresa : __. ____________________________________   |
+
+				¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+				  Fechas de Cierre  
+				§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+				  [  __/__/____  ]   <-- Ultimo Cierre 
+				                    
+				                    
+				                    
+				                    
+				                    
+				                    
+				                    
+				                    
+				                    
+				¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form
+use comgral, sue;
+language "C";
+window label "[Cierre de Operaciones de Peru]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+multi   : rows 1000, display 10;
+feccie  : display only;
+

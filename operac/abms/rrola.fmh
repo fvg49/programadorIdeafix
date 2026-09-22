@@ -1,0 +1,14 @@
+/* Field names	*/
+# define CODROL          (fmfield)  0	/* Integer         */
+# define DESC0           (fmfield)  1	/* String          */
+# define FILA            (fmfield)  2	/* Integer         */
+# define MULTI           (fmfield)  3	/* MULTIPLE        */
+# define AGRUP           (fmfield)  4	/* GROUPED         */
+# define COLUM           (fmfield)  5	/* Integer         */
+# define VALOR           (fmfield)  6	/* String          */
+# define DESC1           (fmfield)  7	/* String          */
+/* Form checksum	*/
+# define FM_RROLA_CHKSUM (long)0x0084
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ccosto.exe {
+	ccosto.fm;	
+	ccosto.c;
+} 
+

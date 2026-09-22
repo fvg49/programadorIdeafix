@@ -1,0 +1,100 @@
+
+  Empresa       : __. _____________________________________________
+
+  Delegación Comercial  : _____  _________________________________
+  Delegación Operacional: _____  _________________________________   
+  Filial Operativa      : ______ _________________________________ 
+  
+  Desde Cliente :{___,___,___. _________________________________
+        Objetivo:       _,___. _________________________________
+
+  Hasta Cliente : ___,___,___.}_________________________________
+        Objetivo:       _,___. _________________________________
+
+  Período Desde :{__/__/____
+          Hasta : __/__/____}
+
+  Opción   : _. ___________________________________________
+
+  Detalle  : _  ___________________________________________
+  
+  Considera retroactivos : __?
+
+  Tipo de Servicio : _ __________________________
+
+  Salida a : _  ______________  Nombre del archivo : ______________
+
+                 ___________________________________________________
+%form
+use operac, bill, sue, comerc, billpro;
+language "C";
+window label "[Listado de Horas por Cliente/Objetivo/Puesto/Vigilador]",
+		border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s";
+
+%fields
+emp		: in sue.emps:(descrip), default $emp, not null;
+demp	: sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+agrupc	: check clid <= clih;
+clid	: on help manual, default 1, not null;
+dclid	: skip;
+objd    : on help manual, default 1, not null;
+dobjd   : skip;
+clih	: on help manual, default 999999999, not null;
+dclih	: skip;
+objh    : on help manual, default 9999, not null;
+dobjh   : skip;
+
+agrupf	: check fechad <= fechah;
+fechad	: not null, default today;
+fechah	: not null, default today;
+
+opcion  : in (1:"Diferencias Estandard Vendido y Trabajado no 0",
+			  2:"Servicios Adicionales Mayor que 0",
+			  3:"Horas a Cargo Mayor que 0",
+			  4:"Horas no Prestadas Mayor que 0",
+			  5:"Sin Filtro"),
+		  not null, 
+		  default 5, 
+		  autoenter;
+dopcion : is descr(opcion);
+
+det     : in ("C":"Consolida por Cliente",
+			  "O":"Consolida por Objetivo",
+			  "P":"Consolida por Puesto",
+			  "V":"Detalla por Vigilador"),
+		  not null, 
+		  default "V", 
+		  mask ">A",
+		  autoenter;
+ddet    : is descr(det);
+
+fretro  : not null, default false;
+objbri  : in ("V": "Vigilancia",
+              "B": "Brigada",
+              "T": "Todos"), not null, default "V", mask ">A";
+dobjbri : is descr(objbri);
+
+salida	: in ("I": "Impresora",
+			  "T": "Terminal",
+			  "A": "Archivo"),
+			not null,
+			default "I", mask ">A",
+			autoenter;
+saldescr: is descr(salida);
+nomarch	: is (salida != "A") ? null : void,
+			default "hscliobj.dat",
+			not null;
+coment  : skip;

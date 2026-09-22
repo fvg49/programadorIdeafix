@@ -1,0 +1,71 @@
+/* Field names	*/
+# define RCLIED          ((rpfield)   0) 	/* Num */
+# define RDCLIED         ((rpfield)   1) 	/* String */
+# define RCLIEH          ((rpfield)   2) 	/* Num */
+# define RDCLIEH         ((rpfield)   3) 	/* String */
+# define ROBJETD         ((rpfield)   4) 	/* Num */
+# define RDOBJETD        ((rpfield)   5) 	/* String */
+# define ROBJETH         ((rpfield)   6) 	/* Num */
+# define RDOBJETH        ((rpfield)   7) 	/* String */
+# define RFDESDE         ((rpfield)   8) 	/* Date */
+# define RFHASTA         ((rpfield)   9) 	/* Date */
+# define RNGRUP          ((rpfield)  10) 	/* Num */
+# define RNGDES          ((rpfield)  11) 	/* Date */
+# define RNGHAS          ((rpfield)  12) 	/* Date */
+# define RCLI            ((rpfield)  13) 	/* Num */
+# define RDCLI           ((rpfield)  14) 	/* String */
+# define ROBJ            ((rpfield)  15) 	/* Num */
+# define RDOBJ           ((rpfield)  16) 	/* String */
+# define RDIA1           ((rpfield)  17) 	/* Date */
+# define RDIA2           ((rpfield)  18) 	/* Date */
+# define RDIA3           ((rpfield)  19) 	/* Date */
+# define RDIA4           ((rpfield)  20) 	/* Date */
+# define RDIA5           ((rpfield)  21) 	/* Date */
+# define RDIA6           ((rpfield)  22) 	/* Date */
+# define RDIA7           ((rpfield)  23) 	/* Date */
+# define RDIA8           ((rpfield)  24) 	/* Date */
+# define RDIA9           ((rpfield)  25) 	/* Date */
+# define RDIA10          ((rpfield)  26) 	/* Date */
+# define RSTD1           ((rpfield)  27) 	/* Num */
+# define RSTD2           ((rpfield)  28) 	/* Num */
+# define RSTD3           ((rpfield)  29) 	/* Num */
+# define RSTD4           ((rpfield)  30) 	/* Num */
+# define RSTD5           ((rpfield)  31) 	/* Num */
+# define RSTD6           ((rpfield)  32) 	/* Num */
+# define RSTD7           ((rpfield)  33) 	/* Num */
+# define RSTD8           ((rpfield)  34) 	/* Num */
+# define RSTD9           ((rpfield)  35) 	/* Num */
+# define RSTD10          ((rpfield)  36) 	/* Num */
+# define R_LEGAJO        ((rpfield)  37) 	/* Num */
+# define R_APENOM        ((rpfield)  38) 	/* String */
+# define R_PTOSER        ((rpfield)  39) 	/* Num */
+# define R_PUESTO        ((rpfield)  40) 	/* Num */
+# define R_DPTOSER       ((rpfield)  41) 	/* String */
+# define R_REGIM         ((rpfield)  42) 	/* String */
+# define R_HSD1          ((rpfield)  43) 	/* Time */
+# define R_HSH1          ((rpfield)  44) 	/* Time */
+# define R_HSD2          ((rpfield)  45) 	/* Time */
+# define R_HSH2          ((rpfield)  46) 	/* Time */
+# define R_HSD3          ((rpfield)  47) 	/* Time */
+# define R_HSH3          ((rpfield)  48) 	/* Time */
+# define R_HSD4          ((rpfield)  49) 	/* Time */
+# define R_HSH4          ((rpfield)  50) 	/* Time */
+# define R_HSD5          ((rpfield)  51) 	/* Time */
+# define R_HSH5          ((rpfield)  52) 	/* Time */
+# define R_HSD6          ((rpfield)  53) 	/* Time */
+# define R_HSH6          ((rpfield)  54) 	/* Time */
+# define R_HSD7          ((rpfield)  55) 	/* Time */
+# define R_HSH7          ((rpfield)  56) 	/* Time */
+# define R_HSD8          ((rpfield)  57) 	/* Time */
+# define R_HSH8          ((rpfield)  58) 	/* Time */
+# define R_HSD9          ((rpfield)  59) 	/* Time */
+# define R_HSH9          ((rpfield)  60) 	/* Time */
+# define R_HSD10         ((rpfield)  61) 	/* Time */
+# define R_HSH10         ((rpfield)  62) 	/* Time */
+/* Report Checksum	*/
+# define RP_GENPART2_CHKSUM ((long) 0x1734)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ENCAB           ((int)   1)
+# define LINEA           ((int)   2)
+# define ZFIN            ((int)   3)

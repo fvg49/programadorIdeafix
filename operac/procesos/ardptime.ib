@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ardptime.exe {
+	ardptime.fm ;
+	ardptime.c : ardptime.fmh;
+	$OPERAC/lib/operac.a;
+}

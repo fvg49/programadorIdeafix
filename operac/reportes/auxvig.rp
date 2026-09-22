@@ -1,0 +1,33 @@
+%zparam(por) no print
+_. 
+%head(today, pageno, module, rfechad, rfechah, rretro, rlicen, rdeleg, rdelega, rfilial) before (page, report)
+[16c
+\$empresa                                                                                                      Fecha : __/__/____
+                                                                                                               Página:       ____.
+                                                                                                                    (______)
+												 Control de Ausentismo por Vigilador
+
+  Fecha Desde :  __/__/____ Hasta :  __/__/____  Considera retroactivos? : __?   Considera vigiladores con licencia? : __?
+  Delegación Comercial  : _____  Delegación Operacional: _____  Filial Operativa      : ______ 
+
+%head1(rclid, rdclid, robjd, rdobjd, rclih, rdclih, robjh, rdobjh) before (page, report), if (por==1)
+  Cliente/Objetivo Desde  : ___,___,___. _____________________________  ____. ___________________________________
+  Cliente/Objetivo Hasta  : ___,___,___. _____________________________  ____. ___________________________________
+%head2(rvigd, rdvigd, rvigh, rdvigh) before (page, report), if (por==2)
+  Vigilador Desde : _______. ___________________________________
+  Vigilador Hasta : _______. ___________________________________
+%subhead() before (page, report)
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+          Vigilador                       Cliente               Objetivo        Fecha   Cond      Novedad       Puesto     Tipo de Puesto     
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥ 
+%zvig(rvigil, rdvigil, rcli, rdcli, robj, rdobj, rdia, rcond, rnov, rdnov, rpue, rtippue, rdesctpue)                                                                 
+ _______. _____________________ _____. ___________________ __. _______________ __/__/__  __  ____. ____________ ____.  ___. _________________  
+%zfin() after(page, report)                                                                                                                
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤ 
+%report                                                                                                               
+use operac;
+language"C";
+//flength=42;
+width=140;
+topmarg = 0;

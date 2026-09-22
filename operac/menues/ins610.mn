@@ -1,0 +1,3 @@
+"1. Control de Horas por Vigilador                         " WCMD hsvigil.exe
+"2. Control de Horas de Servicio                           " WCMD lhscont.exe
+"3. Control de Ausentismo por Vigilador                    " WCMD auxvig.exe

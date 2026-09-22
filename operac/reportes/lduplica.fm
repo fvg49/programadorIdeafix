@@ -1,0 +1,43 @@
+
+  Empresa         :     __. ____________________________________
+                   
+  Fecha     Desde :{__/__/____
+            Hasta : __/__/____}
+
+  Vigilador Desde :{_______. _____________________________
+            Hasta : _______.}_____________________________
+
+  Tope HS. NORM   : ____.__
+
+  Salida          : _ _________    ____________________
+
+     _____________________________________
+
+%form 
+use comerc, sue;
+language "c";
+window label "[Control de condiciones en el parte]", border single;
+confirm update, ignore, end;
+ignore add, delete, prev, next;
+
+%fields
+emp	    : in sue.emps:descrip, default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+agrfec  : check (fechad <= fechah);
+fechad  : not null;
+fechah  : not null;
+
+agrupv  : check vigild <= vigilh;
+vigild  : not null, on help in sue.per(emp):apynom, default 1;
+dvigild : sue.per.apynom, skip;
+vigilh  : not null, on help in sue.per(emp):apynom descending, default 999999;
+dvigilh : sue.per.apynom, skip;
+
+nortope : not null, default 160;
+
+salida  : in ("A": "Archivo"), not null, default "A", mask ">A";
+dsalida : is descr(salida);
+archivo : is (salida != "A") ? null : void, default "lduplica.txt", not null;
+
+coment  : skip;

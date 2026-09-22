@@ -1,0 +1,52 @@
+/* Field names	*/
+# define R_CLI           ((rpfield)   0) 	/* Num */
+# define R_DCLI          ((rpfield)   1) 	/* String */
+# define R_OBJ           ((rpfield)   2) 	/* Num */
+# define R_DOBJ          ((rpfield)   3) 	/* String */
+# define R_SUPERV        ((rpfield)   4) 	/* Num */
+# define R_DSUP          ((rpfield)   5) 	/* String */
+# define R_FIL           ((rpfield)   6) 	/* String */
+# define R_DFIL          ((rpfield)   7) 	/* String */
+# define R_CANTPTO       ((rpfield)   8) 	/* Num */
+# define R_PTOSER        ((rpfield)   9) 	/* Num */
+# define R_PTO           ((rpfield)  10) 	/* Num */
+# define R_DPTOSER       ((rpfield)  11) 	/* String */
+# define R_CATEG         ((rpfield)  12) 	/* Num */
+# define R_HSPT          ((rpfield)  13) 	/* Num */
+# define R_HDESDE        ((rpfield)  14) 	/* Time */
+# define R_HHASTA        ((rpfield)  15) 	/* Time */
+# define R_D1            ((rpfield)  16) 	/* String */
+# define R_D2            ((rpfield)  17) 	/* String */
+# define R_D3            ((rpfield)  18) 	/* String */
+# define R_D4            ((rpfield)  19) 	/* String */
+# define R_D5            ((rpfield)  20) 	/* String */
+# define R_D6            ((rpfield)  21) 	/* String */
+# define R_D7            ((rpfield)  22) 	/* String */
+# define R_REG           ((rpfield)  23) 	/* String */
+# define R_FREC          ((rpfield)  24) 	/* String */
+# define R_CANTPER       ((rpfield)  25) 	/* Num */
+# define R_LEGAJO        ((rpfield)  26) 	/* Num */
+# define R_APENOM        ((rpfield)  27) 	/* String */
+# define R_VR            ((rpfield)  28) 	/* String */
+# define R_EF            ((rpfield)  29) 	/* String */
+# define R_FR            ((rpfield)  30) 	/* String */
+# define R_FECASIG       ((rpfield)  31) 	/* Date */
+# define R_FECHAS        ((rpfield)  32) 	/* Date */
+# define R_FFRANCO       ((rpfield)  33) 	/* Date */
+# define R_REGIM         ((rpfield)  34) 	/* String */
+# define R_DIA1          ((rpfield)  35) 	/* String */
+# define R_DIA2          ((rpfield)  36) 	/* String */
+# define R_DIA3          ((rpfield)  37) 	/* String */
+# define R_DIA4          ((rpfield)  38) 	/* String */
+# define R_DIA5          ((rpfield)  39) 	/* String */
+# define R_DIA6          ((rpfield)  40) 	/* String */
+# define R_DIA7          ((rpfield)  41) 	/* String */
+# define R_HSENT         ((rpfield)  42) 	/* Time */
+# define R_HSSAL         ((rpfield)  43) 	/* Time */
+/* Report Checksum	*/
+# define RP_LVIGXPTO_CHKSUM ((long) 0x0894)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ENCAB           ((int)   1)
+# define LINPTO          ((int)   2)
+# define LINVIG          ((int)   3)

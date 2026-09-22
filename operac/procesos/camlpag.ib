@@ -1,0 +1,8 @@
+project $NOVIA/reglas.ib;
+
+
+camlpag.exe {
+	camlpag.fm ;
+	camlpag.rp ;
+	camlpag.c : camlpag.fmh camlpag.rph;
+}

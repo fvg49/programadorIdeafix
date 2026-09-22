@@ -1,0 +1,8 @@
+/* Field names	*/
+# define SALIDA          (fmfield)  0	/* String          */
+# define DUMMY           (fmfield)  1	/* String          */
+/* Form checksum	*/
+# define FM_CRETRO_CHKSUM (long)0x0003
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

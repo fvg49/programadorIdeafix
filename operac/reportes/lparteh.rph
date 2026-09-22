@@ -1,0 +1,38 @@
+/* Field names	*/
+# define R_CLIED         ((rpfield)   0) 	/* Num */
+# define R_DCLIED        ((rpfield)   1) 	/* String */
+# define R_CLIEH         ((rpfield)   2) 	/* Num */
+# define R_DCLIEH        ((rpfield)   3) 	/* String */
+# define R_OBJETD        ((rpfield)   4) 	/* Num */
+# define R_DOBJETD       ((rpfield)   5) 	/* String */
+# define R_OBJETH        ((rpfield)   6) 	/* Num */
+# define R_DOBJETH       ((rpfield)   7) 	/* String */
+# define R_FDESDE        ((rpfield)   8) 	/* Date */
+# define R_FHASTA        ((rpfield)   9) 	/* Date */
+# define R_CLIE          ((rpfield)  10) 	/* Num */
+# define R_DCLIE         ((rpfield)  11) 	/* String */
+# define R_OBJET         ((rpfield)  12) 	/* Num */
+# define R_DOBJET        ((rpfield)  13) 	/* String */
+# define R_SUPERV        ((rpfield)  14) 	/* Num */
+# define R_DSUP          ((rpfield)  15) 	/* String */
+# define R_DIA1          ((rpfield)  16) 	/* Date */
+# define R_STD1          ((rpfield)  17) 	/* Num */
+# define R_HDESDE        ((rpfield)  18) 	/* Time */
+# define R_HHASTA        ((rpfield)  19) 	/* Time */
+# define R_LEGAJO        ((rpfield)  20) 	/* Num */
+# define R_APENOM        ((rpfield)  21) 	/* String */
+# define R_PTOSER        ((rpfield)  22) 	/* Num */
+# define R_PUESTO        ((rpfield)  23) 	/* Num */
+# define R_DPTOSER       ((rpfield)  24) 	/* String */
+# define R_REGIM         ((rpfield)  25) 	/* String */
+/* Report Checksum	*/
+# define RP_LPARTEH_CHKSUM ((long) 0x02a3)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ENCAB0          ((int)   1)
+# define ENCAB1          ((int)   2)
+# define ENCAB2          ((int)   3)
+# define LINEA           ((int)   4)
+# define FLIN            ((int)   5)
+# define FLIN1           ((int)   6)
+# define TOTAL           ((int)   7)

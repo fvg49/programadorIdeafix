@@ -1,0 +1,15 @@
+/* Field names	*/
+# define RNROLEGD        ((rpfield)   0) 	/* Num */
+# define RAPYNOMD        ((rpfield)   1) 	/* String */
+# define RNROLEGH        ((rpfield)   2) 	/* Num */
+# define RAPYNOMH        ((rpfield)   3) 	/* String */
+# define RNROLEG         ((rpfield)   4) 	/* Num */
+# define RAPYNOM         ((rpfield)   5) 	/* String */
+# define RFINGRESO       ((rpfield)   6) 	/* Date */
+# define RFEGRESO        ((rpfield)   7) 	/* Date */
+# define RPERIODO        ((rpfield)   8) 	/* Num */
+/* Report Checksum	*/
+# define RP_LVACFAL_CHKSUM ((long) 0x0057)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)

@@ -1,0 +1,12 @@
+/* Field names	*/
+# define OFPAG           (fmfield)  0	/* Long            */
+# define DESOF1          (fmfield)  1	/* String          */
+# define OFPAGH          (fmfield)  2	/* Long            */
+# define DESOF2          (fmfield)  3	/* String          */
+# define SALIDA          (fmfield)  4	/* String          */
+# define DUMMY           (fmfield)  5	/* String          */
+/* Form checksum	*/
+# define FM_OBJXOPAG_CHKSUM (long)0x0031
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

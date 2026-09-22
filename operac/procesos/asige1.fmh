@@ -1,0 +1,77 @@
+/* Field names	*/
+# define I_EFECT         (fmfield)  0	/* String          */
+# define I_EXISTE        (fmfield)  1	/* Integer         */
+# define I_VIGILAD       (fmfield)  2	/* String          */
+# define I_FECINI1       (fmfield)  3	/* Date            */
+# define I_FECFIN1       (fmfield)  4	/* Date            */
+# define I_CHGEFEC       (fmfield)  5	/* Integer         */
+# define I_EXISPAR       (fmfield)  6	/* Integer         */
+# define I_NODESCONTO    (fmfield)  7	/* Integer         */
+# define I_CANTASIG      (fmfield)  8	/* Integer         */
+# define FECHA           (fmfield)  9	/* Date            */
+# define I_FECHAS        (fmfield) 11	/* Date            */
+# define AGRTOT          (fmfield) 12	/* GROUPED         */
+# define AGRASIG         (fmfield) 13	/* GROUPED         */
+# define AGRPUESTO       (fmfield) 14	/* GROUPED         */
+# define TIPPTO          (fmfield) 15	/* Integer         */
+# define CODINT          (fmfield) 16	/* Integer         */
+# define I_NROINT        (fmfield) 17	/* Integer         */
+# define I_VIGI          (fmfield) 18	/* Integer         */
+# define I_CANTVIG       (fmfield) 19	/* Integer         */
+# define I_CATEG         (fmfield) 20	/* Integer         */
+# define I_HORENT        (fmfield) 21	/* Time            */
+# define I_HORSAL        (fmfield) 22	/* Time            */
+# define I_DIA1          (fmfield) 23	/* String          */
+# define I_DIA2          (fmfield) 24	/* String          */
+# define I_DIA3          (fmfield) 25	/* String          */
+# define I_DIA4          (fmfield) 26	/* String          */
+# define I_DIA5          (fmfield) 27	/* String          */
+# define I_DIA6          (fmfield) 28	/* String          */
+# define I_DIA7          (fmfield) 29	/* String          */
+# define I_FINICIO       (fmfield) 30	/* Date            */
+# define I_FFINAL        (fmfield) 31	/* Date            */
+# define I_HORAPT        (fmfield) 32	/* Integer         */
+# define I_CODFREC       (fmfield) 33	/* String          */
+# define I_MODIF         (fmfield) 34	/* Integer         */
+# define I_FCHDES        (fmfield) 35	/* Date            */
+# define I_FCHHAS        (fmfield) 36	/* Date            */
+# define REGIM           (fmfield) 37	/* String          */
+# define TIPODIA         (fmfield) 38	/* String          */
+# define CODROL          (fmfield) 39	/* Integer         */
+# define FILA            (fmfield) 40	/* Integer         */
+# define COLUM           (fmfield) 41	/* Integer         */
+# define HORAPT          (fmfield) 42	/* Integer         */
+# define CODFREC         (fmfield) 43	/* String          */
+# define DCODFREC        (fmfield) 44	/* String          */
+# define AGRUPD          (fmfield) 45	/* GROUPED         */
+# define DIA1            (fmfield) 46	/* String          */
+# define DIA2            (fmfield) 47	/* String          */
+# define DIA3            (fmfield) 48	/* String          */
+# define DIA4            (fmfield) 49	/* String          */
+# define DIA5            (fmfield) 50	/* String          */
+# define DIA6            (fmfield) 51	/* String          */
+# define DIA7            (fmfield) 52	/* String          */
+# define FRANCERO        (fmfield) 53	/* Integer         */
+# define FECFRA          (fmfield) 54	/* Date            */
+# define NUMFRAN         (fmfield) 55	/* Integer         */
+# define AGRHORAS        (fmfield) 56	/* GROUPED         */
+# define HORENT          (fmfield) 57	/* Time            */
+# define HORSAL          (fmfield) 58	/* Time            */
+# define SUBFPTIME       (fmfield) 59	/* String          */
+# define MOTIVO1         (fmfield) 61	/* String          */
+/* Form checksum	*/
+# define FM_ASIGE1_CHKSUM (long)0x3c80
+/* Subform names	*/
+# define SF_ASIGE3            0
+# define SF_ASIGE5            1
+# define SF_ASIGE6            2
+/* Symbol names for messages */
+# define M_FECHA            0
+# define M_ERHOR            1
+# define M_NOTRABPUE        2
+# define M_OBLIG            3
+# define M_MODIFIC          4
+# define M_PARTE            5
+# define M_CHGEFEC          6
+# define M_FECING           7
+/* =========== End of fmh file ============ */

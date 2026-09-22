@@ -1,0 +1,10 @@
+/* Field names	*/
+# define AGRUPCC         (fmfield)  0	/* GROUPED         */
+# define FECD            (fmfield)  1	/* Date            */
+# define FECH            (fmfield)  2	/* Date            */
+/* Form checksum	*/
+# define FM_PARCLIOB_CHKSUM (long)0x0061
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_DESDE            0
+/* =========== End of fmh file ============ */

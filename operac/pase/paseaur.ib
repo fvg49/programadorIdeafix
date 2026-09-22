@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+paseaur.exe {
+	paseaur.fm;
+	paseaur.c;
+	$DENARIUSLIB.a;
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

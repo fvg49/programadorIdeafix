@@ -1,0 +1,29 @@
+%cabe(rempre, pageno, today, hour, module, rpresenv, rdpresenv, rpresenn, rdpresenn) before (page, report)
+[16c
+____________________________________                            Página :     ____. 
+                                                                Fecha  : __/__/__
+                                                                Hora   : __:__:__
+                                                                    (_______)
+
+                              Cambio Masivo de Responsable de Presentismo
+
+  Responsable de Presentismo Viejo : _,___,___. ________________________________________________
+  Responsable de Presentismo Nuevo : _,___,___. ________________________________________________
+  
+
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª 
+                   Cliente                                Objetivo                 
+ §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea(clie, dclie, obj, dobj)                                                                                                              
+   ______. _________________________________   ____. ____________________________  
+%final() after (page, report)
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%total(count(clie)) after report
+     Total de Clientes Modificados : ____.
+     
+%report
+language "C";
+flength = $FLENGTH;
+topmarg = 0;
+
+%fields

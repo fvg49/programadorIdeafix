@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ctrlpar1.exe {
+	ctrlpar1.fm;
+	ctrlpa11.rp;
+	ctrlpa12.rp;
+	ctrlpar1.c;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+} 

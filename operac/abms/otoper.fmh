@@ -1,0 +1,41 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define TIPCOMP         (fmfield)  2	/* Integer         */
+# define DCOMP           (fmfield)  3	/* String          */
+# define SERIE           (fmfield)  4	/* Integer         */
+# define DSERIE          (fmfield)  5	/* String          */
+# define DELEG           (fmfield)  6	/* String          */
+# define DDELEG          (fmfield)  7	/* String          */
+# define NROOT           (fmfield)  8	/* Long            */
+# define CLIEOT          (fmfield)  9	/* Long            */
+# define DCLIE           (fmfield) 10	/* String          */
+# define OBJET           (fmfield) 11	/* Integer         */
+# define DOBJ            (fmfield) 12	/* String          */
+# define FECREG          (fmfield) 13	/* Date            */
+# define ABM             (fmfield) 14	/* String          */
+# define FINICIO         (fmfield) 15	/* Date            */
+# define HINIC           (fmfield) 16	/* Time            */
+# define FFINAL          (fmfield) 17	/* Date            */
+# define HFIN            (fmfield) 18	/* Time            */
+# define MULTIOT         (fmfield) 19	/* MULTIPLE        */
+# define M_PTOSER        (fmfield) 20	/* Integer         */
+# define I_PTOSER        (fmfield) 21	/* Integer         */
+# define I_MODPTO        (fmfield) 22	/* Integer         */
+# define M_DCOPUES       (fmfield) 23	/* String          */
+# define I_TOTPERS       (fmfield) 24	/* Integer         */
+# define M_COND          (fmfield) 25	/* String          */
+# define I_MODSUB        (fmfield) 27	/* Integer         */
+# define TOTPERS         (fmfield) 28	/* Long            */
+# define COMENT          (fmfield) 29	/* String          */
+/* Form checksum	*/
+# define FM_OTOPER_CHKSUM (long)0x1014
+/* Subform names	*/
+# define SF_PTOPER            0
+/* Symbol names for messages */
+# define M_NOCLI            0
+# define M_NOOBJ            1
+# define M_NODELEG          2
+# define M_ESPOR            3
+# define M_ABRIR            4
+/* =========== End of fmh file ============ */

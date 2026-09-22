@@ -1,0 +1,21 @@
+%head(pageno, today) before (page, report)
+Página :\	____.\	Fecha :\	__/__/____
+\	\	\	\	\	\	Asignación de Vigiladores por Puestos
+
+%list(r_listapor) no print
+_.
+%encleg() before (page, report), if (r_listapor == 2)
+Legajo\	Apellido y Nombre\	Cliente\	Objetivo\	Efec/Provis\	Puesto\	Régimen\	Días\	H.Ent.\	H.Sal.\	F. Desde\	F. Hasta\	Ultima Fec Asi
+%linvig(r_legajo, r_apenom,         r_cli,     r_obj, r_dobj,          r_ef,    r_ptoser, r_puesto, r_dptoser, r_regim, r_dia1, r_dia2, r_dia3, r_dia4, r_dia5, r_dia6, r_dia7, r_hsent, r_hssal, r_fecasig, r_fechas, r_ultdia) if (r_listapor == 2)
+_______.\	________________________\	_______.\	____.\	__________________\	__________\	__.\	____.\	_________________\	_________\	_-_-_-_-_-_-_\	__:__\	__:__\	__/__/____\	__/__/____\	__/__/____
+%enccli() before (page, report), if (r_listapor == 1)
+Cliente\	Objetivo\	Legajo\	Apellido y Nombre\	Efec/Provis\	Puesto\	Régimen\	Días\	H.Ent.\	H.Sal.\	F. Desde\	F. Hasta\	Ultima Fec Asig 
+%lincli(r_cli, r_obj, r_dobj,       r_legajo, r_apenom,                r_ef,    r_ptoser, r_puesto, r_dptoser, r_regim, r_dia1, r_dia2, r_dia3, r_dia4, r_dia5, r_dia6, r_dia7, r_hsent, r_hssal, r_fecasig, r_fechas, r_ultdia) if (r_listapor == 1)
+_______.\	____.\	________________\	_______.\	________________________\	__________\	__.\	____.\	_________________\	_________\	_-_-_-_-_-_-_\	__:__\	__:__\	__/__/____\	__/__/____\	__/__/____
+%fin() after (page, report)
+%report
+language"C";
+topmarg = 0;
+flength= $FLENLANDCOMP;
+width=147;
+output to terminal;

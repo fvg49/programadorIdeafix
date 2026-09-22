@@ -1,0 +1,58 @@
+
+  Empresa         :  ____. _____________________________
+
+  Cliente  Desde  : _____. _____________________________
+           Hasta  : _____. _____________________________
+
+  Objetivo Desde  :    __. _______________________________
+           Hasta  :    __. _______________________________
+
+  Fecha de Inicio :  __/__/____ 
+
+  Puesto   Desde  : [1m [0m  ____. ____.
+           Hasta  : [1m [0m  ____. ____.
+
+  Nivel Consulta  :  ____.  _______________________________
+
+  Salida          :     _  _________  ____________________
+
+%form
+use  operac, bill, comerc, sue;
+language "C";
+window label "[Listado Movimientos por Improductividad]", border single;
+confirm add, update, ignore, end;
+ignore delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+clie    : on help in bill.cliente:(razsoc);
+dclie   : bill.cliente.razsoc, skip;
+clieh   : on help in bill.cliente:(razsoc), >= clie;
+dclieh  : bill.cliente.razsoc, skip;
+
+objet   : in comerc.objetivo by est(emp, true, clie):descrip, skip when clie = null;
+dobj    : comerc.objetivo.descrip, skip;
+objeth  : in comerc.objetivo by est(emp, true, clieh):descrip, >= objet, skip when clieh = null;
+dobjh   : comerc.objetivo.descrip, skip;
+
+fechot  : ;
+
+tippto  :  on help in comerc.tptoser by emp(emp):(descrip), skip when (clie = null or fechot = null);
+codint  :  on help manual, 
+        // on help in operac.puestos (clie, objet, tippto):(finicio, ffinal, regim, codfrec, dia1, dia2, dia3, dia4, dia5, dia6, dia7) ,
+           skip when tippto=null;
+tipptoh :  on help in comerc.tptoser by emp(emp):(descrip), skip when tippto = null;
+codinth :  on help manual, 
+        // on help in operac.puestos (clie, objet, tippto):(finicio, ffinal, regim, codfrec, dia1, dia2, dia3, dia4, dia5, dia6, dia7), 
+           skip when tipptoh=null;
+
+nivcon  : ;
+denico  : is ((nivcon == null) ? "Todos los niveles " : null);
+
+salida  : in ("T":"Terminal", "I":"Impresora", "A":"Archivo"),
+          default "T", mask ">A", not null;
+dessal  : is descr(salida);
+nomarch : is (salida == "A") ? void : null, not null;
+

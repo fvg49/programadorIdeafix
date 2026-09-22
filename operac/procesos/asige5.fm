@@ -1,0 +1,62 @@
+ Cantidad de Horas Mensuales: ____.__
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡ª
+    Fec. Asig.    H.Ent.    H.Sal.  Cant.Horas 
+ §¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¥
+[  {__/__/____   {__:__     __:__      __.__}} ]
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¥
+                                     ____.__   
+                                   ¢¡¡¡¡¡¡¡¡¡¡¤ 
+%form(i_fecasig, i_fechah, canth)
+
+language "c";
+use operac, comerc;
+window label "Dias PartTime", border single;
+ignore delete, end, ignore;
+messages
+		FECPT	: "La fecha debe estar dentro del rango al cual ha asignado al Vigilador (%D - %D)",
+		ERRHORAS: "La cantidad de Horas asignadas para el mes %d es distinta a la cantidad mensual %d",
+		FALTANH	: "Faltan cargar %d horas!",
+		FRECUEN : "Los días asignados no corresponden con la frecuencia del regimen.";
+
+%fields
+i_fecasig	: internal date;
+i_fechah	: internal date;
+
+canth		: skip;
+
+i_cantmult  : internal num(3), default 0;
+i_horent1   : internal time;
+i_horsal1   : internal time;
+
+i_rango     : internal char(60), is "La fecha debe estar comprendida entre los días ";
+i_fecha     : internal char(40), is "La fecha debe ser mayor o igual a ";
+i_mensaje   : internal char(80), is (i_fechah == null ? i_fecha + i_fecasig : i_rango + i_fecasig + " " + i_fechah);
+
+multdias	: rows 90, display 10;
+agrdias		: has after;
+dia			: not null,
+				unique,
+				check ((this >= i_fecasig and i_fechah == null ) or 
+					  (this >= i_fecasig and this <= i_fechah and i_fechah != null)),
+				on error i_mensaje;
+i_diastr	: internal char(1);
+
+
+i_errhor     : internal char(60), is ( "Debe estar comprendida entre las " + i_horent1 + " y " + i_horsal1);
+
+agrhs		: has after;
+hent		: not null, default i_horent1, check ((canth == 0 and hent >= i_horent1) or  (canth != 0)),
+		      on error i_errhor;
+hsal		: not null, default i_horsal1, check ((canth == 0 and hsal <= i_horsal1) or (canth != 0)),
+			  on error i_errhor;
+hsxdia		: skip;
+canths		: is sum(hsxdia);

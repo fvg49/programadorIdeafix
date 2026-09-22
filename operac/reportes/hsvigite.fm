@@ -1,0 +1,97 @@
+
+  Empresa         :       __. ____________________________________
+
+  Período Desde   : {__/__/____
+          Hasta   :  __/__/____}
+
+  Vigilador Desde :{________. _____________________________
+            Hasta : ________.}_____________________________
+
+  Detalla Cliente/Objetivo : __?
+
+  Detalle : _ _____________________________________________
+  
+  Considera Retroactivos   : __?
+
+  Tipo de Servicio : _ __________________________
+  
+  Tiempo de Servicio : _ _________
+  
+  Salida a : _ ______________ Nombre del archivo: ______________
+
+  ______________________ __? 
+
+%form
+use operac, comerc, sue, billpro;
+language "C";
+window label "[Listado de Horas por Vigilador]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+agrupf  : check fechad <= fechah;
+fechad  : not null, default today;
+fechah  : not null, default today;
+
+agrupv  : check vigild <= vigilh;
+vigild  : not null, in sue.per(emp):apynom;
+dvigild : sue.per.apynom, skip;
+vigilh  : not null, in sue.per(emp):apynom descending;
+dvigilh : sue.per.apynom, skip;
+
+detcli  : default true, not null, autoenter;
+
+r_detalle:not null, default "F", mask ">A", autoenter,
+          in ("F": "Detalle por Fecha",
+              "S": "Consilidado por Semana",
+              "L": "Total por Legajo"),; 
+
+descdet : is descr(r_detalle);
+
+fretro  : default false, not null, autoenter;
+
+objbri  : in ("V": "Vigilancia",
+              "B": "Brigada",
+              "T": "Todos"), not null, default "V", mask ">A";
+dobjbri : is descr(objbri);
+
+tiptie : in ("F": "FullTime",
+             "P": "PartTime",
+             "T": "Total"), not null, default "T", mask ">A";
+tiptied: is descr(tiptie);            
+
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"),
+            not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "hsvigite.dat", not null;
+timpsub : is (salida == "A") ? "Imprimir Subtotales :" :null; 
+impsub  : is (salida == "A") ? void :null, on help in (true, false); 
+
+
+/* Esto es lo que hay que agregar para la descentralizacion
+
+  Delegación Comercial  : _____  _________________________________
+
+  Delegación Operacional: _____  _________________________________   
+
+  Filial Operativa      : ______ _________________________________ 
+
+
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+
+*/

@@ -1,0 +1,42 @@
+
+       ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+          Este proceso generará horas para   
+          completar la jornada laboral de    
+                los  Brigadistas.            
+       ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+ Empresa        :    __. _______________________
+
+ Cliente        : _,___. _______________________________
+
+ Objetivo Desde :{_,___. ________________________________
+          Hasta : _,___.}________________________________
+
+ Fecha    Desde :{__/__/____
+          Hasta : __/__/____}
+
+%form
+use sue, bill, comerc;
+window label "[Generación de Horas Improductivas]", border single;
+confirm end, update;
+ignore delete;
+display status;
+messages
+       DESDE    : "La Fecha Desde debe ser menor o igual a la Fecha Hasta.",
+       ERR_OBJE : "El Objetivo Desde debe ser menor o igual al Objetivo Hasta";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+cliente : on help in bill.cliente:(razsoc), not null, default 1016, skip;
+dclie   : bill.cliente.razsoc, skip;
+agrobje : check (objdesde <= objhasta), on error ERR_OBJE;
+objdesde: in comerc.objetivo by est(emp, true, cliente):descrip, default 1, not null, skip;
+dobjd   : comerc.objetivo.descrip, skip;
+objhasta: in comerc.objetivo by est(emp, true, cliente):descrip, default 1, not null, skip;
+dobjh   : comerc.objetivo.descrip, skip;
+
+agrupcc : check fecd <= fech, on error DESDE;
+fecd    : not null;
+fech    : not null;

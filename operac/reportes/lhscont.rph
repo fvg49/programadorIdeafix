@@ -1,0 +1,37 @@
+/* Field names	*/
+# define IMP_PUESTO      ((rpfield)   0) 	/* Num */
+# define REMP            ((rpfield)   1) 	/* String */
+# define RVERSION        ((rpfield)   2) 	/* String */
+# define RCLI            ((rpfield)   3) 	/* Num */
+# define RDCLI           ((rpfield)   4) 	/* String */
+# define ROBJ            ((rpfield)   5) 	/* Num */
+# define RDOBJ           ((rpfield)   6) 	/* String */
+# define RPTO            ((rpfield)   7) 	/* Num */
+# define RDPTO           ((rpfield)   8) 	/* String */
+# define RFCH            ((rpfield)   9) 	/* Date */
+# define FSVTOT          ((rpfield)  10) 	/* Num */
+# define FSTNPRES        ((rpfield)  11) 	/* Num */
+# define FSTTOT          ((rpfield)  12) 	/* Num */
+# define FSATOT          ((rpfield)  13) 	/* Num */
+# define SVTOT           ((rpfield)  14) 	/* Num */
+# define STNPRES         ((rpfield)  15) 	/* Num */
+# define STTOT           ((rpfield)  16) 	/* Num */
+# define SATOT           ((rpfield)  17) 	/* Num */
+# define RSEMD           ((rpfield)  18) 	/* Date */
+# define RSEMH           ((rpfield)  19) 	/* Date */
+/* Report Checksum	*/
+# define RP_LHSCONT_CHKSUM ((long) 0x014e)
+/* Zone names	*/
+# define NOMUESTRA       ((int)   0)
+# define HEAD            ((int)   1)
+# define ZCLI            ((int)   2)
+# define ZOBJ            ((int)   3)
+# define ZPTO            ((int)   4)
+# define ZFCH            ((int)   5)
+# define ZNOPRINT        ((int)   6)
+# define ZTOTPTO         ((int)   7)
+# define ZTOTSEM         ((int)   8)
+# define ZTOTOBJ         ((int)   9)
+# define ZTOTCLI         ((int)  10)
+# define ZTOTGEN         ((int)  11)
+# define ZFIN            ((int)  12)

@@ -1,0 +1,22 @@
+%nopr(filtro) no print
+_.
+%head(today, pageno) before (report, page)
+[16c                                                                                                            Fecha  : __/__/____
+                                                                                                            Página :       ____.
+                                            Vigiladores dados de Baja
+                                            ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Legajo     Apellido y Nombre                Cliente                       Objetivo           Fecha Baja  
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea(r_legajo, r_apenom, r_cli, r_dcli, r_obj, r_dobj, r_fecbaj)
+ _______. ________________________ _________. ___________________ ____. _____________________  __/__/____  
+%finlin() after (page, report)
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%report
+language"C";
+topmarg = 0;
+flength= $FLENGTH;
+output to terminal;
+

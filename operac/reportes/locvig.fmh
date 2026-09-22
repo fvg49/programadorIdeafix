@@ -1,0 +1,29 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define CODPAIS         (fmfield)  2	/* Integer         */
+# define DPAIS           (fmfield)  3	/* String          */
+# define MULTIP          (fmfield)  4	/* MULTIPLE        */
+# define FPROVI          (fmfield)  5	/* Integer         */
+# define DPROVI          (fmfield)  6	/* String          */
+# define FLOCAL          (fmfield)  7	/* Long            */
+# define DLOCAL          (fmfield)  8	/* String          */
+# define MULTIPOL        (fmfield)  9	/* MULTIPLE        */
+# define PALTA           (fmfield) 10	/* Integer         */
+# define DPALTA          (fmfield) 11	/* String          */
+# define PROVIS          (fmfield) 12	/* String          */
+# define DPROVIS         (fmfield) 13	/* String          */
+# define INSCLU          (fmfield) 14	/* String          */
+# define DINSCLU         (fmfield) 15	/* String          */
+# define PORTAC          (fmfield) 16	/* String          */
+# define DPORTAC         (fmfield) 17	/* String          */
+# define SALIDA          (fmfield) 18	/* String          */
+# define DESC5           (fmfield) 19	/* String          */
+# define DARCHIVO        (fmfield) 20	/* String          */
+# define ARCHIVO         (fmfield) 21	/* String          */
+# define AVANCE          (fmfield) 22	/* String          */
+/* Form checksum	*/
+# define FM_LOCVIG_CHKSUM (long)0x01f1
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

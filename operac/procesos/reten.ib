@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+reten.exe {
+	reten.fm  ;
+	reten.rp  ;
+	reten.c   : reten.fmh;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$BRIGADALIB.a;
+}
+

@@ -1,0 +1,26 @@
+/* Field names	*/
+# define MULTI           (fmfield)  0	/* MULTIPLE        */
+# define CLI             (fmfield)  1	/* Long            */
+# define DCLI            (fmfield)  2	/* String          */
+# define OBJ             (fmfield)  3	/* Integer         */
+# define DOBJ            (fmfield)  4	/* String          */
+# define FASIG           (fmfield)  5	/* Date            */
+# define I_FECHASTA      (fmfield)  6	/* Date            */
+# define I_VIGIL4        (fmfield)  7	/* String          */
+# define I_TIPPTO        (fmfield)  8	/* Integer         */
+# define I_CODINT        (fmfield)  9	/* Integer         */
+# define I_NUMINT        (fmfield) 10	/* Integer         */
+# define ADIA1           (fmfield) 11	/* String          */
+# define ADIA2           (fmfield) 12	/* String          */
+# define ADIA3           (fmfield) 13	/* String          */
+# define ADIA4           (fmfield) 14	/* String          */
+# define ADIA5           (fmfield) 15	/* String          */
+# define ADIA6           (fmfield) 16	/* String          */
+# define ADIA7           (fmfield) 17	/* String          */
+# define HORAENT         (fmfield) 18	/* Time            */
+# define HORASAL         (fmfield) 19	/* Time            */
+/* Form checksum	*/
+# define FM_ASIGH4_CHKSUM (long)0x0688
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

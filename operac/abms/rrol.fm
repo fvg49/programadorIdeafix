@@ -1,0 +1,65 @@
+
+    Rol : ____. _____________________________ |
+
+ ¨¡¡¡¡¡¡¡¡¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡©¡¡ª
+     Ciclo   01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 
+ §¡¡¡¡¡¡¡¡¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¦¡¡¥
+ [__________ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _ ]
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+                                                                                                       
+ ¢¡¡¡¡¡¡¡¡¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡£¡¡¤
+
+%form
+use operac;
+language "C";
+window label "[Roles]", border single;
+confirm update, end, ignore,add;
+ignore delete;
+
+%fields
+codrol : rol., in rol: descrip, not null;
+drol   : rol.descrip, skip;
+multi  : rows 45, display 15;
+vigi   : ;
+pos1   : rrol.valor;
+pos2   : rrol.valor;
+pos3   : rrol.valor;
+pos4   : rrol.valor;
+pos5   : rrol.valor;
+pos6   : rrol.valor;
+pos7   : rrol.valor;
+pos8   : rrol.valor;
+pos9   : rrol.valor;
+pos10  : rrol.valor;
+pos11  : rrol.valor;
+pos12  : rrol.valor;
+pos13  : rrol.valor;
+pos14  : rrol.valor;
+pos15  : rrol.valor;
+pos16  : rrol.valor;
+pos17  : rrol.valor;
+pos18  : rrol.valor;
+pos19  : rrol.valor;
+pos20  : rrol.valor;
+pos21  : rrol.valor;
+pos22  : rrol.valor;
+pos23  : rrol.valor;
+pos24  : rrol.valor;
+pos25  : rrol.valor;
+pos26  : rrol.valor;
+pos27  : rrol.valor;
+pos28  : rrol.valor;
+pos29  : rrol.valor;
+pos30  : rrol.valor;

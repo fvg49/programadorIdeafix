@@ -1,0 +1,32 @@
+/* Field names	*/
+# define RMES            ((rpfield)   0) 	/* Num */
+# define RANIO           ((rpfield)   1) 	/* Num */
+# define RFECREG         ((rpfield)   2) 	/* Date */
+# define RNROLEGD        ((rpfield)   3) 	/* Num */
+# define RAPYNOMD        ((rpfield)   4) 	/* String */
+# define RNROLEGH        ((rpfield)   5) 	/* Num */
+# define RAPYNOMH        ((rpfield)   6) 	/* String */
+# define RNROLEG         ((rpfield)   7) 	/* Num */
+# define RAPYNOM         ((rpfield)   8) 	/* String */
+# define RPERIODO        ((rpfield)   9) 	/* Num */
+# define RFDESDE         ((rpfield)  10) 	/* Date */
+# define RFHASTA         ((rpfield)  11) 	/* Date */
+# define RTOTVAC         ((rpfield)  12) 	/* Num */
+# define RCLIENTE1       ((rpfield)  13) 	/* Num */
+# define ROBJ1           ((rpfield)  14) 	/* Num */
+# define RCLIENTE2       ((rpfield)  15) 	/* Num */
+# define ROBJ2           ((rpfield)  16) 	/* Num */
+# define RCLIENTE3       ((rpfield)  17) 	/* Num */
+# define ROBJ3           ((rpfield)  18) 	/* Num */
+# define RCLIENTE4       ((rpfield)  19) 	/* Num */
+# define ROBJ4           ((rpfield)  20) 	/* Num */
+# define RCLIENTE5       ((rpfield)  21) 	/* Num */
+# define ROBJ5           ((rpfield)  22) 	/* Num */
+# define RCLIENTE6       ((rpfield)  23) 	/* Num */
+# define ROBJ6           ((rpfield)  24) 	/* Num */
+/* Report Checksum	*/
+# define RP_LVACAC_CHKSUM ((long) 0x018e)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)
+# define ZTOTAL          ((int)   2)

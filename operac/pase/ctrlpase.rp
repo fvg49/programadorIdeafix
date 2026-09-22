@@ -1,0 +1,20 @@
+%head(today, rnroliq)  before(page, report)
+[16c                                                                                                            Fecha    : __/__/____
+
+ NUMERO DE LIQUIDACION: _________.
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡ª
+         EMPRESA           FECHA       FECHA      CANTIDAD   
+                           DESDE       HASTA                 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea(remp, rrazsoc, rfecdes, rfechas, rcantidad)
+  __. ______________     __/__/____  __/__/____  ________.   
+%fin()
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%report
+use operac;
+language"C";
+flength=42;
+width=247;
+

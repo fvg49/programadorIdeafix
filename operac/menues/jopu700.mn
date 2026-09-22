@@ -1,0 +1,4 @@
+"1. Listado de Filiales                                    " WCMD lfilial.exe
+"2. Listado de Usuarios por Filial                         " WCMD lusrxfil.exe
+"3. Con un Usuario Obtengo los Vigiladores con Permiso     " WCMD lpervig.exe
+"4. Con un Vigilador Obtengo que Usuarios lo Pueden Usar   " WCMD lperusu.exe

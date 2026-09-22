@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+aprot.exe {
+	aprot.hlp;
+	aprot.fm;
+	motrech.fm;
+	aprot.c;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPROLIB.a;
+	$BILL/lib/bill.a;
+}

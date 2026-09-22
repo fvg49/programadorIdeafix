@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lcatevig.exe {
+	lcatevig.fm;
+	lcatevig.rp;
+	lcatevig.c; 
+	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

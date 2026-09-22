@@ -1,0 +1,14 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define CLIE            (fmfield)  2	/* Long            */
+# define DESCLI          (fmfield)  3	/* String          */
+# define OBJET           (fmfield)  4	/* Integer         */
+# define DESOBJ          (fmfield)  5	/* String          */
+# define LIMPIA          (fmfield)  6	/* Integer         */
+# define COMENT          (fmfield)  7	/* String          */
+/* Form checksum	*/
+# define FM_CPCODINT2_CHKSUM (long)0x00ce
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

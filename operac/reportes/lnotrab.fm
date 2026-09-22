@@ -1,0 +1,30 @@
+
+ Empresa : __. __________________________________
+
+ Fecha Desde : __/__/____ Hasta: __/__/____
+
+ Legajo desde  :{_________. ____________________________________
+ 	    hasta  : _________.}____________________________________
+
+ Salida         : _ ___________________
+
+%form
+use sue;
+window label "[Listado de Legajos Sin Horas Cargadas]", border single;
+confirm update, end;
+ignore add, delete, prev, next;
+
+%fields
+emp		: in sue.emps:descrip, not null, default $emp;
+demp	: sue.emps.descrip, skip;
+fecdes  : not null;
+fechas  : not null;
+
+agrleg	: ;
+legd	: on help in per(emp):apynom, not null, default 1;
+dlegd   : per.apynom, skip;
+legh	: on help in per(emp):apynom, not null, >legd, check after agrleg, default 999999;
+dlegh   : per.apynom, skip;
+
+salida	: in ("T":"Terminal", "I":"Impresora"), not null, default "I", mask "1>A";
+dsalida : is descr(salida);

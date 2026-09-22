@@ -1,0 +1,165 @@
+
+                            [1;4mABM DE PUESTOS MIMP[0m (Movimientos por improductividad)
+
+Un Puesto MIMP ([1mpuesto hijo[0m) se da de alta a partir de un puesto estándar ([1mpuesto padre[0m), lo que varia-
+ra es la fecha desde-hasta, la hora desde-hasta, los dias de la semana, el régimen y la cantidad de per-
+sonas del puesto
+
+Un puesto padre puede ser reemplazado en un periodo dado por uno o mas puestos mimp, que cubran los mis-
+mos dias y cantidad de horas.
+
+Ejemplo:
+	Supongamos que tenemos un puesto padre que va desde el 01/01/2005 hasta el 01/07/2005 y se crea un
+Puesto hijo del 01/03/2005 al 15/03/2005, gráficamente seria: 
+
+   01/01/2005[1m®±±±±±±±±±±±±¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡[0m©¡¡¡¡¡¡¡¡¡¡¡¡©[1m¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡[0m¯01/07/2005
+                                               |            | 
+                                               |            |
+                                     01/03/2005 [1m®¡¡¡¡¡¡¡¡¡¡¯[0m 15/03/2005
+Se puede observar que: 
+                      -La parte activa del puesto es la resaltada en el grafico
+                      -Un puesto hijo debe estar incluido entre el rango de fechas de su puesto padre 
+
+    A su vez el puesto hijo puede tener otro puesto hijo y así sucesivamente N veces.
+
+   01/01/2005[1m®±±±±±±±±±±±±¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡[0m©¡¡¡¡¡¡¡¡¡¡¡¡©[1m¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡[0m¯01/07/2005
+                                               |            | 
+                                               |            |
+                                     01/03/2005 [1m®¡¡[0m©¡¡¡¡¡¡©[1m¡¯[0m 15/03/2005
+                                                   |      |
+                                                   |      |
+                                         05/03/2005 [1m®¡¡¡¡¯[0m 10/03/200
+                                          
+
+   Además un mismo puesto padre puede tener N puestos hijos, que a la vez pueden tener varios puesto
+hijos a la vez, Generándose así estructuras más complejas. 
+
+
+   01/01/2005[1m®±¡¡¡¡¡[0m©¡¡¡¡¡¡¡¡¡¡¡¡¡©[1m¡±±±±±±±±±¡[0m©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©[1m¡¡¡¡¡¡¡¡¡¡¡¡¡¡¯[0m01/07/2005
+                    |             |           |                  | 
+                    |             |           |                  | 
+          01/02/2005 [1m®¡¡[0m©¡¡¡¡¡¡©[1m¡¯[0m 15/02/2005 |                  |
+                        |      |    01/02/2005 [1m®¡¡[0m©¡¡¡©[1m¡¡¡[0m©¡¡¡¡©[1m¡¯[0m 30/02/2005
+                        |      |                  |   |   |    |
+              05/03/2005 [1m®¡¡¡¡¯[0m 10/03/200         |   |    [1m®¡¡¯[0m 25/03/200
+                                       05/03/2005 [1m®¡¡¡¯[0m   15/03/2005
+                                                    10/03/200
+
+Recordar: a su vez cada uno de estos puestos mimp graficados puede estar conformado por mas de uno
+que cubran los dias y la cantidad de horas
+
+ [1;4mCOMO DAR DE ALTA PUESTOS MIMP[0m
+
+Para trae a la pantalla los puestos padres a partir de los que se generaran los MIMP, se deben
+completar los campos Empresa, Cliente, Objetivo, y Fecha de Inicio.
+Donde la fecha de inicio seria aquella para la cual se desean traer los puestos activos, para
+la empresa, cliente y objetivo seleccionado.
+O sea se traerá a la pantalla aquel puesto que en los gráficos esta resaltado donde caiga la fecha
+pedida
+
+Por ejemplo si lo que tuviáramos en la parte superior de la pantalla fuera esto: 
+
+¨[Movimientos por Improductividad]¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª 
+  Empresa :    1  PROSEGUR S.A.                                                                     
+  Cliente :      3  PROSEGUR - ENFERMOS PROLONGAD  Objetivo : 21  ENFERMO BUENOS AIRES             
+  Fecha de Inicio : 05/05/2005                                                                     
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥ P U E S T O   O R I G I N A L§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª 
+ §¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡©¡¡¡¡¡©¡¡¡¡¡¥ 
+  Modif?   Puesto  Categ   Fecha    Fecha   Hora  Hora      Días      Regimen D F Can Cant. Mimp?  
+                   Vigil  Inicio    Final  Inici Final                            Pue Pers.        
+ §¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¥ 
+    No    1     5   302  01/05/05 09/05/05 06:00 14:00 L-M-X-J-V-S-D 6x1x8    T    0   0,00  Si    
+    No    1     2   201  01/01/00 06/12/05 06:00 14:00 L M X J V S D 1x1x12   T S  0   0,00  No    
+                                                                                                   
+
+Lo que me dice es que tengo dos puestos activos el 05/05/2005, de los cuales el primero es mimp(ulti-
+ma columna) y el segundo no
+
+En la primer columna (Modif?) debería marcar aquellos puestos que quiera modificar y luego pasar a 
+la parte inferior de la pantalla, donde están los puestos para modificar. Si marcáramos el segundo
+nos debería quedar así: 
+
+    ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¯ P U E S T O    N U E V O ®¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª        
+    §¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡©¡¡¡¡¡¥        
+     Moti  Puesto   Categ   Fecha    Fecha   Hora Hora       Días      Regimen D F Can Cant.         
+      vo   Padre    Vigil  Inicio    Final  Inici Final                            Pue Pers.         
+    §¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¦¡¡¡¡¡¥        
+       1   1     2   201                    06:00 14:00 L-M-X-J-V-S-D          T S  0   0,00         
+                                                                                                     
+
+Dejándonos los campos Fecha de inicio, Fecha final y Régimen para que lo definamos, las restricciones 
+son que el[1m regimen[0m debe ser diferente al del puesto padre y las [1mfechas Inicio-Final [0mdeben estar inclu-
+idas en el puesto padre. Además La fecha desde debe ser mayor a la del ultimo cierre de operaciones.
+Otros campos que se pueden modificar son la [1mhora desde-hasta[0m, [1mlos dias de la semana[0m y [1mla cantidad de[0m
+[1mpuestos[0m. Lo que se controlara aqui es que la sumatoria de horas por dia, por cada puesto sea igual a 
+la del puesto padre.
+Tambien hay que tener en cuenta que el campo motivo es obligatorio
+
+Después de completar estos campos se presionara <F5> y quedara creado el o los puestos mimp
+Si se dejara la fecha vacía, porque todavía no esta definida, se auto completara con la máxima fecha 
+que se puede poner, que seria la del puesto padre.
+
+[1;4mCAMBIO DE FECHA DE FINAL DE UN PUESTO MIMP [0m
+
+Solo se puede cambiar la fecha final si el puesto es mimp, y no se puso si en el campo "Modif?".
+Unicamente se puede cambiar una fecha final por otra que cumpla las siguientes condiciones: 
+   -Sea mayor que la fecha de inicio del puesto mimp
+   -Sea menor a la del puesto padre
+
+Para cambiar esta fecha hay que traer este puesto mimp de igual forma que como se explico anteriormente,
+y luego si se cumple con todas las condiciones explicadas, hay que ir al campo fecha final en la parte
+superior de la pantalla y remplazar la fecha, cuando se salga de campo aparecerá un cartel pidiéndonos 
+que confirmemos el cambio, si lo hacemos quedaría modificada esta fecha en la base de datos.
+
+                     ¨Fecha de Finalización de MIMP¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                       Seguro que Desea Cambiar la Fecha de Finalización de este Mimp?   
+                                                                                         
+                                                                                         
+                                        ¨¡¡¡¡¡¡¡¡¡¡¡¡ª  ¨¡¡¡¡¡¡¡¡¡¡¡¡ª                   
+                                          [7m    OK    [0m       CANCELAR                      
+                                        ¢¡¡¡¡¡¡¡¡¡¡¡¡¤  ¢¡¡¡¡¡¡¡¡¡¡¡¡¤                   
+                     ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+
+[1;4mABRIR PUESTO PADRE EN DOS O MAS PUESTOS HIJOS[0m
+
+Como se dijo anteriormente es posible abrir un puesto padre en 2 o mas hijos con la condicion de que 
+estos cubran exactamente la misma cantidad de horas por dia
+
+para el ejemplo:
+
+¨[Movimientos por Improductividad]¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª 
+  Empresa :    1  PROSEGUR S.A.                                                                     
+  Cliente :      3  PROSEGUR - ENFERMOS PROLONGAD  Objetivo : 21  ENFERMO BUENOS AIRES             
+  Fecha de Inicio : 05/05/2005                                                                     
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥ P U E S T O   O R I G I N A L§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª 
+ §¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡©¡¡¡¡¡©¡¡¡¡¡¥ 
+  Modif?   Puesto  Categ   Fecha    Fecha   Hora  Hora      Días      Regimen D F Can Cant. Mimp?  
+                   Vigil  Inicio    Final  Inici Final                            Pue Pers.        
+ §¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¥ 
+    No    1     5   302  01/05/05 09/05/05 06:00 14:00 L-M-X-J-V-S-D 6x1x8    T    1   0,00  Si    
+    No    1     2   201  01/01/00 06/12/05 06:00 14:00 L M X J V S D 1x1x12   T S  1   0,00  No    
+                                                                                                   
+
+Se podria dar el caso de abrirlo de la siguiente forma: 
+
+    ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¯ P U E S T O    N U E V O ®¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª      
+    §¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡©¡¡¡¡¡¥      
+     Moti  Puesto   Categ   Fecha    Fecha   Hora Hora       Días      Regimen D F Can Cant.       
+      vo   Padre    Vigil  Inicio    Final  Inici Final                            Pue Pers.       
+    §¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¦¡¡¡¡¡¥      
+       1   1     2   201  10/01/05 05/12/05 06:00 08:00 L-M-X-J-V-S-D 1x1x12   T S  1   0,00       
+       1   1     2   201  10/01/05 05/12/05 08:00 14:00 L-M-X-J-V-S-D 1x1x12   T S  1   0,00       
+                                                                                                   
+                                                                                                
+Para hacerlo hay que ubicar el cursor en la linea siguiente de la que se quiere abrir, si estubiera
+ocupada se debera precionar <INSERT> para insertar una linea en blanco. Luego ingrese el codigo de 
+motivo y se copiara automaticamente la linea original del puesto que este en la linea superior a la
+que se esta editando
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m mimp.exe
+
+[1mProceso:[0m  Graba:  operac|puestos 
+

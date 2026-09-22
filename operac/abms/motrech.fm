@@ -1,0 +1,11 @@
+
+____________________________________________________________
+
+%form
+use comerc;
+language "C";
+window label "Motivo de Rechazo", border single;
+ignore end;
+
+%fields
+obs	: ;

@@ -1,0 +1,7 @@
+"1. Consulta de Vigiladores                              " WCMD lvigil.exe
+"2. Listado de Asignaciones de Vigiladores               " WCMD lasig.exe
+"3. Listado de Asignaciones de Vigiladores por Puestos   " WCMD lvigxpto.exe
+"4. Control de Horas por Vigilador                       " WCMD hsvigil.exe
+"5. Control de Ausentismo por Vigilador                  " WCMD        auxvig.exe
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .
+"Z. Configuración                                        " MENU  opuusr

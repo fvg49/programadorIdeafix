@@ -1,0 +1,31 @@
+%head(today, pageno, rfechad, rfechah) before (page, report)
+[20c\$empresa
+                                                                                                                          Fecha  : __/__/____                                      
+                                                                [1mCONTROL DIARIO[0m                                            Página :       ____.
+                                                          De __/__/____ a __/__/____                                           (lcontdia)
+
+¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡©¡¡¡¡¡ª
+ Legajo      Fecha     Nombre                   HSNOR  HS50 HS100 HS100F  Cliente                       Objetivo               Est Cond  Mot                
+¢¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡£¡¡¡¡¡¤
+%linea(rnroleg, rfecha, rapynom, rhsnor, rhs50, rhs100, rhs100fe, rcliente, rnombre, robjet, rdobjet, restado, rcond, rmot)
+ ________. __/__/____ _________________________ __.__ __.__ __.__ __.__ _________. ___________________ ____. _________________  _   __.  __.
+%report
+use operac;
+language "c";
+width = 145;
+
+%fields
+rnroleg	: parte.nroleg;
+rfecha  : parte.dia;   
+rapynom : ;
+rhsnor  : parte.hsnor;
+rhs50   : parte.hs50;
+rhs100  : parte.hs100f;
+rhs100fe: parte.hs100fe;
+rcliente: parte.cliente;
+rnombre : ;
+robjet  : parte.objetivo;
+rdobjet : ;
+restado : parte.condic;
+rcond   : ;
+rmot    : ;

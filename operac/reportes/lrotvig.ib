@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lrotvig.exe {
+	lrotvig.fm;
+	lrotvig.rp;
+	lrotvig2.rp;
+	lrotvig.c : lrotvig.fmh lrotvig.rph comerc.sch bill.sch;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$OPERAC/lib/operac.a;
+	$IGRALLIB.a;
+
+}

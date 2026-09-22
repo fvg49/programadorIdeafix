@@ -1,0 +1,17 @@
+/* Field names	*/
+# define MULTI           (fmfield)  0	/* MULTIPLE        */
+# define AGRUP           (fmfield)  1	/* GROUPED         */
+# define TIPFAC          (fmfield)  2	/* Integer         */
+# define DTIPFAC         (fmfield)  3	/* String          */
+# define MOTIVO          (fmfield)  4	/* Integer         */
+# define VALCLI          (fmfield)  5	/* Integer         */
+# define DMOTIV          (fmfield)  6	/* String          */
+# define HORAS           (fmfield)  7	/* Integer         */
+# define HS50            (fmfield)  8	/* Integer         */
+# define HS100           (fmfield)  9	/* Integer         */
+# define OBS             (fmfield) 10	/* String          */
+/* Form checksum	*/
+# define FM_PARTEB2_CHKSUM (long)0x0167
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

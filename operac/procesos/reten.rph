@@ -1,0 +1,30 @@
+/* Field names	*/
+# define RFECHA          ((rpfield)   0) 	/* Date */
+# define RNROLEG         ((rpfield)   1) 	/* Num */
+# define RAPYNOM         ((rpfield)   2) 	/* String */
+# define RREGIMEN        ((rpfield)   3) 	/* String */
+# define RFRANCO         ((rpfield)   4) 	/* Date */
+# define RLABD           ((rpfield)   5) 	/* Time */
+# define RLABH           ((rpfield)   6) 	/* Time */
+# define RTELEF          ((rpfield)   7) 	/* String */
+# define RPOL1           ((rpfield)   8) 	/* String */
+# define RPOL2           ((rpfield)   9) 	/* String */
+# define RPOL3           ((rpfield)  10) 	/* String */
+# define RPOL4           ((rpfield)  11) 	/* String */
+# define RPORT           ((rpfield)  12) 	/* Bool */
+# define RCLU            ((rpfield)  13) 	/* Bool */
+# define RCLIPROV        ((rpfield)  14) 	/* Num */
+# define RDCLIPROV       ((rpfield)  15) 	/* String */
+# define ROBJPROV        ((rpfield)  16) 	/* Num */
+# define RDOBJPROV       ((rpfield)  17) 	/* String */
+# define RPTEPTA         ((rpfield)  18) 	/* Bool */
+# define RLLEGPTA        ((rpfield)  19) 	/* Time */
+# define RLLEGOBJ        ((rpfield)  20) 	/* Time */
+# define RHSTOT          ((rpfield)  21) 	/* Num */
+/* Report Checksum	*/
+# define RP_RETEN_CHKSUM ((long) 0x02ec)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)
+# define ZENTLIN         ((int)   2)
+# define ZFIN            ((int)   3)

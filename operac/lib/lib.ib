@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+operac.a {
+	operac.c;
+	opdena.c;
+	asig.c;
+	pasesue.c;
+	opechi.c;
+	disthspro.c;
+	disths.c;
+}
+
+bonoslib.ib;
+exceplib.ib;

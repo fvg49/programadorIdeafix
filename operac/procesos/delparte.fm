@@ -1,0 +1,54 @@
+
+    Empresa   :      __. ______________________________________
+
+    Vigilador : _______. ______________________________________
+
+    Cliente   :   _____. __________________________________
+
+    Objetivo  :      __. _________________________________
+
+    Fecha de Parte : __/__/____
+
+
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡ª 
+        Puesto      Regimen  Con   Hs.     Hs.     Hs.     Hs.    Hs.Ex   Hs.Ex   Hs.Ex   
+                                 Entrada Salida   Total  Normal    50%   100%Fe  100%Fr   
+  §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¥ 
+   ____. ____. __. _________  _   __:__   __:__   __.__   __.__   __.__   __.__   __.__   
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¤ 
+
+%form
+use operac, bill, comerc, sue;
+language "C";
+window label "[Eliminar Inserción del Parte]", border single;
+confirm add, update, end;
+ignore delete, next, prev;
+
+%fields
+emp      : in sue.emps:(descrip), default $emp, not null;
+demp     : sue.emps.descrip, skip;
+
+nroleg   : in sue.per(emp):(nroleg,apynom), has after; //unique, 
+nombre   : sue.per.apynom, skip;
+
+clie     : on help in bill.cliente:(razsoc), not null;
+dclie    : bill.cliente.razsoc, skip;
+objet    : in comerc.objetivo by est(emp, true, clie):descrip, not null;
+dobj     : comerc.objetivo.descrip, skip;
+
+fecparte : default today, not null;
+
+rtippto  : on help manual, not null;
+rcodint  : on help manual, not null;
+rnroint  : on help manual, not null;
+
+rregim   : skip;
+pcond    : skip;
+phsentre : skip;
+phssal   : skip;
+phstot   : skip;
+
+pnormal  : skip;
+pextras1 : skip;
+pextras2 : skip;
+pfrancos : skip;

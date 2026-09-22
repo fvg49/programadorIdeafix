@@ -1,0 +1,40 @@
+
+    Tipo de Grupo     : ____. ______________________________
+    Grupo de Clientes : ____.|______________________________
+
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+         C L I E N T E                     O B J E T I V O               
+  §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+   [_,___,___. _________________ ____. _________________ ______________] 
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+                                                                         
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form
+use billpro, comerc, bill, sue;
+language "C";
+window label "[Clientes Especiales]", border single;
+confirm add, update, ignore, end, delete;
+ignore prev, next;
+
+%fields
+tipgrp:cliesp., in (1:"Facturacion",
+                    2:"Clientes Prosegur"),
+       default 1, not null;
+dtipgrp: is descr(tipgrp);
+tipcli: cliesp., on help in cliesp by tipogrp(tipgrp):descrip;
+descrip: cliesp.;
+
+multi: rows 200, display 10;
+clie: rcliesp.cliente, on help manual;
+dclie:  skip;
+objet:   rcliesp.objet, on help manual;
+dobjet:  skip;
+dtobjet:  is (clie>0 and objet = null) ? "Todos los Obj." : null;

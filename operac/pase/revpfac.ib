@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+//BIN="../rbin/";
+//BIN="/usrpeprod/prodbin/novia/operac/rbin/";
+
+revpfac.exe {
+	revpfac.hlp;
+	revpfac.fm;
+    revpfac.c : revpfac.fmh operac.sch;
+	$COMERC/lib/comerc.a;		
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;		
+ 	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+}

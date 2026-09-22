@@ -1,0 +1,21 @@
+/* Field names	*/
+# define W0_EMP          (fmfield)  0	/* Integer         */
+# define W0_DEMP         (fmfield)  1	/* String          */
+# define W0_AGRVIGI      (fmfield)  2	/* GROUPED         */
+# define W0_VIGDESDE     (fmfield)  3	/* Long            */
+# define W0_DVIGD        (fmfield)  4	/* String          */
+# define W0_VIGHASTA     (fmfield)  5	/* Long            */
+# define W0_DVIGH        (fmfield)  6	/* String          */
+# define W0_AGRFEC       (fmfield)  7	/* GROUPED         */
+# define W0_FECHAD       (fmfield)  8	/* Date            */
+# define W0_FECHAH       (fmfield)  9	/* Date            */
+# define W0_SALIDA       (fmfield) 10	/* String          */
+# define W0_DESC5        (fmfield) 11	/* String          */
+# define W0_NOMARCH      (fmfield) 12	/* String          */
+/* Form checksum	*/
+# define FM_LDFRANCO_CHKSUM (long)0x022b
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_VIGI         0
+# define M_ERR_FEC          1
+/* =========== End of fmh file ============ */

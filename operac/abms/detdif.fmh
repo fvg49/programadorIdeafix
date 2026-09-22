@@ -1,0 +1,14 @@
+/* Field names	*/
+# define II_DHSNOR       (fmfield)  0	/* Integer         */
+# define II_DHS50        (fmfield)  1	/* Integer         */
+# define II_DHS100F      (fmfield)  2	/* Integer         */
+# define II_DHS100FE     (fmfield)  3	/* Integer         */
+# define DNORMAL         (fmfield)  4	/* Integer         */
+# define DEXTRAS1        (fmfield)  5	/* Integer         */
+# define DEXTRAS2        (fmfield)  6	/* Integer         */
+# define DFRANCOS        (fmfield)  7	/* Integer         */
+/* Form checksum	*/
+# define FM_DETDIF_CHKSUM (long)0x00d8
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

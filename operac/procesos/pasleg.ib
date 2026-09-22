@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+pasleg.exe {
+	pasleg.fm  ;
+	pasleg.c   : pasleg.fmh;
+}
+

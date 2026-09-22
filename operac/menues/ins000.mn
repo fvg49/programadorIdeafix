@@ -1,0 +1,7 @@
+"1. Tablas Generales         " MENU ins110
+"2. Clientes y Objetivos     " MENU ins200
+"3. Orden de Trabajo         " MENU ins310
+"4. Asignación de Vigiladores" MENU ins400
+"5. Retenes                  " MENU ins500
+"6. Parte Diario             " MENU ins610
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .

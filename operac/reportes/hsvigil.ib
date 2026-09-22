@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+hsvigil.exe {
+	hsvigil.fm;
+    hsvigil.rp;
+    hsvigil2.rp;
+	hsvigil.hlp;
+    hsvigil.c	: hsvigil.fmh hsvigil.rph operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

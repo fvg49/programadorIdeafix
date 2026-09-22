@@ -1,0 +1,6 @@
+"1. Generación del Parte Diario    " WCMD genparte.exe !ADU 1
+"2. Confirmación del Parte Diario  " WCMD confpar.exe !ADU
+"3. Carga del Parte Diario por Día " WCMD partep.exe !ADU
+"4. Listado del Parte Diario       " WCMD lparteo.exe
+"5. Listados y Consultas           " MENU ope610 
+"6. Auditoria Control de Horas     " MENU ope620

@@ -1,0 +1,19 @@
+/* Field names	*/
+# define I_EMP           (fmfield)  0	/* Integer         */
+# define I_FECHINI       (fmfield)  1	/* Date            */
+# define I_FECHFIN       (fmfield)  2	/* Date            */
+# define I_FECASIG2      (fmfield)  3	/* Date            */
+# define FECBAJ          (fmfield)  4	/* Date            */
+# define ERRORASIG       (fmfield)  5	/* Integer         */
+# define MOTIVO          (fmfield)  6	/* Integer         */
+# define DMOTVI          (fmfield)  7	/* String          */
+# define REEMPL          (fmfield)  8	/* Long            */
+# define NOMBRE2         (fmfield)  9	/* String          */
+# define I_ACT2          (fmfield) 10	/* Integer         */
+/* Form checksum	*/
+# define FM_ASIGH2_CHKSUM (long)0x0234
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_FECBAJ           0
+# define M_LEGINACT2        1
+/* =========== End of fmh file ============ */

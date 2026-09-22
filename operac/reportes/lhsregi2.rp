@@ -1,0 +1,19 @@
+%head(today, rregim, pageno, rfechad, rfechah) before (page, report)
+[16c[2o\$empresa                                                                                                                          Fecha  : __/__/____
+                                                      [1mCONTROL DE HORAS POR REGIMEN ________[0m                                        Página :       ____.
+                                                                                                                                   (lhsregim.exe)
+                                                          De __/__/____ a __/__/____
+
+¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡ª
+  Legajo        Nombre y Apellido           Fecha                  Cliente                          Objetivo             Ent.  Sal.  Horas  
+¢¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¤
+%linea1(r_nroleg, r_nombre, r_dia, r_cliente, r_dcliente, r_objet, r_dobjet, r_horent, r_horsal, r_horas)
+ ________. ______________________________ __/__/____ _________. _______________________ ____. _________________________ __:__ __:__ ____.__
+%totleg(r_nroleg, r_nombre, sum(r_horas)) after r_nroleg
+
+ TOTAL ________. ______________________________                                                                                    _____.__
+
+%report
+use comerc;
+language "c";
+flength = 42;

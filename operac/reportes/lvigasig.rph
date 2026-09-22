@@ -1,0 +1,20 @@
+/* Field names	*/
+# define R_EMP           ((rpfield)   0) 	/* Num */
+# define R_DEMP          ((rpfield)   1) 	/* String */
+# define R_FEC           ((rpfield)   2) 	/* Date */
+# define R_LEGAJO        ((rpfield)   3) 	/* Num */
+# define R_APENOM        ((rpfield)   4) 	/* String */
+# define R_FECASIG       ((rpfield)   5) 	/* Date */
+# define R_FECHAS        ((rpfield)   6) 	/* Date */
+# define R_CLI           ((rpfield)   7) 	/* Num */
+# define R_DCLI          ((rpfield)   8) 	/* String */
+# define R_OBJ           ((rpfield)   9) 	/* Num */
+# define R_DOBJ          ((rpfield)  10) 	/* String */
+# define R_FILIAL        ((rpfield)  11) 	/* String */
+# define R_DFILIAL       ((rpfield)  12) 	/* String */
+/* Report Checksum	*/
+# define RP_LVIGASIG_CHKSUM ((long) 0x00af)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)
+# define FLIN            ((int)   2)

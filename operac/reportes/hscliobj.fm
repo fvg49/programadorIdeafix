@@ -1,0 +1,106 @@
+  Empresa         :          __.  _________________________________
+
+  Delegación Comercial  : _____  _________________________________
+  Delegación Operacional: _____  _________________________________   
+  Filial Operativa      : ______ _________________________________ 
+
+  Desde Cliente   :{___,___,___.  _________________________________
+        Objetivo  :       _,___.  _________________________________
+
+  Hasta Cliente   : ___,___,___.} _________________________________
+        Objetivo  :       _,___.  _________________________________
+
+  Período Desde   : {__/__/____   Hasta   :  __/__/____}
+
+  Opción          : _. ______________________________________________
+
+  Detalle         : _  ___________________________________________
+
+  Tipos de Obj.   : _  ___________________________________________
+
+  Considera Retroactivos : __?  Fecha para standard : __/__/____
+
+  Ajusta Diferencias por Feriado: __?
+
+  Salida a         : _  _________  Nombre del archivo  : ____________
+
+                 ___________________________________________________
+%form
+use operac, bill, sue, comerc, billpro;
+language "C";
+window label "[Listado de Horas por Cliente/Objetivo/Puesto/Fecha]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+agrupc  : check clid <= clih;
+clid    : on help manual, default 1, not null;
+dclid   : skip;
+objd    : on help manual, default 1, not null;
+dobjd   : skip;
+clih    : on help manual, default 999999999, not null;
+dclih   : skip;
+objh    : on help manual, default 9999, not null;
+dobjh   : skip;
+agrupf  : check fechad <= fechah;
+fechad  : not null, default today;
+fechah  : not null, default today;
+opcion  : in (1:"Diferencias Estandard Vendido y Trabajado no 0",
+              2:"Servicios Adicionales Mayor que 0",
+              3:"Horas a Cargo Mayor que 0",
+              4:"Horas no Prestadas Mayor que 0",
+              5:"Sin Filtro"),
+          not null, default 5,autoenter;
+dopcion : is descr(opcion);
+
+r_opcion  : internal num(1), is ( fdelega == null ? 1 : 2);//, in (1,2);
+r_detalle: reference (i_deta1..i_deta2), , is (r_opcion), not null;
+i_deta1: internal char(1), in ("C":"Consolida por Cliente",
+              "O":"Consolida por Objetivo",
+              "P":"Consolida por Puesto",
+              "D":"Consolida por Fecha",
+              "F":"Detalla por Fecha"),
+          not null, default "F", mask ">A", autoenter;
+i_deta2: internal char(1), in ("C":"Consolida por Cliente",
+              "O":"Consolida por Objetivo",
+              "P":"Consolida por Puesto",
+              "D":"Consolida por Fecha",
+              "F":"Detalla por Fecha"),
+          not null, default "F", mask ">A", autoenter;
+
+descdet : is descr(r_detalle);
+
+tipobj  : in ("T":"Todos los objetivos",
+              "R":"Objetivos Riff",
+              "E":"Objetivos Esporadicos"),
+          not null, default "T", mask ">A", autoenter;
+dtipobj : is descr(tipobj);
+
+fretro  : not null, default false;
+
+fecstd  : descr "Calcula el std. en base a los puestos vivos a esta fecha.   Si es nulo se calcula dia por dia";
+
+dife    : is false; //not null, default false;
+
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo",
+              "R": "Gestion"),
+          not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+nomarch : is (salida!="A" and salida!="R") ? null : void, default "hscliobj.dat", not null;
+coment  : skip;

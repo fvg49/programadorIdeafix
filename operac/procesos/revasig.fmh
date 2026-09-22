@@ -1,0 +1,42 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define DELEG           (fmfield)  2	/* String          */
+# define DDELEG          (fmfield)  3	/* String          */
+# define FDELEGA         (fmfield)  4	/* String          */
+# define DDELEGA         (fmfield)  5	/* String          */
+# define FFILIAL         (fmfield)  6	/* String          */
+# define DESCRIP         (fmfield)  7	/* String          */
+# define VIGILA          (fmfield)  8	/* Long            */
+# define DVIG            (fmfield)  9	/* String          */
+# define MULTI           (fmfield) 10	/* MULTIPLE        */
+# define REVIERTE        (fmfield) 11	/* Integer         */
+# define FCLIENTE        (fmfield) 12	/* Long            */
+# define DCLIE           (fmfield) 13	/* String          */
+# define OBJET           (fmfield) 14	/* Integer         */
+# define EFEC            (fmfield) 15	/* String          */
+# define TIPPTO          (fmfield) 16	/* Integer         */
+# define FPUESTO         (fmfield) 17	/* Integer         */
+# define I_NROINT        (fmfield) 18	/* Integer         */
+# define DPUESTO         (fmfield) 19	/* String          */
+# define REGIM           (fmfield) 20	/* String          */
+# define CODROL          (fmfield) 21	/* Integer         */
+# define FILA            (fmfield) 22	/* Integer         */
+# define COLUM           (fmfield) 23	/* Integer         */
+# define TIPODIA         (fmfield) 24	/* String          */
+# define FECASIG         (fmfield) 25	/* Date            */
+# define DIA1            (fmfield) 26	/* String          */
+# define DIA2            (fmfield) 27	/* String          */
+# define DIA3            (fmfield) 28	/* String          */
+# define DIA4            (fmfield) 29	/* String          */
+# define DIA5            (fmfield) 30	/* String          */
+# define DIA6            (fmfield) 31	/* String          */
+# define DIA7            (fmfield) 32	/* String          */
+# define HSENT           (fmfield) 33	/* Time            */
+# define HSSAL           (fmfield) 34	/* Time            */
+# define COMENT          (fmfield) 35	/* String          */
+/* Form checksum	*/
+# define FM_REVASIG_CHKSUM (long)0x0fe4
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

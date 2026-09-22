@@ -1,0 +1,37 @@
+
+	Empresa	    :        __.  ______________________________________
+    Presentismo : _,___,___.| ______________________________________
+    
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+   		      Cliente                                Objetivo                
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+[{___,___,___. _______________________ __.} ________________________________]
+                                 	                                         
+                                 	                                         
+                                 	   	                                     
+                                 	                                         
+                                 	                                         
+                                 	                                         
+                                 	                                         
+                                 	                                         
+                                 	                                         
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use comerc, sue, bill;
+language "C";
+window label "[Personal que toma Presentismo por Objetivos]", border single;
+confirm add, update, ignore, end;
+ignore delete, next, prev;
+
+%fields
+emp		: in sue.emps:descrip, default 1, not null;
+demp	: sue.emps.descrip, skip;
+perpre	: objetivo.svisor, in sue.per(emp):(apynom);
+dpresen : sue.per.apynom, skip;
+
+multis	: rows 1000, display 10;
+agrup	: unique;	
+clie	: on help manual;
+dclie	: skip;
+objet	: on help manual;
+dobjet	: skip;

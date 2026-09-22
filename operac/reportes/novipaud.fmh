@@ -1,0 +1,27 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRFEC          (fmfield)  2	/* GROUPED         */
+# define FDESDE          (fmfield)  3	/* Date            */
+# define FHASTA          (fmfield)  4	/* Date            */
+# define AGRUPV          (fmfield)  5	/* GROUPED         */
+# define VIGILD          (fmfield)  6	/* Long            */
+# define DVIGILD         (fmfield)  7	/* String          */
+# define VIGILH          (fmfield)  8	/* Long            */
+# define DVIGILH         (fmfield)  9	/* String          */
+# define LNOPARTE        (fmfield) 10	/* Integer         */
+# define CTRLCOND        (fmfield) 11	/* Integer         */
+# define VIGIBAJ         (fmfield) 12	/* Integer         */
+# define HSNVSREG        (fmfield) 13	/* Integer         */
+# define HSPARTE         (fmfield) 14	/* Integer         */
+# define SALIDA          (fmfield) 15	/* String          */
+# define DESC5           (fmfield) 16	/* String          */
+# define NOMARCH         (fmfield) 17	/* String          */
+# define PROCVIGI        (fmfield) 18	/* Long            */
+# define DPROCVIG        (fmfield) 19	/* String          */
+# define COMENT          (fmfield) 20	/* String          */
+/* Form checksum	*/
+# define FM_NOVIPAUD_CHKSUM (long)0x0701
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

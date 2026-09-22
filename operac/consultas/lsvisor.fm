@@ -1,0 +1,24 @@
+ Empresa     :  __. ______________________________________________
+
+ Presentismo : _________. _________________________________
+
+ Salida por  : _________________
+
+               ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                 Digite __ para confirmar  
+               ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use comerc, sue;
+window label "[Listado de Clientes por Presentismo]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+presen  : in sue.per(emp):(apynom), not null;
+dpresen : sue.per.apynom, skip;
+salida  : in ("printer", "terminal", "presen delimited"), default "printer", not null;
+dummy   : is help (PROCESAR);
+

@@ -1,0 +1,8 @@
+project $NOVIA/reglas.ib;
+
+BIN="$OPERAC/rbinaux/";
+
+dasiprov.exe {
+	dasiprov.fm;
+	dasiprov.c : operac.sch;
+}

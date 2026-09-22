@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+cieroper.exe {
+	cieroper.fm;
+	cieroper.c : cieroper.fmh operac.sch;
+
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;		
+ 	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+}

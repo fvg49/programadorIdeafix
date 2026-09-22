@@ -1,0 +1,18 @@
+/* Field names	*/
+# define REMP            ((rpfield)   0) 	/* Num */
+# define RDEMP           ((rpfield)   1) 	/* String */
+# define RFECDES         ((rpfield)   2) 	/* Date */
+# define RFECHAS         ((rpfield)   3) 	/* Date */
+# define RLEGD           ((rpfield)   4) 	/* Num */
+# define RDLEGD          ((rpfield)   5) 	/* String */
+# define RLEGH           ((rpfield)   6) 	/* Num */
+# define RDLEGH          ((rpfield)   7) 	/* String */
+# define RLEG            ((rpfield)   8) 	/* Num */
+# define RDLEG           ((rpfield)   9) 	/* String */
+# define RFECING         ((rpfield)  10) 	/* Date */
+/* Report Checksum	*/
+# define RP_LNOTRAB_CHKSUM ((long) 0x0080)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LINEA           ((int)   1)
+# define TOTAL           ((int)   2)

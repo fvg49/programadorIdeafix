@@ -1,0 +1,847 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe3082{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f4\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Times{\*\falt Times New Roman};}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier{\*\falt Courier New};}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;
+\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\lang3082\cgrid \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{
+\s15\sb640\sa320\sl640\slmult0\keepn\nowidctlpar\adjustright \b\fs48\cf1\lang3082 \snext15 Appendix;}{\s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\adjustright \fs20\cf1\lang3082 \snext16 Body;}{\s17\qj\sl-240\slmult0\nowidctlpar\adjustright 
+\fs20\cf1\lang3082 \snext17 BodyNoIn;}{\s18\qj\li2520\sb80\sa120\sl240\slmult0\nowidctlpar\tx360\tx2160\tx2520\adjustright \fs20\cf1\lang3082 \snext18 Bulleted;}{\s19\sl280\slmult0\nowidctlpar\adjustright \cf1\lang3082 \snext19 CellBody;}{
+\s20\qc\sl280\slmult0\nowidctlpar\adjustright \cf1\lang3082 \snext20 CellHeading;}{\s21\qj\sl-860\slmult0\nowidctlpar\adjustright \b\fs72\cf1\lang3082 \snext21 ChapterNumber;}{\s22\qj\li2880\sb80\sa120\sl-240\slmult0\nowidctlpar\adjustright 
+\fs20\cf1\lang3082 \snext22 DoubleQuote;}{\s23\qj\li2880\sl-200\slmult0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 \snext23 DoubleSample;}{
+\s24\qc\li2160\sb40\sa40\sl-200\slmult0\nowidctlpar\adjustright \fs16\cf1\lang3082 \snext24 Figure;}{\s25\qc\li2160\sb40\sa40\sl-200\slmult0\nowidctlpar\adjustright \fs16\cf1\lang3082 \snext25 Figure1;}{\s26\sl280\slmult0\nowidctlpar\adjustright 
+\cf1\lang3082 \snext26 Footer;}{\s27\li360\ri360\sl200\slmult0\nowidctlpar\adjustright \fs16\cf1\lang3082 \snext27 Footnote;}{\s28\sl280\slmult0\nowidctlpar\adjustright \cf1\lang3082 \snext28 Header;}{\s29\sb360\sa160\sl420\slmult0
+\keepn\nowidctlpar\adjustright \b\f1\fs36\cf1\lang3082 \snext29 Heading1;}{\s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\adjustright \b\f1\fs28\cf1\lang3082 \snext30 Heading2;}{\s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\adjustright 
+\b\f1\cf1\lang3082 \snext31 Heading3;}{\s32\sb120\sl280\slmult0\keepn\nowidctlpar\adjustright \b\cf1\lang3082 \snext32 HeadingRunIn;}{\s33\li360\sl280\slmult0\nowidctlpar\tx360\adjustright \cf1\lang3082 \snext33 Indented;}{
+\s34\qj\li2520\sb80\sa120\sl240\slmult0\nowidctlpar\tx360\adjustright \fs20\cf1\lang3082 \snext34 Numbered;}{\s35\qj\li2520\sb80\sa120\sl240\slmult0\nowidctlpar\tx360\adjustright \fs20\cf1\lang3082 \snext35 Numbered1;}{\s36\li2520\sb80\sa120\sl240\slmult0
+\nowidctlpar\tx360\adjustright \fs20\cf1\lang3082 \snext36 Numbered2;}{\s37\qj\li2520\sb80\sa120\sl-240\slmult0\nowidctlpar\adjustright \fs20\cf1\lang3082 \snext37 Quote;}{\s38\qj\li2520\sl-200\slmult0\nowidctlpar
+\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 \snext38 Sample;}{\s39\qj\li720\sl-200\slmult0\nowidctlpar\adjustright \f6\fs16\cf1\lang3082 \snext39 SampleNoIn;}{\s40\qj\sl-200\slmult0
+\nowidctlpar\adjustright \fs16\cf1\lang3082 \snext40 SmallBodyNoIn;}{\s41\fi-241\li600\ri600\sl240\slmult0\nowidctlpar\tx600\adjustright \fs20\cf1\lang3082 \snext41 TableFootnote;}{\s42\qc\sl280\slmult0\nowidctlpar\adjustright \b\cf1\lang3082 \snext42 
+TableTitle;}{\s43\sb640\sa680\sl640\slmult0\keepn\nowidctlpar\adjustright \b\f1\fs48\cf1\lang3082 \sbasedon0 \snext43 Title;}{\s44\qc\sl280\slmult0\nowidctlpar\adjustright \lang3082 \snext44 CellFooting;}}{\*\listtable{\list\listtemplateid201981953
+\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid46805777}{\list\listtemplateid201981953\listsimple
+{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid52579701}{\list\listtemplateid201981953\listsimple{\listlevel
+\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid56368289}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23
+\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid228150709}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0
+\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid249581202}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0
+\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid436677072}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1
+\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid440538061}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid457573122}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0
+{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid473792265}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid527183301}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid536040255}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid538207626}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid592470438}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid641542437}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid729307095}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid773524800}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1044788778}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1082145565}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1111245293}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1159930521}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1198200358}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1323512286}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1329753519}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1403748107}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1414859906}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1444571919}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1561550448}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1575968993}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1707827667}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1730612168}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1886597270}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1989430182}{\list\listtemplateid201981953\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid2008826517}}{\*\listoverridetable{\listoverride\listid52579701\listoverridecount0\ls1}{\listoverride\listid1044788778\listoverridecount0\ls2}
+{\listoverride\listid536040255\listoverridecount0\ls3}{\listoverride\listid1323512286\listoverridecount0\ls4}{\listoverride\listid1329753519\listoverridecount0\ls5}{\listoverride\listid527183301\listoverridecount0\ls6}{\listoverride\listid641542437
+\listoverridecount0\ls7}{\listoverride\listid473792265\listoverridecount0\ls8}{\listoverride\listid1198200358\listoverridecount0\ls9}{\listoverride\listid1444571919\listoverridecount0\ls10}{\listoverride\listid1989430182\listoverridecount0\ls11}
+{\listoverride\listid1730612168\listoverridecount0\ls12}{\listoverride\listid538207626\listoverridecount0\ls13}{\listoverride\listid440538061\listoverridecount0\ls14}{\listoverride\listid1561550448\listoverridecount0\ls15}{\listoverride\listid1082145565
+\listoverridecount0\ls16}{\listoverride\listid249581202\listoverridecount0\ls17}{\listoverride\listid2008826517\listoverridecount0\ls18}{\listoverride\listid457573122\listoverridecount0\ls19}{\listoverride\listid436677072\listoverridecount0\ls20}
+{\listoverride\listid1111245293\listoverridecount0\ls21}{\listoverride\listid1575968993\listoverridecount0\ls22}{\listoverride\listid1414859906\listoverridecount0\ls23}{\listoverride\listid46805777\listoverridecount0\ls24}{\listoverride\listid1159930521
+\listoverridecount0\ls25}{\listoverride\listid56368289\listoverridecount0\ls26}{\listoverride\listid1886597270\listoverridecount0\ls27}{\listoverride\listid729307095\listoverridecount0\ls28}{\listoverride\listid592470438\listoverridecount0\ls29}
+{\listoverride\listid1707827667\listoverridecount0\ls30}{\listoverride\listid773524800\listoverridecount0\ls31}{\listoverride\listid228150709\listoverridecount0\ls32}{\listoverride\listid1403748107\listoverridecount0\ls33}}{\info{\author Cap.}
+{\operator Diego Cerqueiras}{\creatim\yr1999\mo4\dy26\hr13\min3}{\revtim\yr1999\mo12\dy3\hr11\min55}{\version6}{\edmins41}{\nofpages28}{\nofwords4474}{\nofchars25502}{\*\company InterSoft Arg.S.A.}{\nofcharsws0}{\vern73}}
+\paperw10080\paperh12240\margl1080\margr1080\margt1800\margb990 \facingp\widowctrl\ftnbj\aenddoc\ftnrestart\pgnstart403\hyphhotz425\margmirror\hyphcaps0\viewkind4\viewscale139\viewzk2 \fet0\sectd 
+\pgnrestart\pgnstarts403\linex0\headery709\footery709\colsx0\titlepg\sectdefaultcl {\headerl \pard\plain \s28\qj\sl-200\slmult0\nowidctlpar\widctlpar\tqc\tx3959\tqr\tx7919\adjustright \cf1\lang3082 {\fs16 $paratext[Heading1]
+\par }\pard \s28\qj\sl-220\slmult0\nowidctlpar\widctlpar\tqc\tx3311\tqr\tx6623\adjustright {\b\f4 $paratext[Title]
+\par }\pard\plain \s16\qc\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {\b\f1\fs24 $paratext[ChapterNumber]}{
+\par }}{\headerr \pard\plain \s28\qj\sl-240\slmult0\nowidctlpar\widctlpar\tqc\tx3959\tqr\tx7919\adjustright \cf1\lang3082 {\fs20 \tab \tab }{\fs16 $paratext[Heading1]
+\par }\pard \s28\qj\sl-240\slmult0\nowidctlpar\widctlpar\tqc\tx3311\tqr\tx6623\adjustright {\fs20 \tab \tab }{\b\f4 $paratext[Title]
+\par }}{\footerl \pard\plain \s26\qj\sl-220\slmult0\nowidctlpar\widctlpar\tqc\tx3035\tqr\tx6071\adjustright \cf1\lang3082 {\b\f4 \chpgn }{     IDEAFIX  }{\f4 Manual del Programador
+\par }}{\footerr \pard\plain \s26\qr\sl-220\slmult0\nowidctlpar\widctlpar\tqc\tx3938\tqr\tx7877\tx10231\adjustright \cf1\lang3082 {IDEAFIX  }{\f4 Manual del Programador}{     }{\b\f4 \chpgn 
+\par }}{\headerf \pard\plain \nowidctlpar\widctlpar\adjustright \fs20\lang3082\cgrid {\f4\fs24\cgrid0 
+\par }}{\footerf \pard\plain \s26\qc\sl-220\slmult0\nowidctlpar\widctlpar\tqc\tx3311\tqr\tx6623\adjustright \cf1\lang3082 {\b\f4 \chpgn 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s15\sb640\sa320\sl640\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\fs48\cf1\lang3082 {
+Interfaz Ideafix-Cobol
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par En este ap\'e9ndice se describir\'e1 el modo de acceder desde Cobol a las funciones de Ideafix y Essentia.
+\par 
+\par }\pard\plain \s29\sb360\sa160\sl420\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs36\cf1\lang3082 {Concepto general
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Durante la ejecuci\'f3n, un m\'f3dulo Cobol es normalmente interpretado, por un m\'f3dulo llamado RUNCOBOL, que es el que 
+se invoca verdaderamente. 
+\par B\'e1sicamente el mecanismo es usar rutinas implementadas en el m\'f3dulo RUNCOBOL, que deber\'e1n invocarse al momento de corrida, pues la manera de invocar  un programa ejecutable Cobol (.COB) es:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {RUNCOBOL [prog]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par donde [prog] es el nombre del programa. 
+\par El m\'f3dulo RUNCOBOL es necesario ya que provee los procedimientos invocados por el programa en Cobol durante el tiempo de corrida.
+\par 
+\par }\pard\plain \s29\sb360\sa160\sl420\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs36\cf1\lang3082 {C\'f3mo usar la interfaz
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {La invocaci\'f3n de una funci\'f3n de acceso a la base de datos (ya sea v\'eda Ideafix o v\'eda
+ Essentia) desde un programa o subprograma Cobol, debe hacerse mediante el verbo CALL. N\'f3tese que esto no implica la llamada a un subprograma; el procesamiento es an\'e1logo al realizado al ejecutarse un verbo cualquiera de Cobol, invoc\'e1
+ndose una funci\'f3n de biblioteca adecuada, que se encuentra dentro del m\'f3dulo RUNCOBOL. Las funciones antedichas est\'e1n }{\i\f4 linkeditadas}{ a este m\'f3dulo y por ello se invocar\'e1n autom\'e1ticamente.
+\par 
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Contenido y modificaciones de RUNCOBOL
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El m\'f3dulo de runtime, RUNCOBOL, incluye todos los pr
+ocedimientos usuales ejecutados con los verbos primitivos del lenguaje, a los que se agregan otros espec\'edficos para Ideafix/Essentia. Existe un RUNCOBOL para Ideafix y otro para Essentia, debiendo utilizarse el necesario en cada caso seg\'fan c\'f3
+mo vaya a funcionar la aplicaci\'f3n correspondiente.
+\par 
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {C\'f3mo invocar un comando de Ideafix/Essentia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {La manera de llamar a un comando (nuevo) es la siguiente:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {CALL "[nombre de comando]" USING [parametros]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par donde [nombre de comando] es una cadena de caracteres (string), y [parametros] es una lista, cuyos elementos van separados por comas, cada uno de los cuales tiene alguna de las siguientes tres formas:
+\par 
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls1\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls1\adjustright \fs20\cf1\lang3082 {BY CONTENT [id]
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls1\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls1\adjustright {BY REFERENCE [id]
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls1\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls1\adjustright {[id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Siguiendo el estilo de Cobol, estas tres formas permiten pasar un par\'e1metro por valor, por referencia, o de la manera }{\i\f4 default}{, respectivamente. Como es habitual en Cobol, el }{\i\f4 default}{ es pasarlos por referencia.
+\par 
+\par 
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Ejemplo
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Un ejemplo t\'edpico de llamada a una funci\'f3n es el siguiente:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {CALL "GetRecord" USING Mi-Archivo, 2, "indice1", FIRST-KEY,
+\par                        TEST-LOCK, estado
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par lo cual se traduce en: invocar la rutina GetRecord, con los par\'e1metros indicados. Para una explicaci\'f3n de las constantes FIRST-KEY y otras, v\'e9ase m\'e1s abajo.
+\par 
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Constantes usuales
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Siempre deber\'e1 incluirse un archivo }{\i\f4 idea.cpy}{ que contiene los nombres y valores de 
+\par 
+\par "constantes'' muy usadas. Por consiguiente, las variables aqu\'ed declaradas no deber\'edan, en general, ser modificadas por el programador as\'ed como tampoco se les asignar\'e1n valores ex profeso.
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   01 READ-MODE.
+\par       02 THIS-KEY               PIC 99 VALUE 1.
+\par       02 NEXT-KEY               PIC 99 VALUE 2.
+\par       02 PREV-KEY               PIC 99 VALUE 4.
+\par       02 FIRST-KEY              PIC 99 VALUE 8.
+\par       02 LAST-KEY               PIC 99 VALUE 16.
+\par       02 THIS-OR-NEXT-KEY       PIC 99 VALUE 3.
+\par       02 THIS-OR-PREV-KEY       PIC 99 VALUE 5.
+\par 
+\par 
+\par    01 LOCK-MODE.
+\par       02 NOT-LOCK               PIC 9(5) VALUE 0.
+\par       02 WAIT-LOCK              PIC 9(5) VALUE 1.
+\par       02 TEST-LOCK              PIC 9(5) VALUE 3.
+\par       02 WAIT-READ-LOCK         PIC 9(5) VALUE 16385.
+\par       02 TEST-READ-LOCK         PIC 9(5) VALUE 16387.
+\par       02 WAIT-PLOCK             PIC 9(5) VALUE 8192.
+\par       02 TEST-PLOCK             PIC 9(5) VALUE 8194.
+\par       02 WAIT-READ-PLOCK        PIC 9(5) VALUE 24576.
+\par       02 TEST-READ-PLOCK        PIC 9(5) VALUE 24578.
+\par 
+\par 
+\par    01 RETURN-VALUES.
+\par       02 OK                     PIC S9 VALUE 0.
+\par       02 ERR                    PIC S9 VALUE -1.
+\par       02 IO-LOCKED              PIC S9 VALUE -2.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par que definen registros adecuados.
+\par 
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Constantes de locks
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Al utilizar locks se emplean los mismos valores de constantes que en el c\'f3
+digo CFIX (ver secciones correspondientes). Cabe aclarar que los nombres de las constantes son diferentes en COBOL. La siguiente es una equivalencia entre dichos nombres:
+\par 
+\par }\pard\plain \s42\qc\sl280\slmult0\nowidctlpar\widctlpar\adjustright \b\cf1\lang3082 {Table 1:  equivalencias de tipos COBOL/CFIX
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {
+\par NOT-LOCK         = IO_NOT_LOCK
+\par WAIT-LOCK        = IO_LOCK|IO_WRITE   o  IO_LOCK
+\par WAIT-READ-LOCK   = IO_LOCK|IO_READ
+\par TEST-LOCK        = IO_LOCK|IO_WRITE|IO_TEST o IO_LOCK|IO_TEST
+\par TEST-READ-LOCK   = IO_LOCK|IO_READ|IO_TEST
+\par WAIT-PLOCK       = IO_PLOCK|IO_WRITE o IO_PLOCK
+\par WAIT-READ-PLOCK  = IO_PLOCK|IO_READ
+\par TEST-PLOCK         = IO_PLOCK|IO_WRITE|IO_TEST o  IO_PLOCK|IO_TEST
+\par TEST-READ-PLOCK  = IO_PLOCK|IO_READ|IO_TEST
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Ejemplo comentado
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El siguiente es un programa completo en Cobol que hace uso de las rutinas mas comunes. Comienza con los encabezados t\'edpicos:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {\tab IDENTIFICATION DIVISION.
+\par \tab PROGRAM-ID.  "clientes".
+\par \tab ENVIRONMENT DIVISION.
+\par 
+\par 
+\par \tab CONFIGURATION SECTION.
+\par 
+\par 
+\par \tab SOURCE-COMPUTER.  RMCOBOL-85.
+\par \tab OBJECT-COMPUTER.  RMCOBOL-85.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par En la DATA DIVISION colocamos:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {\tab DATA DIVISION.
+\par \tab WORKING-STORAGE SECTION.
+\par 
+\par \tab copy "idea.cpy".
+\par \tab copy "demo.cpy".
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par para incluir o "copiar'' los archivos explicitados.
+\par 
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Declaraci\'f3n de datos y estructuras del programador
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El segundo archivo incluido, demo.cpy, contiene la definici\'f3
+n completa del esquema a utilizar. Esto se realiza definiendo el registro correspondiente a cada tabla (archivo) del esquema. En primer lugar, definimos una tabla con datos de clientes:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {     01\tab CLIENTES.
+\par            06 \tab TAB-ID     PIC 9(5) BINARY VALUE 512.
+\par            06\tab  CLIENTES-DATA.
+\par                11\tab  CLIENO-KEY.
+\par                    16  CLIENO  PIC S9(4) VALUE ZEROES.
+\par                11\tab  NOMIDX-KEY.
+\par                    16  NOMBRE  PIC X(30) VALUE SPACES.
+\par                11\tab  DIREC       PIC X(30) VALUE SPACES.
+\par                11\tab  PROV        PIC X(1) VALUE SPACES.
+\par                11\tab  LOCAL       PIC S9(2) VALUE ZEROES.
+\par                11\tab  COD-P       PIC X(4) VALUE SPACES.
+\par                11\tab  FEALTA      PIC 9(6) VALUE ZEROES.
+\par                11  IVA      PIC S9(2)V9(2) VALUE ZEROES.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par que es el registro de la tabla CLIENTES. El siguiente es el registro de otra tabla que almacenar\'e1 con datos de movimientos:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {       01\tab  MOVIM.
+\par            06 TAB-ID         PIC 9(5) BINARY VALUE 1024.
+\par            06 MOVIM-DATA.
+\par                11 \tab ORDERNO-KEY.
+\par                    16 ORDERNO PIC S9(4) VALUE ZEROES.
+\par                    16 ITEMNO  PIC S9(4) VALUE ZEROES.
+\par                11\tab  CANTID    PIC S9(4) VALUE ZEROES.
+\par                11\tab  PRVTA  PIC S9(12)V9(2) VALUE ZEROES.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par que es el registro de MOVIM para almacenar cada movimiento. Es importante destacar que el uso de estos registros reemplaza (y hace innecesaria) su definici\'f3n en la FILE SECTION del programa. Vale decir, no se deben usar definiciones en dicha secci\'f3
+n cuando se trata de registros de tablas de Ideafix. N\'f3tese la aparici\'f3n de la "constante" TAB-ID, un n\'famero identificador de tabla, que el utilitario DGEN genera autom\'e1ticamente. Este campo normalmente no debe ser modificado por el prog
+ramador, puesto que se utilizar\'e1 (ver m\'e1s adelante, en la secci\'f3n relacionada con el uso del DGEN).
+\par Continuando, inicializamos los siguientes titulos y mensajes de error:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   01  title pic X(60) value
+\par        "Clientes".
+\par    01  MSG1  pic X(60) value
+\par        "Error opening schema.".
+\par    01  MSG2  pic X(60) value
+\par        "El cliente solicitado no existe.".
+\par 
+\par    01  schema pic X(30) value "demo".
+\par \tab \tab \tab \tab 01  sch\tab pic S9(8) binary.
+\par    01  stat  pic S9(4) value 0.
+\par 
+\par 
+\par    01  option pic 9 value 0.
+\par    01  dummy pic X value spaces.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Veamos ahora la PROCEDURE DIVISION. El programa principal puede comenzar con el r\'f3tulo MAIN:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   PROCEDURE DIVISION.
+\par    MAIN.
+\par       call "OpenSchema" using schema, sch.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {abre un esquema llamado "demo" (ver la definici\'f3n de la variable schema), retornando el resultado de la operaci\'f3
+n en la variable sch. Se puede controlar as\'ed si hubo error o no:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {      if sch = ERR 
+\par       then
+\par          perform clear-scr
+\par          display MSG1, low, line 2, position 1
+\par          go to exit-func
+\par       end-if.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {A continuacion, se invoca la funcion que llamamos do-form hasta que la opci\'f3n elegida sea salir.
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {      perform do-form until option = 4.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Acto seguido, se cierra el esquema y se finaliza la ejecucion del programa.
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {      call "CloseSchema" using sch.
+\par       go to exit-func.
+\par 
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Veamos la "funci\'f3n'' do-form.
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   do-form.
+\par       perform menu.
+\par       perform clear-scr.
+\par 
+\par       if option < 4 and option > 0 
+\par       then
+\par          perform get-key
+\par 
+\par          if option = 1 then perform get-rec end-if
+\par          if option = 2 then perform put-rec end-if
+\par          if option = 3 then perform del-rec end-if
+\par 
+\par          perform wait
+\par          perform clear-buff
+\par       end-if.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par lo que esto hace es mostrar el men\'fa principal, que permite al usuario seleccionar una opci\'f3n, luego borra la pantalla, y por \'faltimo decide qu\'e9 operaci\'f3n ejecutar seg\'fan la opci\'f3n elegida.
+\par Las funciones antedichas, y otras \'fatiles, pueden implementarse as\'ed:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   clear-scr.
+\par       display " " erase.
+\par       display title, high, line 1.
+\par 
+\par    clear-buff.
+\par       move zero to CLIENO.
+\par       move spaces to NOMBRE.
+\par       move spaces to DIREC.
+\par       move spaces to PROV.
+\par       move zero to LOCAL.
+\par       move spaces to CP.
+\par       move spaces to FEALTA.
+\par       move zero to IVA.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Rutina de espera de una tecla:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   wait.
+\par       display "Presione enter para continuar.", low,
+\par       line 20, position 1.
+\par       accept dummy, line 20 position 40 no beep.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Rutina de lectura de nro. de cliente:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   get-key.
+\par       display "Cliente :", low\tab , line 3, position 1.
+\par       accept CLIENO, line 3, position 12, TAB no beep.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Rutina de lectura de un registro.
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   get-rec.
+\par       call "GetRecord" using CLIENTES stat.
+\par 
+\par       if stat = ERR
+\par       then
+\par          display MSG2, low, line 3, position 1
+\par       else
+\par          perform form
+\par          perform show
+\par       end-if.
+\par 
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Rutina de grabado de un registro.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Notar que se pide poner lock al registro puesto que se lo va a modificar. Primero se lo lee:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   put-rec.
+\par       call "GetRecord" using CLIENTES, WAIT-LOCK.
+\par 
+\par       perform form.
+\par       perform show.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {luego el usuario ingresan los datos del cliente:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 { accept NOMBRE, high, line 4 position 12 update no beep.
+\par  accept DIREC, high, line 5 position 12 update no beep.
+\par  accept PROV, high, line 6 position 12 update no beep.
+\par  accept LOCAL, high, line 7 position 12 update no beep.
+\par  accept CP, high, line 8 position 12 update no beep.
+\par  accept FEALTA, high, line 9 position 12 update no beep.
+\par  accept IVA, high, line 10 position 12 update no beep.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Por \'faltimo, el registro es grabado:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {      call "PutRecord"  using CLIENTES.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Rutina de borrado de un registro.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Ac\'e1 tambi\'e9n se hace necesario usar locks:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   del-rec.
+\par       call "GetRecord" using CLIENTES, WAIT-LOCK, stat.
+\par       if stat = ERR
+\par       then
+\par          display MSG2, low, line 3, position 1
+\par       else
+\par          call "DelRecord"  using CLIENTES
+\par       end-if.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Rutinas para mostrar en una pantalla los datos del cliente.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Los nombres de los campos:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   form.
+\par       display "Cliente :", low, line 3, position 1.
+\par       display "Nombre  :", low, line 4, position 1.
+\par       display "Direcc. :", low, line 5, position 1.
+\par       display "Prov.   :", low, line 6, position 1.
+\par       display "Local.  :", low, line 7, position 1.
+\par       display "C.P.    :", low, line 8, position 1.
+\par       display "Ingreso :", low, line 9, position 1.
+\par       display "IVA     :", low, line 10, position 1.
+\par 
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Los contenidos de los campos:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   show.
+\par       display CLIENO, high, line 3, position 12 convert.
+\par       display NOMBRE, high, line 4, position 12.
+\par       display DIREC, high, line 5, position 12.
+\par       display PROV, high, line 6, position 12.
+\par       display LOCAL, high, line 7, position 12 convert.
+\par       display CP, high, line 8, position 12.
+\par       display FEALTA, high, line 9, position 12.
+\par       display IVA, high, line 10, position 12 convert.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El men\'fa principal es:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   menu.
+\par       perform clear-scr.
+\par       display "1. Consulta   ", low, line 4 position 10.
+\par       display "2. Alta/Modif.", low, line 5 position 10.
+\par       display "3. Baja       ", low, line 6 position 10.
+\par       display "4. Salir      ", low, line 7 position 10.
+\par       display "Especifique la operacion", low,
+\par       line 10 position 20.
+\par       accept option, line 10, position 47, tab no beep.
+\par 
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Notar que, siguiendo el estilo de los programas cl\'e1sicos en Cobol, se definen secciones, d\'e1ndoles r\'f3tulos adecuados, una para cada opci
+\'f3n del men\'fa.
+\par Por \'faltimo, para terminar la ejecuci\'f3n, se puede utilizar la secci\'f3n:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   exit-func.
+\par       exit program.
+\par       stop run.
+\par }\pard\plain \s29\sb360\sa160\sl420\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs36\cf1\lang3082 {Sintaxis general
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {A continuaci\'f3n damos reglas sint\'e1cticas para los llamados a las funciones t\'edpicas de Ideafix/Essentia. N\'f3tese que no colocamos aqu\'ed
+ las cl\'e1usulas BY CONTENT ni BY REFERENCE, a\'fan cuando \'e9stas pueden usarse, puesto que al omitirlas el pasaje de los par\'e1metros se realiza de la manera sugerida por la funci\'f3n en cada caso.
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Manejo de esquemas
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "OpenSchema" USING [schema-name] [sch-id]
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls2\adjustright \fs20\cf1\lang3082 {[schema-name] : string, nombre de esquema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls2\adjustright {[sch-id] : pasa por referencia, en esta variable se devuelveel identificador del esquema para ser usado luego\}
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Abre el esquema schema-name. Si se especifica [sch-id], se copiar\'e1 el identificador del esquema en d
+icha variable. En caso de error al abrirlo, se devuelve en dicha variable el valor ERR. Si no se especifica esta variable, entonces en caso de error el programa aborta.
+\par Una vez abierto un esquema, \'e9ste queda establecido como esquema corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "CloseSchema" [ USING [sch-id]
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls3\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls3\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenidocon OpenSchema, pasa por valor\}
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Si [sch-id] es especificado se cierra el esquema correspondiente; si no, se cierra el esquema corriente.
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Manejo de Tablas
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "SetTableCache" USING [sch-id] [record] [rec-amount] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Reserva memoria cache para el esquema, para una cantidad de registros igual a la cantidad especificada, para la tabla dada.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls4\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador del esquema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls4\adjustright {[record] : registro con estructura de la tabla correspondiente, pasa por valor\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls4\adjustright {[rec-amount] : num\'e9rico sin signo, cantidad de registros para los cuales crear el cache, pasa por valor\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls4\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Esta funci\'f3n permite definir el tamano de la memoria cache a utilizar para una tabla dada dentro de un esquema dado.
+\par El valor default de [sch-id] es el esquema corriente.
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Manejo de registros
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "GetRecord" USING [sch-id]  [record]  [index-name]
+\par                        [find-mode] [lock-mode] [ret-val]
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls5\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenido con OpenSchema, pasa por referencia\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls5\adjustright {[record] : registro con estructura de la tabla correspondiente, pasa por referencia\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls5\adjustright {[index-name] : cadena, nombre del \'edndice a usar, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls5\adjustright {[find-mode] : el modo de b\'fasqueda (ver partes anteriores), pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls5\adjustright {[lock-mode] : modo de lock (ver partes anteriores), pasapor valor\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls5\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Copia en [record] el registro (buffer) seg\'fan los valores de los campos q
+ue conforman la clave correspondiente. Si se le pasa la variable [ret-val] , se devuelve en ella el estado que resulta de la operaci\'f3n (para referencia de los estados, v\'e9anse las partes anteriores).
+\par Los valores default son:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls6\adjustright \fs20\cf1\lang3082 {[index-name] : primary key
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls6\adjustright {[find mode] : THIS-KEY
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls6\adjustright {[lock mode] : NOT-LOCK
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "PutRecord" USING [sch-id] [record]
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls7\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls7\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenido con OpenSchema, pasa por valor\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls7\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls7\adjustright {[record] : registro (buffer), pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Modifica/Agrega el contenido del registro [ record]  en la tabla correspondiente. El valor default de [sch-id]  es el esquema corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "DelRecord" USING [sch-id] [record]
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls8\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls8\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenido con OpenSchema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls8\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls8\adjustright {[record] : registro (buffer), pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Elimina el registro [record]  de la tabla correspondiente, seg\'fa
+n los valores en [record]  de la clave primaria. El valor default de [ sch-id]  es el esquema corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "AddRecord" USING [sch-id] [record] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Permite agregar un registro dado a una tabla.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls9\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls9\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenido con OpenSchema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls9\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls9\adjustright {[record] : registro (buffer), pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls9\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls9\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Agrega el contenido del registro [ record]  en
+ la tabla correspondiente. El valor default de [sch-id]  es el esquema corriente. Si un registro con la misma clave ya existe en dicha tabla, se produce un error. Notar la diferencia con PutRecord. Si [ret-val] no fue especificado, entonces la transacci
+\'f3n corriente quedar\'e1 corrupta, pudiendo comprobarse el error usando TransOk (ver TransOk). Si, en cambio, se especific\'f3 [ret-val], entonces la transacci\'f3n corriente no quedar\'e1
+ corrupta sino que se devuelve en dicha variable el error correspondiente (valor ERR).
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "BindRecord" USING [sch-id] [record] [table-name] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Asocia un registro a una tabla.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls10\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls10\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenido con OpenSchema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls10\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls10\adjustright {[record] : registro (buffer), pasa por referencia
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls10\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls10\adjustright {[table-name] : variable indicando nombre de la tabla a usar
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls10\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls10\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Esta funci\'f3
+n permite asociar un registro a una tabla, de modo que futuras referencias a ese registro (e.g., usando Get Record, Put Record, CreateCursor, etc.) impl
+iquen acceso a dicha tabla. Esto se puede hacer necesario cuando la tabla a usar no es siempre la misma, i.e., dependa de una condici\'f3n espec\'edfica durante la ejecuci\'f3n.
+\par El registro a ser asociado debe mantener el mismo formato (tipos en cada campo) del registro correspondiente a la tabla (el generado por el DGEN). El campo TAB-ID no necesita tener valor.
+\par En caso de error en la operaci\'f3n, se devuelve en [ret-val] el valor ERR. Si no se especifica esta variable, entonces en caso de error el programa aborta.
+\par Por ejemplo, el siguiente cambio puede incorporarse al ejemplo de programa Cobol anterior:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   get-rec.
+\par       call "BindRecord" using CLONE "clientes" stat
+\par       if stat = ERR
+\par       then
+\par          display MSG3, low, line 3, position 1
+\par       else
+\par          call "GetRecord" using CLONE stat
+\par       ...
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {y agregando a la WORKING-STORAGE SECTION algo como lo siguiente (definici\'f3
+n de registro a asociar y "constante" mensaje de error correspondiente):
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {     01 \tab CLONE.
+\par          06 \tab TAB-ID PIC 9(5) BINARY.
+\par          06\tab  CLIENTES-DATA.
+\par              11 \tab CLIENO-KEY.
+\par                  16 \tab CLIENO\tab PIC S9(4).
+\par              11\tab  NOMIDX-KEY.
+\par                  16 \tab NOMBRE\tab PIC X(30).
+\par              11\tab  DIREC\tab PIC X(30).
+\par              11\tab  PROV\tab PIC X(1).
+\par              11\tab  LOCAL\tab PIC S9(2).
+\par              11 \tab COD-P\tab PIC X(4).
+\par              11\tab  FEALTA\tab PIC 9(6).
+\par              11\tab  IVA\tab PIC S9(2)V9(2).
+\par 
+\par 
+\par    01  MSG3  pic X(60) value
+\par        "Error: imposible asociar registro.".
+\par 
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Manejo de transacciones
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "BeginTransaction"
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Inicia una transacci\'f3n. Las transacciones consisten en operaciones que pueden ser hechas todas, o ninguna, es decir, puede ser deshecha. (Para m
+\'e1s informaci\'f3n, v\'e9anse partes anteriores.)
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "EndTransaction"
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Termina (confirma) una transacci\'f3n, llev\'e1ndola a cabo.
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "RollBack"
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Cancela (aborta) la transacci\'f3n corriente (es decir, la \'faltima iniciada).
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "TransOk" USING [bool-var]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Verifica el estado de una transacci\'f3n.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls11\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls11\adjustright \fs20\cf1\lang3082 {[bool-var] : variable string, en donde se guarda elresultado de la n corriente, pasa por referencia\}
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Pregunta si la transacci\'f3n corriente (es decir, la \'fa
+ltima declarada) se lleva a cabo sin error. Retorna para esto "T" (verdadero) o "F" (falso) en la variable [bool-var].
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Manejo de cursores
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Las funciones de manejo de cursores consisten en crear un cursor, eliminar un cursor, definir registros l\'edmite de un cursor y leer registro pr
+\'f3ximo y anterior seg\'fan un cursor. Una vez creado un cursor, \'e9ste queda establecido como corriente.
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "CreateCursor" USING  [sch-id] record [index-name]
+\par                            [lock-mode] [cur-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Crea un cursor, para el esquema [sch-id], seg\'fan las caracter\'edsticas especificadas.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par }\pard\plain \s18\qj\li2520\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx360\tx2160\tx2520\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema obtenido con OpenSchema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls12\adjustright {[record] : registro (buffer), pasa por referencia
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls12\adjustright {[index-name] : nombre del \'edndice asociado, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls12\adjustright {[lock-mode] : modo de lock, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls12\adjustright {[cur-id] : identificador del cursor, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Los valores default son:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls13\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls13\adjustright \fs20\cf1\lang3082 {[sch-id] : esquema corriente
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls13\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls13\adjustright {[index-name] : primary key
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls14\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls14\adjustright {[lock-mode] : NOT-LOCK
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {En caso de erro
+r al crear el cursor, se devuelve en [cur-id] el valor ERR. Si no se especifica esta variable, entonces en caso de error el programa aborta.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "DeleteCursor" USING  [cur-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Elimina el cursor [cur-id].
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par }\pard\plain \s18\qj\li2520\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx360\tx2160\tx2520\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Por default, se usa el cursor corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "SetCursorFrom" USING  [cur-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Define el primer registro asociado al cursor [cur-id].
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls15\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls15\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Por default, se usa el cursor corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "SetCursorTo" USING [cur-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Define el \'faltimo registro asociado al cursor [cur-id].
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls16\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls16\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Por default, se usa el cursor corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "MoveCursorFirst" USING [cur-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Posiciona el cursor [cur-id] al comienzo del conjunto de registros asociados a \'e9l.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls17\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls17\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Por default, se usa el cursor corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "MoveCursorLast" USING [cur-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Posiciona el cursor [cur-id]al final del conjunto de registros asociados a \'e9l.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls18\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls18\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Por default, se usa el cursor corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "FetchCursor" USING [cur-id] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Lee el registro siguiente seg\'fan un cursor.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls19\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls19\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls19\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls19\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Lee el pr\'f3ximo registro a partir del cursor [cur-id]. Por default, se usa el cursor corriente. En [ret-val] se devuelve un valor seg\'fa
+n el resultado de la operaci\'f3n: OK, si no hubo problemas; ERR, si hubo un error, o IO_LOCKED, si no pudo leerlo por lock. Estas constantes est\'e1n definidas en idea.cpy .
+\par El valor default para [sch-id] es el esquema corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "FetchCursorPrev" USING [cur-id] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Lee el registro previo seg\'fan un cursor.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls20\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls20\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls20\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls20\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Lee el registro anterior seg\'fan el cursor [cur-id]. Por default, se asume el cursor corriente. Si se especifica [ret-val], se devuelve en
+ dicha variable un valor seg\'fan el resultado de la operaci\'f3n: OK, si no hubo problemas; ERR, si hubo un error, o IO_LOCKED, si no pudo leerlo por haber un lock. Estas constantes est\'e1n definidas en idea.cpy .
+\par 
+\par El valor default para [sch-id] es el esquema corriente.
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {
+\par CALL "SetCursorFlds" USING [cur-id] "field-name" [ "field-name" ... ]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Define los campos asociados a un cursor determinado.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls21\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls21\adjustright \fs20\cf1\lang3082 {[cur-id] : identificador del cursor, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls21\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls21\adjustright {"field-name" ... : cadenas, nombres de los campos del cursor, pasan porvalor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Esta funci\'f3n define cu\'e1les son campos que estar\'e1n ligados a un cursor creado previamente. Para m\'e1s informaci\'f3
+n acerca de cursores, ver la secci\'f3n correspondiente del manual.
+\par El valor default para [cur-id] es el cursor corriente.
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Manejo de Locks
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "LockSchema" USING [sch-id] [lock-mode] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Pone un lock a un esquema.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls22\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls22\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls22\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls22\adjustright {[lock-mode] : modo de lock, pasa por valor; s\'f3lo puede ser WAIT-LOCK o TEST-LOCK\}
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls22\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls22\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Los valores default son:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls23\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls23\adjustright \fs20\cf1\lang3082 {[sch-id] : esquema corriente
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls23\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls23\adjustright {[lock-mode] : WAIT-LOCK
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "LockTable" USING [sch-id]  [table-name]
+\par                        [lock-mode] [ret-val]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Pone un lock a una tabla.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls24\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador de esquema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls24\adjustright {[table-name] : cadena, nombre de la tabla, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls24\adjustright {[lock-mode] : modo de lock, pasa por valor; s\'f3lo puede serWAIT-LOCK o TEST-LOCK
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls25\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls25\adjustright {[ret-val] : valor de retorno, pasa por referencia
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Los valores default son:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls26\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls26\adjustright \fs20\cf1\lang3082 {[sch-id] : esquema corriente
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls26\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls26\adjustright {[lock-mode] : WAIT-LOCK
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "FreeSchema" USING [sch-id]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Elimina el lock de un esquema.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metro:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls27\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls27\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador del esquema, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El valor default de [sch-id] es el esquema corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "FreeTable" USING [sch-id] [table-name]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Elimina el lock de una tabla.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls28\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls28\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador del esquema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls28\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls28\adjustright {[table-name] : cadena, nombre de la tabla, pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El valor default de [sch-id] es el esquema corriente.
+\par 
+\par }\pard\plain \s39\qj\li720\sl-200\slmult0\nowidctlpar\widctlpar\adjustright \f6\fs16\cf1\lang3082 {CALL "FreeRecord" USING [sch-id]  [record]  [index-name]  [find-mode]
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Elimina el lock de un registro.
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Par\'e1metros:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls29\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls29\adjustright \fs20\cf1\lang3082 {[sch-id] : identificador del esquema, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls29\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls29\adjustright {[record] : registro (buffer), pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls29\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls29\adjustright {[index-name] : cadena, nombre del \'edndice a usar, pasa por valor
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls29\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls29\adjustright {[find-mode] es el modo de b\'fasqueda (ver partes anteriores), pasa por valor
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Los valores default son:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls30\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls30\adjustright \fs20\cf1\lang3082 {[sch-id] : esquema corriente
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls30\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls30\adjustright {[find-mode] : THIS-KEY
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls30\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls30\adjustright {[index-name] : primary key
+\par }\pard\plain \s29\sb360\sa160\sl420\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs36\cf1\lang3082 {Tipos de datos usados
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Como referencia general, los tipos de datos espec\'edficos para los par\'e1metros descriptos en la secci\'f3
+n de sintaxis general son los siguientes:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {[schema-name] : string
+\par [sch-id] : S9(8) binary
+\par [record] : con el formato (y en el orden) generado por DGEN (p.ej. demo.cpy)
+\par [index-name] : string
+\par [find-mode] : valor seg\'fan idea.cpy
+\par [lock-mode] : valor seg\'fan idea.cpy
+\par [cur-id] : S9(8) binary
+\par [ret-val] : S9, valor seg\'fan idea.cpy
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Equivalencia ente los tipos de la base de datos y tipos en Cobol
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Los tipos en Cobol que representan los tipos usuales de datos de la base de
+\par datos deben asumirse seg\'fan las siguientes equivalencias:
+\par 
+\par }\pard\plain \s42\qc\sl280\slmult0\nowidctlpar\widctlpar\adjustright \b\cf1\lang3082 {Table 2:   CFIX                 COBOL
+\par }\pard\plain \s41\fi-241\li600\ri600\sl240\slmult0\nowidctlpar\widctlpar\tx600\adjustright \fs20\cf1\lang3082 { 
+\par }\trowd \trqc\trgaph57 \clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx1252\clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb 
+\cellx5860\pard\plain \s17\qj\sl-240\slmult0\nowidctlpar\widctlpar\intbl\adjustright \fs20\cf1\lang3082 {date\cell 9(6)\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\trowd \trqc\trgaph57 \clvertalt\clbrdrt
+\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx1252\clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx5860\pard\plain \s17\qj\sl-240\slmult0
+\nowidctlpar\widctlpar\intbl\adjustright \fs20\cf1\lang3082 {time\cell 9(8)\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\pard\plain \s17\qj\sl-240\slmult0\nowidctlpar\widctlpar\intbl\adjustright 
+\fs20\cf1\lang3082 {bool\cell X, valiendo "T\'d3 (verdadero), "F\'d3 (falso) o " " (nulo)\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\pard\plain \s17\qj\sl-240\slmult0\nowidctlpar\widctlpar\intbl\adjustright 
+\fs20\cf1\lang3082 {num(a,b)\cell S9(a-b)V9(b)\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\trowd \trqc\trgaph57 \clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 
+\cltxlrtb \cellx1252\clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx5860\pard\plain \s17\qj\sl-240\slmult0\nowidctlpar\widctlpar\intbl\adjustright \fs20\cf1\lang3082 {char(n)\cell X(n)
+\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\pard\plain \s41\fi-241\li600\ri600\sl240\slmult0\nowidctlpar\widctlpar\tx600\adjustright \fs20\cf1\lang3082 { 
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {donde tipo es uno de los 5 tipos b\'e1sicos, es decir, date, time, bool, num() o char(), y tipocobol es su equivalencia en COBOL seg\'fa
+n esta tabla. Un ejemplo de esta \'faltima equivalencia es el siguiente:
+\par 
+\par }\trowd \trqc\trgaph57 \clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrdb\brdrw15 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx1252\clvertalt\clbrdrt\brdrs\brdrw5 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrdb\brdrw15 \clbrdrr\brdrs\brdrw5 \cltxlrtb 
+\cellx5572\pard\plain \s17\qj\sl-240\slmult0\nowidctlpar\widctlpar\intbl\adjustright \fs20\cf1\lang3082 {CFIX\cell COBOL\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\trowd \trqc\trgaph57 \clvertalt\clbrdrt
+\brdrdb\brdrw15 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx1252\clvertalt\clbrdrt\brdrdb\brdrw15 \clbrdrl\brdrs\brdrw5 \clbrdrb\brdrs\brdrw5 \clbrdrr\brdrs\brdrw5 \cltxlrtb \cellx5572\pard\plain 
+\s17\qj\sl-240\slmult0\nowidctlpar\widctlpar\intbl\adjustright \fs20\cf1\lang3082 {[n]num(a,b)\cell S9(a-b)V9(b) OCCURS n TIMES\cell }\pard\plain \nowidctlpar\widctlpar\intbl\adjustright \fs20\lang3082\cgrid {\row }\pard\plain 
+\s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par declarando un array de n valores num\'e9ricos de a d\'edgitos incluyendo b d\'edgitos a la derecha de la coma decimal.
+\par 
+\par }\pard\plain \s29\sb360\sa160\sl420\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs36\cf1\lang3082 {Uso del DGEN
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {El utilitario DGEN se puede usar ahora para generar archivos de encabezado en formato correspondiente a definiciones Cobol. La extensi\'f3
+n por default es .cpy . Las siguientes son maneras de generarlos:
+\par 
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls31\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls31\adjustright \fs20\cf1\lang3082 {Con DGEN, usar los switches -c o -c2 . Si se usa -c, se generar\'e1 un registro por cada tabla de esquema usado, juntando todo en un archivo de n (.cpy).
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s31\li2160\sb200\sa60\sl280\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\cf1\lang3082 {Ejemplo:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {       01\tab  ITEMS.
+\par            06 \tab TAB-ID PIC 9(5) BINARY VALUE 256.
+\par            06\tab  ITEMS-DATA.
+\par                11 \tab ITEMNO-KEY.
+\par                    16 ITEMNO PIC S9(4) VALUE ZEROES.
+\par                11\tab  DSC\tab PIC X(45) VALUE SPACES.
+\par                11\tab  COST\tab PIC S9(12)V9(2) VALUE ZEROES.
+\par                11\tab  PRVTA\tab PIC S9(12)V9(2) VALUE ZEROES.
+\par                11\tab  CANTID\tab PIC S9(4) VALUE ZEROES.
+\par 
+\par 
+\par        01 \tab CLIENTES.
+\par            06\tab  TAB-ID PIC 9(5) BINARY VALUE 512.
+\par            06\tab  CLIENTES-DATA.
+\par                11 \tab CLIENO-KEY.
+\par                    16  CLIENO PIC S9(4) VALUE ZEROES.
+\par                11\tab  NOMIDX-KEY.
+\par                    16  NOMBRE PIC X(30) VALUE SPACES.
+\par                11\tab  DIREC\tab PIC X(30) VALUE SPACES.
+\par                11\tab  PROV\tab PIC X(1) VALUE SPACES.
+\par                11\tab  LOCAL\tab PIC S9(2) VALUE ZEROES.
+\par                11\tab  COD-P\tab PIC X(4) VALUE SPACES.
+\par                11\tab  FEALTA\tab PIC 9(6) VALUE ZEROES.
+\par                11\tab  IVA\tab PIC S9(2)V9(2) VALUE ZEROES.
+\par 
+\par 
+\par        01\tab  ORDENES.
+\par            06\tab  TAB-ID PIC 9(5) BINARY VALUE 768.
+\par            06\tab  ORDENES-DATA.
+\par                11\tab  ORDERNO-KEY.
+\par                    16  ORDERNO PIC S9(4) VALUE ZEROES.
+\par                11\tab  FECHA\tab PIC 9(6) VALUE ZEROES.
+\par                11\tab  CLIENO\tab PIC S9(4) VALUE ZEROES.
+\par                11\tab  VALOR\tab PIC S9(12)V9(2) VALUE ZEROES.
+\par                11\tab  MIVA\tab PIC S9(12)V9(2) VALUE ZEROES.
+\par                11 \tab MENTR\tab PIC S9(1) VALUE ZEROES.
+\par                11\tab  DIREC\tab PIC X(50) VALUE SPACES.
+\par 
+\par 
+\par        01\tab  MOVIM.
+\par            06\tab  TAB-ID PIC 9(5) BINARY VALUE 1024.
+\par            06\tab  MOVIM-DATA.
+\par                11 \tab ORDERNO-KEY.
+\par                    16 ORDERNO PIC S9(4) VALUE ZEROES.
+\par                    16 ITEMNO PIC S9(4) VALUE ZEROES.
+\par                11\tab  CANTID\tab PIC S9(4) VALUE ZEROES.
+\par                11\tab  PRVTA\tab PIC S9(12)V9(2) VALUE ZEROES.
+\par 
+\par 
+\par        01\tab  PROVIN.
+\par            06 \tab TAB-ID PIC 9(5) BINARY VALUE 1280.
+\par            06\tab  PROVIN-DATA.
+\par                11 \tab CODPRO-KEY.
+\par                    16 CODPRO PIC X(1) VALUE SPACES.
+\par                11\tab  NOMBRE\tab PIC X(20) VALUE SPACES.
+\par 
+\par 
+\par        01\tab  LOCAL.
+\par            06 \tab TAB-ID PIC 9(5) BINARY VALUE 1536.
+\par            06\tab  LOCAL-DATA.
+\par                11\tab  CODPRO-KEY.
+\par                    16 CODPRO PIC X(1) VALUE SPACES.
+\par                    16 CODLOC PIC S9(2) VALUE ZEROES.
+\par                11\tab  NOMBRE\tab PIC X(20) VALUE SPACES.
+\par 
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls32\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls32\adjustright \fs20\cf1\lang3082 {Si se usa -c2, se har\'e1 lo mismo, pero agrupando todas las tablas en un registro con el nombre del esquema. Esto es \'fatil
+ si por ejemplo se trabaja con s de un esquema en el mismo programa, y tablas distintas de distintos esquemas puedan tener un mismo nombre. Lo que se con el ejemplo anterior es algo como:
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {     01 DEMO
+\par        06 \tab ITEMS.
+\par          ... 
+\par        06 \tab CLIENTES.
+\par          ...
+\par        06 \tab ORDENES.
+\par          ...
+\par        06 \tab MOVIM.
+\par          ...
+\par        06 \tab PROVIN.
+\par          ...
+\par        06 \tab LOCAL.
+\par          ...
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par Usar la cl\'e1usula }{\i\f4 language "Cobol"}{ en la definici\'f3n del esquema correspondiente (.sc). El siguiente ejemplo genera encabezados en Cobol y en C:
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {create schema demo descr "Demostration Schema"
+\par                    language "Cobol", language "C";
+\par 
+\par table items ...
+\par 
+\par table clientes ...
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {
+\par }\pard\plain \s30\sb280\sa80\sl340\slmult0\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\cf1\lang3082 {Observaci\'f3n
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {Notar que en el encabezado generado se enumeran las claves de cada tabla del siguiente modo:
+\par 
+\par }\pard\plain \s38\qj\li2520\sl-200\slmult0\nowidctlpar\widctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\adjustright \f6\fs16\cf1\lang3082 {   06\tab  CLIENTES-DATA.
+\par        11 \tab CLIENO-KEY.
+\par            16 \tab CLIENO\tab PIC S9(4) VALUE ZEROES.
+\par        11\tab  NOMIDX-KEY.
+\par            16\tab  NOMBRE\tab PIC X(30) VALUE SPACES.
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {vale decir, se genera un nivel m\'e1s de campos para cada clave, d\'e1ndole a \'e9stas un nombre identificatorio formado por el nombre del \'ed
+ndice especificado seguido de -KEY. Cuando se trata de la clave primaria, como no se especifica ning\'fan nombre de \'edndice, el campo toma el nombre del primer campo de la clave.
+\par Esto \'faltimo ocurre en el caso de que:
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls33\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls33\adjustright \fs20\cf1\lang3082 {o bien los campos de la clave de la tabla est\'e9n definidos en forma consecutiva, y \'e9stos no se superponen con los campos de otra clave definida previamente,
+\par {\pntext\pard\plain\s18 \f3\fs20\cf1 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s18\qj\fi-360\li2880\sb80\sa120\sl240\slmult0\nowidctlpar\widctlpar\tx2160\tx2520\jclisttab\tx2880{\*\pn \pnlvlblt\ilvl0\ls33\pnrnot0\pnf3\pnstart1\pnindent360\pnhang
+{\pntxtb \'b7}}\ls33\adjustright {o bien los campos de la clave de la tabla est\'e1n incluidos dentro delos campos de otra clave
+\par }\pard\plain \s16\qj\li2160\sb80\sa120\sl-240\slmult0\nowidctlpar\widctlpar\adjustright \fs20\cf1\lang3082 {En estos casos, se agrupa los campos de la clave dentro de otro con el nombre antedicho.
+\par }}

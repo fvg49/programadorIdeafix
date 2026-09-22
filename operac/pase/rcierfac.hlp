@@ -1,0 +1,27 @@
+
+                 [1;4mREVERSIÓN DEL CIERRE DE OPERACIONES PARA FACTURAR[0m
+
+Revierte el proceso de cierre de operaciones para facturar (cierfac.exe).
+
+Este proceso cambia el estado del parte y retroactivos de  "Cerrado para facturar" a "Sin confirmar".
+
+Solo modifica los registros que están en estado "Cerrado para facturar".
+
+[1;4mErrores[0m
+
+Si el parte tiene una liquidación de facturación asociada, 
+ya se hizo el pasaje al modulo de facturación.
+
+En este caso primero hay que revertir el pasaje al modulo de facturación.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m rcierfac.exe
+
+[1mProceso:[0m  Recorre las tablas operac|PARTE y operac|RETRO y cambia el campo confir 
+          (pone valor 0 "Sin confirmar").
+
+          Esta modificación la hace solo si el estado era 3 "Cerrado para facturar".
+          Si el campo liqfac tiene valor da error (Ya se hizo el pasaje al modulo de facturación).
+
+[1mPeríodo:[0m  Rango de dias trabajados (No es la fecha de registración).

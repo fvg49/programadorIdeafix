@@ -1,0 +1,5 @@
+"1. Cálculo de Horas Trabajadas por Subregimen " WCMD calcsreg.exe !ADU
+"2. Orden de Trabajo                           " WCMD ot.exe !ADU 3
+"3. OT en Servicio                             " WCMD otviva.exe !ADU
+"4. Aprobación de OT                           " WCMD aprot.exe !ADU
+"5. Listados de OT                             " MENU oph310

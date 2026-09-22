@@ -1,0 +1,8 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+rrol.exe {
+	rrol.fm;
+	rrol.c;
+}

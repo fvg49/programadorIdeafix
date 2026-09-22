@@ -1,0 +1,18 @@
+/* Field names	*/
+# define RCLI            ((rpfield)   0) 	/* Num */
+# define RDCLI           ((rpfield)   1) 	/* String */
+# define ROBJ            ((rpfield)   2) 	/* Num */
+# define RDOBJ           ((rpfield)   3) 	/* String */
+# define RFCH            ((rpfield)   4) 	/* Date */
+# define SATOT           ((rpfield)   5) 	/* Num */
+/* Report Checksum	*/
+# define RP_HORFAC_CHKSUM ((long) 0x0025)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ZCLI            ((int)   1)
+# define ZOBJ            ((int)   2)
+# define ZFCH            ((int)   3)
+# define ZTOTOBJ         ((int)   4)
+# define ZTOTCLI         ((int)   5)
+# define ZTOTGEN         ((int)   6)
+# define ZFIN            ((int)   7)

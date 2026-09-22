@@ -1,0 +1,12 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRUPF          (fmfield)  2	/* GROUPED         */
+# define FDESDE          (fmfield)  3	/* Date            */
+# define FHASTA          (fmfield)  4	/* Date            */
+/* Form checksum	*/
+# define FM_PASEVAC_CHKSUM (long)0x00bf
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_FECHA        0
+/* =========== End of fmh file ============ */

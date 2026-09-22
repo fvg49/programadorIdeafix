@@ -1,0 +1,60 @@
+/* Field names	*/
+# define RFECHA          ((rpfield)   0) 	/* Date */
+# define ROPCION         ((rpfield)   1) 	/* String */
+# define RCLID           ((rpfield)   2) 	/* Num */
+# define ROBJD           ((rpfield)   3) 	/* Num */
+# define RDOBJD          ((rpfield)   4) 	/* String */
+# define RCLIH           ((rpfield)   5) 	/* Num */
+# define ROBJH           ((rpfield)   6) 	/* Num */
+# define RDOBJH          ((rpfield)   7) 	/* String */
+# define RNROLEGD        ((rpfield)   8) 	/* Num */
+# define RAPYNOMD        ((rpfield)   9) 	/* String */
+# define RNROLEGH        ((rpfield)  10) 	/* Num */
+# define RAPYNOMH        ((rpfield)  11) 	/* String */
+# define RPROVD          ((rpfield)  12) 	/* Num */
+# define RDPROVD         ((rpfield)  13) 	/* String */
+# define RPROVH          ((rpfield)  14) 	/* Num */
+# define RDPROVH         ((rpfield)  15) 	/* String */
+# define RASIG           ((rpfield)  16) 	/* String */
+# define RASIST          ((rpfield)  17) 	/* String */
+# define RRCLU           ((rpfield)  18) 	/* String */
+# define RPORTAC         ((rpfield)  19) 	/* String */
+# define RORDEN          ((rpfield)  20) 	/* String */
+# define RNROLEG         ((rpfield)  21) 	/* Num */
+# define RAPYNOM         ((rpfield)  22) 	/* String */
+# define RREGIMEN        ((rpfield)  23) 	/* String */
+# define RFRANCO         ((rpfield)  24) 	/* Date */
+# define RDIA1           ((rpfield)  25) 	/* String */
+# define RDIA2           ((rpfield)  26) 	/* String */
+# define RDIA3           ((rpfield)  27) 	/* String */
+# define RDIA4           ((rpfield)  28) 	/* String */
+# define RDIA5           ((rpfield)  29) 	/* String */
+# define RDIA6           ((rpfield)  30) 	/* String */
+# define RDIA7           ((rpfield)  31) 	/* String */
+# define RLABD           ((rpfield)  32) 	/* Time */
+# define RLABH           ((rpfield)  33) 	/* Time */
+# define RTELEF          ((rpfield)  34) 	/* String */
+# define RPOL1           ((rpfield)  35) 	/* String */
+# define RPOL2           ((rpfield)  36) 	/* String */
+# define RPOL3           ((rpfield)  37) 	/* String */
+# define RPOL4           ((rpfield)  38) 	/* String */
+# define RPORT           ((rpfield)  39) 	/* Bool */
+# define RCLU            ((rpfield)  40) 	/* Bool */
+# define RCLIPROV        ((rpfield)  41) 	/* Num */
+# define ROBJPROV        ((rpfield)  42) 	/* Num */
+# define RFCHD           ((rpfield)  43) 	/* Date */
+# define RFCHH           ((rpfield)  44) 	/* Date */
+# define RCOND           ((rpfield)  45) 	/* String */
+# define RCONDD          ((rpfield)  46) 	/* Date */
+# define RCONDH          ((rpfield)  47) 	/* Date */
+# define RPTEPTA         ((rpfield)  48) 	/* Bool */
+# define RLLEGPTA        ((rpfield)  49) 	/* Time */
+# define RSALPTA         ((rpfield)  50) 	/* Time */
+# define RLLEGOBJ        ((rpfield)  51) 	/* Time */
+/* Report Checksum	*/
+# define RP_LRETEN_CHKSUM ((long) 0x0ea7)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)
+# define ZENTLIN         ((int)   2)
+# define ZFIN            ((int)   3)

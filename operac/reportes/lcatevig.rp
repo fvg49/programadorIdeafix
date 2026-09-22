@@ -1,0 +1,25 @@
+%head(today, rdemp, pageno, rfdesde, rfhasta, rvigid, rdvigid, rvigih, rdvigih, rdefa, rddefa, rcambc, rdcambc) before (page, report)
+[2o[20c                                                                                                                                                                                                         Fecha  : __/__/____
+  _________________________________________                                                                                                                                                              Página :       ____.
+                                                                                            Listado de Categorías por Vigilador                                                                               (lcatevig)
+                                                                                            ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+  Periodo : __/__/____ - __/__/____
+  Vigilador Desde : _________.  _________________________________________   Vigilador Hasta : _______.  _________________________________________
+  Vigiladores Defasados : __. ___________________                           Cambios de Categoría  : __. ___________________
+
+                                                            ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                              CLIENTE - OBJETIVO                                      Descripción VIGILADOR                 
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¦¡¦¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡ª
+  Legajo  Apellido y Nombre   Fecha     F.Hasta  Cli./Obj.   Categ.  Basico   Plus    Ticket     Otros    Confor.    Categ.  Basico   Plus    Ticket     Otros     Confor.   Difer.  
+                              Asig.                                                                       Cliente                                                  Cobrado   Salar.  
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¥
+%linea(rnroleg, rapynom, rfecasig, rfecbaj, rcliente, robjetivo, rcateg1, rbasico1, r_plus1, r_tk1, r_otros1, rconfcli, rcateg2, rbasico2, r_plus2, r_tk2, r_otros2,rconfcobr, rdifsal)
+ _______. _________________ __/__/____ __/__/__ _____. ____. _,___. $____.__ $___.__ $_____.__ $_____.__ $_____.__   _,___. $____.__ $___.__ $_____.__ $_____.__  $_____.__ $____.__ 
+%flin() after(page, report), group with linea                                                                                                                       
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¤
+%report
+use operac, sue, comerc;
+language"C";
+flength= $FLENLANDCOMP;
+width=310;
+

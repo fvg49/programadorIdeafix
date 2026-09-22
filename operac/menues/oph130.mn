@@ -1,0 +1,7 @@
+"1. Zonas                               " WCMD doform !ADU -b zonains
+"2. Zonas de Inspección                 " WCMD objzona.exe !ADU
+"3. Plan de Inspección                  " WCMD planins.exe !ADU
+"4. Inspectores                         " WCMD doform !ADU -b grupoleg
+"5. Inspectores por Objetivo            " WCMD supxobj.exe !ADU
+"6. Vehiculos                           " WCMD doform !ADU -b vehiculo
+"7. Exportación de Datos para Inspección" WCMD expcli.exe

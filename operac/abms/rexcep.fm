@@ -1,0 +1,29 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+    Tipo   Horas               Motivo          Horas  Horas  Horas     Obsevaciones    
+                                               Normal  50%    100%                     
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+[{__. ______________ __. ____________________} -__.__ -__.__ -__.__ __________________]
+                                                                                       
+                                                                                       
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use operac;
+language "C";
+window label "Excepciones", border single;
+ignore ignore, end, add, update;
+
+%fields
+multi     : rows 6, display 3;
+agrup     : unique;
+tipfac    : retroexc.condic, in condicion:descor, not null;
+dtipfac   : condicion.descor, skip;
+motivo    : retroexc.motivo, in motexc(tipfac):descrip, not null;
+valcli    : internal motexc.valcli, motexc.valcli; //esta aca para que quede dentro del agrup
+dmotiv    : motexc.descrip, skip;
+horas     : retroexc., default 0;
+hs50      : retroexc., default 0;
+hs100     : retroexc., default 0;
+i_dehoras : internal num(4,2);
+i_dehs50  : internal num(4,2);
+i_dehs100 : internal num(4,2);
+obs       : retroexc.;

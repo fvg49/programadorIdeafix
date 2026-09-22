@@ -1,0 +1,21 @@
+%ztitulo(remp, pageno, today, hour, rsaldesde, rsalhasta) before(page, report)
+[16c\ ________________________________                                                                              Página :       ____.
+                                                                                                               Fecha  : __/__/____
+                                                                                                               Hora   :   __:__:__     
+                                                  Pase de Vacaciones                                               (pasevac)
+                                 Fecha Salida Desde: __/__/____  Hasta: __/__/____
+
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                 Vigilador                   Período  Fecha Desde  Fecha Hasta   Dias  Dias Periodo  Periodo Anterior Pend?  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%zlinea(rnroleg, rapynom,                    rperiodo,  rfdesde,     rfhasta, rcantdias, rdiasper,    rperant)
+   _______. ________________________________  ____.    __/__/____   __/__/____   ___.      ___.              __?
+%ztotal(count(rnroleg)) after report
+
+           Total Vigiladores : _,___.
+%report
+language "c";
+width = 180;
+topmarg = 0;
+flength = $FLENGTH;

@@ -1,0 +1,12 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define PRESEN          (fmfield)  2	/* Long            */
+# define DPRESEN         (fmfield)  3	/* String          */
+# define SALIDA          (fmfield)  4	/* String          */
+# define DUMMY           (fmfield)  5	/* String          */
+/* Form checksum	*/
+# define FM_LSVISOR_CHKSUM (long)0x002f
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

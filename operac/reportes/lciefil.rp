@@ -1,0 +1,21 @@
+%head(today, pageno) before (page, report)
+[2o[16c                                                                                                                        Fecha  : __/__/____
+                                                                                                                        Página :       ____.
+                                                                 Cierres por Filial                                     (lciefil)
+                                                                 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+%encab(rfildes, rdfildes, rfilhas, rdfilhas, rfechad, rfechah) before (page)
+
+ Filial Desde : ______ _________________________________  Hasta : ______ _________________________________ 
+ Fecha  Desde : __/__/____ Hasta : __/__/____ 
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+ Filial   Descripcion                     Fec Cierre  Usr que Cerró   Fec Carga  Hora Carga Revertido Usr que Revirtió Fec Reversión Hora Reversión 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%linfil(rfilial, rdescrip, rfeccie, ridcarga, rdidcarga, rfeccarga, rhoracarga, rrevertido, ridrever, rdidrever, rfecrever, rhorarever)
+ ______ _________________________________ __/__/____ _____. _________ __/__/____   __:__       __?    _____. _________   __/__/____      __:__
+%report
+language"C";
+topmarg = 0;
+flength= $FLENLANDCOMP;
+width=150;
+output to terminal;

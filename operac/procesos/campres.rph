@@ -1,0 +1,17 @@
+/* Field names	*/
+# define REMPRE          ((rpfield)   0) 	/* String */
+# define RPRESENV        ((rpfield)   1) 	/* Num */
+# define RDPRESENV       ((rpfield)   2) 	/* String */
+# define RPRESENN        ((rpfield)   3) 	/* Num */
+# define RDPRESENN       ((rpfield)   4) 	/* String */
+# define CLIE            ((rpfield)   5) 	/* Num */
+# define DCLIE           ((rpfield)   6) 	/* String */
+# define OBJ             ((rpfield)   7) 	/* Num */
+# define DOBJ            ((rpfield)   8) 	/* String */
+/* Report Checksum	*/
+# define RP_CAMPRES_CHKSUM ((long) 0x0046)
+/* Zone names	*/
+# define CABE            ((int)   0)
+# define LINEA           ((int)   1)
+# define FINAL           ((int)   2)
+# define TOTAL           ((int)   3)

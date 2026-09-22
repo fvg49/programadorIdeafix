@@ -1,0 +1,30 @@
+
+ Fecha Desde :{__/__/____
+       Hasta : __/__/____}
+
+
+
+%form
+use comerc, sue;
+window label "[Listado de Horarios de Entrada y Salida]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+messages
+       DESDE: "La Fecha Desde debe ser menor o igual a la Fecha Hasta";
+
+%fields
+agrupcc : check fecd <= fech, on error DESDE;
+fecd    : default today;
+fech    : default today;
+
+
+/*
+salida  : in ("printer", "terminal", "horas delimited"), default "printer", not null;
+dummy   : is help (PROCESAR);
+ Salida por  : _________________
+
+   ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     Digite __ para confirmar  
+   ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+*/

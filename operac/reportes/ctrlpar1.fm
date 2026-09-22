@@ -1,0 +1,46 @@
+
+  Empresa         :     __. ____________________________________
+                   
+  Fecha     Desde :{__/__/____
+            Hasta : __/__/____}
+
+  Vigilador Desde :{______. _____________________________
+            Hasta : ______.}_____________________________
+
+  Opción  Listado : _ __________________________
+
+  Salida          : _ _________    ____________________
+
+                                       ____________________________
+
+%form 
+use comerc, sue;
+language "c";
+window label "[Horas Normales Trabajadas Vs. Horas Normales de Regimen]", border single;
+confirm update, ignore, end;
+ignore add, delete, prev, next;
+
+%fields
+emp	    : in sue.emps:descrip, default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+agrfec  : check (fechad <= fechah);
+fechad  : not null;
+fechah  : not null;
+
+agrupv  : check vigild <= vigilh;
+vigild  : not null, on help in sue.per(emp):apynom, default 1;
+dvigild : sue.per.apynom, skip;
+vigilh  : not null, on help in sue.per(emp):apynom descending, default 999999;
+dvigilh : sue.per.apynom, skip;
+
+opcion  : in ("T":"Totales", "D":"Detalle"), not null, mask ">A", default "T";
+dopcion : is descr(opcion);
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"), not null, default "T", mask ">A";
+dsalida : is descr(salida);
+archivo : is (salida != "A") ? null : void, default "ctrlpar.txt", not null;
+
+coment  : skip;

@@ -1,0 +1,25 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define EMPDESC         (fmfield)  1	/* String          */
+# define FECDES          (fmfield)  2	/* Date            */
+# define MULTI0          (fmfield)  3	/* MULTIPLE        */
+# define NROLEG          (fmfield)  4	/* Long            */
+# define DESC0           (fmfield)  5	/* String          */
+# define DELORI          (fmfield)  6	/* String          */
+# define FILORI          (fmfield)  7	/* String          */
+# define AGRFEC          (fmfield)  8	/* GROUPED         */
+# define TIPPER          (fmfield)  9	/* Integer         */
+# define DESC1           (fmfield) 10	/* String          */
+# define FECINI          (fmfield) 11	/* Date            */
+# define FECFIN          (fmfield) 12	/* Date            */
+# define DELEGA          (fmfield) 13	/* String          */
+# define FILIAL          (fmfield) 14	/* String          */
+# define ACTIVO          (fmfield) 15	/* Integer         */
+# define LINEA           (fmfield) 17	/* String          */
+# define MENSAJE         (fmfield) 18	/* String          */
+/* Form checksum	*/
+# define FM_PERVIG_CHKSUM (long)0x049f
+/* Subform names	*/
+# define SF_PERVIG1           0
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

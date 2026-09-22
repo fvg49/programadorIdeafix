@@ -1,0 +1,51 @@
+
+          ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+             Este proceso borra las asignaciones   
+             para los vigiladores dados de Baja    
+          ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+               
+ Empresa :          __. ____________________________________
+
+ Delegación Comercial  : _____  _________________________________
+ Delegación Operacional: _____  _________________________________   
+ Filial Operativa      : ______ _________________________________ 
+
+ Cliente : ___,___,___. ____________________________________
+
+ Objetivo Desde :{____. _________________________________________
+          Hasta : ____.}_________________________________________
+
+                 ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                   Presione F5 para procesar  
+                 ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+                  
+%form
+use sue, bill, comerc, billpro;
+language "C";
+window label "[Eliminación de Asignaciones]", border single;
+confirm end, update;
+ignore delete;
+display status;
+messages
+		ERR_OBJE : "El Objetivo Desde debe ser menor o igual al Objetivo Hasta";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+fcliente: on help in bill.cliente:(razsoc), not null, default 1008, 
+          check (fcliente = 1008 or fcliente = 1508 or fcliente = 1308 or fcliente = 1608);
+dclie   : bill.cliente.razsoc, skip;
+agrobje	: check (objdesde <= objhasta),	on error ERR_OBJE;
+objdesde: on help manual, not null;
+dobjd	: skip;
+objhasta: on help manual, not null;
+dobjh	: skip;
+

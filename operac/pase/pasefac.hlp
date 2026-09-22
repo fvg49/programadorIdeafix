@@ -1,0 +1,142 @@
+
+                      [1m [0m[1;4mPASAJE DE HORAS TRABAJADAS A FACTURACIÓN[0m
+
+Este proceso carga las variables de novedad por liquidación-cliente-objetivo correspondientes 
+a las horas trabajadas por concepto.
+Si la liquidación es la misma que la registrada en el parte no hace falta revertir.
+Los conceptos se pueden facturar por horas o directamente.
+Los retroactivos se consideran por la fecha trabajada, no por la fecha de registración.
+Si tiene retroactivos pasados en otra liquidación no los tiene en cuenta (lo informa),
+el resto del cliente se pasa normalmente.
+
+[1;4mCómo hacer para no facturar todos los clientes ?[0m
+ 
+Debido a que el periodo de facturación no es para todos los clientes igual se puede filtrar 
+para excluir clientes.
+Para no cargar siempre los mismos clientes se los pueden agrupar como "clientes especiales".
+Cada vez que se ingresa un grupo se agregan los clienetes a los que ya estan en la lista.
+
+[1mLos clientes se pueden informar de tres formas:[0m
+
+[1mPor rango:[0m Se ingresa un cliente-objetivo inicial y un cliente-objetivo final. 
+           Se pasan las horas de todos los clientes-objetivos incluidos en ese rango.
+           La opción "Filtra clientes" debe ser "No".
+
+[1mPor rango con filtro:[0m  Se ingresa un cliente-objetivo inicial y un cliente-objetivo final. 
+Se pasan las horas de todos los clientes-objetivos incluidos en ese rango, salvo los clientes 
+que se detallan que "no se consideran".
+                       La opción "Filtra clientes" debe ser "SI".
+                       La opción "considera los siguientes clientes" debe ser "NO".
+Con esta combinación de opciones nos pide un grupo de "clientes especiales", 
+a estos clientes no se pasaran las horas.
+El grupo se carga en el form como base, se pueden agregar o sacar clientes.
+
+[1mForma discreta:[0m Se ingresa en forma individual solo los clientes-objetivos que se quieren pasar.
+                No se pide cliente-objetivo desde-hasta.
+                La opción "Filtra clientes" debe ser "SI".
+                La opción "considera los siguientes clientes" debe ser "SI".
+Con esta combinación de opciones nos pide un grupo de "clientes especiales", 
+únicamente a estos clientes se pasaran las horas.
+El grupo se carga en el form como base, se pueden agregar o sacar clientes.
+
+Existe un programa para revertir este pase (revpfac.exe)
+
+Si el programa se llama con el parametro "R" no se borran las variables de novedades
+y las variables se acumulan a los valores actuales.
+
+[1;4mErrores:[0m
+
+[1m*[0m [1mNo existe subconcepto especial para el concepto x.[0m
+El concepto correspondiente a las horas normales no tiene un concepto 
+para las hs. especiales relacionados.
+
+[1m*[0m [1mHoras adicionales se quisieron asignar al concepto x pero no esta cargado.[0m
+Se sabe cual es el concepto correspondiente a las horas especiales pero no tiene precio. 
+No se cargo en ninguna OT.
+
+[1m*[0m [1mNo se encontró concepto para cargar las horas "normales/especiales" en el puesto x.[0m
+El puesto en la OT no tiene ningún concepto de facturación asignado. 	
+
+[1m*[0m [1mTiene horas en la liquidación x [0m
+Se quiere pasar un día  que ya se paso a otra liquidación.
+
+[1m* No tiene el cierre completo.[0m
+Falta correr el proceso "Cierre de Operaciones para facturar". 
+El "Cierre definitivo" también es contemplado como valido.
+
+Los errores salen por impresora.
+
+[1;4mAvisos:[0m
+
+[1m*[0m [1mTiene horas en la liquidación x [0m
+Si tiene horas en otra liquidación ese cliente no se procesa.
+Solo controla si tiene horas en las fechas desde-hasta, si en estas fechas esta bien la liquidación pero
+en el periodo intermedio no, se notifica como un error.
+No se controla todo el periodo por performance (tardaría mucho).
+
+[1m* No tiene el cierre completo.[0m
+Falta correr el proceso "Cierre de Operaciones para facturar". 
+Solo controla en las fechas desde-hasta, si en estas fechas esta el cierre hecho pero
+en el periodo intermedio no, se notifica como un error.
+No se controla todo el periodo por performance (tardaría mucho).
+
+[1m* No tiene asignado a ningun resumen(billing) [0m
+Falta cargar en el objetivo la relacion con billing.
+
+Los avisos salen por impresora.
+
+[1;4mDireferencia entre ERROR y AVISO[0m
+
+Los errores abortan el programa, no pasa las horas de ningun cliente.
+Los avisos notifican que un cliente no se proceso. El resto de los clientes se procesaron normalmente.
+
+[1;4mConceptos de facturación por Adicional Vigilador (Opción Tarifario) [0m
+
+[1;4mConceptos Normales [0m
+
+No considera los conceptos especiales por adicional vigilador .
+
+[1;4mConceptos Adicional por vigilador [0m
+
+[1;4mConceptos por hora [0m
+
+
+
+[1;4mOtros Conceptos[0m
+
+[1mConcepto Normal (139):[0m Este concepto es el precio de la Ot por la cantidad de vigiladores.
+                       La cantidad de vigiladores es igual a la cant. de los puestos de la ot viva 
+                       en el periodo que se quiere facturar.
+                       Si hubo una variación se calcula el proporcional en base al periodo y a la cant.
+
+[1mConcepto Especial(140):[0m Este concepto es el precio de la Ot por la cantidad de vigiladores.
+                       La cantidad de vigiladores es la 
+                       cantidad de horas de adicionales dividido  200 (cant. de horas por vig. x mes).
+                       Se toma como hora adicional solo cuando no es una extension de turno.
+                       Además el legajo no debe estar asignado a ese objetivo.
+
+Ambos calculos se detallan en un archivo pasefac.txt.
+Este archivo no se borra , sino que guarda el historico de todas las liquidaciones.
+
+[1mConcepto Especial Precio mensual:[0m Este concepto se carga con el mismo valor que el precio mensual(30)
+                       Debe ser concepto especial y no por hora.
+
+[1mConcepto Especial por hora:[0m Es igual a los conceptos por hora normales.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m pasefac.exe
+
+[1mProceso:[0m Pasa las horas del parte y retroactivos a bil|varnov.
+         En las tablas parte y retro graba la liquidación en el campo liqfac.
+         El concepto que se le asigna al puesto es él ultimo cargado para ese tipo de puesto.
+         Tabla comer|ITMXPUE (Toma como ultimo el de cdate mayor)
+
+La relación entre el concepto normal y especial esta en la tabla comerc|itmfac.
+En esta misma tabla se ingresa si un concepto se factura por horas o directamente.
+Para verlo usar el form itmfac.
+Se usa para horas especiales cuando es subconcepto y el concepto padre es el que se uso 
+para las horas normales.
+Si el concepto en 30(precio mensual) siempre la cantidad de horas es 1 y debe tener 
+cargado otro concepto para las horas normales así poder sacar las extras donde van.
+

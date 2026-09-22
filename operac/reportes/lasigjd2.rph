@@ -1,0 +1,45 @@
+/* Field names	*/
+# define RR_EMP          ((rpfield)   0) 	/* Num */
+# define RR_DEMP         ((rpfield)   1) 	/* String */
+# define RR_VIGD         ((rpfield)   2) 	/* Num */
+# define RR_DVIGD        ((rpfield)   3) 	/* String */
+# define RR_VIGH         ((rpfield)   4) 	/* Num */
+# define RR_DVIGH        ((rpfield)   5) 	/* String */
+# define RR_TIPINF       ((rpfield)   6) 	/* String */
+# define RR_FDESDE       ((rpfield)   7) 	/* Date */
+# define RR_FHASTA       ((rpfield)   8) 	/* Date */
+# define R_VIGI          ((rpfield)   9) 	/* Num */
+# define R_DVIGI         ((rpfield)  10) 	/* String */
+# define RR_CLI          ((rpfield)  11) 	/* Num */
+# define RR_DCLI         ((rpfield)  12) 	/* String */
+# define RR_OBJ          ((rpfield)  13) 	/* Num */
+# define RR_DOBJ         ((rpfield)  14) 	/* String */
+# define RR_VR           ((rpfield)  15) 	/* String */
+# define RR_EF           ((rpfield)  16) 	/* String */
+# define RR_FR           ((rpfield)  17) 	/* String */
+# define RR_REGIM        ((rpfield)  18) 	/* String */
+# define RR_ROL          ((rpfield)  19) 	/* Num */
+# define RR_FILA         ((rpfield)  20) 	/* Num */
+# define RR_COLUM        ((rpfield)  21) 	/* Num */
+# define RR_FECASIG      ((rpfield)  22) 	/* Date */
+# define RR_FECHAS       ((rpfield)  23) 	/* Date */
+# define RR_FFRANCO      ((rpfield)  24) 	/* Date */
+# define RR_NFRANCO      ((rpfield)  25) 	/* Num */
+# define RR_DIA1         ((rpfield)  26) 	/* String */
+# define RR_DIA2         ((rpfield)  27) 	/* String */
+# define RR_DIA3         ((rpfield)  28) 	/* String */
+# define RR_DIA4         ((rpfield)  29) 	/* String */
+# define RR_DIA5         ((rpfield)  30) 	/* String */
+# define RR_DIA6         ((rpfield)  31) 	/* String */
+# define RR_DIA7         ((rpfield)  32) 	/* String */
+# define RR_HSENT        ((rpfield)  33) 	/* Time */
+# define RR_HSSAL        ((rpfield)  34) 	/* Time */
+# define RR_MOTD         ((rpfield)  35) 	/* Num */
+# define RR_DMOTD        ((rpfield)  36) 	/* String */
+/* Report Checksum	*/
+# define RP_LASIGJD2_CHKSUM ((long) 0x05b7)
+/* Zone names	*/
+# define HEAD2           ((int)   0)
+# define ENCAB2          ((int)   1)
+# define LINEA2          ((int)   2)
+# define FLIN2           ((int)   3)

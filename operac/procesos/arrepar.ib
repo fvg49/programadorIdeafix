@@ -1,0 +1,12 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+arrepar.exe {
+	arrepar.c : operac.sch sue.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

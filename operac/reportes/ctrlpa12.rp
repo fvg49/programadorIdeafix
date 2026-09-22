@@ -1,0 +1,21 @@
+%head(today, pageno, r_fechad, r_fechah) before (page, report)
+[16c\$empresa                                                                                                         Fecha  : __/__/____
+                                                                                                [1m [0m                 Página :       ____.
+                                                                                                                       (ctrlpar1)
+                                     Horas Normales Trabajadas Vs. Horas Normales de Regimen
+                                                   De __/__/____ a __/__/____
+
+¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡ª
+  Legajo        Nombre y Apellido           Fecha                  Cliente                          Objetivo             Regimen   Horas  
+¢¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¤
+%linea1(r_nroleg, r_nombre, r_dia, r_cliente, r_dcliente, r_objet, r_dobjet, r_regimen, r_horas)
+ ________. ______________________________ __/__/____ _________. _______________________ ____. _________________________ _________ ____.__
+%totleg(sum(r_horas)) after (r_nombre, r_dia)
+                                                                                                                                ¡¡¡¡¡¡¡¡
+                                                                                                                                _____.__
+
+%report
+use comerc;
+language "c";
+flength= $FLENGTH;
+output to terminal;

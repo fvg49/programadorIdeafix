@@ -1,0 +1,5 @@
+"1. Consulta de Vigiladores                         " WCMD lvigil.exe
+"2. Asignación de Vigiladores                       " WCMD asige.exe
+#"3. Reversión de Asignación                         " WCMD revasig.exe
+"4. Carga de Vacaciones                             " WCMD vacac.exe
+"5. Listados y Consultas                            " MENU opu410

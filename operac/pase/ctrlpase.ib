@@ -1,0 +1,11 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ctrlpase.exe {
+	ctrlpase.fm;
+    ctrlpase.c;
+    ctrlpase.rp;
+
+	$WEBINTER/lib/webinter.a;
+}

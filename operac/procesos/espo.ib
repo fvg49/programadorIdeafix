@@ -1,0 +1,11 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+espo.exe {
+	espo.fm ;
+	espo.c : comerc.sch bill.sch;
+
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

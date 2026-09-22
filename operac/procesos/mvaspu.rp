@@ -1,0 +1,27 @@
+%head(today, pageno, module, r_emp, r_fecmov, r_cli, r_dcli,r_obj, r_dobj) before (page, report)
+[2o[16c                                                                                                                                                                      
+\$empresa                                                                                                                                                               Fecha : __/__/____
+                                                                                                                                                                        Página:       ____.
+                                                                                                                                                                                (______)
+                                          								 [1mMigracion de Asignaciones Entre Puestos [0m
+
+                                                                     Empresa : __.   Fecha de  Movimiento : __/__/____
+Cliente 	:	______. ________________________________________________
+Objetivo    :       __. ________________________________________________
+%zenc()
+¨¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡©¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡ª
+ Mov      Accion     Vig Efec Fr        Puesto            Regimen     Fecha Asignación   Fec.Franco Nro       Días      H.Ent. H.Sal. Mot 
+ Nro                 P T Prov                                        Desde      Hasta                                                 ivo 
+§¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¦¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¥
+%linea(r_movimien,r_accion, r_vr, r_ef, r_fr, r_ptoser, r_puesto, r_dptoser, r_regim, r_fecasig, r_fechas, r_ffranco, r_nfranco ,r_dia1, r_dia2, r_dia3, r_dia4, r_dia5, r_dia6, r_dia7, r_hsent, r_hssal, r_motd)
+ __. _______________  _    _  _  ____. ____. ___________ _________ __/__/____ __/__/____ __/__/____ __.  _-_-_-_-_-_-_   __:__  __:__ __. 
+%flin()                                                                                                                                                                                     
+¢¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡£¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¤
+%zlog(r_log)
+__________________________________________________________________________________________________________________________________________
+%report
+use operac;
+language"C";
+flength=9999;
+width=140;
+topmarg = 0;

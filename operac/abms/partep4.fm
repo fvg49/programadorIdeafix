@@ -1,0 +1,23 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+             P  u  e  s  t  o               
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+ {__. ______________________________ ____.} 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form(i_emp, i_clieot, i_objet, i_nroleg)
+language "c";
+use operac; //, comerc;
+window label " Puesto ", border single;
+ignore delete, end, update, add, ignore;
+
+%fields
+i_emp	 : internal num(2);
+i_clieot : internal num(9);
+i_objet  : internal num(2);
+i_nroleg : internal num(7);
+
+agrupp   : ;
+tippto	 : asig.ptoser, on help manual;
+dtippto  : skip; //comerc.tptoser.descor, skip;
+codint	 : on help manual, skip when tippto <0;  //asig.puesto, 
+nroint 	 : internal num(4);

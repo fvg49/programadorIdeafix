@@ -1,0 +1,27 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+otoper.exe {
+	otoper.fm;	
+	ptoper.fm;
+	saloper.fm;
+	otoper.c;
+	$AURUSLIB.a;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$INTERFLIB.a;
+	$SUMINLIB.a;
+	$COMPRASLIB.a;
+	$INTIALIB.a;
+	$IGRALLIB.a;
+	$AURUSLIB.a;
+	$IBRLIB.a;
+	$AUFLIB.a;
+	$TESLIB.a;
+	$PRESUPLIB.a;
+	$AURUSLIB.a;
+} 
+

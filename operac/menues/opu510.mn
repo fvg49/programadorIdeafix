@@ -1,0 +1,17 @@
+"1. Listado del Parte Diario                               " WCMD lparteo.exe
+"2. Listado del Parte Diario por horario				   " WCMD lparteh.exe
+"3. Control de Horas por Clientes/Objetivo/Puesto/Fecha    " WCMD hscliobj.exe
+"4. Control de Horas por Clientes/Objetivo/Puesto/Vigilador" WCMD hsclileg.exe
+"5. Control de Horas por Vigilador                         " WCMD hsvigil.exe
+"6. Listado de Categorías por Empleado                     " WCMD lcatevig.exe
+"7. Pase de horas a Meta4 / Última semana                  " WCMD contden.exe
+"8. Informe de Parte Diario por Pegadas                    " WCMD pegados.exe
+"9. Control de Horas Diario                                " WCMD lcontdia.exe
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" SHELL .
+"A. Auditoria Control de Horas                             " WCMD novipaud.exe
+"B. Horas Normales VS Horas Regimen                        " WCMD ctrlpar1.exe
+"C. Control de condiciones                                 " WCMD ctrlpar2.exe
+"D. Listados de vigiladores sin asignacion pero con parte  " WCMD lnoasig.exe
+"E. Control horas Perú                                     " WCMD lduplica.exe
+"F. Listado de Asignaciones de Vigiladores Provisorios     " WCMD lprovenc.exe
+"G. Control de Horas de Servicio                           " WCMD lhscont.exe

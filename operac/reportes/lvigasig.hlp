@@ -1,0 +1,13 @@
+
+ [1mListado de Vigiladores Asignados por Fecha[0m
+
+Este programa genera un listado con los clientes/objetivos 
+donde está asignado un vigilador a una determinada fecha.
+
+Se puede filtrar por Delegación Comercial, Operacional o Filial,
+pudiendo dejar Nulo estos campos para ver todos los datos sin filtro.
+
+En el campo vigilador se ingresa el número de legajo que se desea
+consultar y en caso de dejar nulo el número de legajo se consideraran 
+todos los vigiladores.
+

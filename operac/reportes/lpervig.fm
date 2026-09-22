@@ -1,0 +1,54 @@
+
+ Empresa        : __. _____________________________________________
+
+ Fecha          :  __/__/____
+
+ Usuario        : ______. _________________________________________
+
+¨Permisos¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                    
+ Procedencia    : _. ______________________________________________ 
+                                                                    
+  por Vigilador : _. _________________________________              
+                                                                    
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+ Salida         : _ _______________________
+ Nombre Archivo : ____________________
+
+
+___________________________________________________________________
+%form
+use bill, sue;
+language "c";
+window label "Listado Legajos Permitidos Por Usuario", border single;
+ignore add, delete, prev, next, ignore;
+confirm update;
+
+%fields
+emp		: in sue.emps:descrip, default $emp, not null;
+demp	: sue.emps.descrip, skip;
+fecha   : default today, not null;
+usuario : default $UID,  in bill.susuario:descrip;
+descusu : bill.susuario.descrip, skip;
+
+procede : in (0:"Todas las Procedencias", 
+              1:"Por asignacion efectiva", 
+              2:"Por no estar asignado",
+              3:"Por Tener Permisos Por Vigilador",
+              4:"Por Pertencer a un Grupos de Filiales"), default 0;
+
+dprocede: is descr (procede);
+
+vervig  : is 0 when procede !=3 and procede !=0, 
+          in (0:"No muestra permisos por vigilador", 
+              1:"Permisos de Asignación",
+              2:"Permisos de Inserción", 
+              3:"Mostrar todos los permisos"), default 3;
+
+dvervig : is descr (vervig);
+
+salida	: in ("T":"Terminal", "I":"Impresora", "A":"Archivo"), default "I", not null, mask ">A";
+dsalida	: is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "lpervig.txt", not null;
+mensaje : is null;

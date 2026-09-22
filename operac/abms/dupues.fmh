@@ -1,0 +1,45 @@
+/* Field names	*/
+# define CLIE            (fmfield)  0	/* Long            */
+# define DESCLI          (fmfield)  1	/* String          */
+# define DIDTRIB         (fmfield)  2	/* String          */
+# define FTIPDOC         (fmfield)  3	/* Integer         */
+# define FNRODOC         (fmfield)  4	/* String          */
+# define OBJETCOM        (fmfield)  5	/* Integer         */
+# define DESCRIP         (fmfield)  6	/* String          */
+# define FEMP            (fmfield)  7	/* Integer         */
+# define DEMP            (fmfield)  8	/* String          */
+# define FINID           (fmfield)  9	/* Date            */
+# define FINIH           (fmfield) 10	/* Date            */
+# define FFIND           (fmfield) 11	/* Date            */
+# define FFINH           (fmfield) 12	/* Date            */
+# define CLIEOP          (fmfield) 13	/* Long            */
+# define DESCLI2         (fmfield) 14	/* String          */
+# define OBJETOP         (fmfield) 15	/* Integer         */
+# define DESCR2          (fmfield) 16	/* String          */
+# define FEMPOP          (fmfield) 17	/* Integer         */
+# define DEMP2           (fmfield) 18	/* String          */
+# define MULTI           (fmfield) 19	/* MULTIPLE        */
+# define TIPPTO          (fmfield) 20	/* Integer         */
+# define CODINT          (fmfield) 21	/* Integer         */
+# define PUESTO          (fmfield) 22	/* Integer         */
+# define HINICIO         (fmfield) 23	/* Time            */
+# define HFINAL          (fmfield) 24	/* Time            */
+# define DIA1            (fmfield) 25	/* String          */
+# define DIA2            (fmfield) 26	/* String          */
+# define DIA3            (fmfield) 27	/* String          */
+# define DIA4            (fmfield) 28	/* String          */
+# define DIA5            (fmfield) 29	/* String          */
+# define DIA6            (fmfield) 30	/* String          */
+# define DIA7            (fmfield) 31	/* String          */
+# define REGIM           (fmfield) 32	/* String          */
+# define CANTVIG         (fmfield) 33	/* Integer         */
+# define CANTPUE         (fmfield) 34	/* Integer         */
+# define TIPODIA         (fmfield) 35	/* String          */
+# define FINICIO         (fmfield) 36	/* Date            */
+# define FFINAL          (fmfield) 37	/* Date            */
+# define DUPLICA         (fmfield) 38	/* Integer         */
+/* Form checksum	*/
+# define FM_DUPUES_CHKSUM (long)0x1737
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

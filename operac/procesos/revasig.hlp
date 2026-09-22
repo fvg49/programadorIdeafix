@@ -1,0 +1,24 @@
+
+ [1;4mReversión de Asignaciones [0m[1;7m(Cuidado!!! este preceso elimina datos)[0m
+
+Este proceso Revierte asignaciones. 
+La  forma  de  usarlo es  ingresar  la empresa y el  numero de legajo 
+y el programa  devuelve la ultima asignacion (efectivas y provisorias 
+abiertas en el periodo de la efectiva), luego en la columna "Rev" hay
+que  poner en  "si" en las  asignaciones  que  se  quieran  revertir, 
+teniendo en cuenta lo siguiente: 
+
+Cuando se revierte una  asignacion efectiva, se revierten tambien las 
+provisorias con fechas igual o posterior a la efectiva.
+
+Cuando se rervierte una asignacion provisoria no revierte ninguna 
+otra mas que la que se pidio.
+
+Se puede ver en  pantalla lo que se va a  revertir  antes de hacerlo, 
+porque en la columna "Rev." pone un "Si" en todo lo que revertiria.
+
+
+[1;4mD[0m[1;4matos Técnicos[0m
+
+[1mP[0m[1mrograma:[0m revasig.exe
+

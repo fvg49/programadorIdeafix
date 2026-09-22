@@ -1,0 +1,12 @@
+project $NOVIA/reglas.ib;
+
+lrol.exe {
+	lrol.fm;
+	lrol.rp;
+	lrol.c : lrol.fmh lrol.rph operac.sch;
+
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

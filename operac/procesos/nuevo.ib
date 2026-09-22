@@ -1,0 +1,17 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+nuevo.exe {
+	nuevo.fm;
+//	nuevo1.fm;
+    nuevo.rp;
+    nuevo.c;  
+  	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$WEBINTERLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

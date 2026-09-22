@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+varser1.exe {
+	varser1.fm;
+	varser1.rp;
+	varser1.c : varser1.fmh varser1.rph comerc.sch bill.sch;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$OPERACLIB.a;
+	$BILLLIB.a; 
+}

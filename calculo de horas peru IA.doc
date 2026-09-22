@@ -1,0 +1,212 @@
+{\rtf1\ansi\deff0\ansicpg1252
+{\fonttbl{\f0\fswiss Arial;}{\f1\froman Times New Roman;}{\f2\fmodern Courier New;}}
+{\colortbl;\red31\green78\blue121;\red64\green64\blue64;\red230\green238\blue246;}
+\paperw11907\paperh16840\margl1250\margr1250\margt1100\margb1100
+\viewkind4\uc1
+\pard\qc\b\f0\fs38 C\'e1lculo de horas - Per\'fa\par
+\pard\qc\b0\fs22 NOVIP Operaciones - An\'e1lisis de partes, distribuci\'f3n diaria y cierre contden\par
+\pard\qc\fs20 Fecha del an\'e1lisis: 14/09/2026\par
+\pard\sa260\par
+
+\pard\b\cf1\fs28 1. Objetivo\par
+\pard\b0\cf0\fs22 Este documento explica c\'f3mo NOVIP decide cu\'e1ntas horas trabajadas por un vigilador corresponden a cada tipo de hora en un d\'eda, y c\'f3mo el programa contden vuelve a distribuir esas horas para reporte o liquidaci\'f3n.\par
+\pard\fs22 El an\'e1lisis se basa principalmente en operac/lib/operac.c, operac/lib/disths.c, operac/procesos/contden.c, operac/procesos/contden.fm y operac/include/disths.h. Se describe el comportamiento efectivo del c\'f3digo actual, no solamente el significado aparente de los nombres de campos.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 2. Resumen ejecutivo\par
+\pard\b0\cf0\fs22 El c\'e1lculo se realiza en dos etapas:\par
+\pard\li360\fi-180\bullet\tab Etapa 1 - Parte diario: se calcula la duraci\'f3n de cada turno y se distribuye el total diario del vigilador entre horas normales, horas al 25 por ciento, horas al 35 por ciento o horas de franco.\par
+\pard\li360\fi-180\bullet\tab Etapa 2 - contden: toma esas horas ya calculadas y las subdivide por nocturnidad, feriado, franco, pegada y otras categor\'edas necesarias para reporte o liquidaci\'f3n.\par
+\pard\li0\fi0\fs22 La regla diaria general encontrada en el c\'f3digo vigente es:\par
+\pard\qc\b\fs24 Primeras 8 horas = normales\par
+Siguientes 2 horas = al 25 por ciento\par
+Excedente de 10 horas = al 35 por ciento\par
+\pard\ql\b0\fs22 Esta escala se aplica sobre el total trabajado por el vigilador en la fecha y para la misma condici\'f3n de parte, no de manera independiente para cada puesto.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 3. Unidad de almacenamiento\par
+\pard\b0\cf0\fs22 NOVIP guarda las horas en cent\'e9simas de hora. Ejemplos:\par
+\pard\li360\fi-180\bullet\tab 800 representa 8,00 horas.\par
+\pard\li360\fi-180\bullet\tab 200 representa 2,00 horas.\par
+\pard\li360\fi-180\bullet\tab 150 representa 1,50 horas.\par
+\pard\li360\fi-180\bullet\tab 50 representa 0,50 horas.\par
+\pard\li0\fi0\fs22 La funci\'f3n ConvHraInt calcula la duraci\'f3n entre la hora de entrada y la de salida. El resultado se multiplica por 100 para compararlo con los campos del parte. Al generar archivos legibles, contden divide nuevamente por 100.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 4. Campos base del parte\par
+\pard\b0\cf0\fs22 Cada registro de PARTE conserva cuatro grupos base:\par
+\pard\li360\fi-180\bullet\tab PARTE_HSNOR: horas normales.\par
+\pard\li360\fi-180\bullet\tab PARTE_HS50: horas denominadas por el negocio como horas al 25 por ciento.\par
+\pard\li360\fi-180\bullet\tab PARTE_HS100F: horas denominadas por el negocio como horas al 35 por ciento.\par
+\pard\li360\fi-180\bullet\tab PARTE_HS100FE: horas trabajadas con condici\'f3n de franco.\par
+\pard\li0\fi0\fs22 Los nombres f\'edsicos HS50 y HS100 son heredados. En contden y en la interfaz de liquidaci\'f3n se usan como 25 por ciento y 35 por ciento, con factores 1,25 y 1,35 respectivamente.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 5. C\'f3mo se obtiene el total trabajado del d\'eda\par
+\pard\b0\cf0\fs22 Para cada registro se calcula:\par
+\pard\qc\f2\fs21 horas del turno = ConvHraInt(entrada, salida) x 100\par
+\pard\ql\f0\fs22 Si el turno atraviesa medianoche, ConvHraInt considera la continuidad hacia el d\'eda siguiente. Por ejemplo, 22:00 a 06:00 representa 8 horas, no una duraci\'f3n negativa.\par
+\pard\fs22 La funci\'f3n CalDetHorPer2 consulta todos los partes del mismo vigilador y fecha. Para el reparto diario acumula los registros de la misma condici\'f3n. Los controles de carga intentan impedir que un vigilador tenga horas en distintos objetivos con condiciones incompatibles.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 6. Regla de distribuci\'f3n diaria\par
+\pard\b0\cf0\fs22 Para un d\'eda normal o feriado, DisHorPer2 aplica la siguiente escala al total diario:\par
+\pard\li360\fi-180\bullet\tab Desde 0 hasta 8 horas: horas normales.\par
+\pard\li360\fi-180\bullet\tab Desde m\'e1s de 8 hasta 10 horas: el excedente va al 25 por ciento, con un m\'e1ximo de 2 horas.\par
+\pard\li360\fi-180\bullet\tab Desde m\'e1s de 10 horas: todo el excedente restante va al 35 por ciento.\par
+\pard\li0\fi0\fs22 F\'f3rmulas conceptuales:\par
+\pard\li360\f2\fs20 HNOR = min(total, 8)\par
+H25  = min(max(total - 8, 0), 2)\par
+H35  = max(total - 10, 0)\par
+\pard\li0\f0\fs22 En la implementaci\'f3n vigente estos topes son constantes: _HORAS_DE_TRABAJO = 800 y _HORAS_AL_25 = 200. Aunque se consulta el r\'e9gimen efectivo del vigilador, el par\'e1metro de horas del r\'e9gimen no modifica esta escala dentro de DisHorPer2.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 7. Ejemplos de un solo puesto\par
+\pard\b0\cf0\fs22 D\'eda normal, una sola prestaci\'f3n:\par
+\trowd\trgaph80\trleft0
+\cellx1800\cellx3900\cellx5800\cellx7700\cellx9400
+\intbl\b Total trabajado\cell Normales\cell Al 25%\cell Al 35%\cell Franco\cell\row
+\trowd\trgaph80\trleft0
+\cellx1800\cellx3900\cellx5800\cellx7700\cellx9400
+\intbl\b0 6 h\cell 6 h\cell 0 h\cell 0 h\cell 0 h\cell\row
+\trowd\trgaph80\trleft0
+\cellx1800\cellx3900\cellx5800\cellx7700\cellx9400
+\intbl 8 h\cell 8 h\cell 0 h\cell 0 h\cell 0 h\cell\row
+\trowd\trgaph80\trleft0
+\cellx1800\cellx3900\cellx5800\cellx7700\cellx9400
+\intbl 9 h\cell 8 h\cell 1 h\cell 0 h\cell 0 h\cell\row
+\trowd\trgaph80\trleft0
+\cellx1800\cellx3900\cellx5800\cellx7700\cellx9400
+\intbl 10 h\cell 8 h\cell 2 h\cell 0 h\cell 0 h\cell\row
+\trowd\trgaph80\trleft0
+\cellx1800\cellx3900\cellx5800\cellx7700\cellx9400
+\intbl 12 h\cell 8 h\cell 2 h\cell 2 h\cell 0 h\cell\row
+\pard\sa180\par
+
+\pard\b\cf1\fs28 8. Varios puestos el mismo d\'eda\par
+\pard\b0\cf0\fs22 La escala de 8 + 2 + excedente se aplica una sola vez al total diario del vigilador. NOVIP no vuelve a entregar ocho horas normales a cada puesto.\par
+\pard\fs22 Ejemplo: el vigilador trabaja 6 horas en el Puesto A y 6 horas en el Puesto B. El total diario es 12 horas:\par
+\pard\li360\fi-180\bullet\tab Total del d\'eda: 8 normales + 2 al 25% + 2 al 35%.\par
+\pard\li360\fi-180\bullet\tab Si A se procesa primero, A recibe 6 normales.\par
+\pard\li360\fi-180\bullet\tab B recibe el saldo: 2 normales + 2 al 25% + 2 al 35%.\par
+\pard\li0\fi0\fs22 El mecanismo es el siguiente:\par
+\pard\li360\fi-180\bullet\tab Calcula la distribuci\'f3n correspondiente al total del d\'eda.\par
+\pard\li360\fi-180\bullet\tab Resta las horas ya asignadas a otros registros o puestos.\par
+\pard\li360\fi-180\bullet\tab AsignoHoras limita lo entregado a la duraci\'f3n del registro actual.\par
+\pard\li0\fi0\fs22 Por eso la categor\'eda que recibe cada puesto puede depender del orden en que se procesan los registros, pero el total final del vigilador para el d\'eda conserva la regla 8 normales, 2 al 25% y el resto al 35%.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 9. Condiciones especiales\par
+\pard\b0\cf0\fs22 Las condiciones definidas por NOVIP son:\par
+\pard\li360\fi-180\bullet\tab T: trabaja.\par
+\pard\li360\fi-180\bullet\tab P: pegada.\par
+\pard\li360\fi-180\bullet\tab F: franco.\par
+\pard\li360\fi-180\bullet\tab A: ausente.\par
+\pard\li360\fi-180\bullet\tab D: adelanto.\par
+\pard\li360\fi-180\bullet\tab V: vacaciones.\par
+\pard\li360\fi-180\bullet\tab X: no trabaja.\par
+\pard\li0\fi0\par
+\pard\b Pegada (P).\b0  CalDetHorPer2 asigna toda la duraci\'f3n del registro inicialmente a la categor\'eda del 35%. En contden, CalcDistrHoras2 mueve esa cantidad desde HSAL35 a HSPEGA para informar y liquidar la pegada por separado. Las pegadas no suman como jornada diurna o nocturna ordinaria.\par
+\pard\b Franco (F).\b0  CalDetHorPer2 asigna toda la duraci\'f3n a horas de franco. No aplica la escala 8 + 2 + excedente. Los francos tampoco se cuentan como jornada ordinaria.\par
+\pard\b Guardian\'eda.\b0  Si el tipo de puesto est\'e1 parametrizado en PARNOV_TPUHSNOR, CalDetHorPer2 asigna inicialmente toda la duraci\'f3n como normal. En contden, cuando se elige Horas para la Liquidaci\'f3n, se aplica un tope de 8 horas normales; cuando se elige Horas Trabajadas se conserva el valor real.\par
+\pard\b Ausencia (A).\b0  El registro conserva la condici\'f3n y contden intenta obtener el c\'f3digo de novedad desde ASISTEN para enviarlo en el pase. Los registros 00:00 a 00:00 no generan horas.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 10. Feriados\par
+\pard\b0\cf0\fs22 En la primera etapa, CalDetHorPer2 trata un feriado con la misma escala base que un d\'eda normal: hasta 8 normales, hasta 2 al 25% y excedente al 35%. La diferencia aparece en contden.\par
+\pard\fs22 contden obtiene el pa\'eds y provincia del cliente/objetivo efectivo del vigilador y consulta FeriadoNovia. Luego reclasifica las horas en:\par
+\pard\li360\fi-180\bullet\tab Horas normales de feriado.\par
+\pard\li360\fi-180\bullet\tab Horas al 25% de feriado.\par
+\pard\li360\fi-180\bullet\tab Horas al 35% de feriado.\par
+\pard\li360\fi-180\bullet\tab Las mismas tres categor\'edas en horario nocturno.\par
+\pard\li0\fi0\fs22 Si el turno cruza medianoche, analiza por separado si es feriado el d\'eda de entrada y si es feriado el d\'eda siguiente. Solo el tramo que cae en la fecha feriada se mueve a las categor\'edas de feriado. El total HSFERI se construye sumando las categor\'edas detalladas de feriado.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 11. Horas diurnas y nocturnas\par
+\pard\b0\cf0\fs22 La franja diurna definida por el sistema es de 06:00 a 22:00. La franja nocturna es de 22:00 a 06:00.\par
+\pard\fs22 contden conserva la categor\'eda econ\'f3mica original al separar la nocturnidad:\par
+\pard\li360\fi-180\bullet\tab Normal diurna pasa a normal nocturna cuando cae entre 22:00 y 06:00.\par
+\pard\li360\fi-180\bullet\tab Hora al 25% diurna pasa a 25% nocturna.\par
+\pard\li360\fi-180\bullet\tab Hora al 35% diurna pasa a 35% nocturna.\par
+\pard\li0\fi0\fs22 Para un turno dentro de la misma fecha, la porci\'f3n nocturna se toma priorizando las categor\'edas de mayor recargo: primero 35%, luego 25% y finalmente normales. Para turnos que cruzan medianoche, separa el tramo del d\'eda de entrada y el tramo del d\'eda siguiente mediante una matriz auxiliar, evitando contar una hora dos veces.\par
+\pard\fs22 Ejemplo sencillo: turno de 20:00 a 04:00, total 8 horas. La base diaria son 8 normales. contden separa 2 horas normales diurnas, de 20:00 a 22:00, y 6 horas normales nocturnas, de 22:00 a 04:00.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 12. Clasificaci\'f3n de la jornada\par
+\pard\b0\cf0\fs22 Adem\'e1s de distribuir horas, contden cuenta jornadas diurnas y nocturnas. Para que un registro cuente como jornada nocturna deben cumplirse estas condiciones:\par
+\pard\li360\fi-180\bullet\tab Las horas normales del registro superan la mitad de las horas normales del r\'e9gimen del puesto; si no encuentra el r\'e9gimen usa 8 horas por defecto.\par
+\pard\li360\fi-180\bullet\tab El total nocturno es de al menos 4 horas.\par
+\pard\li360\fi-180\bullet\tab El puesto no est\'e1 parametrizado como guardian\'eda especial.\par
+\pard\li0\fi0\fs22 Si no alcanza cuatro horas nocturnas, la jornada se cuenta como diurna, aunque algunas horas individuales hayan sido clasificadas como nocturnas. Las condiciones franco y pegada no generan jornada ordinaria.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 13. Validaci\'f3n antes del cierre\par
+\pard\b0\cf0\fs22 contden verifica cada parte con esta igualdad:\par
+\pard\qc\f2\fs20 duraci\'f3n entrada/salida = HSNOR + HS50 + HS100F + HS100FE\par
+\pard\ql\f0\fs22 Si la diferencia es igual o mayor a una cent\'e9sima, genera un Error de Confirmaci\'f3n. En la ejecuci\'f3n actual de contden, el registro inconsistente se omite del acumulado porque CargaDistrHoras se llama con la opci\'f3n de ignorar horas inv\'e1lidas.\par
+\pard\fs22 Tambi\'e9n se controla que un parte no haya sido liquidado con otro n\'famero de liquidaci\'f3n. En el cierre real se marca PARTE_LIQDENA o PARTE_LIQDENUS, seg\'fan sea cierre mensual o de \lquote \lquote \faltima semana\rquote \rquote . Los retroactivos usan marcas equivalentes.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 14. Categor\'edas generadas por contden\par
+\pard\b0\cf0\fs22 La matriz de distribuci\'f3n tiene 21 tipos:\par
+\pard\li360\fi-180\bullet\tab Normales, 25%, 35%, franco y feriado.\par
+\pard\li360\fi-180\bullet\tab Normales nocturnas, 25% nocturnas y 35% nocturnas.\par
+\pard\li360\fi-180\bullet\tab Pegadas.\par
+\pard\li360\fi-180\bullet\tab Normales, 25% y 35% de feriado diurno.\par
+\pard\li360\fi-180\bullet\tab Normales, 25% y 35% de feriado nocturno.\par
+\pard\li360\fi-180\bullet\tab Normales, 25% y 35% de franco diurno.\par
+\pard\li360\fi-180\bullet\tab Normales, 25% y 35% de franco nocturno.\par
+\pard\li0\fi0\fs22 Estas categor\'edas se acumulan jer\'e1rquicamente por empresa, legajo, cliente, objetivo, puesto, fecha y rango horario. El reporte puede mostrarlas en cualquiera de esos niveles. El pase siempre utiliza el nivel m\'e1s detallado.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 15. Conversi\'f3n para liquidaci\'f3n\par
+\pard\b0\cf0\fs22 Al grabar webinter.WDETLIQ, contden calcula totales equivalentes:\par
+\pard\li360\f2\fs20 TOHSNO = HSNORM + HSNONO\par
+TOHSEX = HS25 x 1,25 + HS35 x 1,35 + HS25NO x 1,25 + HS35NO x 1,35 + HSFRAN x 2 + HSFERI x 2\par
+TOHSNOR = TOHSNO + TOHSEX\par
+\pard\li0\f0\fs22 Las horas feriado y franco se valorizan al doble. Las horas al 25% y 35% se convierten con factores 1,25 y 1,35. Las categor\'edas detalladas tambi\'e9n se guardan individualmente en WDETLIQ para que el sistema receptor disponga del desglose.\par
+\pard\sa180\par
+
+\pard\b\cf1\fs28 16. Reporte, prueba y cierre\par
+\pard\b0\cf0\fs22 En modo impresora, terminal o archivo, contden calcula y presenta las horas sin marcar los partes como liquidados ni cerrar el per\'edodo.\par
+\pard\fs22 En modo S, Prueba pase VCMC, genera WDETLIQ y la cabecera de liquidaci\'f3n, pero no marca PARTE o RETRO como liquidados.\par
+\pard\fs22 En modo P, Pase, adem\'e1s:\par
+\pard\li360\fi-180\bullet\tab Verifica que no existan procesos que est\'e9n modificando partes.\par
+\pard\li360\fi-180\bullet\tab Valida que el per\'edodo est\'e9 pendiente.\par
+\pard\li360\fi-180\bullet\tab Exige que el per\'edodo anterior haya terminado correctamente.\par
+\pard\li360\fi-180\bullet\tab Marca el per\'edodo en ejecuci\'f3n.\par
+\pard\li360\fi-180\bullet\tab Marca cada PARTE y RETRO con la liquidaci\'f3n correspondiente.\par
+\pard\li360\fi-180\bullet\tab Genera WDETLIQ y WCABLIQ.\par
+\pard\li360\fi-180\bullet\tab Finaliza el per\'edodo con estado correcto.\par
+\pard\li0\fi0\sa180\par
+
+\pard\b\cf1\fs28 17. Observaciones t\'e9cnicas\par
+\pard\b0\cf0\fs22 Se identificaron los siguientes puntos que conviene considerar al probar o modificar el sistema:\par
+\pard\li360\fi-180\bullet\tab El reparto vigente de CalDetHorPer2 usa topes fijos de 8 y 2 horas, aunque consulta el r\'e9gimen.\par
+\pard\li360\fi-180\bullet\tab La asignaci\'f3n de categor\'edas entre varios puestos depende del orden de procesamiento, aunque el total diario final debe mantenerse.\par
+\pard\li360\fi-180\bullet\tab CalcDistrHoras2 carga HSFRAN, pero su bloque de subdivisi\'f3n detallada de franco depende de una variable local hsfra que permanece en cero en la ruta observada. Por eso las columnas detalladas de franco diurno/nocturno deben validarse con casos reales.\par
+\pard\li360\fi-180\bullet\tab TOHSNO no incluye expl\'edcitamente HSNOFE y HNOFEN porque esas sumas aparecen comentadas. El total de feriado se incorpora mediante HSFERI al doble, pero es recomendable verificar el resultado esperado con liquidaci\'f3n.\par
+\pard\li360\fi-180\bullet\tab Para confirmar resultados deben probarse turnos diurnos, nocturnos, cruzando medianoche, feriados en uno o ambos d\'edas, varios puestos, pegadas, francos y guardian\'edas.\par
+\pard\li0\fi0\sa180\par
+
+\pard\b\cf1\fs28 18. Secuencia completa del c\'e1lculo\par
+\pard\b0\cf0\fs22 En t\'e9rminos funcionales, NOVIP hace lo siguiente:\par
+\pard\li360\fi-180\bullet\tab 1. Calcula la duraci\'f3n de cada turno.\par
+\pard\li360\fi-180\bullet\tab 2. Re\'fane las horas del vigilador para la fecha y condici\'f3n.\par
+\pard\li360\fi-180\bullet\tab 3. Determina si el registro es normal, pegada, franco o guardian\'eda.\par
+\pard\li360\fi-180\bullet\tab 4. En el caso general, reparte 8 normales, 2 al 25% y excedente al 35%.\par
+\pard\li360\fi-180\bullet\tab 5. Resta las categor\'edas ya consumidas por otros puestos.\par
+\pard\li360\fi-180\bullet\tab 6. Limita el resultado a la duraci\'f3n del puesto actual.\par
+\pard\li360\fi-180\bullet\tab 7. Graba HSNOR, HS50, HS100F y HS100FE en PARTE.\par
+\pard\li360\fi-180\bullet\tab 8. contden valida la igualdad entre duraci\'f3n y detalle.\par
+\pard\li360\fi-180\bullet\tab 9. Separa horas diurnas y nocturnas.\par
+\pard\li360\fi-180\bullet\tab 10. Reclasifica feriados, francos y pegadas.\par
+\pard\li360\fi-180\bullet\tab 11. Cuenta jornadas diurnas, nocturnas y pegadas.\par
+\pard\li360\fi-180\bullet\tab 12. Acumula o genera el detalle de liquidaci\'f3n.\par
+\pard\li0\fi0\sa220\par
+
+\pard\b\cf1\fs28 19. Conclusi\'f3n\par
+\pard\b0\cf0\fs22 La decisi\'f3n de cu\'e1ntas horas van a cada tipo comienza con el total diario del vigilador: ocho horas normales, dos al 25% y el excedente al 35%, salvo condiciones especiales. Cuando hay varios puestos, el cupo diario se comparte entre ellos. Luego contden transforma ese detalle base seg\'fan horario nocturno, feriado, franco, pegada y reglas de guardian\'eda, y finalmente lo presenta como reporte o lo env\'eda al circuito de liquidaci\'f3n.\par
+\pard\sa260\par
+\pard\qc\i\fs19 Documento t\'e9cnico generado a partir del an\'e1lisis de los fuentes vigentes de NOVIP Operaciones.\par
+}

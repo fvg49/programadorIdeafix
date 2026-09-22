@@ -1,0 +1,16 @@
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+   Motivo            : ____. |                       
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+   Descripción       : ___________________________
+   Descripción Corta : _______________  
+
+%form
+use operac;
+window label "[Motivo de horas improductivas]", border single;
+display status;
+
+%fields
+codmot : mohsim., on help in mohsim:(descrip);
+descrip: mohsim.;
+descor : mohsim.;

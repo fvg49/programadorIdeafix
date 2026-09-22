@@ -1,0 +1,14 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define CANHS           (fmfield)  2	/* Integer         */
+# define TDIA            (fmfield)  3	/* Integer         */
+# define DTDIA           (fmfield)  4	/* String          */
+# define MULTI           (fmfield)  5	/* MULTIPLE        */
+# define TIPHOR          (fmfield)  6	/* String          */
+# define CANHOR          (fmfield)  7	/* Integer         */
+/* Form checksum	*/
+# define FM_BANCONF_CHKSUM (long)0x008c
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

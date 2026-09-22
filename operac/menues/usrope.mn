@@ -1,0 +1,4 @@
+"W. Cambio de Impresoras             " SETENV impope01.cfg
+"X. Ver Perfil                       " PIPE   20 100 verperfil.sh
+"Y. Cambio de Password   - SAMBA -   " SHELL chg_sambapasswd.sh
+"Z. Cambio de Password               " SHELL chg_passwd.sh

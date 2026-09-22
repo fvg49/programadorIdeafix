@@ -1,0 +1,33 @@
+%ztitulo(pageno, today, rselec, rselec1, rselec2) before(page, report)
+[20c\$empresa                                                                                                                        Página :       ____.
+                                                                                                                                   Fecha  : __/__/____
+                                                                                                                                           (lpervig)
+                                                              Listado Legajos Permitidos Por Usuario
+
+ ___________________________________________________________________________________________________________________________________________________________
+ ___________________________________________________________________________________________________________________________________________________________ 
+ ___________________________________________________________________________________________________________________________________________________________
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                 Vigilador                                           Procedencia           Detalle                                                           
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%zlinea(rnroleg, rapynom, rproced, rdetall)
+   ________. ___________________________________________________________ __. ________________________________________________________________________________
+%zcierre(runcount(rnroleg))after report
+ ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+                                                                                                                           Cantidad de Vigiladores : ______.
+
+ [4mReferencia de Procedencia[0m
+ 
+ El usuario tiene permiso porque el vigilador:
+
+		1 : Esta asignado en forma efectiva en un objetivo de una filial en la que tengo permiso
+		2 : No esta asignado en ningun objetivo
+		3 : tiene permiso otorgado la filial que posee este objetivo 
+		4 : Pertenece una filial que esta en un grupo comun (solo para insercion).
+
+%report
+language "c";
+width = 160;
+topmarg = 0;
+flength = $FLENGTH;

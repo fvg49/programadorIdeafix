@@ -1,0 +1,79 @@
+/* Field names	*/
+# define RRETRO          ((rpfield)   0) 	/* Bool */
+# define RFECHAD         ((rpfield)   1) 	/* Date */
+# define RFECHAH         ((rpfield)   2) 	/* Date */
+# define RCLID           ((rpfield)   3) 	/* Num */
+# define ROBJD           ((rpfield)   4) 	/* Num */
+# define RDCLIOBJD       ((rpfield)   5) 	/* String */
+# define RCLIH           ((rpfield)   6) 	/* Num */
+# define ROBJH           ((rpfield)   7) 	/* Num */
+# define RDCLIOBJH       ((rpfield)   8) 	/* String */
+# define RDMOT1          ((rpfield)   9) 	/* String */
+# define RDMOT2          ((rpfield)  10) 	/* String */
+# define RDMOT3          ((rpfield)  11) 	/* String */
+# define RDMOT4          ((rpfield)  12) 	/* String */
+# define RDMOT5          ((rpfield)  13) 	/* String */
+# define RCLI            ((rpfield)  14) 	/* Num */
+# define RDCLI           ((rpfield)  15) 	/* String */
+# define ROBJ            ((rpfield)  16) 	/* Num */
+# define RDOBJ           ((rpfield)  17) 	/* String */
+# define RPTO            ((rpfield)  18) 	/* Num */
+# define RDPTO           ((rpfield)  19) 	/* String */
+# define RFCH            ((rpfield)  20) 	/* Date */
+# define RNROLEG         ((rpfield)  21) 	/* Num */
+# define FS1HN           ((rpfield)  22) 	/* Num */
+# define FS1H50          ((rpfield)  23) 	/* Num */
+# define FS1H100         ((rpfield)  24) 	/* Num */
+# define FS1TOT          ((rpfield)  25) 	/* Num */
+# define FS2HN           ((rpfield)  26) 	/* Num */
+# define FS2H50          ((rpfield)  27) 	/* Num */
+# define FS2H100         ((rpfield)  28) 	/* Num */
+# define FS2TOT          ((rpfield)  29) 	/* Num */
+# define FS3HN           ((rpfield)  30) 	/* Num */
+# define FS3H50          ((rpfield)  31) 	/* Num */
+# define FS3H100         ((rpfield)  32) 	/* Num */
+# define FS3TOT          ((rpfield)  33) 	/* Num */
+# define FS4HN           ((rpfield)  34) 	/* Num */
+# define FS4H50          ((rpfield)  35) 	/* Num */
+# define FS4H100         ((rpfield)  36) 	/* Num */
+# define FS4TOT          ((rpfield)  37) 	/* Num */
+# define FS5HN           ((rpfield)  38) 	/* Num */
+# define FS5H50          ((rpfield)  39) 	/* Num */
+# define FS5H100         ((rpfield)  40) 	/* Num */
+# define FS5TOT          ((rpfield)  41) 	/* Num */
+# define S1HN            ((rpfield)  42) 	/* Num */
+# define S1H50           ((rpfield)  43) 	/* Num */
+# define S1H100          ((rpfield)  44) 	/* Num */
+# define S1TOT           ((rpfield)  45) 	/* Num */
+# define S2HN            ((rpfield)  46) 	/* Num */
+# define S2H50           ((rpfield)  47) 	/* Num */
+# define S2H100          ((rpfield)  48) 	/* Num */
+# define S2TOT           ((rpfield)  49) 	/* Num */
+# define S3HN            ((rpfield)  50) 	/* Num */
+# define S3H50           ((rpfield)  51) 	/* Num */
+# define S3H100          ((rpfield)  52) 	/* Num */
+# define S3TOT           ((rpfield)  53) 	/* Num */
+# define S4HN            ((rpfield)  54) 	/* Num */
+# define S4H50           ((rpfield)  55) 	/* Num */
+# define S4H100          ((rpfield)  56) 	/* Num */
+# define S4TOT           ((rpfield)  57) 	/* Num */
+# define S5HN            ((rpfield)  58) 	/* Num */
+# define S5H50           ((rpfield)  59) 	/* Num */
+# define S5H100          ((rpfield)  60) 	/* Num */
+# define S5TOT           ((rpfield)  61) 	/* Num */
+# define STOTAL          ((rpfield)  62) 	/* Num */
+/* Report Checksum	*/
+# define RP_HSACEMP_CHKSUM ((long) 0x089a)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ZCLI            ((int)   1)
+# define ZOBJ            ((int)   2)
+# define ZPTO            ((int)   3)
+# define ZFCH            ((int)   4)
+# define ZLEG            ((int)   5)
+# define ZNOPRINT        ((int)   6)
+# define ZTOTFCH         ((int)   7)
+# define ZTOTPTO         ((int)   8)
+# define ZTOTOBJ         ((int)   9)
+# define ZTOTCLI         ((int)  10)
+# define ZTOTGEN         ((int)  11)

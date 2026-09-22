@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+hsacemp.exe {
+	hsacemp.fm;
+    hsacemp.rp;
+    hsacemp.c	: hsacemp.fmh hsacemp.rph operac.sch;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;		
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

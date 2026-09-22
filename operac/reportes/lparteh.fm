@@ -1,0 +1,80 @@
+ Empresa          : __. _____________________________________________
+
+ Delegación Comercial  : _____  _________________________________
+
+ Delegación Operacional: _____  _________________________________   
+
+ Filial Operativa      : ______ _________________________________ 
+
+ Opcion           : _ __________________
+ 
+ Legajo     Desde :  {_______. ______________________________________
+            Hasta :   _______.}______________________________________
+
+ Cliente    Desde :{_________. ______________________________________
+            Hasta : _________.}______________________________________
+
+ Objetivo   Desde :    {_,___. ______________________________________
+            Hasta :     _,___.}______________________________________
+
+ Semana del Parte :{__/__/____
+                    __/__/____}
+                    
+ Mostrar          : __. _______________________
+
+ Salida a         : _  _________  ____________________ ____________
+ 
+                 ___________________________________________________
+                     
+%form
+use comerc, bill, sue, billpro;
+language "C";
+window label "Impresión del Parte por Turnos", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+opcion  : in ("C":"Cliente/Objetivo",
+              "P":"Presentismo",
+              "G":"Programador",
+              "S":"Supervisor"), not null, default "C", mask "1>A", autoenter;
+dopcion : is descr(opcion);
+agrsup  : check (nrolegd <= nrolegh), skip when opcion == "C";
+nrolegd : in sue.per(emp):apynom;
+apynomd : sue.per.apynom, skip;
+nrolegh : in sue.per(emp):apynom descending;
+apynomh : sue.per.apynom, skip;
+agrcli  : check (clied <= clieh), skip when opcion == "P" or opcion == "G" or opcion == "S";
+clied   : on help manual, default 1, not null;
+dclied  : skip;
+clieh   : on help manual, default 9999, not null, <10000;
+dclieh  : skip;
+agrobj  : skip when opcion == "P" or opcion == "G" or opcion == "S";
+objetd  : on help manual, default 1, not null;
+dobjd   : skip;
+objeth  : on help manual, default 99, not null, <100;
+dobjh   : skip;
+agrup   : check fdesde <= fhasta;
+fdesde  : default today;
+fhasta  : default today;
+mostra  : in (1:"Todo", 2:"Parametrizado"), default 2;
+dmostr  : is descr(mostra);
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"),
+          not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+dnomb   : is (salida != "A" ? null : "Nombre del archivo: ");
+nomarch : is null when salida !="A", not null;
+coment  : skip;
+

@@ -1,0 +1,30 @@
+
+
+				   [1;4mReporte de Auditoria de Horas[0m
+	
+		
+Este programa hace un listado de controles sobre distintos posibles 
+errores: 
+*	Si tiene la opción "Control que NO tengan parte pero si 
+asignación?", hace una busqueda en la asignacion para el vigilador 
+y luego busca si tiene el parte correspondientes por los días que 
+debería trabajar(Solo visualiza los días que falta tener el parte 
+hecho).                                  
+*	Si la opción es "Control de condición" se fija si para un mismo día
+en el parte tiene ausente y trabajado para el mismo cliente/objetivo.
+*	Si la opción es "Listado de Vigiladores de Baja?" hace una
+busqueda en la asignacion y luego se fija si el vigilador esta
+activo o no. (Solo visualiza a los vigiladores que no estan activo
+y tienen asignación).
+*	Si la opción es "Listado para Comparar Hs. Normales Trabajadas
+contra Hs. Regimen", compara de que las horas normales jamás superen
+las que indica el regimen de dicha asignación, también indica si
+no se llego a cumplir las horas que establece el regimen(si son menos
+horas a las que debería haber trabajado).
+
+
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m noviuaud.exe
+

@@ -1,0 +1,30 @@
+/* Field names	*/
+# define RPROVI          ((rpfield)   0) 	/* String */
+# define RLOCAL          ((rpfield)   1) 	/* String */
+# define RLEGAJO         ((rpfield)   2) 	/* Num */
+# define RAPENOM         ((rpfield)   3) 	/* String */
+# define RTIPDOC         ((rpfield)   4) 	/* String */
+# define RNRODOC         ((rpfield)   5) 	/* Num */
+# define RCALLE          ((rpfield)   6) 	/* String */
+# define RTEL            ((rpfield)   7) 	/* String */
+# define RCLI            ((rpfield)   8) 	/* Num */
+# define RDCLI           ((rpfield)   9) 	/* String */
+# define ROBJ            ((rpfield)  10) 	/* Num */
+# define RDOBJ           ((rpfield)  11) 	/* String */
+# define REFEC           ((rpfield)  12) 	/* String */
+# define RFR             ((rpfield)  13) 	/* String */
+# define RREGIM          ((rpfield)  14) 	/* String */
+# define RHENT           ((rpfield)  15) 	/* Time */
+# define RHSAL           ((rpfield)  16) 	/* Time */
+# define RALTAP1         ((rpfield)  17) 	/* String */
+# define RALTAP2         ((rpfield)  18) 	/* String */
+# define RALTAP3         ((rpfield)  19) 	/* String */
+# define RALTAP4         ((rpfield)  20) 	/* String */
+# define RPORT           ((rpfield)  21) 	/* Bool */
+# define RCLU            ((rpfield)  22) 	/* Bool */
+/* Report Checksum	*/
+# define RP_LOCVIG_CHKSUM ((long) 0x0301)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ENCAB           ((int)   1)
+# define LINVIG          ((int)   2)

@@ -1,0 +1,28 @@
+%nomuestra(rdetfec, rdetobj) no print
+__. __.
+%head(today, rferiado, rper) before (report)
+Fecha: __/__/____
+HORAS STANDARD\	_____________________ \	__________________________
+
+CLIENTE\	DESCR.CLI.\	OBJETIVO\	DESCR.OBJ.\	 \	HS.STANDARD
+%titcli()
+
+%titobj()
+
+%titcli_imp(rcli, rdcli, robj, rdobj, rsvh)
+_________.\	____________________________________________________\	____.\	____________________________________________________ _____.__
+
+%titobj_imp()
+
+%linfecha (rcli, rdcli, robj, rdobj, rfecha, rsvh)
+_________.\	____________________________________________________\	____.\	____________________________________________________\	__/__/____ \	 _____.__
+%totcli()
+
+%zfinp()
+
+%zfin()
+
+%report
+// use operac;
+language"C";
+flength= 0;

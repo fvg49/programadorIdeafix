@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+contden.exe {
+	contden.fm;
+//	nuevo1.fm;
+    contden.rp;
+    contden.c;  
+  	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$WEBINTER/lib/webinter.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+//	$WEBINTER/lib/webinter.a;
+}

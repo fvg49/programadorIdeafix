@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+stdvend.exe {
+	stdvend.fm;
+    stdvend.rp;
+    stdvend2.rp;
+    stdvend.c	: stdvend.fmh stdvend.rph operac.sch;
+	$COMERC/lib/comerc.a;		
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;		
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

@@ -1,0 +1,8 @@
+/* Field names	*/
+# define MULTIREC        (fmfield)  0	/* MULTIPLE        */
+# define OBS             (fmfield)  1	/* String          */
+/* Form checksum	*/
+# define FM_MOTRECMT_CHKSUM (long)0x0007
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

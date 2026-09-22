@@ -1,0 +1,39 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define ULTSEM          (fmfield)  2	/* Integer         */
+# define I_NROCIER       (fmfield)  3	/* Integer         */
+# define MESC            (fmfield)  4	/* Integer         */
+# define ANIOC           (fmfield)  5	/* Integer         */
+# define FDESNOR         (fmfield)  6	/* Date            */
+# define FHASNOR         (fmfield)  7	/* Date            */
+# define FDESEX          (fmfield)  8	/* Date            */
+# define FHASEX          (fmfield)  9	/* Date            */
+# define I_FDESRET       (fmfield) 10	/* Date            */
+# define I_FHASRET       (fmfield) 11	/* Date            */
+# define TIPOCIER        (fmfield) 12	/* Integer         */
+# define DTIPCIER        (fmfield) 13	/* String          */
+# define AGRFN           (fmfield) 14	/* GROUPED         */
+# define FECDNOR         (fmfield) 15	/* Date            */
+# define FECHNOR         (fmfield) 16	/* Date            */
+# define AGRFE           (fmfield) 17	/* GROUPED         */
+# define FECDEX          (fmfield) 18	/* Date            */
+# define FECHEX          (fmfield) 19	/* Date            */
+# define AGRRET          (fmfield) 20	/* GROUPED         */
+# define FECDRET         (fmfield) 21	/* Date            */
+# define FECHRET         (fmfield) 22	/* Date            */
+# define COMENTARIO      (fmfield) 23	/* String          */
+/* Form checksum	*/
+# define FM_CIEROPER_CHKSUM (long)0x0ec2
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_PERI_CERRADO  0
+# define M_ERR_FECNOR       1
+# define M_ERR_FDESNOR      2
+# define M_ERR_FHASNOR      3
+# define M_ERR_FECEX        4
+# define M_ERR_FDESEX       5
+# define M_ERR_FHASEX       6
+# define M_ERR_FDESRET      7
+# define M_ERR_FHASRET      8
+/* =========== End of fmh file ============ */

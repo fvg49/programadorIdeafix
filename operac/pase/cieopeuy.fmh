@@ -1,0 +1,10 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define MULTI           (fmfield)  2	/* MULTIPLE        */
+# define FECCIE          (fmfield)  3	/* Date            */
+/* Form checksum	*/
+# define FM_CIEOPEUY_CHKSUM (long)0x005f
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

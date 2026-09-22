@@ -1,0 +1,6 @@
+"1. Cliente                                "	WCMD	clibill.exe !ADU
+"2. Objetivo                               "	WCMD	objetivo.exe 
+"3. Objetivo sin OT esporadica             "	WCMD	objsinot.exe
+"4. Listado de Datos de Objetivos          "	WCMD	lobjet.exe
+"5. Listado de Objetivos Relacionados      "	WCMD	lrelobj.exe
+"6. Duplicar puestos en Objetivo Hijo/Relac"	WCMD	dupues.exe

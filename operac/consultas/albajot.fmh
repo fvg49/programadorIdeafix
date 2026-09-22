@@ -1,0 +1,12 @@
+/* Field names	*/
+# define AGRUPCC         (fmfield)  0	/* GROUPED         */
+# define FECD            (fmfield)  1	/* Date            */
+# define FECH            (fmfield)  2	/* Date            */
+# define SALIDA          (fmfield)  3	/* String          */
+# define DUMMY           (fmfield)  4	/* String          */
+/* Form checksum	*/
+# define FM_ALBAJOT_CHKSUM (long)0x006a
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_DESDE            0
+/* =========== End of fmh file ============ */

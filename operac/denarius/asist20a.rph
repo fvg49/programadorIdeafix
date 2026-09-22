@@ -1,0 +1,16 @@
+/* Field names	*/
+# define REMPRE          ((rpfield)   0) 	/* String */
+# define RNROLEG         ((rpfield)   1) 	/* Num */
+# define RAPYNOM         ((rpfield)   2) 	/* String */
+# define RFECHA          ((rpfield)   3) 	/* Date */
+# define RCODAUS         ((rpfield)   4) 	/* Num */
+# define RDESCRAUS       ((rpfield)   5) 	/* String */
+# define RTIEMPO         ((rpfield)   6) 	/* Num */
+# define RJUSTIF         ((rpfield)   7) 	/* String */
+/* Report Checksum	*/
+# define RP_ASIST20A_CHKSUM ((long) 0x003e)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LEG             ((int)   1)
+# define LINEA           ((int)   2)
+# define FINLINEA        ((int)   3)

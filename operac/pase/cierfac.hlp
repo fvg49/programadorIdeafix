@@ -1,0 +1,22 @@
+
+               [1;4mCIERRE DE OPERACIONES PARA FACTURAR[0m
+
+Este proceso marca los registros del parte y retroactivos 
+cambiando el estado a "Cerrado para facturar".
+En este estado el parte diario no se puede modificar.
+También se marcan los retroactivos correspondientes al período.
+
+Si el parte se encuentra en estado "Cerrado definitivo" o ya 
+estaba en "Cerrado para facturar" no se modifica.
+
+Existe un programa de reversión: (rcierfac.c)
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m cierfac.exe
+
+[1mProceso:[0m  Recorre las tablas operac|PARTE y operac|RETRO y 
+cambia el campo confir (pone valor 3 "Cerrado para facturar").
+
+[1mPeríodo:[0m  Rango de dias trabajados (No es la fecha de registración).
+

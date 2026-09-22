@@ -1,0 +1,40 @@
+/* Field names	*/
+# define C_EMP           (fmfield)  0	/* Integer         */
+# define X_EMP           (fmfield)  1	/* String          */
+# define T_ORDEN         (fmfield)  2	/* Integer         */
+# define X_ORDEN         (fmfield)  3	/* String          */
+# define T_INFO          (fmfield)  4	/* String          */
+# define X_TINFO         (fmfield)  5	/* String          */
+# define M_DIAS          (fmfield)  6	/* Integer         */
+# define AGRUP_CLI       (fmfield)  7	/* GROUPED         */
+# define C_CLID          (fmfield)  8	/* Long            */
+# define X_CLID          (fmfield)  9	/* String          */
+# define C_CLIH          (fmfield) 10	/* Long            */
+# define X_CLIH          (fmfield) 11	/* String          */
+# define AGRUP_OBJ       (fmfield) 12	/* GROUPED         */
+# define OBJ_D           (fmfield) 13	/* Integer         */
+# define X_OBJD          (fmfield) 14	/* String          */
+# define OBJ_H           (fmfield) 15	/* Integer         */
+# define X_OBJH          (fmfield) 16	/* String          */
+# define AGRUP_VIGI      (fmfield) 17	/* GROUPED         */
+# define VIG_D           (fmfield) 18	/* Long            */
+# define X_VIGD          (fmfield) 19	/* String          */
+# define VIG_H           (fmfield) 20	/* Long            */
+# define X_VIGH          (fmfield) 21	/* String          */
+# define AGRUP_FECHA     (fmfield) 22	/* GROUPED         */
+# define F_D             (fmfield) 23	/* Date            */
+# define F_H             (fmfield) 24	/* Date            */
+# define SALIDA          (fmfield) 25	/* String          */
+# define X_SALIDA        (fmfield) 26	/* String          */
+# define X_ARCHIVO       (fmfield) 27	/* String          */
+/* Form checksum	*/
+# define FM_LASIGPT_CHKSUM (long)0x0910
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_VIGI         0
+# define M_ERR_CLI          1
+# define M_ERR_OBJ          2
+# define M_ERR_FECHA        3
+# define M_ERR_FDESDE       4
+# define M_ERR_FHASTA       5
+/* =========== End of fmh file ============ */

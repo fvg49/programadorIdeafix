@@ -1,0 +1,6 @@
+"1. Pase de Horas trabajadas a Denarius    " WCMD pasdenuy.exe N
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"   SHELL .
+"2. Control de Horas por Clientes/Objetivo/Puesto/Fecha    " WCMD hscliobj.exe
+"3. Control de Horas por Clientes/Objetivo/Puesto/Vigilador" WCMD hsclileg.exe
+"4. Control de Horas por Vigilador                         " WCMD hsvigil.exe
+"E. Control horas Perú									   " WCMD lduplica.exe

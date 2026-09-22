@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+delparte.exe {
+	delparte.fm;
+	delparte.c : delparte.fmh operac.sch;
+
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+}

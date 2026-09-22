@@ -1,0 +1,40 @@
+
+ Empresa  :   __. ______________________________________________     
+ Grupo    : _,___. |  ___________________________________
+
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                          Filial                            
+ §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+ [______ __________________________________________________]
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form
+use operac, comerc, sue;
+language "c";
+window label "[Usuarios por Filial]", border single;
+confirm add, update, end, ignore;
+ignore delete, next, prev;
+display status;
+
+%fields
+emp    : filxgrup., in sue.emps:(descrip), default $emp;
+empdesc: sue.emps.descrip, skip;
+
+grupo  : filxgrup. , in grufil(emp):(descrip);
+dgrupo : grufil.descrip, skip;
+
+multi  : rows 100, display 10;
+
+ffilial: filxgrup.filial , in comerc.filial:(descrip),unique;
+dfilial: comerc.filial.descrip, skip;
+
+

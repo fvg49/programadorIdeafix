@@ -1,0 +1,85 @@
+
+
+				[1mCONSULTA DE ASIGNACIÓN DE VIGILADORES PART TIME.[0m
+
+[1mObjetivo:[0m 
+
+	Generar  un  reporte  que liste  para  un  rango de Fechas dado  la
+	asignación de vigiladores Part Time según el rango de Clientes,
+	Objetivos y Vigiladores especificados como criterios de selección.
+	
+[1mDatos A ingresar:[0m 
+
+[1mCampos de Selección:[0m 
+	Estos campos permiten restringir el rango de la informacion a listar.
+
+[1mCliente Desde:[0m 
+	Indica el valor mínimo  que  puede  tomar el cliente de la información
+	procesada.
+	El valor ingresado debe estar contenido en la tabla de CLIENTES.
+	Si no se especifica ningún valor para el campo se considera que no hay
+	límite inferior para el rango de clientes a considerar.
+
+[1mCliente Hasta:[0m 
+	Indica el valor máximo  que  puede  tomar el cliente de la información
+	procesada.
+	El valor ingresado debe estar contenido en la tabla de CLIENTES.
+	Si no se especifica ningún valor para el campo se considera que no hay
+	límite inferior para el rango de clientes a considerar.
+
+[1mObjetivo Desde:[0m
+	Indica el valor mínimo  que  puede  tomar el objetivo de la información
+	procesada.
+	El valor ingresado debe estar contenido en la tabla de OBJETIVOS.
+    Si  no  se especifica ningún valor para el campo se considera que no hay
+	límite inferior para el rango de objetivos a considerar.	
+
+[1mObjetivo Hasta:[0m 
+	Indica el valor máximo  que  puede  tomar el objetivo de la información
+	procesada.
+	El valor ingresado debe estar contenido en la tabla de OBJETIVOS.
+	Si  no  se especifica ningún valor para el campo se considera que no hay
+	límite superior para el rango de objetivos a considerar.
+
+[1mVigilador Desde:[0m 
+	Indica el valor mínimo  que  puede  tomar el vigilador de la información
+	procesada.
+	El valor ingresado debe estar contenido en la tabla de VIGILADORES.
+	Si  no  se especifica ningún valor para el campo se considera que no hay
+	límite inferior para el rango de objetivos a considerar.
+
+[1mVigilador Hasta:[0m 
+	Indica el valor máximo  que  puede  tomar el vigilador de la información 
+	procesada.
+	El valor ingresado debe estar contenido en la tabla de VIGILADORES.
+	Si  no  se especifica ningún valor para el campo se considera que no hay
+	límite superior para el rango de objetivos a considerar.
+
+[1mPeríodo:[0m 
+[1mDesde:[0m 
+	Indica el valor mínimo  del rango de Fechas a considerar para la asignación 
+	de los vigiladores Part Time.
+
+[1mal:[0m 
+	Indica el valor máximo  del rango de Fechas a considerar para la asignación
+	de los vigiladores Part Time.
+
+[1mSalida:[0m
+	Esta opción permite seleccionar la salida del reporte.
+	Los valores posibles son T (Terminal) , I (Impresora), A (Archivo).
+	En este último caso se habilita un campo para informar el nombre del 
+	archivo a utilizar.
+
+
+[1mAnexo Técnico:[0m    
+
+	Fuentes del Programa
+	lasigpt.c:		Programa cfix principal
+	lasigpt.fm:		Formulario.
+	lasigpt1.rp:	Reporte.
+	lasigpt2.rp:	Reporte.
+	lasigpt.ib:		Archivo que contiene los componentes para generar el .exe.
+	lasigpt.hlp:	Archivo de Ayuda.
+                                                                           
+    
+    

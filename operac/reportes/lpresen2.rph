@@ -1,0 +1,25 @@
+/* Field names	*/
+# define RPMODO2         ((rpfield)   0) 	/* Num */
+# define R_SUPERV2       ((rpfield)   1) 	/* Num */
+# define R_DSUP2         ((rpfield)   2) 	/* String */
+# define R_FECHA2        ((rpfield)   3) 	/* Date */
+# define R_CLI2          ((rpfield)   4) 	/* Num */
+# define R_DCLI2         ((rpfield)   5) 	/* String */
+# define R_STD2          ((rpfield)   6) 	/* Num */
+# define R_OBJ2          ((rpfield)   7) 	/* Num */
+# define R_DOBJ2         ((rpfield)   8) 	/* String */
+# define R_LEGAJO2       ((rpfield)   9) 	/* Num */
+# define R_APENOM2       ((rpfield)  10) 	/* String */
+# define R_REGIM2        ((rpfield)  11) 	/* String */
+# define R_CONDIC2       ((rpfield)  12) 	/* String */
+# define R_HDESDE2       ((rpfield)  13) 	/* String */
+# define R_HHASTA2       ((rpfield)  14) 	/* String */
+/* Report Checksum	*/
+# define RP_LPRESEN2_CHKSUM ((long) 0x00d3)
+/* Zone names	*/
+# define NOPRINT2        ((int)   0)
+# define HEAD2           ((int)   1)
+# define SVISOR2         ((int)   2)
+# define LCLI2           ((int)   3)
+# define ZLINEA2         ((int)   4)
+# define ZFIN2           ((int)   5)

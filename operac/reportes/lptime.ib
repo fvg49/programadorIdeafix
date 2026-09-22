@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lptime.exe {
+	lptime.fm;
+	lptime.rp;
+	lptime1.rp;
+	lptime.c;
+	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

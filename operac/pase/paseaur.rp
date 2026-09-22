@@ -1,0 +1,17 @@
+%titulo(empre, today, hour, pageno) before (page, report) 
+[16c
+________________                                            Fecha : __/__/____
+                                                            Hora  :      __:__
+                                                            Página:       ____.
+
+        Errores del cross de clientes de operaciones a comercial
+        ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+%linea(descrip)
+___________________________________________________________________________
+%report
+use prosegur;
+language "C";
+flength = $FLENGTH;
+
+%fields

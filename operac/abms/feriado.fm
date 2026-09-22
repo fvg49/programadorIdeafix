@@ -1,0 +1,28 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Fecha del Feriado : __/__/____| ___________________________ 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                País                      Provincia         
+  §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+  [{__. ________________________ __. _____________________}]
+                                                            
+                                                            
+                                                            
+                                                            
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use operac, sue;
+language "c";
+window label "[Feriados]", border single;
+display status;
+
+%fields
+fecha  : feriado., on help manual;
+descrip: feriado.;
+multi  : rows 50, display 5;
+agrup  : unique;
+pais1  : feriado.pais, in sue.pais: descrip;
+despai : sue.pais.descrip, skip;
+prov   : feriado., in sue.provi(pais1): denom;
+desprov: sue.provi.denom, skip;
+

@@ -1,0 +1,4 @@
+"1. Listado de Clientes por Presentismo " WCMD execform -w -b lsvisor iql -b lsvisor
+"2. Listado de Regimen                  " WCMD execform -w -b cregim iql -b cregim
+"3. Listado de Subregimen               " WCMD execform -w -b c_subreg iql -b c_subreg
+"4. Listado de Feriados                 " WCMD lferiado.exe

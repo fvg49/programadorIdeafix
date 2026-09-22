@@ -1,0 +1,12 @@
+/* Field names	*/
+# define I_EMP           (fmfield)  0	/* Integer         */
+# define LIQUI1          (fmfield)  1	/* Long            */
+# define AGRUL           (fmfield)  2	/* GROUPED         */
+# define ANO             (fmfield)  3	/* Integer         */
+# define MES             (fmfield)  4	/* String          */
+# define QUIN            (fmfield)  5	/* Integer         */
+/* Form checksum	*/
+# define FM_NUEVO1_CHKSUM (long)0x006c
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

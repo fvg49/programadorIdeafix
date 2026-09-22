@@ -1,0 +1,15 @@
+"1. Tablas Generales             " MENU  copu100
+"2. Clientes y Objetivos         " MENU  copu200
+"3. Orden de Trabajo             " MENU  copu300
+"4. Asignación de Vigiladores    " MENU  copu400
+"5. Parte Diario                 " MENU  copu500
+"6. Listados de Ausentismos      " MENU  copu600
+"7. Filiales (Descentralización) " MENU  copu700
+"8. Auditoria de Asignaciones    " MENU  copu800
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" SHELL .
+"Z. Configuración            " MENU  opuusr
+
+
+
+
+

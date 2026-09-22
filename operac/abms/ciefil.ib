@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ciefil.exe {
+	ciefil.fm;
+   	ciefil.c;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+}

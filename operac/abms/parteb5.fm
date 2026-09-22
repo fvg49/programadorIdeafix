@@ -1,0 +1,59 @@
+¨_________________________________________________¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡±¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                                       
+  [1m  Se encontraron inconsistencias en el calculo de horas desea corregirlas ? __?  [0m    
+                                                                                       
+  Legajo  : _______. _______________________                                           
+  Regimen : _________  Hs Normales : __.__                                             
+  Linea ____.                                                                          
+                                                                                       
+  ¨¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡ª  
+                                    ACTUALMENTE                 SUGERIDO               
+   Cliente Objet Hora  Hora §¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¥Dif   
+                  Ent.  Sal.   Hs  HsExt Hs.Ext Hs.Ext Hs.   HsExt Hs.Ext Hs.Ext       
+                             Norm.   25% 35%yFe Franc. Norm.  25%  35%yFe Franc.       
+  §¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¥  
+  [______. ____. __:__ __:__ __.__ __.__ __.__  __.__  __.__ __.__ __.__  __.__  __?]  
+                                                                                       
+                                                                                       
+                                                                                       
+                                                                                       
+  ¢¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¤  
+                                                                                       
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form()                                                                
+use operac;
+language "C";
+ignore end, ignore, add, update, delete;
+
+%fields
+ctrltitulo: skip;
+
+ctrlcorri : in (true, false), not null, default false;
+
+ctrlnroleg: skip;
+ctrlnombre: skip;
+ctrlregim : skip;
+ctrlnormal: skip;
+ctrllinea : skip;
+
+ctrlmulti : rows 30, display 5, ignore delete, ignore insert;
+ctrlclien : skip;
+ctrlobjet : skip;
+ctrlhrent : skip;
+ctrlhrsal : skip;
+ctrlnorac : skip;
+ctrl50ac  : skip;
+ctrl100ac : skip;
+ctrlfraac : skip;
+ctrlnorsu : skip;
+ctrl50su  : skip;
+ctrl100su : skip;
+ctrlfrasu : skip;
+
+i_ctrlptoser : internal num(4), default null;
+i_ctrlpuesto : internal num(4), default null;
+i_ctrlnroint : internal num(4), default null;
+
+ctrldifer : is (ctrlnorac != ctrlnorsu or ctrl50ac  != ctrl50su or ctrl100ac != ctrl100su or ctrlfraac != ctrlfrasu? true : null);
+

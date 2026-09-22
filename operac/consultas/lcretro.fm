@@ -1,0 +1,39 @@
+_____________________________________ 
+ 
+ Fecha desde: __/__/____
+ Fecha hasta: __/__/____
+
+ Fecha registracion desde: __/__/____
+ Fecha registracion hasta: __/__/____
+
+
+ Salida por  : _ _________________  _________________
+
+   ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     Digite __ para confirmar  
+   ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+   
+_____________________________________________________________________________   
+
+%form
+use comerc, sue;                
+language "C";
+window label "[Listado de Retroactivos]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+
+%fields           
+titulo  : skip;
+fdesde  : not null;
+fhasta  : not null;
+frdesde : not null;
+frhasta : not null;
+//salida  : in ("printer", "terminal"), default "printer", not null;
+salida	: in ("T":"Terminal", "I":"Impresora", "A": "Archivo"), default "I", mask ">A";
+dsalida	: is descr(salida);    
+archivo : is salida = "A" ? void : null, not null;      
+dummy   : is help (PROCESAR);
+comentario : skip;
+
+

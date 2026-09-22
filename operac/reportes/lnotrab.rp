@@ -1,0 +1,26 @@
+%titulo(pageno, today, module,remp, rdemp, rfecdes, rfechas, rlegd, rdlegd, rlegh, rdlegh) before (page, report)
+													   Página:       ____.
+													   Fecha : __/__/____
+													           (________)
+Empresa :___. ___________________Fecha desde : __/__/____ hasta : __/__/____
+Legajo desde : _________. __________________________________________________
+       hasta : _________. __________________________________________________
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  LEGAJO                  NOMBRE Y APELLIDO                    FECHA INGRESO 
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%linea(rleg, rdleg, rfecing)
+_________. __________________________________________________    __/__/____
+%total(count(rleg)) after report
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+ Cantidad Total  :                                                   ____.    
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+use sue;
+flength=$FLENCOMP;
+output to terminal;
+width=80;
+
+%fields
+rleg    : per.nroleg;
+rdleg   : per.apynom;
+rfecing : per.fecing;

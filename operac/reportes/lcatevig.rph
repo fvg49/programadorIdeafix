@@ -1,0 +1,37 @@
+/* Field names	*/
+# define RDEMP           ((rpfield)   0) 	/* String */
+# define RFDESDE         ((rpfield)   1) 	/* Date */
+# define RFHASTA         ((rpfield)   2) 	/* Date */
+# define RVIGID          ((rpfield)   3) 	/* Num */
+# define RDVIGID         ((rpfield)   4) 	/* String */
+# define RVIGIH          ((rpfield)   5) 	/* Num */
+# define RDVIGIH         ((rpfield)   6) 	/* String */
+# define RDEFA           ((rpfield)   7) 	/* Num */
+# define RDDEFA          ((rpfield)   8) 	/* String */
+# define RCAMBC          ((rpfield)   9) 	/* Num */
+# define RDCAMBC         ((rpfield)  10) 	/* String */
+# define RNROLEG         ((rpfield)  11) 	/* Num */
+# define RAPYNOM         ((rpfield)  12) 	/* String */
+# define RFECASIG        ((rpfield)  13) 	/* Date */
+# define RFECBAJ         ((rpfield)  14) 	/* Date */
+# define RCLIENTE        ((rpfield)  15) 	/* Num */
+# define ROBJETIVO       ((rpfield)  16) 	/* Num */
+# define RCATEG1         ((rpfield)  17) 	/* Num */
+# define RBASICO1        ((rpfield)  18) 	/* Num */
+# define R_PLUS1         ((rpfield)  19) 	/* Num */
+# define R_TK1           ((rpfield)  20) 	/* Num */
+# define R_OTROS1        ((rpfield)  21) 	/* Num */
+# define RCONFCLI        ((rpfield)  22) 	/* Num */
+# define RCATEG2         ((rpfield)  23) 	/* Num */
+# define RBASICO2        ((rpfield)  24) 	/* Num */
+# define R_PLUS2         ((rpfield)  25) 	/* Num */
+# define R_TK2           ((rpfield)  26) 	/* Num */
+# define R_OTROS2        ((rpfield)  27) 	/* Num */
+# define RCONFCOBR       ((rpfield)  28) 	/* Num */
+# define RDIFSAL         ((rpfield)  29) 	/* Num */
+/* Report Checksum	*/
+# define RP_LCATEVIG_CHKSUM ((long) 0x0243)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)
+# define FLIN            ((int)   2)

@@ -1,0 +1,24 @@
+%ztitulo(pageno, today, rmes, ranio, rfecreg, rnrolegd, rapynomd, rnrolegh, rapynomh) before(page, report)
+[16c[2o\$empresa                                                                                                                                                               Página :       ____.
+                                                                                                                                                                        Fecha  : __/__/____
+                                                                                                                                                                               (lvacac)
+                                                                                     Listado de Vacaciones 
+
+           Mes   : __. Año: ____.                                                                                                          Fecha de Carga : __/__/____
+           Desde : _______. ______________________________________
+           Hasta : _______. ______________________________________
+
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                  Vigilador                   Período  Fecha Desde  Fecha Hasta    Días  Cliente/Obj 1  Cliente/Obj 2  Cliente/Obj 3  Cliente/Obj 4  Cliente/Obj 5  Cliente/Obj 6  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%zlinea(rnroleg, rapynom, rperiodo, rfdesde, rfhasta, rtotvac, rcliente1, robj1, rcliente2, robj2, rcliente3, robj3, rcliente4, robj4, rcliente5, robj5, rcliente6, robj6)
+   ________. ________________________________  ____.    __/__/____   __/__/____  ______.  ______. __.    ______. __.    ______. __.    ______. __.    ______. __.    ______. __.
+%ztotal(count(rnroleg)) after report
+
+          Total Vigiladores : _,___.
+%report
+language "c";
+width = 180;
+topmarg = 0;
+flength = $FLENGTH;

@@ -1,0 +1,46 @@
+Empresa:   __. ______________________________________________ Fecha de Inicio Posterior a : __/__/____ | 
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©±±±±±±±±±±±±©¡¡¡¡ª
+                                    Origen                                              Destino         
+            Legajo              §¡¡¡¡¡©¡¡¡¡¡¡¥      Tipo         Inicio       Fin    §¡¡¡¡¡©¡¡¡¡¡¡¥Act. 
+                                 Deleg Filial                                         Deleg Filial      
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦±±±±±±±±±±¡±±±±±¦¡¡¡¡¡¡¡¡¡¡¦±±±±±±¡±±±±¦±±±±±¦±±±±±±¦¡¡¡¡¥
+[_______. ______________________ _____ ______ {__. ___________ __/__/____ __/__/____}°_____ ______  __?]
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+                                                                                     °                   
+¢¡_______________¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¤ 
+
+           ___________________________________________________________________________
+%form
+use operac, sue, billpro, comerc;
+window label "[Permisos sobre vigiladores x Delegacion/Filial]", border single;
+display status;
+ignore delete;
+%fields
+
+emp       : pervig., in sue.emps:(descrip), default $emp;
+empdesc   : sue.emps.descrip, skip;
+fecdes    : not null;
+
+multi0    : rows 500, display 10;
+nroleg    : pervig., on help manual, unique;
+desc0     : skip; //sue.per.apynom, skip;
+delori    : pervig. , skip;
+filori    : pervig. , skip;
+agrfec    : ;
+tipper    : pervig. ;
+desc1     : tpermi.descor, skip;
+fecini    : pervig. ;
+fecfin    : pervig. , >=fecini;
+delega    : pervig. , in billpro.delega:(descrip);
+filial    : pervig. , on help manual, not null;
+activo    : pervig. , manual subform pervig1;
+linea     : default "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡", skip;
+mensaje   : skip;

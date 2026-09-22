@@ -1,0 +1,10 @@
+/* Field names	*/
+# define CODROL          (fmfield)  0	/* Integer         */
+# define DESCRIP         (fmfield)  1	/* String          */
+# define TIPROL          (fmfield)  2	/* Integer         */
+# define DTIPROL         (fmfield)  3	/* String          */
+/* Form checksum	*/
+# define FM_ROL_CHKSUM (long)0x001e
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

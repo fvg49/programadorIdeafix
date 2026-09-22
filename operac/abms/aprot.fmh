@@ -1,0 +1,27 @@
+/* Field names	*/
+# define NROEMP          (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define POSOT           (fmfield)  2	/* Long            */
+# define MULTI           (fmfield)  3	/* MULTIPLE        */
+# define EMP             (fmfield)  4	/* String          */
+# define TIPCOMP         (fmfield)  5	/* String          */
+# define SERIE           (fmfield)  6	/* String          */
+# define DELEG           (fmfield)  7	/* String          */
+# define NROOT           (fmfield)  8	/* Long            */
+# define ABM             (fmfield)  9	/* String          */
+# define I_EMP           (fmfield) 10	/* Integer         */
+# define I_TIPCOMP       (fmfield) 11	/* Integer         */
+# define I_SERIE         (fmfield) 12	/* Integer         */
+# define CLIENTE         (fmfield) 13	/* Long            */
+# define OBJET           (fmfield) 14	/* Integer         */
+# define FECREG          (fmfield) 15	/* Date            */
+# define APRUEBA         (fmfield) 16	/* Integer         */
+# define DAPRUEB         (fmfield) 18	/* String          */
+# define TIPSER          (fmfield) 19	/* String          */
+# define DTIPSER         (fmfield) 20	/* String          */
+/* Form checksum	*/
+# define FM_APROT_CHKSUM (long)0x0470
+/* Subform names	*/
+# define SF_MOTRECH           0
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,47 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define CLIENTE         (fmfield)  2	/* Long            */
+# define DCLIE           (fmfield)  3	/* String          */
+# define OBJET           (fmfield)  4	/* Integer         */
+# define DOBJET          (fmfield)  5	/* String          */
+# define FECHA           (fmfield)  6	/* Date            */
+# define AGRRET          (fmfield)  7	/* GROUPED         */
+# define RETEND          (fmfield)  8	/* Long            */
+# define DRETEND         (fmfield)  9	/* String          */
+# define RETENH          (fmfield) 10	/* Long            */
+# define DRETENH         (fmfield) 11	/* String          */
+# define AGRCLI          (fmfield) 12	/* GROUPED         */
+# define CLID            (fmfield) 13	/* Long            */
+# define OBJD            (fmfield) 14	/* Integer         */
+# define DOBJD           (fmfield) 15	/* String          */
+# define CLIH            (fmfield) 16	/* Long            */
+# define OBJH            (fmfield) 17	/* Integer         */
+# define DOBJH           (fmfield) 18	/* String          */
+# define AGRPROV         (fmfield) 19	/* GROUPED         */
+# define I_CODPAIS       (fmfield) 20	/* Integer         */
+# define PROVD           (fmfield) 21	/* Integer         */
+# define DPROVD          (fmfield) 22	/* String          */
+# define PROVH           (fmfield) 23	/* Integer         */
+# define DPROVH          (fmfield) 24	/* String          */
+# define PROVIS          (fmfield) 25	/* String          */
+# define DPROVIS         (fmfield) 26	/* String          */
+# define CONDTRAB        (fmfield) 27	/* String          */
+# define DCONDTRAB       (fmfield) 28	/* String          */
+# define INSCLU          (fmfield) 29	/* String          */
+# define DINSCLU         (fmfield) 30	/* String          */
+# define PORTAC          (fmfield) 31	/* String          */
+# define DPORTAC         (fmfield) 32	/* String          */
+# define OPCION          (fmfield) 33	/* String          */
+# define DOPCION         (fmfield) 34	/* String          */
+# define ORDEN           (fmfield) 35	/* String          */
+# define DORDEN          (fmfield) 36	/* String          */
+# define SALIDA          (fmfield) 37	/* String          */
+# define DSALIDA         (fmfield) 38	/* String          */
+# define NOMARCH         (fmfield) 39	/* String          */
+# define COMENT          (fmfield) 40	/* String          */
+/* Form checksum	*/
+# define FM_LRETEN_CHKSUM (long)0x0856
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

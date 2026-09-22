@@ -1,0 +1,13 @@
+"1. Tablas Generales             " MENU  opu100
+"2. Clientes y Objetivos         " MENU  opu200
+"3. Orden de Trabajo             " MENU  opu300
+"4. Asignación de Vigiladores    " MENU  opu400
+"5. Parte Diario                 " MENU  opu500
+"6. Listados de Ausentismos      " MENU  opu600
+"7. Filiales (Descentralización) " MENU  opu700
+"8. Auditoria de Asignaciones    " MENU  opu800
+"9. Roles                        " MENU  opu900
+"A. Cierre Operativo             " WCMD cieopeuy.exe
+"B. Cierre Facturacion           " WCMD cierfac.exe
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" SHELL .
+"Z. Configuración            " MENU  opuusr

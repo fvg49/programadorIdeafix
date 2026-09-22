@@ -1,0 +1,24 @@
+%head(today, pageno) before (page, report)
+[2o[16c                                                                                                                                                                      Fecha  : __/__/____
+                                                                                                                                                                      Página :       ____.
+                                                                 Datos de Vigiladores                                                                                     (ldatvig)
+                                                                 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+%encab(r_cli, r_dcli, r_presen, r_dpresen, r_obj, r_dobj, r_program, r_dprogram, r_fil, r_dfil) before (page)
+
+Cliente  : _________.  _________________________________________             Presentismo : _,___,___. _________________________________________
+Objetivo :      ____.  _________________________________________             Programador : _,___,___. _________________________________________
+Filial   :       ___   _________________________________________
+                                                                                                                                                                                                                               ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                                                                                                                                                                                         Fecha         
+¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¥
+  Legajo        Apellido y Nombre          Documento     Fec.Nac.          Domicilio             Localidad            Provincia       Teléfono    Fr  Régimen  Régimen N P H.Ent. H.Sal. Alt.Pol Port Fecha Ven. CLU Fecha Ven.  Ingreso       Cese    
+¢¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¤
+%linvig(rlegajo, rapenom,            rtipdoc, rnrodoc, rfecnac,   rcalle,                       rlocal,             rprovi,      rtel,          rfr, rregim, rregpto, rcodint, rhent, rhsal, raltap1, raltap2, raltap3, raltap4, rport, rfvenport, rclu, rfvenclu, rfing, rfegr)
+_________. ___________________________ ____ ___,___,___. __/__/__ ______________________________ ____________________ ____________ ______________ _ ________ ________ ____. __:__  __:__  _ _ _ _ __?  __/__/____ __? __/__/____ __/__/____  __/__/____
+
+%report
+language"C";
+topmarg = 0;
+flength= $FLENLANDCOMP;
+//width=250;
+output to terminal;

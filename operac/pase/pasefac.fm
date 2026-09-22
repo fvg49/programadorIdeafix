@@ -1,0 +1,106 @@
+ Empresa        :         __.  _________________________________________
+ Liquidación    :  _________.  _________________________________________
+
+ Filtra Clientes: __?
+ {
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+   __? __________________________________ ____. ______________________  
+  §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥   
+   [_,___,___. _________________ ____. _________________ ______________]
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+ } {
+ ________________ {_________.  _________________________________________
+          _______  _________.} _________________________________________
+
+ ________________      {____.  _________________________________________
+          _______       ____.} _________________________________________
+ }
+
+ Período  Desde :{__/__/____
+          Hasta : __/__/____}
+
+ Origen Horas   : _ ___________________________
+ 
+ Tipo   Horas   : _ ___________________________
+
+ [1m_____________________________________________________________[0m   _______
+
+%form
+use operac, bill, sue, billpro, comerc;
+language "C";
+window label "[Pasaje de Horas Trabajadas de Novia a Facturación]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+messages
+		ERR_CLIE : "El Cliente Desde debe ser menor o igual al Cliente Hasta",
+		ERR_OBJE : "El Objetivo Desde debe ser menor o igual al Objetivo Hasta",
+		ERR_FCH  : "La Fecha Desde debe ser menor o igual a la Fecha Hasta";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+i_grupo : internal num(2);
+//nroliq  : in bill.liquid by grup(i_grupo):(descrip), not null;
+nroliq  : in bill.liquid by emp(emp,i_grupo):(descrip), not null;
+descliq : bill.liquid.descrip, skip;
+
+filtra  : not null, default false;
+agr_filtro: skip when (filtra=false);
+considera: is (filtra=false ? null : void), not null, default false;
+dconsider: is (filtra=false ? null : "considera los siguientes clientes: ");
+tipcli:    is (filtra=false ? null : void),
+			in billpro.cliesp by tipogrp(1):descrip, descr "Grupo de clientes especiales";
+dtipcli:   billpro.cliesp.descrip, skip;
+
+multi  :  rows 200, display 5;
+clicon :  in bill.cliente:(razsoc);
+dclicon:  bill.cliente.razsoc, skip;
+objcon:   in comerc.objetivo by est(emp, true, clicon):descrip;
+dobjcon:  comerc.objetivo.descrip, skip;
+dtobjcon:  is (clicon>0 and objcon = null) ? "Todos los Obj." : null;
+
+agr_desde: skip when (considera=true);
+clidesde: is (filtra=true and considera=true ? null : "Cliente  Desde :");
+agrclie : check (clid <= clih), on error ERR_CLIE;
+clid    : is (filtra=true and considera=true ? null : void),
+			on help in bill.cliente:(razsoc), not null, default 3001;
+dclid   : bill.cliente.razsoc, skip;
+clihasta: is (filtra=true and considera=true ? null : "Hasta :");
+clih    : is (filtra=true and considera=true ? null : void),
+		  on help in bill.cliente:(razsoc), not null, default 999999999;
+dclih   : bill.cliente.razsoc, skip;
+
+objdesde: is (filtra=true and considera=true ? null : "Objetivo Desde :");
+agrobje : ; //check (objd <= objh), on error ERR_OBJE;
+objd    : is (filtra=true and considera=true ? null : void),
+		  on help in comerc.objetivo by est(emp, true, clid):descrip, not null, default 0;
+dobjd   : comerc.objetivo.descrip, skip;
+objhasta: is (filtra=true and considera=true ? null : "Hasta :");
+objh    : is (filtra=true and considera=true ? null : void),
+		  on help in comerc.objetivo by est(emp, true, clih):descrip, not null, default 99;
+dobjh   : comerc.objetivo.descrip, skip;
+
+agrupf  : check fechad <= fechah, on error ERR_FCH;
+fechad  : not null;
+fechah  : not null;
+
+tiphor	: not null,default "T", mask ">A",
+ 			in ("P":"Parte Diario",
+				"R":"Retroactivos",
+				"T":"Parte Diario + Retroactivos"),autoenter;
+dtiphor	: is descr (tiphor);
+
+tipho	: not null,default "T", mask ">A",
+ 			in ("N":"Normales",
+				"E":"Especiales",
+				"T":"Normales + Especiales"),autoenter;
+dtipho	: is descr (tipho);
+
+
+coment  : skip;
+coment2 : skip;

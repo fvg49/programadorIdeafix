@@ -1,0 +1,7 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+depano.fm;
+depanoh.fm;
+depano.c : depano.fmh depanoh.fmh comgral.sch comgral.h;

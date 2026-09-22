@@ -1,0 +1,50 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define LISTAPOR        (fmfield)  2	/* Integer         */
+# define DLISPOR         (fmfield)  3	/* String          */
+# define AGRFEC          (fmfield)  4	/* GROUPED         */
+# define FDESDE          (fmfield)  5	/* Date            */
+# define FHASTA          (fmfield)  6	/* Date            */
+# define FDELEG          (fmfield)  7	/* String          */
+# define DDELEG          (fmfield)  8	/* String          */
+# define FDELEGA         (fmfield)  9	/* String          */
+# define DDELEGA         (fmfield) 10	/* String          */
+# define FFILIAL         (fmfield) 11	/* String          */
+# define DFILIAL         (fmfield) 12	/* String          */
+# define AGRCLIE         (fmfield) 13	/* GROUPED         */
+# define CLIDESDE        (fmfield) 14	/* Long            */
+# define DCLID           (fmfield) 15	/* String          */
+# define CLIHASTA        (fmfield) 16	/* Long            */
+# define DCLIH           (fmfield) 17	/* String          */
+# define AGROBJE         (fmfield) 18	/* GROUPED         */
+# define OBJDESDE        (fmfield) 19	/* Integer         */
+# define DOBJD           (fmfield) 20	/* String          */
+# define OBJHASTA        (fmfield) 21	/* Integer         */
+# define DOBJH           (fmfield) 22	/* String          */
+# define AGRVIGI         (fmfield) 23	/* GROUPED         */
+# define VIGID           (fmfield) 24	/* Long            */
+# define DVIGID          (fmfield) 25	/* String          */
+# define VIGIH           (fmfield) 26	/* Long            */
+# define DVIGIH          (fmfield) 27	/* String          */
+# define DEFASA          (fmfield) 28	/* Integer         */
+# define DDEFASA         (fmfield) 29	/* String          */
+# define CAMBCATE        (fmfield) 30	/* Integer         */
+# define DCAMBCAT        (fmfield) 31	/* String          */
+# define DIFER           (fmfield) 32	/* Integer         */
+# define COMPSUE         (fmfield) 33	/* Integer         */
+# define SUPDIF          (fmfield) 34	/* Integer         */
+# define SALIDA          (fmfield) 35	/* String          */
+# define DSALIDA         (fmfield) 36	/* String          */
+# define NOMARCH         (fmfield) 37	/* String          */
+# define PROCVIGI        (fmfield) 38	/* Long            */
+# define DPROCVIG        (fmfield) 39	/* String          */
+/* Form checksum	*/
+# define FM_LCATEVIG_CHKSUM (long)0x11ba
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_FECHAS       0
+# define M_ERR_CLIE         1
+# define M_ERR_OBJE         2
+# define M_ERR_VIGI         3
+/* =========== End of fmh file ============ */

@@ -1,0 +1,17 @@
+	[1m	[0m[1;4mListado Legajos Permitidos Por Usuario[0m
+		
+		
+ Este listado muestra a que legajos puede acceder un usuario. 
+
+ [1mVer permisos por Vigilador:[0m Se puede elegir que no muestre estos 
+ permisos, que muestre los de asignacion, insercion o ambos. 
+
+ [1mVer permisos por Grupos de Filiale[0m: agrega o no los  permisos por
+ grupos de fifliales, o sea si esta en si muestra todos los legajos
+ que se pueden insertar por estar en determinado grupo.
+
+
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m lpervig.exe

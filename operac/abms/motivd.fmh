@@ -1,0 +1,12 @@
+/* Field names	*/
+# define CODMOTD         (fmfield)  0	/* Integer         */
+# define DESCRIP         (fmfield)  1	/* String          */
+# define DESCOR          (fmfield)  2	/* String          */
+# define M_INC           (fmfield)  3	/* Integer         */
+# define ROTACION        (fmfield)  4	/* Integer         */
+# define ACTIVO          (fmfield)  5	/* Integer         */
+/* Form checksum	*/
+# define FM_MOTIVD_CHKSUM (long)0x0119
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

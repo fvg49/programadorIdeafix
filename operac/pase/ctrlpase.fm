@@ -1,0 +1,41 @@
+
+
+Año     : ____.   Tipo de Cierre: __. ______________________________
+  
+Periodo : __. __/__/____  __/__/____
+
+Nro. Liq: _________.
+
+Salida Por _ _________________ _______________
+[1m_____________________________________________ [0m
+
+%form()
+use webinter, operac;
+language "C";
+window label "[Liquidaciones]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+anio    : not null, between 2011 and 2050, default year(today);
+
+
+cotici : in operac.tipcie:(descrip), not null;
+dtipcie : operac.tipcie.descrip, skip;
+
+period  : in operac.periodo (40, anio, cotici):(fecdes, fechas), not null; //Le harcodeo 40 como número de liquidación
+fechad  : operac.periodo.fecdes, skip;
+fechah  : operac.periodo.fechas, skip;
+
+
+nroliq  : skip;
+
+salida  : in (	"T":"Terminal",
+				"I":"Impresora",
+				"A":"Archivo"),
+		default "I",
+		mask ">A",
+		autoenter ;
+dsalida : is descr(salida);
+archivo : is (salida!="A" ? null: void), not null;
+comenta : skip;

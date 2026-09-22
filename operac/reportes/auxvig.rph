@@ -1,0 +1,44 @@
+/* Field names	*/
+# define POR             ((rpfield)   0) 	/* Num */
+# define RFECHAD         ((rpfield)   1) 	/* Date */
+# define RFECHAH         ((rpfield)   2) 	/* Date */
+# define RRETRO          ((rpfield)   3) 	/* Bool */
+# define RLICEN          ((rpfield)   4) 	/* Bool */
+# define RDELEG          ((rpfield)   5) 	/* String */
+# define RDELEGA         ((rpfield)   6) 	/* String */
+# define RFILIAL         ((rpfield)   7) 	/* String */
+# define RCLID           ((rpfield)   8) 	/* Num */
+# define RDCLID          ((rpfield)   9) 	/* String */
+# define ROBJD           ((rpfield)  10) 	/* Num */
+# define RDOBJD          ((rpfield)  11) 	/* String */
+# define RCLIH           ((rpfield)  12) 	/* Num */
+# define RDCLIH          ((rpfield)  13) 	/* String */
+# define ROBJH           ((rpfield)  14) 	/* Num */
+# define RDOBJH          ((rpfield)  15) 	/* String */
+# define RVIGD           ((rpfield)  16) 	/* Num */
+# define RDVIGD          ((rpfield)  17) 	/* String */
+# define RVIGH           ((rpfield)  18) 	/* Num */
+# define RDVIGH          ((rpfield)  19) 	/* String */
+# define RVIGIL          ((rpfield)  20) 	/* Num */
+# define RDVIGIL         ((rpfield)  21) 	/* String */
+# define RCLI            ((rpfield)  22) 	/* Num */
+# define RDCLI           ((rpfield)  23) 	/* String */
+# define ROBJ            ((rpfield)  24) 	/* Num */
+# define RDOBJ           ((rpfield)  25) 	/* String */
+# define RDIA            ((rpfield)  26) 	/* Date */
+# define RCOND           ((rpfield)  27) 	/* String */
+# define RNOV            ((rpfield)  28) 	/* Num */
+# define RDNOV           ((rpfield)  29) 	/* String */
+# define RPUE            ((rpfield)  30) 	/* Num */
+# define RTIPPUE         ((rpfield)  31) 	/* Num */
+# define RDESCTPUE       ((rpfield)  32) 	/* String */
+/* Report Checksum	*/
+# define RP_AUXVIG_CHKSUM ((long) 0x03b0)
+/* Zone names	*/
+# define ZPARAM          ((int)   0)
+# define HEAD            ((int)   1)
+# define HEAD1           ((int)   2)
+# define HEAD2           ((int)   3)
+# define SUBHEAD         ((int)   4)
+# define ZVIG            ((int)   5)
+# define ZFIN            ((int)   6)

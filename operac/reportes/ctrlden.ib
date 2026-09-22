@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ctrlden.exe {
+	ctrlden.fm;
+	ctrlden.rp;
+	ctrlden.c;
+	$DENARIUSLIB.a;
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+ 	$BRIGADALIB.a;
+}

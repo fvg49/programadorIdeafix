@@ -1,0 +1,5 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+rrola.fm;

@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+genhspar.exe {
+	genhspar.fm;
+	genhspar.c : genhspar.fmh operac.sch;
+
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+}

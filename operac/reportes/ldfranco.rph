@@ -1,0 +1,27 @@
+/* Field names	*/
+# define R_EMP           ((rpfield)   0) 	/* Num */
+# define R_DEMP          ((rpfield)   1) 	/* String */
+# define R_LEGD          ((rpfield)   2) 	/* Num */
+# define R_DLEGD         ((rpfield)   3) 	/* String */
+# define R_LEGH          ((rpfield)   4) 	/* Num */
+# define R_DLEGH         ((rpfield)   5) 	/* String */
+# define R_FECD          ((rpfield)   6) 	/* Date */
+# define R_FECH          ((rpfield)   7) 	/* Date */
+# define R_LEG           ((rpfield)   8) 	/* Num */
+# define R_DLEG          ((rpfield)   9) 	/* String */
+# define R_CLIE          ((rpfield)  10) 	/* Num */
+# define R_OBJ           ((rpfield)  11) 	/* Num */
+# define R_DOBJ          ((rpfield)  12) 	/* String */
+# define R_TPUE          ((rpfield)  13) 	/* Num */
+# define R_DTPUE         ((rpfield)  14) 	/* String */
+# define R_REGIM         ((rpfield)  15) 	/* String */
+# define R_CANTD         ((rpfield)  16) 	/* Num */
+# define R_FRANTE        ((rpfield)  17) 	/* Num */
+# define R_CANTFR        ((rpfield)  18) 	/* Num */
+# define R_FRATRA        ((rpfield)  19) 	/* Num */
+# define R_FRANOT        ((rpfield)  20) 	/* Num */
+/* Report Checksum	*/
+# define RP_LDFRANCO_CHKSUM ((long) 0x0147)
+/* Zone names	*/
+# define ZTIT            ((int)   0)
+# define LINEA           ((int)   1)

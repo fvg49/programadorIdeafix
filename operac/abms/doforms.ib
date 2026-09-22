@@ -1,0 +1,11 @@
+project $NOVIA/reglas.ib;
+
+//model.fm;
+motivd.fm;
+condicio.fm;
+rol.fm;
+rrola.fm;
+subcont.fm;
+subfobj.fm;
+#periodos.fm;
+sucxobj.fm;

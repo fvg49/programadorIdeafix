@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+migpue.exe {
+	migpue.fm;
+	migpue.c : migpue.fmh comerc.sch operac.sch aurus.sch billpro.sch bill.sch;
+	$COMERC/lib/comerc.a;
+  	$OPERAC/lib/operac.a;
+  	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+	$AURUSLIB.a;
+}

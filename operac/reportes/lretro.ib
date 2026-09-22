@@ -1,0 +1,11 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lretro.exe {
+	lretro.fm;
+	lretro.rp;
+	lretro.c;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+}

@@ -1,0 +1,89 @@
+
+  Empresa         :       __. ____________________________________
+
+  _________________ {  _____  ________________________________________
+  			 ______    _____} ________________________________________
+
+
+  Período Desde   : {__/__/____
+          Hasta   :  __/__/____}
+
+  Vigilador Desde :{________. _____________________________
+            Hasta : ________.}_____________________________
+
+  Detalla Cliente/Objetivo : __?
+
+  Detalle : _ _____________________________________________
+  
+  Considera Retroactivos   : __?
+
+  Tipo de Servicio : _ __________________________
+
+  Salida a : _ ______________ Nombre del archivo: ______________
+
+%form
+use operac, comerc, sue;
+language "C";
+window label "[Listado de Horas por Vigilador]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+i_pais  : internal num(2);
+titdelegd: is ( i_pais == 1 ? null :"Delegacion Desde:");
+agrupd  :;
+delegd: on help manual, is ( i_pais == 1 ? null: void);
+desc1:, skip;
+titdelegh: is ( i_pais == 1 ? null :"Hasta:");
+delegh: on help manual, >= delegd, not null, is ( delegd == null ? null : void);
+desc2:, skip;
+
+
+agrupf  : check fechad <= fechah;
+fechad  : not null, default today;
+fechah  : not null, default today;
+
+agrupv  : check vigild <= vigilh;
+vigild  : not null, in sue.per(emp):apynom;
+dvigild : sue.per.apynom, skip;
+vigilh  : not null, in sue.per(emp):apynom descending;
+dvigilh : sue.per.apynom, skip;
+
+detcli  : default true, not null, autoenter;
+
+opcion  : internal num(1), is ( delegd == null ? 1 : 2);//, in (1,2);
+r_detalle: reference (i_deta1..i_deta2), is (opcion), not null; 
+i_deta1: internal char(1), 
+		  in ("F": "Detalle por Fecha",
+              "S": "Consilidado por Semana",
+              "L": "Total por Legajo"),
+          not null, default "F", mask ">A", autoenter;
+
+i_deta2: internal char(1), 
+		  in ("F": "Detalle por Fecha",
+              "S": "Consilidado por Semana",
+              "D": "Consilidado por Delegacion",
+              "L": "Total por Legajo"),
+          not null, default "F", mask ">A", autoenter;
+
+descdet : is descr(r_detalle);
+
+fretro  : default false, not null, autoenter;
+
+objbri  : in ("V": "Vigilancia",
+              "B": "Brigada",
+              "T": "Todos"), not null, default "V", mask ">A";
+dobjbri : is descr(objbri);
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"),
+            not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "hsvigil.dat", not null;

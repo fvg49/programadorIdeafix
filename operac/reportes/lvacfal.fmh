@@ -1,0 +1,18 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRLEG          (fmfield)  2	/* GROUPED         */
+# define NROLEGD         (fmfield)  3	/* Long            */
+# define APYNOMD         (fmfield)  4	/* String          */
+# define NROLEGH         (fmfield)  5	/* Long            */
+# define APYNOMH         (fmfield)  6	/* String          */
+# define PERIODO         (fmfield)  7	/* Integer         */
+# define SALIDA          (fmfield)  8	/* String          */
+# define DSALIDA         (fmfield)  9	/* String          */
+# define NOMARCH         (fmfield) 10	/* String          */
+# define MENSAJE         (fmfield) 11	/* String          */
+/* Form checksum	*/
+# define FM_LVACFAL_CHKSUM (long)0x00d3
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lasigpt.exe {
+	lasigpt.fm;
+	lasigpt1.rp;
+	lasigpt2.rp;
+	lasigpt.c;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

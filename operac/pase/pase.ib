@@ -1,0 +1,25 @@
+project $NOVIA/reglas.ib;
+
+doforms.ib;
+
+banco.ib;
+cieopeuy.ib;
+cierfac.ib;
+cieroper.ib;
+cierpar.ib;
+ctrlfac.ib;
+diavig.ib;
+pasdenuy.c;
+paseaur.ib;
+paseden.ib;
+pasefac.ib;
+pasevac.ib;
+pfacnew.ib;
+rcierfac.ib;
+revcoper.ib;
+revpfac.ib;
+
+
+echo "----- Modulo PASE OK !!! -----";
+
+

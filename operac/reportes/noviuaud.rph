@@ -1,0 +1,18 @@
+/* Field names	*/
+# define EMPRE           ((rpfield)   0) 	/* String */
+# define R_FDESDE        ((rpfield)   1) 	/* Date */
+# define R_FHASTA        ((rpfield)   2) 	/* Date */
+# define RBAJA           ((rpfield)   3) 	/* Bool */
+# define R_EMP           ((rpfield)   4) 	/* Num */
+# define R_LEGAJO        ((rpfield)   5) 	/* Num */
+# define R_APENOM        ((rpfield)   6) 	/* String */
+# define R_CLIENTE       ((rpfield)   7) 	/* Num */
+# define R_OBJETIVO      ((rpfield)   8) 	/* Num */
+# define R_TXTERROR      ((rpfield)   9) 	/* String */
+# define R_DETERROR      ((rpfield)  10) 	/* String */
+/* Report Checksum	*/
+# define RP_NOVIUAUD_CHKSUM ((long) 0x007d)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)
+# define FLIN            ((int)   2)

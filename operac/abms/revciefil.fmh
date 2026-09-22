@@ -1,0 +1,11 @@
+/* Field names	*/
+# define MULTI           (fmfield)  0	/* MULTIPLE        */
+# define FFILIAL         (fmfield)  1	/* String          */
+# define DESCFIL         (fmfield)  2	/* String          */
+# define FECCIE          (fmfield)  3	/* Date            */
+# define REVIERTE        (fmfield)  4	/* Integer         */
+/* Form checksum	*/
+# define FM_REVCIEFIL_CHKSUM (long)0x00ac
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

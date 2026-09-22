@@ -1,0 +1,20 @@
+/* Field names	*/
+# define RREGIM          ((rpfield)   0) 	/* String */
+# define RFECHAD         ((rpfield)   1) 	/* Date */
+# define RFECHAH         ((rpfield)   2) 	/* Date */
+# define R_NROLEG        ((rpfield)   3) 	/* Num */
+# define R_NOMBRE        ((rpfield)   4) 	/* String */
+# define R_DIA           ((rpfield)   5) 	/* Date */
+# define R_CLIENTE       ((rpfield)   6) 	/* Num */
+# define R_DCLIENTE      ((rpfield)   7) 	/* String */
+# define R_OBJET         ((rpfield)   8) 	/* Num */
+# define R_DOBJET        ((rpfield)   9) 	/* String */
+# define R_HORENT        ((rpfield)  10) 	/* Time */
+# define R_HORSAL        ((rpfield)  11) 	/* Time */
+# define R_HORAS         ((rpfield)  12) 	/* Num */
+/* Report Checksum	*/
+# define RP_LHSREGI2_CHKSUM ((long) 0x00ce)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA1          ((int)   1)
+# define TOTLEG          ((int)   2)

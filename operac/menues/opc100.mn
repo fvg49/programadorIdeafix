@@ -1,0 +1,3 @@
+"1. Control de Horas por Vigilador           " WCMD hsvigil.exe
+"2. Listado de Asignaciones de Vigiladores   " WCMD lasig.exe
+"3. Control de Ausentismo por Vigilador      " WCMD	auxvig.exe

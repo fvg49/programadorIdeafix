@@ -1,0 +1,17 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define FECDES          (fmfield)  2	/* Date            */
+# define FECHAS          (fmfield)  3	/* Date            */
+# define AGRLEG          (fmfield)  4	/* GROUPED         */
+# define LEGD            (fmfield)  5	/* Long            */
+# define DLEGD           (fmfield)  6	/* String          */
+# define LEGH            (fmfield)  7	/* Long            */
+# define DLEGH           (fmfield)  8	/* String          */
+# define SALIDA          (fmfield)  9	/* String          */
+# define DSALIDA         (fmfield) 10	/* String          */
+/* Form checksum	*/
+# define FM_LNOTRAB_CHKSUM (long)0x013e
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

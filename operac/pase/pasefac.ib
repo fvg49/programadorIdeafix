@@ -1,0 +1,21 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+//BIN="../rbin/";
+//BIN="/usrpeprod/prodbin/novia/operac/rbin/";
+//BIN="/usrpeprod/productos/novip/pbin/usrprueba/";
+
+pasefac.exe {
+	pasefac.hlp;
+	pasefac.fm;
+	pasefac.rp;
+	observa.c;
+    pasefac.c : pasefac.fmh pasefac.rph operac.sch;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;		
+ 	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+
+}

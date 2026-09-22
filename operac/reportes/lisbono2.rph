@@ -1,0 +1,55 @@
+/* Field names	*/
+# define POR             ((rpfield)   0) 	/* Num */
+# define BON             ((rpfield)   1) 	/* Num */
+# define CLI             ((rpfield)   2) 	/* Num */
+# define OBJ             ((rpfield)   3) 	/* Num */
+# define LEG             ((rpfield)   4) 	/* Num */
+# define REMP            ((rpfield)   5) 	/* String */
+# define RFECHAD         ((rpfield)   6) 	/* Date */
+# define RFECHAH         ((rpfield)   7) 	/* Date */
+# define RCLID           ((rpfield)   8) 	/* Num */
+# define ROBJD           ((rpfield)   9) 	/* Num */
+# define RDCLIOBJD       ((rpfield)  10) 	/* String */
+# define RCLIH           ((rpfield)  11) 	/* Num */
+# define ROBJH           ((rpfield)  12) 	/* Num */
+# define RDCLIOBJH       ((rpfield)  13) 	/* String */
+# define RVIGD           ((rpfield)  14) 	/* Num */
+# define RDVIGD          ((rpfield)  15) 	/* String */
+# define RVIGH           ((rpfield)  16) 	/* Num */
+# define RDVIGH          ((rpfield)  17) 	/* String */
+# define RBON2           ((rpfield)  18) 	/* Num */
+# define RDBON2          ((rpfield)  19) 	/* String */
+# define RLEG2           ((rpfield)  20) 	/* Num */
+# define RDLEG2          ((rpfield)  21) 	/* String */
+# define RCLI2           ((rpfield)  22) 	/* Num */
+# define RDCLI2          ((rpfield)  23) 	/* String */
+# define ROBJ2           ((rpfield)  24) 	/* Num */
+# define TCANT2          ((rpfield)  25) 	/* Num */
+# define TCANTPAG2       ((rpfield)  26) 	/* Num */
+# define TTOT2           ((rpfield)  27) 	/* Num */
+# define SCANT2          ((rpfield)  28) 	/* Num */
+# define SVUNI2          ((rpfield)  29) 	/* Num */
+# define STOT2           ((rpfield)  30) 	/* Num */
+# define RDOBJ2          ((rpfield)  31) 	/* String */
+/* Report Checksum	*/
+# define RP_LISBONO2_CHKSUM ((long) 0x02d1)
+/* Zone names	*/
+# define ZPARAM          ((int)   0)
+# define HEAD            ((int)   1)
+# define HEAD1           ((int)   2)
+# define HEAD2           ((int)   3)
+# define SUBHEAD2        ((int)   4)
+# define ZXB2            ((int)   5)
+# define ZBON2           ((int)   6)
+# define ZLEG2           ((int)   7)
+# define ZCLI2           ((int)   8)
+# define ZXD2            ((int)   9)
+# define ZDATOS2         ((int)  10)
+# define ZXA2            ((int)  11)
+# define ZDATOBJ2        ((int)  12)
+# define ZOBJ2           ((int)  13)
+# define ZTCLI2          ((int)  14)
+# define ZTLEG2          ((int)  15)
+# define ZTLEG23         ((int)  16)
+# define ZTBON2          ((int)  17)
+# define ZTGEN2          ((int)  18)

@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+campres.exe {
+	campres.fm ;
+	campres.rp ;
+	campres.hlp;
+	campres.c : campres.fmh campres.rph;
+	$COMERC/lib/comerc.a;
+  	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+	$AURUSLIB.a;
+  	$IGRALLIB.a;
+  	$OPERAC/lib/operac.a;
+}

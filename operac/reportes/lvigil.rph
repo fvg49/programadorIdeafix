@@ -1,0 +1,45 @@
+/* Field names	*/
+# define RNROLEG         ((rpfield)   0) 	/* Num */
+# define RAPYNOM         ((rpfield)   1) 	/* String */
+# define RSEXO           ((rpfield)   2) 	/* String */
+# define RTIPDOC1        ((rpfield)   3) 	/* String */
+# define RNRODOC1        ((rpfield)   4) 	/* Num */
+# define RTIPDOC2        ((rpfield)   5) 	/* String */
+# define RNRODOC2        ((rpfield)   6) 	/* Num */
+# define RDIREC          ((rpfield)   7) 	/* String */
+# define RTELEF          ((rpfield)   8) 	/* String */
+# define RLOCAL          ((rpfield)   9) 	/* String */
+# define RCODPOS         ((rpfield)  10) 	/* String */
+# define RFECNAC         ((rpfield)  11) 	/* Date */
+# define RCUIL           ((rpfield)  12) 	/* String */
+# define RNACION         ((rpfield)  13) 	/* String */
+# define RESTCIV         ((rpfield)  14) 	/* String */
+# define RESTUD          ((rpfield)  15) 	/* String */
+# define RFECING         ((rpfield)  16) 	/* Date */
+# define RCLIENTE        ((rpfield)  17) 	/* Num */
+# define RDCLIENTE       ((rpfield)  18) 	/* String */
+# define ROBJET          ((rpfield)  19) 	/* Num */
+# define RDOBJET         ((rpfield)  20) 	/* String */
+# define RREGIMEN        ((rpfield)  21) 	/* String */
+# define RCODCAT         ((rpfield)  22) 	/* Num */
+# define RCATEG          ((rpfield)  23) 	/* String */
+# define RCTROCTO        ((rpfield)  24) 	/* Num */
+# define RLUGPAG         ((rpfield)  25) 	/* Num */
+# define RDLUGPAG        ((rpfield)  26) 	/* String */
+# define ROS             ((rpfield)  27) 	/* Num */
+# define RDOS            ((rpfield)  28) 	/* String */
+# define RNROAFIL        ((rpfield)  29) 	/* String */
+# define RFECEGR         ((rpfield)  30) 	/* Date */
+# define R_CATS          ((rpfield)  31) 	/* Num */
+# define R_CATSAL        ((rpfield)  32) 	/* String */
+# define R_SBAS          ((rpfield)  33) 	/* Num */
+# define R_PLUS          ((rpfield)  34) 	/* Num */
+# define R_TK            ((rpfield)  35) 	/* Num */
+# define R_OTROS         ((rpfield)  36) 	/* Num */
+# define R_TOTAL         ((rpfield)  37) 	/* Num */
+/* Report Checksum	*/
+# define RP_LVIGIL_CHKSUM ((long) 0x0499)
+/* Zone names	*/
+# define LINEA           ((int)   0)
+# define LINEA1          ((int)   1)
+# define LINSAL          ((int)   2)

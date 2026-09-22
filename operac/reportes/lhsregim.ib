@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lhsregim.exe {
+	lhsregim.fm;
+	lhsregi1.rp;
+	lhsregi2.rp;
+	lhsregim.c;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+} 

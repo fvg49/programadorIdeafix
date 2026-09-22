@@ -1,0 +1,106 @@
+
+    Empresa   :      __. ______________________________________
+
+    Vigilador : _______. ______________________________________
+
+    Fecha de Parte : __/__/____ |       Fecha de Registración : __/__/____
+
+
+     ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥Datos del Parte§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+    ¨¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡ª
+       Cli/Obj   Regimen       Puesto      Con   Hs.   Hs.    Hs.  Horas Hs.Ex Hs.35% Hs.Ext Excep. 
+                                               Entra. Salid Total  Norm.  25%  y Fer. Franco   Hs.  
+    §¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+    [_____. __. _________ ____. ____. __.   _   __:__ __:__ __.__  __.__ __.__  __.__  __.__  \[_\]  ]
+                                                                                              \[ \]   
+                                                                                              \[ \]   
+                                                                                              \[ \]   
+                                                                                              \[ \]   
+    ¢¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¤
+
+ ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥Carga de Retroactivos§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+¨¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡ª
+   Cli/Obj    Regimen       Puesto      Con   Hs.   Hs.    Hs.  Horas  Hs.Ex Hs.35% Hs.Ext  Det   Excep. 
+                                            Entra. Salid Total  Norma.  25%  y Fer. Franco Dif.Hs   Hs.  
+§¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+[{_____. __. _________ ____. ____. __.}  _  {__:__ __:__ __.__} {__.__ __.__  __.__ __.__}  \[_\]    \[_\]  ]
+                                                                                            \[ \]    \[ \]   
+                                                                                            \[ \]    \[ \]   
+                                                                                            \[ \]    \[ \]   
+¢¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¤
+%form
+use operac, bill, comerc, sue;
+language "C";
+window label "[Carga de Retroactivos]", border single;
+confirm add, update, end;
+ignore delete, next, prev;
+messages
+	PRESIONEX : "Presione INICIO para ver el detalle de excepciones.",
+	TOTHS     : "El detalle de horas es menor al total de horas.";
+
+%fields
+emp      : retro., in sue.emps:(descrip), default $emp, not null;
+demp     : sue.emps.descrip, skip;
+nroleg   : retro., in sue.per(emp):(nroleg,apynom), has after; //unique, 
+nombre   : sue.per.apynom, skip;
+fecparte : retro.dia, default today, not null;
+fecreg   : default today, skip;
+
+multipar : rows 10, display 5, ignore delete;
+pclie    : skip;
+pobjet   : skip;
+pregim   : skip;
+
+ptippto  : skip;
+pcodint  : skip;
+pnroint  : skip; //internal num(4);
+
+pcond    : skip, manual subform ausent;
+phsentre : skip;
+phssal   : skip;
+phstot   : skip;
+
+pnormal  : skip;
+pextras1 : skip;
+pextras2 : skip;
+pfrancos : skip;
+pexcp    : manual subform rexcep, descr PRESIONEX;
+
+multiret : rows 8, display 4;
+agrcli   : unique;
+rclie    : retro.cliente, on help manual, not null;
+robjet   : retro.objetivo, on help manual, not null;
+rregim   : skip; //is pregim; //
+
+rtippto  : on help manual, not null;
+rcodint  : on help manual, not null;
+rnroint  : on help manual, not null; //internal num(4);
+i_clinew : internal bool, default false;
+rcond    : in ("T":"Trabajo",
+               "V":"Vacaciones",
+               "A":"Ausente",
+               "F":"Franco"), default "T", mask "1>a",
+           manual subform ausent;
+agruphs  : not null, skip when rcond == "A" or rcond == "V";
+rhsentre : retro.horaent, has after;
+rhssal   : retro.horasal, has after;
+rhstot   : skip;
+
+agrupdet : check (rnormal + rextras1 + rextras2 + rfrancos) = rhstot, 
+		   skip when rcond == "A" or rcond == "V", on error TOTHS, not null;
+rnormal  : not null, default 0; //skip;
+rextras1 : not null, default 0; //skip;
+rextras2 : not null, default 0; //skip;
+rfrancos : not null, default 0; //skip;
+
+i_dhsnor   : internal num(4,2);
+i_dhs50	   : internal num(4,2);
+i_dhs100f  : internal num(4,2);
+i_dhs100fe : internal num(4,2);
+
+rdet     : subform detdif(i_dhsnor, i_dhs50, i_dhs100f, i_dhs100fe), descr PRESIONEX;
+rexcp    : manual subform rexcep, descr PRESIONEX;
+
+
+//i_extasig: internal bool, default false;
+

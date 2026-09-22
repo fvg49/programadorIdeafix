@@ -1,0 +1,18 @@
+/* Field names	*/
+# define REMP            ((rpfield)   0) 	/* String */
+# define RSALDESDE       ((rpfield)   1) 	/* Date */
+# define RSALHASTA       ((rpfield)   2) 	/* Date */
+# define RNROLEG         ((rpfield)   3) 	/* Num */
+# define RAPYNOM         ((rpfield)   4) 	/* String */
+# define RPERIODO        ((rpfield)   5) 	/* Num */
+# define RFDESDE         ((rpfield)   6) 	/* Date */
+# define RFHASTA         ((rpfield)   7) 	/* Date */
+# define RCANTDIAS       ((rpfield)   8) 	/* Num */
+# define RDIASPER        ((rpfield)   9) 	/* Num */
+# define RPERANT         ((rpfield)  10) 	/* Bool */
+/* Report Checksum	*/
+# define RP_PASEVAC_CHKSUM ((long) 0x00a7)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)
+# define ZTOTAL          ((int)   2)

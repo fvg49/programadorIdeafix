@@ -1,0 +1,16 @@
+%head(today) before (report)
+Datos de Vigiladores Fecha  : __/__/____
+%encab(rprovi, rlocal) before (rlocal, rprovi)
+
+
+Provincia\	 ____________________________\	Localidad\	_____________________________________
+Legajo\	Apellido y Nombre\	Tipo Doc\	Documento\	Domicilio\	Telefono\	Cliente\	\	Objetivo\	\	Efect/Prov\	Franquero\	Regimen\	H. Entrada\	H. Salida\	Alta Policial\	Inscripto en Portacion\	Inscripto en CLU
+
+%linvig(rlegajo, rapenom,                 rtipdoc, rnrodoc,   rcalle,                              rtel,            rcli,          rdcli,                robj,  rdobj,      refec, rfr,  rregim, rhent, rhsal, raltap1, raltap2, raltap3, raltap4, rport, rclu)
+_______.\	________________________________________\	____\	___,___,___.\	________________________________\	______________\	   _________.\	_____________________________\	____.\	_______________________________\	__________\	_\	________\	__:__\	__:__\	_ _ _ _\	__?\	__?
+%report
+language"C";
+topmarg = 0;
+flength= $FLENLANDCOMP;
+width=200;
+output to terminal;

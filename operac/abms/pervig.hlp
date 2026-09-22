@@ -1,0 +1,26 @@
+
+			[1;4mPERMISOS POR VIGILADORES[0m
+
+
+Este ABM se usa para dar Permisos sobre los vigiladores de una filial a otra.
+Actualmente existen 2 tipos de permisos, para insertar (parte) o pasa asignar (Asignacion)
+
+[1;4mForma de uso:[0m
+
+	Para [1mconsulta[0mr permisos hay que inresar la empresa y la fecha a partir de la que se 
+	quieren ver los permisos.
+
+	Para [1mborrar[0m un permiso hay que posicionar el cursor sobre la linea que se desea borrar,
+	presionar la tecla <SUPR> o <DELETE> y luego <F5>, de esta forma el permisos seguira 
+	apareciendo pero como no activo
+	
+	si se quiere [1mver el historial[0m de cada permiso hay que posicionar el cursor sobre el 
+	campo "Act." del permiso que se quiere ver y presionar la tecla <INICIO> o <HOME>
+
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m pervig.exe
+
+[1mProceso:[0m  Graba:  operac|pervig(permisos por vigilador)
+

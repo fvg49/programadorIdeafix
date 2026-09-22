@@ -1,0 +1,45 @@
+/* Field names	*/
+# define I_CONV          (fmfield)  0	/* Integer         */
+# define I_TPUES         (fmfield)  1	/* Integer         */
+# define I_MODPTOG       (fmfield)  2	/* Integer         */
+# define I_EMP           (fmfield)  3	/* Integer         */
+# define MULTI           (fmfield)  4	/* MULTIPLE        */
+# define AGRUPM          (fmfield)  5	/* GROUPED         */
+# define CATEGOR         (fmfield)  6	/* Integer         */
+# define PTIME           (fmfield)  7	/* Integer         */
+# define HORAPT          (fmfield)  8	/* Integer         */
+# define HINICIO         (fmfield)  9	/* Time            */
+# define HFINAL          (fmfield) 10	/* Time            */
+# define AGRUPD          (fmfield) 11	/* GROUPED         */
+# define DIAS1           (fmfield) 12	/* String          */
+# define DIAS2           (fmfield) 13	/* String          */
+# define DIAS3           (fmfield) 14	/* String          */
+# define DIAS4           (fmfield) 15	/* String          */
+# define DIAS5           (fmfield) 16	/* String          */
+# define DIAS6           (fmfield) 17	/* String          */
+# define DIAS7           (fmfield) 18	/* String          */
+# define REGIM           (fmfield) 19	/* String          */
+# define SUBREG          (fmfield) 20	/* String          */
+# define TIPODIA         (fmfield) 21	/* String          */
+# define I_MODPTOM       (fmfield) 22	/* Integer         */
+# define I_CODINT        (fmfield) 23	/* Integer         */
+# define I_CANTVIG       (fmfield) 24	/* Integer         */
+# define CODFREC         (fmfield) 25	/* String          */
+# define SALARIO         (fmfield) 26	/* Long            */
+# define CANTPUE         (fmfield) 28	/* Integer         */
+# define I_CANTP         (fmfield) 29	/* Integer         */
+# define CANTVIG         (fmfield) 30	/* Integer         */
+# define COND            (fmfield) 31	/* String          */
+# define I_CONDC         (fmfield) 32	/* String          */
+# define I_TOTVIG        (fmfield) 33	/* Integer         */
+/* Form checksum	*/
+# define FM_PTOPER_CHKSUM (long)0x0c69
+/* Subform names	*/
+# define SF_SALOPER           0
+/* Symbol names for messages */
+# define M_EQDIAS           0
+# define M_PTOS             1
+# define M_PRESION          2
+# define M_DELPUE           3
+# define M_AYUDA            4
+/* =========== End of fmh file ============ */

@@ -1,0 +1,48 @@
+Empresa         :       __. ____________________________________
+
+Desde Cliente   :{___,___,___.  _________________________________  
+      Objetivo  :       _,___.  _________________________________  
+
+Hasta Cliente   : ___,___,___.} _________________________________  
+      Objetivo  :       _,___.  _________________________________  
+
+    Fecha Desde :{__/__/____
+          Hasta : __/__/____}
+
+Salida a        : _  _________  Nombre del archivo  : ________________________
+                ______________________________________________________________
+%form
+use  comerc, bill, sue;
+language "C";
+window label "[Listado de Horas por Vigilador]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s"; //No se utiliza
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+agrupc  : check clid <= clih;
+clid    : default 1, on help in bill.cliente:(razsoc);
+dclid   : bill.cliente.razsoc, skip;
+objd    : on help in comerc.objetivo by est (emp, true, clid):descrip, is (clid == null ? null : void), default 1;
+dobjd   : comerc.objetivo.descrip, skip; 
+clih    : on help in bill.cliente:(razsoc),  is ( clid == null ? null : void), not null, default 9999;
+dclih   : bill.cliente.razsoc, skip;
+objh    : on help in comerc.objetivo by est (emp, true, clih):descrip, is (objd == null ? null : void), not null, default 99;
+dobjh   : comerc.objetivo.descrip, skip;
+
+agrfec	: check fdesde <= fhasta;
+fdesde	: not null, default today;
+fhasta	: not null, default today;
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"),
+              not null, default "A", mask ">A", autoenter;
+saldescr: is descr(salida);
+nomarch : is (salida!="A") ? null : void, default "FichajesPOP.csv", not null;
+coment  : skip;                                                                            

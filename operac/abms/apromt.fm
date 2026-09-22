@@ -1,0 +1,49 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡ª
+     Margen Teórico     Clie/Objet  R/E   Aprueba    Fecha y Hora   Usuario   Fecha y Hora   Usuario  Plazo  
+                                                   Aprob. Comercial Comerc.  Aprob. Operac.  Operac. Montaje 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¥
+[___ __ ___ ___ ______. _____. ___.  _  _. _______ __/__/____ __:__ _______ __/__/____ __:__ _______   ___. ]
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¤
+%form                         
+use comerc;
+language "C";
+window label "Aprobación de Margen Teórico", border single;
+confirm add, update, ignore, end;
+ignore delete;
+
+%fields
+i_usucom: internal num(2);
+multi   : rows 100, display 10, ignore delete;
+emp     : skip;
+tipcomp : skip;
+serie   : skip;
+deleg   : skip;
+nroot   : skip;
+
+i_emp   : internal num(2);
+i_tipcomp: internal num(4);
+i_serie : internal num(4);
+cliente : skip;
+objet   : skip;
+tipser  : skip;
+aprueba : in (0: "Pendiente",
+		      1: "Aprueba",
+		      2: "Rechaza") ,
+		  default 0, subform(null, null, motrecmt);
+daprueb : is descr(aprueba);
+fokvta  : skip;
+hokvta  : skip;
+usucom  : skip;
+fokoper : skip;
+hokoper : skip;
+usuope  : skip;
+plazo   : is (i_usucom == 1 or aprueba == 2 ? null : void), not null;

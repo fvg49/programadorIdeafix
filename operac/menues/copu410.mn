@@ -1,0 +1,6 @@
+"1. Listado de Datos de Vigiladores                      " WCMD ldatvig.exe
+"2. Listado de Asignaciones de Vigiladores               " WCMD lasig.exe
+"3. Listado de Asignaciones de Vigiladores por Puestos   " WCMD lvigxpto.exe
+"4. Listado de Vacaciones                                " WCMD lvacac.exe
+"5. Listado de Rotación de Vigiladores                   " WCMD lrotvig.exe
+"6. Listado de Puestos en Servicio			             " WCMD puevivo.exe

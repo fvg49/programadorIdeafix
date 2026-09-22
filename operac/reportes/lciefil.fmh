@@ -1,0 +1,16 @@
+/* Field names	*/
+# define FILDES          (fmfield)  0	/* String          */
+# define DFILDES         (fmfield)  1	/* String          */
+# define FILHAS          (fmfield)  2	/* String          */
+# define DFILHAS         (fmfield)  3	/* String          */
+# define AGRUPF          (fmfield)  4	/* GROUPED         */
+# define FECHAD          (fmfield)  5	/* Date            */
+# define FECHAH          (fmfield)  6	/* Date            */
+# define SALIDA          (fmfield)  7	/* String          */
+# define DSALIDA         (fmfield)  8	/* String          */
+# define ARCHIVO         (fmfield)  9	/* String          */
+/* Form checksum	*/
+# define FM_LCIEFIL_CHKSUM (long)0x0132
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

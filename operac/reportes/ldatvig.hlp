@@ -1,0 +1,15 @@
+
+     [1;4mListado de datos  de Vigiladores[0m
+
+Este Listado muestra varios dato de los vigiladores.
+La salida a pantalla no es exactamente igual a la 
+impresa
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m ldatvig..exe
+
+[1mProceso:[0m  Lee:  comerc|objetivo (Objetivos)
+                operac|asig     (Asignaciones)
+                sue   |per      (Legajos)
+

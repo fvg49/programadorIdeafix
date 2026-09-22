@@ -1,0 +1,16 @@
+/* Field names	*/
+# define TIPGRP          (fmfield)  0	/* Integer         */
+# define DTIPGRP         (fmfield)  1	/* String          */
+# define TIPCLI          (fmfield)  2	/* Integer         */
+# define DESCRIP         (fmfield)  3	/* String          */
+# define MULTI           (fmfield)  4	/* MULTIPLE        */
+# define CLIE            (fmfield)  5	/* Long            */
+# define DCLIE           (fmfield)  6	/* String          */
+# define OBJET           (fmfield)  7	/* Integer         */
+# define DOBJET          (fmfield)  8	/* String          */
+# define DTOBJET         (fmfield)  9	/* String          */
+/* Form checksum	*/
+# define FM_CLIESP_CHKSUM (long)0x00b1
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

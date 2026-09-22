@@ -1,0 +1,43 @@
+
+  Empresa      : __. ____________________________________
+
+  Cantidad 
+  de Horas     : __.__
+
+  Tipo de Dia  : _. _________________________________ |
+
+                      Tipo          Cantidad
+
+            [  ______________________ __.__  ]
+
+
+
+
+
+
+
+        
+%form
+use operac, comerc, sue, bill;
+language "C";
+window label "[Distibución Horas Perú]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+canhs   : default 12, not null;
+tdia    : in (1:"Día Franco",
+              2:"Día Feriado",
+              3:"Día Normal"), 
+              default 3, 
+          not null ;
+
+dtdia   : is descr(tdia);
+
+
+multi   : rows 80, display 8;
+tiphor  : skip;
+canhor  : display only;

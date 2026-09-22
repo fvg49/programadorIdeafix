@@ -1,0 +1,59 @@
+/* Field names	*/
+# define RCONS           ((rpfield)   0) 	/* String */
+# define RDETA           ((rpfield)   1) 	/* String */
+# define RTIPOBJ         ((rpfield)   2) 	/* String */
+# define RRETRO          ((rpfield)   3) 	/* Bool */
+# define RFECHAD         ((rpfield)   4) 	/* Date */
+# define RFECHAH         ((rpfield)   5) 	/* Date */
+# define RDFECHA         ((rpfield)   6) 	/* String */
+# define RFECBASE        ((rpfield)   7) 	/* Date */
+# define RCLID           ((rpfield)   8) 	/* Num */
+# define ROBJD           ((rpfield)   9) 	/* Num */
+# define RDCLIOBJD       ((rpfield)  10) 	/* String */
+# define RCLIH           ((rpfield)  11) 	/* Num */
+# define ROBJH           ((rpfield)  12) 	/* Num */
+# define RDCLIOBJH       ((rpfield)  13) 	/* String */
+# define RDELEG          ((rpfield)  14) 	/* String */
+# define RDDELEG         ((rpfield)  15) 	/* String */
+# define RCLI            ((rpfield)  16) 	/* Num */
+# define RDCLI           ((rpfield)  17) 	/* String */
+# define ROBJ            ((rpfield)  18) 	/* Num */
+# define RDOBJ           ((rpfield)  19) 	/* String */
+# define RPTO            ((rpfield)  20) 	/* Num */
+# define RDPTO           ((rpfield)  21) 	/* String */
+# define RFCH            ((rpfield)  22) 	/* Date */
+# define FSVHN           ((rpfield)  23) 	/* Num */
+# define FSVH50          ((rpfield)  24) 	/* Num */
+# define FSVH100         ((rpfield)  25) 	/* Num */
+# define FSVTOT          ((rpfield)  26) 	/* Num */
+# define FSTHN           ((rpfield)  27) 	/* Num */
+# define FSTH50          ((rpfield)  28) 	/* Num */
+# define FSTH100         ((rpfield)  29) 	/* Num */
+# define FSTH100F        ((rpfield)  30) 	/* Num */
+# define FSTTOT          ((rpfield)  31) 	/* Num */
+# define FSTNPRES        ((rpfield)  32) 	/* Num */
+# define FDIFHN          ((rpfield)  33) 	/* Num */
+# define FDIFH50         ((rpfield)  34) 	/* Num */
+# define FDIFH100        ((rpfield)  35) 	/* Num */
+# define FDIFH100F       ((rpfield)  36) 	/* Num */
+# define FSAHN           ((rpfield)  37) 	/* Num */
+# define FSAH50          ((rpfield)  38) 	/* Num */
+# define FSAH100         ((rpfield)  39) 	/* Num */
+# define FSATOT          ((rpfield)  40) 	/* Num */
+# define FSEHN           ((rpfield)  41) 	/* Num */
+# define FSEH50          ((rpfield)  42) 	/* Num */
+# define FSEH100         ((rpfield)  43) 	/* Num */
+# define FSETOT          ((rpfield)  44) 	/* Num */
+# define TTEXTO          ((rpfield)  45) 	/* String */
+/* Report Checksum	*/
+# define RP_HSCLIOBJ1_CHKSUM ((long) 0x0550)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ZDEL            ((int)   1)
+# define ZCLI            ((int)   2)
+# define ZOBJ            ((int)   3)
+# define ZPTO            ((int)   4)
+# define ZFCH            ((int)   5)
+# define ZTOTFCH         ((int)   6)
+# define ZTOTAL          ((int)   7)
+# define ZTOTGEN         ((int)   8)

@@ -1,0 +1,39 @@
+%nopr(filtro) no print
+_.
+%head(today, pageno, hour, limite) before (report, page)
+[16c                                                                                                            Fecha  : __/__/____
+                                                                                                            Página :       ____.
+                                                                                                            Hora   :      __:__
+                                        Asignaciones de Vigiladores Provisorios                                 (lprovenc)
+                                        ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+ Fecha Límite : __/__/____
+
+%cabcli() before (page, report), if (filtro == 0)
+                          ¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                            Legajo           Apellido y Nombre             Fecha Asignación     Observación   
+                                                                            Desde     Hasta                   
+                          ¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%clienterp(r_cli, r_dcli, r_obj, r_dobj) before (page, report, r_cli, r_obj), if (filtro == 0)
+
+[1m Cliente    : _________. __________________________  Objetivo : ____. ________________________[0m
+
+%lincli(r_legajo,r_apenom, r_fecasig, r_fechas, r_observ), if (filtro == 0)
+                           _______. ____________________________________ __/__/____ __/__/____   [1m__________[0m
+%svisor(r_svisor, r_dsvisor) before (page, report, r_svisor), if (filtro == 1)
+ Supervisor   : _________. _________________________________________
+
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Legajo     Apellido y Nombre               Cliente                      Objetivo              Fecha Asignación     Observación  
+                                                                                                 Desde     Hasta                  
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linsup(r_legajo, r_apenom, r_cli, r_dcli, r_obj, r_dobj, r_fecasig, r_fechas, r_observ), if (filtro == 1)
+ _______. ________________________ _________. ___________________ ____. _____________________ __/__/____ __/__/____   [1m__________[0m  
+%finsup() after (page, report, r_svisor), group with linsup, if (filtro == 1)
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%report
+language"C";
+topmarg = 0;
+flength= $FLENGTH;
+output to terminal;
+

@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+echo "COMPILANDO MODULO OPERAC";
+
+lib.ib			@ "lib";
+abms.ib			@ "abms";
+reportes.ib		@ "reportes";
+procesos.ib		@ "procesos";
+menues.ib		@ "menues";

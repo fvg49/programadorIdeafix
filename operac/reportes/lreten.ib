@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lreten.exe {
+	lreten.fm  ;
+	lreten.rp  ;
+	lreten.c   ;
+//	$INTERFASELIB.a;
+//	$DENARIUSLIB.a;
+//	$SIRHLIB.a;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/exceplib.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$BRIGADALIB.a;
+}

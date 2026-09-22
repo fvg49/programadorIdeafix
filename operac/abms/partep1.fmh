@@ -1,0 +1,10 @@
+/* Field names	*/
+# define NORMAL          (fmfield)  0	/* Integer         */
+# define EXTRAS1         (fmfield)  1	/* Integer         */
+# define EXTRAS2         (fmfield)  2	/* Integer         */
+# define FRANCOS         (fmfield)  3	/* Integer         */
+/* Form checksum	*/
+# define FM_PARTEP1_CHKSUM (long)0x003c
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

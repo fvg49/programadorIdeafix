@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+banco.exe {
+	banco.fm;
+    banco.c	: banco.fmh operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

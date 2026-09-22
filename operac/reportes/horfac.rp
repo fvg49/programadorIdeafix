@@ -1,0 +1,30 @@
+%head(today, pageno) before (page, report)
+[16c\$empresa
+                                                                                                               Fecha : __/__/____
+                                                                                                               Página:       ____.
+                                               [4mCONTROL HORAS DE SERVICIO[0m                                            (horfac)
+
+                   ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                    Cliente                               SERVICIOS          CONFORMIDAD        
+                             Objetivo                    ADICIONALES           CLIENTE          
+                   §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%zcli(rcli, rdcli) before (rcli)
+                    ______. ___________________________                                         
+%zobj(robj, rdobj) before (rcli, robj)
+                       ____. __________________________                                         
+%zfch(rfch, satot)
+                                            __/__/__       _____.__                             
+%ztotobj(robj, rdobj, sum(satot)) after (rcli, robj)
+                     TOTAL ____. ______________________    _____.__                             
+                                                                                                
+%ztotcli(rcli,rdcli, sum(satot)) after (rcli)
+                    TOTAL ______. _____________________    _____.__                             
+                                                                                                
+%ztotgen(sum(satot)) after (report)
+                    TOTAL GENERAL                          _____.__                             
+%zfin() after (page, report)
+                   ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+use operac;
+language"C";
+flength= $FLENGTH;

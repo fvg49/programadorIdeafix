@@ -1,0 +1,27 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define NROLEG          (fmfield)  2	/* Long            */
+# define NOMBRE          (fmfield)  3	/* String          */
+# define CLIE            (fmfield)  4	/* Long            */
+# define DCLIE           (fmfield)  5	/* String          */
+# define OBJET           (fmfield)  6	/* Integer         */
+# define DOBJ            (fmfield)  7	/* String          */
+# define FECPARTE        (fmfield)  8	/* Date            */
+# define RTIPPTO         (fmfield)  9	/* Integer         */
+# define RCODINT         (fmfield) 10	/* Integer         */
+# define RNROINT         (fmfield) 11	/* Integer         */
+# define RREGIM          (fmfield) 12	/* String          */
+# define PCOND           (fmfield) 13	/* String          */
+# define PHSENTRE        (fmfield) 14	/* Time            */
+# define PHSSAL          (fmfield) 15	/* Time            */
+# define PHSTOT          (fmfield) 16	/* Integer         */
+# define PNORMAL         (fmfield) 17	/* Integer         */
+# define PEXTRAS1        (fmfield) 18	/* Integer         */
+# define PEXTRAS2        (fmfield) 19	/* Integer         */
+# define PFRANCOS        (fmfield) 20	/* Integer         */
+/* Form checksum	*/
+# define FM_DELPARTE_CHKSUM (long)0x07a5
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

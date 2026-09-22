@@ -1,0 +1,5 @@
+"1. Listado de Ordenes de Trabajo   " WCMD lot.exe
+"2. Listado de OT por Cli/Obj       " WCMD otcliobj.exe
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" SHELL   .
+"3. Impresión de OT                 " WCMD rot.exe
+"4. Impresión de OT en Servicio     " WCMD rotserv.exe

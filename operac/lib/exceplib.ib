@@ -1,0 +1,5 @@
+project $NOVIA/reglas.ib;
+
+exceplib.a {
+	excep.c;
+}

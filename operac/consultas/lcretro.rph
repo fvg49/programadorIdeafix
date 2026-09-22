@@ -1,0 +1,25 @@
+/* Field names	*/
+# define RNROLEG         ((rpfield)   0) 	/* Num */
+# define RDIA            ((rpfield)   1) 	/* Date */
+# define RFCREG          ((rpfield)   2) 	/* Date */
+# define RCLIENTE        ((rpfield)   3) 	/* Num */
+# define ROBJETIVO       ((rpfield)   4) 	/* Num */
+# define RHENTRADA       ((rpfield)   5) 	/* Time */
+# define RHSALIDA        ((rpfield)   6) 	/* Time */
+# define RHNORMALES      ((rpfield)   7) 	/* Num */
+# define RHEXT50         ((rpfield)   8) 	/* Num */
+# define RHEXT100FRAN    ((rpfield)   9) 	/* Num */
+# define RHEXT100FER     ((rpfield)  10) 	/* Num */
+# define RCONDIC         ((rpfield)  11) 	/* String */
+# define RDHSNOR         ((rpfield)  12) 	/* Num */
+# define RDHS50          ((rpfield)  13) 	/* Num */
+# define RDHS100F        ((rpfield)  14) 	/* Num */
+# define RDHS100FE       ((rpfield)  15) 	/* Num */
+# define RCUID           ((rpfield)  16) 	/* Num */
+# define RUSUARIO        ((rpfield)  17) 	/* String */
+/* Report Checksum	*/
+# define RP_LCRETRO_CHKSUM ((long) 0x00fa)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LEGAJO          ((int)   1)
+# define FINCUADRO       ((int)   2)

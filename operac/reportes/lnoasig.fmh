@@ -1,0 +1,19 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRFEC          (fmfield)  2	/* GROUPED         */
+# define FDESDE          (fmfield)  3	/* Date            */
+# define FHASTA          (fmfield)  4	/* Date            */
+# define MOSTRAR         (fmfield)  5	/* Integer         */
+# define DESC6           (fmfield)  6	/* String          */
+# define BAJA            (fmfield)  7	/* Integer         */
+# define SALIDA          (fmfield)  8	/* String          */
+# define DESC5           (fmfield)  9	/* String          */
+# define NOMARCH         (fmfield) 10	/* String          */
+# define PROCVIGI        (fmfield) 11	/* Long            */
+# define DPROCVIG        (fmfield) 12	/* String          */
+/* Form checksum	*/
+# define FM_LNOASIG_CHKSUM (long)0x0205
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

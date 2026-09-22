@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lvigil.exe {
+	lvigil.fm;
+	lvigil.rp;
+	lvigil.c;
+	lvigil.hlp;
+
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+	$OPERACLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+
+}

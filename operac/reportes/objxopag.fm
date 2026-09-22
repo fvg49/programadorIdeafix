@@ -1,0 +1,25 @@
+
+ Oficina de Pago Desde : ___,___. _________________________________
+ Oficina de Pago Hasta : ___,___. _________________________________
+
+ Salida por      : _________________
+
+               ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                 Digite __ para confirmar  
+               ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use comerc, sue;
+window label "[Listado de Clientes por Oficinas de Pagos]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+
+%fields
+ofpagd	: in sue.ofpag($emp):denom;
+desof1	: sue.ofpag.denom, skip;
+ofpagh	: in sue.ofpag($emp):denom;
+desof2	: sue.ofpag.denom, skip;
+
+salida  : in ("printer", "terminal", "ofpag delimited"), default "printer", not null;
+dummy   : is help (PROCESAR);
+

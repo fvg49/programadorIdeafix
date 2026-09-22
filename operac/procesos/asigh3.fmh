@@ -1,0 +1,17 @@
+/* Field names	*/
+# define I_FECDESDE      (fmfield)  0	/* Date            */
+# define I_FFINICIO      (fmfield)  1	/* Date            */
+# define I_FFFINAL       (fmfield)  2	/* Date            */
+# define I_EXISPAR1      (fmfield)  3	/* Integer         */
+# define I_EFECT2        (fmfield)  4	/* Integer         */
+# define I_EXISTE2       (fmfield)  5	/* Integer         */
+# define I_VIGI2         (fmfield)  6	/* String          */
+# define FECHAS          (fmfield)  7	/* Date            */
+/* Form checksum	*/
+# define FM_ASIGH3_CHKSUM (long)0x0211
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_FECHAS           0
+# define M_FECHAS2          1
+# define M_FECHAS3          2
+/* =========== End of fmh file ============ */

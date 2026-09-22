@@ -1,0 +1,22 @@
+/* Field names	*/
+# define RFECHAD         ((rpfield)   0) 	/* Date */
+# define RFECHAH         ((rpfield)   1) 	/* Date */
+# define RNROLEG         ((rpfield)   2) 	/* Num */
+# define RFECHA          ((rpfield)   3) 	/* Date */
+# define RAPYNOM         ((rpfield)   4) 	/* String */
+# define RHSNOR          ((rpfield)   5) 	/* Num */
+# define RHS50           ((rpfield)   6) 	/* Num */
+# define RHS100          ((rpfield)   7) 	/* Num */
+# define RHS100FE        ((rpfield)   8) 	/* Num */
+# define RCLIENTE        ((rpfield)   9) 	/* Num */
+# define RNOMBRE         ((rpfield)  10) 	/* String */
+# define ROBJET          ((rpfield)  11) 	/* Num */
+# define RDOBJET         ((rpfield)  12) 	/* String */
+# define RESTADO         ((rpfield)  13) 	/* String */
+# define RCOND           ((rpfield)  14) 	/* Num */
+# define RMOT            ((rpfield)  15) 	/* Num */
+/* Report Checksum	*/
+# define RP_LCONTDIA_CHKSUM ((long) 0x00c1)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)

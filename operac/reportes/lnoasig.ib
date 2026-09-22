@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lnoasig.exe {
+	lnoasig.fm;
+	lnoasig.rp;
+	lnoasig.c;
+	lnoasig.hlp;
+
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

@@ -1,0 +1,86 @@
+%lin_tiposvar1(rp_titulo,rp_cemp,rp_xemp,rp_cclid,rp_xclid,rp_cclih,rp_xclih,rp_objd,rp_xobjd)
+ _______________________________________________________ rp.titulo
+ __.										rp.cemp
+ _________________________________________	rp.xemp
+ _________.									rp.cclid
+ _________________________________________	rp.xclid
+ _________.									rp.cclih
+ _________________________________________	rp.xclih
+ ____.										rp.objd
+ _________________________________________	rp.xobjd
+%lin_tiposvar2(rp_objh,rp_xobjh,rp_vigd,rp_xvigd,rp_vigh,rp_xvigh,rp_fd,rp_fh)
+ ____.										rp.objh
+ _________________________________________	rp.xobjh
+ _________.									rp.vigd
+ _________________________________________	rp.xvigd
+ _________.									rp.vigh
+ _________________________________________	rp.xvigh
+ __/__/____									rp.fd
+ __/__/____									rp.fh
+%lin_tiposvar3(rp_ccli,rp_xcli,rp_obj,rp_xobj,rp_legajo,rp_apenom,rp_vr,rp_ef,rp_ptoser)
+ _________.									rp.ccli
+ _________________________________________	rp.xcli
+ ____.										rp.obj
+ _________________________________________	rp.xobj
+ _______.									rp.legajo
+ ________________________					rp.apenom
+ ___________								rp.vr
+ __________									rp.ef
+ ____.										rp.ptoser
+%lin_tiposvar4(rp_dptoser,rp_regim,rp_fecasig,rp_fechas,rp_dia1,rp_dia2)
+ __________________							rp.dptoser
+ _________									rp.regim
+ __/__/____ 								rp.fecasig
+ __/__/____									rp.fechas
+ _											rp.dia1
+ _											rp.dia2
+%lin_tiposvar5(rp_dia3,rp_dia4,rp_dia5,rp_dia6,rp_dia7,rp_hsent,rp_hssal,rp_vig,rp_xvig)
+ _											rp.dia3
+ _											rp.dia4
+ _											rp.dia5
+ _											rp.dia6
+ _											rp.dia7
+ __:__										rp.hsent
+ __:__										rp.hssal
+ _______.									rp.vig
+ ________________________________________________________________	rp.xvig
+%lin_tiposvar6(rp_frecuencia,rp_khoras,rp_xtinfo)
+ __											rp.frecuencia
+ ____.										rp.khoras
+ __________									rp.xtinfo
+%lin_tiposvar7(rp_diasfecha1,rp_diashe1,rp_diashs1,rp_diasfecha2,rp_diashe2,rp_diashs2,rp_diasfecha3,rp_diashe3,rp_diashs3,rp_diasfecha4,rp_diashe4,rp_diashs4,rp_diasfecha5,rp_diashe5,rp_diashs5)
+ __/__/____ __:__ __:__ 
+ __/__/____ __:__ __:__ 
+ __/__/____ __:__ __:__ 
+ __/__/____ __:__ __:__ 
+ __/__/____ __:__ __:__ 
+%encabezamiento(today,pageno,rp_titulo,rp_cemp,rp_xemp,rp_fd,rp_fh,rp_xtinfo,rp_cclid,rp_xclid,rp_cclih,rp_xclih,rp_objd,rp_xobjd,rp_objh,rp_xobjh) before(report, page)
+[2o[16c                                                                                                                                          Fecha  : __/__/____
+                                                                                                                                          Página :       ____.
+
+                                                                 _______________________________________________________
+
+  EMPRESA  : __.  _________________________________________  FECHA:    Del __/__/____  al __/__/____                           TIPO DE INFORMACIÓN: __________
+  CLIENTE  : Del  _________. _________________________________________  al _________. _________________________________________
+  OBJETIVO : Del       ____. _________________________________________  al      ____. _________________________________________
+%lin_cliobj(rp_ccli,rp_xcli,rp_obj,rp_xobj) before (page)
+
+  Cliente  : _________.  _________________________________________
+  Objetivo :      ____.  _________________________________________
+ ¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡ª
+   Legajo    Apellido  y  Nombre    Vigilador /    Efectivo /          Puesto         Régimen   FR Horas    Fecha Asignación         Días      H.Ent. H.Sal. 
+                                    Reten/PartTime Provisorio                                              Desde      Hasta                                  
+ §¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+%lin_vigilador() 
+%lin_detalle(rp_legajo,rp_apenom,rp_vr,rp_ef,rp_ptoser,rp_dptoser,rp_regim,rp_frecuencia,rp_khoras,rp_fecasig,rp_fechas,rp_dia1,rp_dia2,rp_dia3,rp_dia4,rp_dia5,rp_dia6,rp_dia7,rp_hsent,rp_hssal)
+  _______. ________________________  ___________   __________  ____. ________________ _________ __ ____. __/__/____ __/__/____  _-_-_-_-_-_-_   __:__  __:__ 
+%titu_dias()
+ §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡D e t a l l e   D í a s¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%raya_sep()
+ §¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+%lin_fin() after(page,report)
+ ¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¤
+%report
+language"C";
+flength= $FLENLANDCOMP;
+width=170;

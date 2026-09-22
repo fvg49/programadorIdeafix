@@ -1,0 +1,34 @@
+%nomuestra(rdetfec, rdetobj) no print
+__. __.
+%head(today, pageno, rferiado, rper) before (page, report)
+[16c\$empresa                                                                                                Fecha : __/__/____
+                                                                                                         Página:       ____.
+                                     [1m  [0m[1;4mHORAS STANDARD[0m[1m  _________________________ [0m                              (stdvend)
+
+           ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+            Cliente                                                                       
+                     Objetivo                   [1m__________________________[0m   HS.STANDARD  
+           §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%titcli(rcli, rdcli) before rcli, if (rdetobj=1 or (rdetobj=0 and rdetfec=1))
+            _________. ____________________________________________________               
+%titobj(robj, rdobj)before (rcli, robj), if (rdetobj=1 and rdetfec=1)
+                 ____. ____________________________________________________               
+%titcli_imp(rcli, rdcli, rsvh)
+            _________. ____________________________________________________   __,___.__   
+%titobj_imp(robj, rdobj, rsvh)
+                 ____. ____________________________________________________   __,___.__   
+%linfecha(rfecha, rsvh)
+                       __/__/____                                             __,___.__   
+%totcli(rcli, rdcli, sum(rsvh)) after rcli,  if (rdetobj=1)
+             TOTAL ____. __________________________________________________  ___,___.__   
+                                                                                          
+%zfinp() after (page)
+           ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%zfin(sum(rsvh)) after (report)
+             TOTAL GENERAL                                                   ___,___.__   
+           ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+// use operac;
+language"C";
+flength= $FLENGTH;
+width=100;

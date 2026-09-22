@@ -1,0 +1,19 @@
+
+ Empresa:        __. ____________________________________
+
+ Legajo : _,___,___. ____________________________________
+	
+	___________________________________________________
+%form
+use sue;
+language "c";
+window label "Archivo de Vigiladores", border single;
+ignore add, delete, prev, next;
+
+%fields
+emp	   :in emps:descrip, default $emp;	
+demp   : emps.descrip, skip;
+nroleg : on help manual; // in per(emp):apynom;
+apynom : skip;
+mensaje: skip;
+                       

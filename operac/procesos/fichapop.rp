@@ -1,0 +1,25 @@
+%titulo (today, pageno) before (report, page)
+[16c\$empresa                                                                                                 Fecha  : __/__/____
+                                                                                                          Página :         __.
+                                                                                                               (fichapop)
+
+%encab(r_empresa, r_clientedesde, r_objetivodesde, r_clientehasta, r_objetivohasta, r_fechadesde, r_fechahasta)  before(report)
+FILTROS:
+Empresa __.
+Cliente/Objetivo desde: ________. ____. hasta: _________. ____.
+Fecha desde: __/__/____ hasta __/__/____
+
+%fichaje() before ( page)
+FICHADAS
+	¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡ª
+	 Código Centro   Código Cliente Código Empleado Código Grupo Cliente Código Punto Servicio Código Servicio Dia Inicio       Dia Fin          Operación Tipo Cuadrante Origen 
+   	§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+%fichadas(r_CodigoCentro, r_CodigoCliente, r_CodigoEmpleado, r_CodigoGrupoCliente, r_CodigoPuntoServicio, r_CodigoServicio, r_diaInicio, r_diaFin, r_operacion, r_tipocuad, r_origen) group with fichaje
+	 _______________          ____.     __________   __________________   ________________                ___  ________________ ________________ _________ ______________ ______ 
+%fichadasfin() after (report, page)
+	¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¤ 
+%report
+use comerc;
+language"C";
+flength=$FLENCOMP;
+output to printer;

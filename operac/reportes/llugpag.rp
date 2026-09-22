@@ -1,0 +1,22 @@
+%titulo(pageno, today, rclid, rnombred, robjd, rdobjd, rclih, rnombreh, robjh, rdobjh) before (page, report)
+[16c
+																								   		     Página:       ____.
+																							               	 Fecha : __/__/____
+Lugares de Pago de Clientes desde : _________. ____________________________ ____. ________________                   (llugpag)
+   			                hasta : _________. ____________________________ ____. ________________
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+ 	     CLIENTE                                OBJETIVO                                  LUGAR DE PAGO                        
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%linea(rclie, rnombre, robj, rdobj, rofpag, rdofpag)
+_________. _____________________   ____. ________________________________   ______. ________________________________________
+%report
+use comerc;
+flength=$FLENCOMP;
+output to terminal;
+
+%fields
+rclie	: objetivo.cliente;
+robj    : objetivo.objet;
+rdobj   : objetivo.descrip;
+rofpag	: objetivo.ofpag;

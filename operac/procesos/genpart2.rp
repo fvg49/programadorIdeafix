@@ -1,0 +1,27 @@
+%head(today, pageno, rclied, rdclied, rclieh, rdclieh, robjetd, rdobjetd, robjeth, rdobjeth, rfdesde, rfhasta) before(report, page)
+[2o[16c
+                                                                                                                                                                    Fecha : __/__/____
+                                                                                                                                                                    Página:       ____.
+                                                                Proceso de Generación del Parte
+                                                                
+   Cliente Desde /Hasta   : __,___. _________________________ / __,___. _________________________
+   Objetivo Desde / Hasta :     __. _________________________ /     __. _________________________
+   Fecha Desde/Hasta	  : __/__/____ al __/__/____
+
+%encab(rngrup, rngdes, rnghas, rcli, rdcli, robj, rdobj, rdia1,rdia2,rdia3,rdia4,rdia5,rdia6,rdia7,rdia8,rdia9,rdia10, rstd1,rstd2,rstd3,rstd4,rstd5,rstd6,rstd7,rstd8,rstd9,rstd10) before(report, page, rngrup, rcli, robj)
+ Agupación: __. (__/__/____ - __/__/____)     Cliente : __,___. _________________________     Objetivo : __. _________________________
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡ª
+  Legajo    Apellido y Nombre          Puesto            Regimen  __/__/____  __/__/____  __/__/____  __/__/____  __/__/____  __/__/____  __/__/____  __/__/____  __/__/____  __/__/____  
+ 	                                                              Std:___.__  Std:___.__  Std:___.__  Std:___.__  Std:___.__  Std:___.__  Std:___.__  Std:___.__  Std:___.__  Std:___.__  
+                                                                   Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal.  Ent.  Sal. 
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¦¡¡¡¡¡©¡¡¡¡¡¥
+%linea(r_legajo,r_apenom,r_ptoser,r_puesto,r_dptoser,r_regim,r_hsd1,r_hsh1,r_hsd2,r_hsh2,r_hsd3,r_hsh3,r_hsd4,r_hsh4,r_hsd5,r_hsh5,r_hsd6,r_hsh6,r_hsd7,r_hsh7,r_hsd8,r_hsh8,r_hsd9,r_hsh9,r_hsd10,r_hsh10)
+ _______. ______________________ ___. ____. ___________ _________ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ __:__ 
+%zfin() group with linea, after (report, page, rngrup, rcli, robj)
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¤
+%report
+use comerc;
+language"C";
+topmarg = 0;
+flength=$FLENLANDCOMP;
+width=200;

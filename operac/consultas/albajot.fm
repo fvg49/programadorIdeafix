@@ -1,0 +1,25 @@
+
+ Fecha Desde :{__/__/__
+       Hasta : __/__/__}
+
+ Salida por  : _______________
+
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+    Digite __ para confirmar  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form
+use comerc, sue;
+window label "[OT de Altas y Bajas]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+messages
+       DESDE: "La Fecha Desde debe ser menor o igual a la Fecha Hasta";
+
+%fields
+agrupcc : check fecd <= fech, on error DESDE;
+fecd    : default today;
+fech    : default today;
+salida  : in ("printer", "terminal", "horas delimited"), default "printer", not null;
+dummy   : is help (PROCESAR);

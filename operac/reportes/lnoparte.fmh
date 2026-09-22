@@ -1,0 +1,24 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define DELEG           (fmfield)  2	/* String          */
+# define DDELEG          (fmfield)  3	/* String          */
+# define FDELEGA         (fmfield)  4	/* String          */
+# define DDELEGA         (fmfield)  5	/* String          */
+# define FFILIAL         (fmfield)  6	/* String          */
+# define DESCRIP         (fmfield)  7	/* String          */
+# define AGRFEC          (fmfield)  8	/* GROUPED         */
+# define FDESDE          (fmfield)  9	/* Date            */
+# define FHASTA          (fmfield) 10	/* Date            */
+# define BAJA            (fmfield) 11	/* Integer         */
+# define SALIDA          (fmfield) 12	/* String          */
+# define DESC5           (fmfield) 13	/* String          */
+# define NOMARCH         (fmfield) 14	/* String          */
+# define PROCVIGI        (fmfield) 15	/* Long            */
+# define DPROCVIG        (fmfield) 16	/* String          */
+# define COMENT          (fmfield) 17	/* String          */
+/* Form checksum	*/
+# define FM_LNOPARTE_CHKSUM (long)0x0387
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

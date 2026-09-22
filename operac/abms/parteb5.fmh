@@ -1,0 +1,30 @@
+/* Field names	*/
+# define CTRLTITULO      (fmfield)  0	/* String          */
+# define CTRLCORRI       (fmfield)  1	/* Integer         */
+# define CTRLNROLEG      (fmfield)  2	/* Long            */
+# define CTRLNOMBRE      (fmfield)  3	/* String          */
+# define CTRLREGIM       (fmfield)  4	/* String          */
+# define CTRLNORMAL      (fmfield)  5	/* Integer         */
+# define CTRLLINEA       (fmfield)  6	/* Integer         */
+# define CTRLMULTI       (fmfield)  7	/* MULTIPLE        */
+# define CTRLCLIEN       (fmfield)  8	/* Long            */
+# define CTRLOBJET       (fmfield)  9	/* Integer         */
+# define CTRLHRENT       (fmfield) 10	/* Time            */
+# define CTRLHRSAL       (fmfield) 11	/* Time            */
+# define CTRLNORAC       (fmfield) 12	/* Integer         */
+# define CTRL50AC        (fmfield) 13	/* Integer         */
+# define CTRL100AC       (fmfield) 14	/* Integer         */
+# define CTRLFRAAC       (fmfield) 15	/* Integer         */
+# define CTRLNORSU       (fmfield) 16	/* Integer         */
+# define CTRL50SU        (fmfield) 17	/* Integer         */
+# define CTRL100SU       (fmfield) 18	/* Integer         */
+# define CTRLFRASU       (fmfield) 19	/* Integer         */
+# define I_CTRLPTOSER    (fmfield) 20	/* Integer         */
+# define I_CTRLPUESTO    (fmfield) 21	/* Integer         */
+# define I_CTRLNROINT    (fmfield) 22	/* Integer         */
+# define CTRLDIFER       (fmfield) 23	/* Integer         */
+/* Form checksum	*/
+# define FM_PARTEB5_CHKSUM (long)0x0a18
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

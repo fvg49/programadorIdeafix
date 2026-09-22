@@ -1,0 +1,3 @@
+"X. Cambio de Impresoras             " SETENV impperu01.cfg
+"Y. Ver Perfil                       " PIPE   20 100 verperfil.sh
+"Z. Cambio de Password               " SHELL chg_passwd.sh

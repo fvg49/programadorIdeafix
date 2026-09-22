@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ausent.exe {
+	ausent.fm;
+    ausent.c	: aausentfmh aperac.sch;
+	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

@@ -1,0 +1,54 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define CLIE            (fmfield)  2	/* Long            */
+# define DCLIE           (fmfield)  3	/* String          */
+# define OBJET           (fmfield)  4	/* Integer         */
+# define DOBJ            (fmfield)  5	/* String          */
+# define ORDENA          (fmfield)  6	/* Integer         */
+# define DORDENA         (fmfield)  7	/* String          */
+# define FECPARTE        (fmfield)  8	/* Date            */
+# define STD             (fmfield)  9	/* Long            */
+# define AGRUGRAL        (fmfield) 10	/* GROUPED         */
+# define MULTIPAR        (fmfield) 11	/* MULTIPLE        */
+# define AGRUPLIN        (fmfield) 12	/* GROUPED         */
+# define NROLEG          (fmfield) 13	/* Long            */
+# define I_VIGINEW       (fmfield) 14	/* Integer         */
+# define I_EFECT         (fmfield) 15	/* Integer         */
+# define I_EXTASIG       (fmfield) 16	/* Integer         */
+# define I_PARTIME       (fmfield) 17	/* Integer         */
+# define I_TIPVIG        (fmfield) 18	/* String          */
+# define NOMBRE          (fmfield) 19	/* String          */
+# define REGIM           (fmfield) 20	/* String          */
+# define PTO             (fmfield) 21	/* String          */
+# define I_PTOSER        (fmfield) 23	/* Integer         */
+# define I_PUESTO        (fmfield) 24	/* Integer         */
+# define I_NROINT        (fmfield) 25	/* Integer         */
+# define COND            (fmfield) 26	/* String          */
+# define AGRUPHS         (fmfield) 28	/* GROUPED         */
+# define HSENTRE         (fmfield) 29	/* Time            */
+# define HSSAL           (fmfield) 30	/* Time            */
+# define HSTOT           (fmfield) 31	/* Integer         */
+# define DETHS           (fmfield) 32	/* String          */
+# define EXCP            (fmfield) 34	/* String          */
+# define TOTAL           (fmfield) 36	/* Long            */
+# define HSSTD           (fmfield) 37	/* Long            */
+# define HSFAC           (fmfield) 38	/* Long            */
+# define HSACEMP         (fmfield) 39	/* Long            */
+# define HSCAIDA         (fmfield) 40	/* Long            */
+# define LINEA           (fmfield) 41	/* String          */
+# define MENSAJE         (fmfield) 42	/* String          */
+# define CTRL            (fmfield) 43	/* String          */
+/* Form checksum	*/
+# define FM_PARTEP_CHKSUM (long)0x1c8b
+/* Subform names	*/
+# define SF_PARTEP4           0
+# define SF_PARTEP3           1
+# define SF_PARTEP1           2
+# define SF_PARTEP2           3
+# define SF_PARTEP5           4
+/* Symbol names for messages */
+# define M_PRESIONDE        0
+# define M_PRESIONEX        1
+# define M_PRESIONPU        2
+/* =========== End of fmh file ============ */

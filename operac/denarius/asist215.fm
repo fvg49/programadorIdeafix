@@ -1,0 +1,56 @@
+
+          Listado de Totales de Inasistencias por Tipo de Código
+
+  Empresa            : __. ___________________________________
+
+  Rangos de Impresión
+
+    Cód. Inasistencia 
+               desde :{____. _________________________
+               hasta : ____.}_________________________
+    
+    Fecha del Parte     
+               desde :{__/__/____
+               hasta : __/__/____}
+
+	Salida a: _ ______________________  _________________________________
+	
+%form 
+//$RCSfile: asist215.fm,v $ $Revision: 1.1.1.1 $ $Date: 1999/05/13 17:26:26 $
+language "C";
+use sue, asist;
+confirm add, delete, update, end;
+ignore ignore;
+display status;
+window label "[ I] Totales de Inasistencias", border single;
+msgtable DCAMPOS ("DCAMPOS");
+
+%fields
+empre    : in sue.emps:descrip,
+		  is (num($Nroempresa) == 0 or num($Nroempresa) == null)  
+          ? void : (empre == null) ? 	num($Nroempresa) : empre;
+empdescr : sue.emps.descrip,
+           skip ;
+agrup1   : ;
+codd     : on help in asist.inasist:descrinas,
+           default 1;
+desc1    : asist.inasist.descrinas, skip;
+codh     : on help in asist.inasist:descrinas,
+           default 9999,
+           >= codd,
+           check after agrup1,
+		   on error DCAMPOS ("COMPAR", "DESDE");
+desc2    : asist.inasist.descrinas, skip;
+agrup2   : ;
+fechad   : default today, <=today,
+           on error (this > today) ? DCAMPOS ("COMPAR", "FECHACT") : 
+           DCAMPOS ("COMPAR", "DESDE");
+fechah   : default today,
+           check (fechah >= fechad and fechah <= today),
+           check after agrup2,
+           on error (this > today) ? DCAMPOS ("COMPAR", "FECHACT"):
+           DCAMPOS ("COMPAR", "DESDE");
+salida   : mask ">A", in ("I":"Impresora","T":"Terminal","A":"Archivo"),
+			default "T";
+dsalida  : is descr(salida);
+nom_archi: is (salida == "A") ? void : null, not null;

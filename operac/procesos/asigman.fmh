@@ -1,0 +1,67 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define EMPDESC         (fmfield)  1	/* String          */
+# define NROLEG          (fmfield)  2	/* Long            */
+# define NOMBRE          (fmfield)  3	/* String          */
+# define CLIANT          (fmfield)  4	/* Long            */
+# define OBJANT          (fmfield)  5	/* Integer         */
+# define PTOANT          (fmfield)  6	/* Integer         */
+# define PUEANT          (fmfield)  7	/* Integer         */
+# define VIGANT          (fmfield)  8	/* String          */
+# define EFEANT          (fmfield)  9	/* String          */
+# define FECANT          (fmfield) 10	/* Date            */
+# define ENTANT          (fmfield) 11	/* Time            */
+# define SALANT          (fmfield) 12	/* Time            */
+# define DIA1ANT         (fmfield) 13	/* String          */
+# define DIA2ANT         (fmfield) 14	/* String          */
+# define DIA3ANT         (fmfield) 15	/* String          */
+# define DIA4ANT         (fmfield) 16	/* String          */
+# define DIA5ANT         (fmfield) 17	/* String          */
+# define DIA6ANT         (fmfield) 18	/* String          */
+# define DIA7ANT         (fmfield) 19	/* String          */
+# define INTANT          (fmfield) 20	/* Integer         */
+# define TIPANT          (fmfield) 21	/* String          */
+# define REGANT          (fmfield) 22	/* String          */
+# define SUBANT          (fmfield) 23	/* String          */
+# define FRAANT          (fmfield) 24	/* Date            */
+# define NUMANT          (fmfield) 25	/* Integer         */
+# define FROANT          (fmfield) 26	/* Integer         */
+# define ROLANT          (fmfield) 27	/* Integer         */
+# define FILANT          (fmfield) 28	/* Integer         */
+# define COLANT          (fmfield) 29	/* Integer         */
+# define HASANT          (fmfield) 30	/* Date            */
+# define CLINUE          (fmfield) 31	/* Long            */
+# define OBJNUE          (fmfield) 32	/* Integer         */
+# define PTONUE          (fmfield) 33	/* Integer         */
+# define PUENUE          (fmfield) 34	/* Integer         */
+# define VIGNUE          (fmfield) 35	/* String          */
+# define EFENUE          (fmfield) 36	/* String          */
+# define FECNUE          (fmfield) 37	/* Date            */
+# define ENTNUE          (fmfield) 38	/* Time            */
+# define SALNUE          (fmfield) 39	/* Time            */
+# define DIA1NUE         (fmfield) 40	/* String          */
+# define DIA2NUE         (fmfield) 41	/* String          */
+# define DIA3NUE         (fmfield) 42	/* String          */
+# define DIA4NUE         (fmfield) 43	/* String          */
+# define DIA5NUE         (fmfield) 44	/* String          */
+# define DIA6NUE         (fmfield) 45	/* String          */
+# define DIA7NUE         (fmfield) 46	/* String          */
+# define INTNUE          (fmfield) 47	/* Integer         */
+# define TIPNUE          (fmfield) 48	/* String          */
+# define REGNUE          (fmfield) 49	/* String          */
+# define SUBNUE          (fmfield) 50	/* String          */
+# define FRANUE          (fmfield) 51	/* Date            */
+# define NUMNUE          (fmfield) 52	/* Integer         */
+# define FRONUE          (fmfield) 53	/* Integer         */
+# define ROLNUE          (fmfield) 54	/* Integer         */
+# define FILNUE          (fmfield) 55	/* Integer         */
+# define COLNUE          (fmfield) 56	/* Integer         */
+# define HASNUE          (fmfield) 57	/* Date            */
+# define FECBAJ          (fmfield) 58	/* Date            */
+# define MOTIVO          (fmfield) 59	/* Integer         */
+# define DMOTIV          (fmfield) 60	/* String          */
+/* Form checksum	*/
+# define FM_ASIGMAN_CHKSUM (long)0x367d
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

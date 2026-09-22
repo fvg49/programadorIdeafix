@@ -1,0 +1,29 @@
+%head(today, pageno, r_emp, r_demp, r_clied, r_dclied, r_objd, r_dobjd, r_clieh, r_dclieh, r_objh, r_dobjh, r_tipinf, r_fdesde, r_fhasta) before(report, page)
+[2o[16c                                                                                                                                               Fecha  : __/__/____
+                                                                                                                                               Página :       ____.
+                                                                                                                                                     (lasigjd)
+                                                                 Vigiladores asignados por Cliente/Objetivo
+                                                                 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+  Empresa             :        __.  _________________________________________
+  Cliente Desde       : _________.  _________________________________________   Objetivo Desde :   ____.  _________________________________________
+  Cliente Hasta       : _________.  _________________________________________   Objetivo Hasta :   ____.  _________________________________________
+  Tipo de información :  _________________________________________ __/__/____ __/__/____
+%encab(r_cli, r_dcli, r_obj, r_dobj) before(page, report, r_cli, r_obj)
+
+  Cliente  : _________.  _________________________________________
+  Objetivo :      ____.  _________________________________________
+ ¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡©¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+   Legajo        Apellido y Nombre       Vig Efec Fr  Regimen      Rol       Fecha Asignación    Fec.Franco Nro       Días      H.Ent. H.Sal.         Motivo        
+                                         P T Prov                             Desde     Hasta                                                     Desasignacion     
+ §¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¦¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea(r_legajo,r_apenom,r_vr, r_ef, r_fr, r_regim, r_rol, r_fila, r_colum, r_fecasig, r_fechas, r_ffranco, r_nfranco ,r_dia1, r_dia2, r_dia3, r_dia4, r_dia5, r_dia6, r_dia7, r_hsent, r_hssal, r_motd, r_dmotd)
+  _______. _____________________________  _    _   _ _________ __. __. __. __/__/____ __/__/____ __/__/____ __.  _-_-_-_-_-_-_   __:__  __:__ __. _________________ 
+%flin() after(page, report, r_cli, r_obj), group with linea                                          
+ ¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡£¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+use operac, sue, comerc;
+language"C";
+flength= $FLENLANDCOMP;
+width=147;
+output to terminal;

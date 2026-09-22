@@ -1,0 +1,35 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define LISTAPOR        (fmfield)  2	/* Integer         */
+# define DLISPOR         (fmfield)  3	/* String          */
+# define AGRCLIE         (fmfield)  4	/* GROUPED         */
+# define CLIDESDE        (fmfield)  5	/* Long            */
+# define DCLID           (fmfield)  6	/* String          */
+# define CLIHASTA        (fmfield)  7	/* Long            */
+# define DCLIH           (fmfield)  8	/* String          */
+# define AGROBJE         (fmfield)  9	/* GROUPED         */
+# define OBJDESDE        (fmfield) 10	/* Integer         */
+# define DOBJD           (fmfield) 11	/* String          */
+# define OBJHASTA        (fmfield) 12	/* Integer         */
+# define DOBJH           (fmfield) 13	/* String          */
+# define AGRVIGI         (fmfield) 14	/* GROUPED         */
+# define VIGDESDE        (fmfield) 15	/* Long            */
+# define DVIGD           (fmfield) 16	/* String          */
+# define VIGHASTA        (fmfield) 17	/* Long            */
+# define DVIGH           (fmfield) 18	/* String          */
+# define TIPOLIS         (fmfield) 19	/* Integer         */
+# define DTIPLIS         (fmfield) 20	/* String          */
+# define AGRFEC          (fmfield) 21	/* GROUPED         */
+# define FDESDE          (fmfield) 22	/* Date            */
+# define FHASTA          (fmfield) 23	/* Date            */
+# define SALIDA          (fmfield) 24	/* String          */
+# define DESC5           (fmfield) 25	/* String          */
+/* Form checksum	*/
+# define FM_LASIGJD_CHKSUM (long)0x07f6
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_VIGI         0
+# define M_ERR_CLIE         1
+# define M_ERR_OBJE         2
+/* =========== End of fmh file ============ */

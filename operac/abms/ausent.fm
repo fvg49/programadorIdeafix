@@ -1,0 +1,15 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+         Código de Novedad         
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+ ____. __________________________  
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use asist;
+language "C";
+window label "Ausentismo", border single;
+ignore delete, end, ignore;
+%fields
+codnov    : asisten. ;
+descrinas : inasist.descrinas, skip;
+//valor     : asisten., not null;
+//justif    : asisten., in (0:"No", 1:"Si"), default 0;

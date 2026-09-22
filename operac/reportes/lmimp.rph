@@ -1,0 +1,34 @@
+/* Field names	*/
+# define RSELEC          ((rpfield)   0) 	/* String */
+# define RSELEC1         ((rpfield)   1) 	/* String */
+# define RSELEC2         ((rpfield)   2) 	/* String */
+# define RCLIE           ((rpfield)   3) 	/* Num */
+# define RCLIED          ((rpfield)   4) 	/* String */
+# define ROBJET          ((rpfield)   5) 	/* Num */
+# define ROBJETD         ((rpfield)   6) 	/* String */
+# define RDETALLE        ((rpfield)   7) 	/* String */
+# define RFINICIO        ((rpfield)   8) 	/* Date */
+# define RFFINAL         ((rpfield)   9) 	/* Date */
+# define RHINICIO        ((rpfield)  10) 	/* Time */
+# define RHFINAL         ((rpfield)  11) 	/* Time */
+# define RDIA1           ((rpfield)  12) 	/* String */
+# define RDIA2           ((rpfield)  13) 	/* String */
+# define RDIA3           ((rpfield)  14) 	/* String */
+# define RDIA4           ((rpfield)  15) 	/* String */
+# define RDIA5           ((rpfield)  16) 	/* String */
+# define RDIA6           ((rpfield)  17) 	/* String */
+# define RDIA7           ((rpfield)  18) 	/* String */
+# define RREGIM          ((rpfield)  19) 	/* String */
+# define RTIPODIA        ((rpfield)  20) 	/* String */
+# define RCODFREC        ((rpfield)  21) 	/* String */
+# define RCANTPUE        ((rpfield)  22) 	/* Num */
+# define RCANTVIG        ((rpfield)  23) 	/* Num */
+# define RCODMOT         ((rpfield)  24) 	/* Num */
+/* Report Checksum	*/
+# define RP_LMIMP_CHKSUM ((long) 0x0279)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ZCLI            ((int)   1)
+# define ZOBJ            ((int)   2)
+# define ZLINEA          ((int)   3)
+# define ZFIN            ((int)   4)

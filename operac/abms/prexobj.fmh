@@ -1,0 +1,16 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define PERPRE          (fmfield)  2	/* Long            */
+# define DPRESEN         (fmfield)  3	/* String          */
+# define MULTIS          (fmfield)  4	/* MULTIPLE        */
+# define AGRUP           (fmfield)  5	/* GROUPED         */
+# define CLIE            (fmfield)  6	/* Long            */
+# define DCLIE           (fmfield)  7	/* String          */
+# define OBJET           (fmfield)  8	/* Integer         */
+# define DOBJET          (fmfield)  9	/* String          */
+/* Form checksum	*/
+# define FM_PREXOBJ_CHKSUM (long)0x00e7
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

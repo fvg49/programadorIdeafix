@@ -1,0 +1,19 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lciefil.exe {
+	lciefil.fm;
+	lciefil.rp;
+   	lciefil.c;
+	$DENARIUSLIB.a;
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+ 	$BRIGADALIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+}

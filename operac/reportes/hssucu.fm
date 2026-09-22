@@ -1,0 +1,70 @@
+  Empresa       :          __.  _________________________________					
+
+  Desde Cliente :{___,___,___.  _________________________________
+        Objetivo:       _,___.  _________________________________
+
+  Hasta Cliente : ___,___,___.} _________________________________
+        Objetivo:       _,___.  _________________________________
+
+  Período Desde : {__/__/____
+          Hasta :  __/__/____}
+
+  Opción        : _. ______________________________________________
+
+  Detalle       : _  ___________________________________________
+
+  Tipos de Obj. : _  ___________________________________________
+
+  Considera Retroactivos : __?  Fecha para standard : __/__/____
+
+  Salida a      : _  _________  Nombre del archivo  : ____________
+
+
+                 ___________________________________________________
+
+%form
+use operac, bill, sue, comerc;
+language "C";
+window label "[Listado de Total de Horas Trabajadas y Adicionales por Cliente/Objetivo/Sucursal]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+agrupc  : check clid <= clih;
+clid    : in bill.cliente:(razsoc), not null;
+dclid   : bill.cliente.razsoc, skip;
+objd    : on help in comerc.objetivo by est (emp, true, clid):descrip, default 1;
+dobjd   : comerc.objetivo.descrip, skip;
+clih    : in bill.cliente:(razsoc), not null;
+dclih   : bill.cliente.razsoc, skip;
+objh    : on help in comerc.objetivo by est (emp, true, clih):descrip, default 99;
+dobjh   : comerc.objetivo.descrip, skip;
+agrupf  : check fechad <= fechah;
+fechad  : not null, default today;
+fechah  : not null, default today;
+opcion  : in (5:"Sin Filtro"),
+          not null, default 5, autoenter;
+dopcion : is descr(opcion);
+det     : in ("F":"Detalla por Fecha"),
+          not null, default "F", mask ">A", autoenter;
+ddet    : is descr(det);
+
+tipobj  : in ("T":"Todos los objetivos",
+              "R":"Objetivos Riff",
+              "E":"Objetivos Esporadicos"),
+          not null, default "T", mask ">A", autoenter;
+dtipobj : is descr(tipobj);
+
+fretro  : not null, default false;
+
+fecstd  : descr "Calcula el std. en base a los puestos vivos a esta fecha.   Si es nulo se calcula dia por dia";
+
+salida  : in ("A": "Archivo"), not null,  mask ">A", autoenter, default "A";
+saldescr: is descr(salida);
+nomarch : is (salida!="A" and salida!="R") ? null : void, default "hssucu.dat", not null;
+coment  : skip;

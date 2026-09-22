@@ -1,0 +1,18 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRFEC          (fmfield)  2	/* GROUPED         */
+# define FECHAD          (fmfield)  3	/* Date            */
+# define FECHAH          (fmfield)  4	/* Date            */
+# define REGIM           (fmfield)  5	/* String          */
+# define CANT            (fmfield)  6	/* Long            */
+# define OPCION          (fmfield)  7	/* String          */
+# define DOPCION         (fmfield)  8	/* String          */
+# define SALIDA          (fmfield)  9	/* String          */
+# define DSALIDA         (fmfield) 10	/* String          */
+# define ARCHIVO         (fmfield) 11	/* String          */
+/* Form checksum	*/
+# define FM_LHSREGIM_CHKSUM (long)0x012f
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

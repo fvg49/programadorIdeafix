@@ -1,0 +1,20 @@
+
+                [1;4mREVERSION DEL PASAJE DE NOVEDADES DE MARTE A FACTURACION[0m
+
+Este proceso borra los registros de la tabla VALIFE relacionados con la Liquidacion ingresada,
+y las variables de novedad de cada uno de estos registros, pudiendose seleccionar para un rango
+de clientes/objetivos.
+La liquidación ingresada en el form puede existir o no, en la tabla de Liquidaciones de BILL.
+Si existe controla que no estè cerrada.
+
+[1;4mErrores:[0m
+
+Si la liquidación existe debe estar abierta.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m revmar.exe
+
+[1mProceso:[0m Borra comgral|VALIFE y bill|VARNOV
+
+

@@ -1,0 +1,13 @@
+/* Field names	*/
+# define REMPRE          ((rpfield)   0) 	/* String */
+# define RFECHAD         ((rpfield)   1) 	/* Date */
+# define RFECHAH         ((rpfield)   2) 	/* Date */
+# define RCODAUS         ((rpfield)   3) 	/* Num */
+# define RDESCRAUS       ((rpfield)   4) 	/* String */
+# define RTOTINAS        ((rpfield)   5) 	/* Num */
+/* Report Checksum	*/
+# define RP_ASIST215_CHKSUM ((long) 0x0025)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LINEA           ((int)   1)
+# define FINLINEA        ((int)   2)

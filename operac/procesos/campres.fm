@@ -1,0 +1,28 @@
+ 
+   Empresa  :    __.  _________________________________________
+   
+  ¨¡ Responsable de Presentismo VIEJO ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     _,___,___. __________________________________________________  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+  ¨¡ Responsable de Presentismo NUEVO ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     _,___,___. __________________________________________________  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤ 
+
+%form()
+use comerc, sue;
+language "C";
+window label "[Cambio Masivo de Responsable de Presentismo]", border single;
+confirm add, update, end, ignore;
+ignore delete;
+display status;
+
+%fields
+emp		: in sue.emps:descrip, not null, default $emp;
+demp	: sue.emps.descrip, skip;
+
+presenv	: in sue.per(emp):(apynom), not null;
+dpresenv: sue.per.apynom, skip;
+
+presenn : in sue.per(emp):(apynom), not null;
+dpresenn: sue.per.apynom, skip;

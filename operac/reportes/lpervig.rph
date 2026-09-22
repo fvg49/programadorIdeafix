@@ -1,0 +1,14 @@
+/* Field names	*/
+# define RSELEC          ((rpfield)   0) 	/* String */
+# define RSELEC1         ((rpfield)   1) 	/* String */
+# define RSELEC2         ((rpfield)   2) 	/* String */
+# define RNROLEG         ((rpfield)   3) 	/* Num */
+# define RAPYNOM         ((rpfield)   4) 	/* String */
+# define RPROCED         ((rpfield)   5) 	/* Num */
+# define RDETALL         ((rpfield)   6) 	/* String */
+/* Report Checksum	*/
+# define RP_LPERVIG_CHKSUM ((long) 0x002e)
+/* Zone names	*/
+# define ZTITULO         ((int)   0)
+# define ZLINEA          ((int)   1)
+# define ZCIERRE         ((int)   2)

@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+novipaud.exe {  
+
+	novipaud.fm;
+	novipaud.rp;
+	novipaud.c;   
+	novipaud.hlp;
+
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

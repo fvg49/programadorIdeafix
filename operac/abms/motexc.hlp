@@ -1,0 +1,21 @@
+
+                     [1;4mMotivos de excepción por condición[0m
+
+
+  [1mDescripción :[0m Nombre del motivo.
+
+  [1mValida Cliente-Objetivo:[0m Si valida comprueba que ese motivo sea valido para ese objetivo.
+                           Ese relacion se carga en motivos x cliente (operac|motxcli).
+
+  [1mVariable de denarius:[0m En el pasaje de horas a denarius estas horas se informan en la
+                        variable correspondiente.
+
+  [1mTipo de Excepción:[0m 
+  
+      [1m1.-  Cubrio normalmente  :[0m Estas horas no se consideran como excepcion. 
+                                 Es como si no existiera el registro.
+
+      [1m2.-  Descuenta del sueldo:[0m Estas horas no se consideran como excepcion. 
+                                 Es como si no existiera el registro.
+                                 Se toma como una improductividad generada por el empleado.
+                         

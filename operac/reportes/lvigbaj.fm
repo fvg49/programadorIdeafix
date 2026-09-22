@@ -1,0 +1,17 @@
+
+ Empresa      : __. _____________________________________________
+
+ Fecha Desde  : __/__/____
+       Hasta  : __/__/____
+%form
+use comerc, bill, sue;
+language "C";
+window label "[Vigiladores dados de Baja]", border single;
+confirm update, end;
+ignore add, delete, ignore;
+
+%fields
+emp		: in sue.emps:(descrip), default $emp, not null;
+demp	: sue.emps.descrip, skip;
+fdesde  : default today - 30;
+fhasta	: default today;

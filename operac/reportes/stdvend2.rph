@@ -1,0 +1,24 @@
+/* Field names	*/
+# define RDETFEC         ((rpfield)   0) 	/* Num */
+# define RDETOBJ         ((rpfield)   1) 	/* Num */
+# define RFERIADO        ((rpfield)   2) 	/* String */
+# define RPER            ((rpfield)   3) 	/* String */
+# define RCLI            ((rpfield)   4) 	/* Num */
+# define RDCLI           ((rpfield)   5) 	/* String */
+# define ROBJ            ((rpfield)   6) 	/* Num */
+# define RDOBJ           ((rpfield)   7) 	/* String */
+# define RSVH            ((rpfield)   8) 	/* Num */
+# define RFECHA          ((rpfield)   9) 	/* Date */
+/* Report Checksum	*/
+# define RP_STDVEND2_CHKSUM ((long) 0x0060)
+/* Zone names	*/
+# define NOMUESTRA       ((int)   0)
+# define HEAD            ((int)   1)
+# define TITCLI          ((int)   2)
+# define TITOBJ          ((int)   3)
+# define TITCLI_IMP      ((int)   4)
+# define TITOBJ_IMP      ((int)   5)
+# define LINFECHA        ((int)   6)
+# define TOTCLI          ((int)   7)
+# define ZFINP           ((int)   8)
+# define ZFIN            ((int)   9)

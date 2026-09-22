@@ -1,0 +1,29 @@
+%noprint1 (rpmodo1) no print
+_.
+
+%head1(pageno, today) before (page, report)
+[16c                                                                                                             Página :       ____.                  
+                                                                                                             Fecha  : __/__/____
+                                                   Listado de Presentismo                                       (lpresen.exe)
+
+      ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+        Hora Entrada   Hora Salida   Condic   Regimen    Legajo           Apellido y Nombre            O b s e r v a c i o n e s      
+      ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%svisor1(r_superv1, r_dsup1, r_fecha1) before (page, r_superv1,r_fecha1),  if rpmodo1 == 1
+[1m Presentismo : _______. _________________________________________                                       FECHA : __/__/____[0m 
+%lcli1(r_cli1, r_dcli1, r_std1, r_fecha1, r_obj1, r_dobj1) before (page, r_fecha1, r_cli1, r_obj1)
+ Cliente     : _______. _________________________________________               Std: ______.__          Fecha : __/__/____
+ Objetivo    :      __. _________________________________________  
+%zlinea1(r_hdesde1, r_hhasta1, r_condic1, r_regim1, r_legajo1, r_apenom1)
+            _____          _____      _      ________  _,___,___. ________________________________
+%zfin1() after (r_cli1, r_obj1)
+
+ Hs. Trabajadas Std [     ]       Hs. No Prestadas [     ]       Hs. Adicionales [     ] 
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+%report
+language"C";
+//flength= $FLENGTH;
+topmarg = 0;
+flength= 64;
+//output to printer;
+width = 135;

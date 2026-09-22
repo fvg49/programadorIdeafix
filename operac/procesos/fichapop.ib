@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+fichapop.exe {
+	fichapop.fm ;
+	fichapop.rp ;
+	fichapop.c : fichapop.fmh;
+	$WEBINTER/lib/webinter.a;
+  	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

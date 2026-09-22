@@ -1,0 +1,45 @@
+
+      Empresa   :     __.  _____________________________
+      Condición : {   __.  ________________________
+      Motivo    :     __.  ________________________ }
+      Cliente   : __,___.| _____________________________
+
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+            O b j e t i v o s            Usa cond-motivo  
+ §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+ [ __. ________________________________        _?        ]
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+                                                          
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form                                   
+use comerc, bill, operac, sue;                
+language "C";
+window label "[Clientes-Objetivos por Excepción]", border single;
+confirm add, update, ignore, end;
+ignore prev, next, delete;
+messages
+	MALV : "El motivo ingresado no valida por Cliente-Objetivo";
+
+
+%fields
+emp      : in sue.emps:descrip, not null, default $emp;
+demp     : sue.emps.descrip, skip;
+agupmot  : check (i_val == true), on error MALV;
+codcond  : operac.motxcli.codcond, in operac.condicion:(descrip);
+descond  : operac.condicion.descrip, skip;
+codmot   : operac.motxcli.codmot, in operac.motexc(codcond):(descrip);
+i_val    : internal operac.motexc.valcli, operac.motexc.valcli;
+descrip  : operac.motexc.descrip , skip;
+clie     : operac.motxcli.cliente , in bill.cliente:(razsoc), not null;
+dclie    : bill.cliente.razsoc, skip;
+multis   : rows 100, display 10;
+objet    : operac.motxcli.objetivo, in comerc.objetivo by est(emp, 1, clie):descrip, not null, unique;
+dobjet   : objetivo.descrip, skip;
+valcli   : not null, default false;

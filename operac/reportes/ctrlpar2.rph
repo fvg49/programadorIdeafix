@@ -1,0 +1,28 @@
+/* Field names	*/
+# define R_VDESDE        ((rpfield)   0) 	/* Num */
+# define R_VHASTA        ((rpfield)   1) 	/* Num */
+# define R_FDESDE        ((rpfield)   2) 	/* Date */
+# define R_FHASTA        ((rpfield)   3) 	/* Date */
+# define R_CLID          ((rpfield)   4) 	/* Num */
+# define R_CLIH          ((rpfield)   5) 	/* Num */
+# define R_OBJD          ((rpfield)   6) 	/* Num */
+# define R_OBJH          ((rpfield)   7) 	/* Num */
+# define R_NROLEG        ((rpfield)   8) 	/* Num */
+# define R_DNROLEG       ((rpfield)   9) 	/* String */
+# define R_DIA           ((rpfield)  10) 	/* Date */
+# define R_CLIENTE       ((rpfield)  11) 	/* Num */
+# define R_DCLIENTE      ((rpfield)  12) 	/* String */
+# define R_OBJETIVO      ((rpfield)  13) 	/* Num */
+# define R_DOBJETIVO     ((rpfield)  14) 	/* String */
+# define R_PTOSER        ((rpfield)  15) 	/* Num */
+# define R_PUESTO        ((rpfield)  16) 	/* Num */
+# define R_DPTOSER       ((rpfield)  17) 	/* String */
+# define R_COND          ((rpfield)  18) 	/* String */
+# define R_DESCOND       ((rpfield)  19) 	/* String */
+/* Report Checksum	*/
+# define RP_CTRLPAR2_CHKSUM ((long) 0x0155)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)
+# define POSLINEA        ((int)   2)
+# define FLIN            ((int)   3)

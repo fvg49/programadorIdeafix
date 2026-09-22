@@ -1,0 +1,41 @@
+/* Field names	*/
+# define CLIENTE         (fmfield)  0	/* Long            */
+# define DCLIE           (fmfield)  1	/* String          */
+# define OBJET           (fmfield)  2	/* Integer         */
+# define DOBJ            (fmfield)  3	/* String          */
+# define FECINI          (fmfield)  4	/* Date            */
+# define TIPPTO          (fmfield)  5	/* Integer         */
+# define DPTOSER         (fmfield)  6	/* String          */
+# define CODINT          (fmfield)  7	/* Integer         */
+# define CATEG           (fmfield)  8	/* Integer         */
+# define DCATEG          (fmfield)  9	/* String          */
+# define PTIME           (fmfield) 10	/* Integer         */
+# define AGRUPT          (fmfield) 11	/* GROUPED         */
+# define HORAPT          (fmfield) 12	/* Integer         */
+# define CODFREC         (fmfield) 13	/* String          */
+# define DESCFRE         (fmfield) 14	/* String          */
+# define AGRUPF          (fmfield) 15	/* GROUPED         */
+# define FINICIO         (fmfield) 16	/* Date            */
+# define FFINAL          (fmfield) 17	/* Date            */
+# define AGRUPH          (fmfield) 18	/* GROUPED         */
+# define HINICIO         (fmfield) 19	/* Time            */
+# define HFINAL          (fmfield) 20	/* Time            */
+# define AGRUPD          (fmfield) 21	/* GROUPED         */
+# define DIAS1           (fmfield) 22	/* String          */
+# define DIAS2           (fmfield) 23	/* String          */
+# define DIAS3           (fmfield) 24	/* String          */
+# define DIAS4           (fmfield) 25	/* String          */
+# define DIAS5           (fmfield) 26	/* String          */
+# define DIAS6           (fmfield) 27	/* String          */
+# define DIAS7           (fmfield) 28	/* String          */
+# define REGIM           (fmfield) 29	/* String          */
+# define TIPODIA         (fmfield) 30	/* String          */
+# define DESC1           (fmfield) 31	/* String          */
+# define CANTVIG         (fmfield) 32	/* Integer         */
+# define CANTPUE         (fmfield) 33	/* Integer         */
+/* Form checksum	*/
+# define FM_PUESTOS_CHKSUM (long)0x0dc0
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_MALFEC           0
+/* =========== End of fmh file ============ */

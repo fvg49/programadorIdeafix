@@ -1,0 +1,91 @@
+    Empresa  :   __. ______________________________________
+    Cliente  :_____. __________________________________________
+    Objetivo : ____. __________________________________________
+    Orden    : __. _______________ Fecha de Parte : __/__/____ | Std. de Horas :  ____.__
+ ¨¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡ª
+    Legajo       Apellido y Nombre   Regimen  Pto Con   Hs.   Hs.     Hs.   Detal. Excep. 
+                                                      Entra. Salid   Total    Hs.         
+{§¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+[ {_______. _______________________ _________ \[_\]  _  {__:__ __:__   __.__}  \[_\]    \[_\] }]
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+                                              \[ \]                            \[ \]    \[ \]   
+ §¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡£¡¡¡¡¡¡¤
+    T o t a l    H o r a s                                         _____.__ }
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¤  
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡ª
+    Total Horas Std. Prestadas                                     _____.__    
+    Total Horas Facturables                                        _____.__ 
+    Total Horas Cargo de Empresa                                   _____.__ 
+    Total Horas Caídas                                             _____.__ 
+ ¢_______________¡________________________________________________£¡¡¡¡¡¡¡¡¤ _
+%form
+use operac, comerc, sue;
+language "C";
+window label "Carga de Horas", border single;
+confirm add, update, end;
+ignore delete, next, prev;
+messages
+	PRESIONDE  	: "Presione INICIO para ver el detalle de horas.",
+	PRESIONEX  	: "Presione INICIO para ver el detalle de excepciones.",
+	PRESIONPU  	: "Presione INICIO para ver el puesto de asignación.";
+%fields
+emp		 : parte., in sue.emps:(descrip), default $emp, not null;
+demp	 : sue.emps.descrip, skip;
+clie	 : parte.cliente, on help manual, not null;
+dclie	 : skip;
+objet	 : parte.objetivo, on help manual, not null;
+dobj	 : skip;
+ordena 	 : not null, in (1:"Por Legajo", 2:"Por Horario"), default 1;
+dordena  : is descr (ordena);
+fecparte : parte.dia, default today, not null;
+std		 : skip;
+agrugral : ;
+multipar : rows 1000, display 10; // ignore delete;
+agruplin : ;
+nroleg	 : on help manual, has after; //unique, 
+
+i_viginew: internal bool, default false;
+i_efect  : internal bool, default false;
+i_extasig: internal bool, default false;
+i_partime: internal bool, default false;
+i_tipvig : internal char;
+
+nombre	 : sue.per.apynom, skip;
+regim	 : in comerc.regimen by regi:descrip, skip;
+pto      : manual subform partep4(emp, clie, objet, nroleg), 
+           descr PRESIONPU, display only;
+i_ptoser : internal num(4);
+i_puesto : internal num(4);
+i_nroint : internal num(4);
+
+cond     : in ("T":"Trabajo",
+               "P":"Pegada",
+               "D":"Adelanto",
+               "V":"Vacaciones",
+               "A":"Ausente",
+               "F":"Franco"), default "T", mask "1>a",
+               manual subform partep3, not null;
+
+agruphs  : not null, skip when cond = "A";
+hsentre	 : parte.horaent, has after, !="23:59",not null;
+hssal	 : parte.horasal, has after, not null;
+hstot    : skip;
+
+deths    : manual subform partep1, descr PRESIONDE, has after;
+excp     : manual subform partep2, descr PRESIONEX;
+total	 : is sum(hstot);
+hsstd    : skip;
+hsfac    : skip;
+hsacemp  : skip;
+hscaida  : is ((std-hsstd) < 0 ? 0 : (std-hsstd));
+
+linea    : skip, default "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡";
+mensaje  : default "¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡", skip;
+ctrl     : manual subform partep5, skip;

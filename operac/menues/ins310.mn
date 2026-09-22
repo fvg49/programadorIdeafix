@@ -1,0 +1,7 @@
+"1. Impresión de OT                     " WCMD rot.exe
+"2. Impresión de OT en Servicio         " WCMD rotserv.exe
+"3. Impresión de OT en Servicio (Insp.) " WCMD rotinsp.exe
+#"3. Impresión de OT por Supervisor  " WCMD rotsup.exe
+#"4. Listado de Aprobación de OT     " WCMD otapro.exe
+#"5. Listado de OT Aprobadas por Día " WCMD lotapro.exe
+#"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .

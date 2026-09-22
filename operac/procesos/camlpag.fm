@@ -1,0 +1,28 @@
+ 
+   Empresa  :    __.  _________________________________________
+   
+  ¨¡ Lugar del Pago VIEJO ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     ___,___. _______________________________________________  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+  ¨¡ Lugar del Pago NUEVO ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     ___,___. _______________________________________________  
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form()
+use comerc, sue;
+language "C";
+window label "[Cambio de Lugar de Pago]", border single;
+confirm add, update, end, ignore;
+ignore delete;
+display status;
+
+%fields
+emp		: in sue.emps:descrip, not null, default $emp;
+demp	: sue.emps.descrip, skip;
+
+ofpagv	: in sue.ofpag(emp):denom;
+desofv	: sue.ofpag.denom, skip;
+
+ofpagn	: in sue.ofpag(emp):denom;
+desofn	: sue.ofpag.denom, skip;

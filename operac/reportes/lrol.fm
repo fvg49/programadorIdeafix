@@ -1,0 +1,24 @@
+
+  Rol Desde  :{_,___. __________________________________________
+  Rol Hasta  : _,___. __________________________________________}
+
+  Salida por : _ _________________
+
+%form
+use operac;
+language "c";
+window label "[Listado de Roles]", border single;
+display status;
+confirm update, end;
+ignore delete, add, next, prev;
+
+%fields
+agrup   : check (rold <= rolh);
+rold    : rol.codrol, in rol:descrip, not null;
+drold   : rol.descrip, skip;
+rolh    : rol.codrol, in rol:descrip, not null;
+drolh   : rol.descrip, skip;
+salida  : in ("T":"Terminal",
+              "I":"Impresora"),
+          default "I", mask ">A", autoenter;
+dsalida : is descr(salida);

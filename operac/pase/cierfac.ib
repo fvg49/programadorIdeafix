@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+cierfac.exe {
+	cierfac.fm;
+	cierfac.hlp;
+    cierfac.c : cierfac.fmh operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$WEBINTERLIB.a;
+	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

@@ -1,0 +1,18 @@
+%tit(pageno, today, module) before (page, report)                                 
+[16c                                                                                                                  Página:  ____.
+                                                                                                                  Fecha : __/__/__
+                                                                                                                        (_______) 
+                                                 Vigiladores sin Alta en Jurisdiccion
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡ª 
+              Legajo                          Cliente                            Objetivo             Jurisdiccion    Fecha  Asig 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¤
+%linea(r_nroleg, r_nombre, r_cliente, r_razsoc, r_objet, r_dobjet, r_juris, r_djuris, rfecasig)
+ ______. ________________________ _____. ___________________________  __. _________________________ __. _____________ __/__/____
+%report
+use sue;
+language "C";
+//flength = $FLENLANDCOMP;
+flength = $FLENGTH;
+width=172;
+output to terminal;

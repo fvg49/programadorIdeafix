@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+revcoper.exe {
+
+	revcoper.fm;
+	revcoper.c;
+}

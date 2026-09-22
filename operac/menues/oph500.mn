@@ -1,0 +1,3 @@
+"1. Carga de Puestos                 " WCMD otoper.exe !ADU
+"2. Consulta de Asignación de Retenes" WCMD reten.exe
+"3. Listado  de Asignación de Retenes" WCMD lreten.exe

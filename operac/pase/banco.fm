@@ -1,0 +1,54 @@
+
+  Empresa         :        __. ____________________________________
+                        
+  Cliente         : _________.  _________________________________________
+
+  Objetivo        :      ____.  _________________________________________
+
+  Fecha           :  __/__/__
+
+  Legajo          :  ________. _____________________________
+
+  Puesto 		  :  __. ___________________-__.-__. |
+
+                        Tipo                           Cantidad
+
+ [  ________________________________________________    __.__  ]
+
+
+
+
+
+
+
+        
+%form
+use operac, comerc, sue, bill;
+language "C";
+window label "[Listado de Horas por Vigilador]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+cli     : on help in bill.cliente:(razsoc), not null ;
+dcli    : bill.cliente.razsoc, skip;
+
+obj     : on help in comerc.objetivo by est(emp, true, cli):descrip, not null, default 1;
+dobj    : comerc.objetivo.descrip, skip;
+
+fecha   : autoenter;
+
+nroleg  : in sue.per(emp): apynom, not null;
+dvig    : sue.per.apynom, skip;
+
+tippto	 : asig.ptoser, on help manual;
+dtippto  : skip; 
+codint	 : on help manual, skip when tippto <0;  
+nroint 	 : in operac.puestos(cli, obj, tippto), not null;
+
+multi   : rows 80, display 8;
+tiphor  : skip;
+canhor  : display only;

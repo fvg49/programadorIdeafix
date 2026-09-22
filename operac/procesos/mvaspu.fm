@@ -1,0 +1,52 @@
+
+   Empresa  :        __. ______________________________
+
+   Cliente  : _________. ___________________________________
+
+   Objetivo :      ____. ____________________________________
+                             ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                Código Interno    
+                             §¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¥
+                               Origen   Destino   
+   Fecha de                  §¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¥ 
+   Movimiento :  __/__/____      __.       __.      
+                             ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤ 
+   Modo : _. _____________________________________
+  
+   Salida : _ ________________  ___________________
+
+   ___________________________________________________
+
+
+%form()
+use comerc, sue;
+language "C";
+window label "[Migracion de asignaciones entre puestos]", border single;
+confirm add, update, end, ignore;
+ignore delete;
+display status;
+
+%fields
+empo	: in sue.emps:descrip, not null, default $emp;
+dempo	: sue.emps.descrip, skip;
+
+cliento: on help manual, not null;
+dclien : skip;
+
+objetiv: on help manual, not null;
+dobjet : skip;
+
+fecmov  : not null;
+
+codinto : on help manual, not null;
+codintd : on help manual, not null;
+
+modpro : in (1:"Reporte", 2:"Proceso", 3:"Reporte y Proceso"), default 1;
+rmodpro: is descr(modpro);
+
+salida  : in ("T": "Terminal", "I":"Impresora", "A":"Archivo"), mask ">A", autoenter, not null, default "I", is null when modpro=2;
+dsalida : is descr(salida);
+
+archivo : is (salida == "A") ? void : null, not null;
+
+coment  : skip;

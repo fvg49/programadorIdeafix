@@ -1,0 +1,122 @@
+
+  Empresa         :       __. ____________________________________
+
+  Cliente  Desde  :  {______. _________________________________________
+           Hasta  :   ______.}_________________________________________
+
+  Objetivo Desde  :    {____. _________________________________________
+           Hasta  :     ____.}_________________________________________
+
+  Vigilador Desde :{________. _________________________________________
+            Hasta : ________.}_________________________________________
+
+
+  Año     : ____.   Tipo de Cierre: __. ______________________________
+  
+  Periodo : __. __/__/____  __/__/____
+                        
+  Detalle : __. _______________________________________________________
+
+  Considera Retroactivos        : _. _________________________
+
+  Muestra Totalizadores         : _. _________________________
+
+  Imprime Vigiladores Inactivos : __?
+  
+  Guardiania : _. __________________________________________
+
+  Salida a : _ _______________________   _______________________ __.
+
+  
+  _____________________ _________.
+  
+  _____________________  ______________
+
+%form
+use operac, comerc, sue, bill;
+language "C";
+window label "[Reversor de Pase de Horas]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s",
+		ERR_CLIE : "El Cliente Desde debe ser menor o igual al Cliente Hasta";
+
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+agrclie : check (clid <= clih), on error ERR_CLIE;
+clid    : on help in bill.cliente:(razsoc), not null, default 1, is 1 when salida="P";
+dclid   : bill.cliente.razsoc, skip;
+clih    : on help in bill.cliente:(razsoc), not null, default 99999,  is 99999 when salida="P";
+dclih   : bill.cliente.razsoc, skip;
+
+agrobje : check (objd <= objh), on error ERR_CLIE;
+objd    : on help in comerc.objetivo by est(emp, true, clid):descrip, not null, default 1, is 1 when salida="P";
+dobjd   : comerc.objetivo.descrip, skip;
+objh    : on help in comerc.objetivo by est(emp, true, clih):descrip, not null, default 99, is 99 when salida="P";
+dobjh   : comerc.objetivo.descrip, skip;
+
+agrupv  : check vigild <= vigilh;
+vigild  : on help in sue.per(emp):apynom/*, is 1 when salida="P"*/, default 1, not null;
+dvigild : sue.per.apynom, skip;
+vigilh  : on help in sue.per(emp):apynom descending/*, is 999999 when salida="P"*/, default 999999, not null;
+dvigilh : sue.per.apynom, skip;
+
+anio    : not null, between 2011 and 2050, default year(today);
+
+
+cotici : in operac.tipcie:(descrip), not null;
+dtipcie : operac.tipcie.descrip, skip;
+
+period  : in operac.periodo (emp, anio, cotici):(fecdes, fechas, estado), not null;
+fechad  : operac.periodo.fecdes, skip;
+fechah  : operac.periodo.fechas, skip;
+
+
+r_detalle: in(0:"Por Empresa",
+              1:"Por Empresa-Legajo",
+			  2:"Por Empresa-Legajo-Cliente",
+			  3:"Por Empresa-Legajo-Cliente-Objetivo",
+              4:"Por Empresa-Legajo-Cliente-Objetivo-Puesto",
+              5:"Por Empresa-Legajo-Cliente-Objetivo-Puesto-Fecha",
+              6:"Por Empresa-Legajo-Cliente-Objetivo-Puesto-Fecha-Hora"),
+              default 6, is  6 when salida="P";
+descdet : is descr(r_detalle);
+
+fretro  : in (1: "Normales",
+              2: "Retroactivos",
+              3: "Normales + Retroactivos"), default 1, not null, autoenter, is 3 when salida="P" or salida="S";
+dfretro : is descr(fretro);
+
+totaliz : in (1: "Ninguno",
+              2: "Solo x Empresa",
+              3: "Todos Los Niveles "), default 2, not null, autoenter;
+dtotaliz : is descr(totaliz);
+
+vigactivo : default false, not null, is true when salida="P", is true when salida="S";
+
+guardia : in (1: "Horas para la Liquidación",
+			  2: "Horas Trabajadas"),
+			  not null, default 2,  is 1 when salida="P" or salida="S", autoenter;
+desguar : is descr (guardia);
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo",
+              //"S": "Prueba pase VCMC"  El modo S es de prueba, genera los lotes en webinter.wdetliq pero no deja la marca en PARTE.LIQDENA o LIQDENUS (lo mismo en RETRO)
+              "P": "Pase"
+              ),
+            not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+dcanlin : is (salida != "T") ? null : "Lineas del Monitor : ";
+canlin  : is (salida != "T") ? null : void;
+
+//dliqui : is (salida != "P") ? null : "Liquidación : ", autoenter;
+dliqui : is (salida = "P" or salida = "S" or salida = "A") ? "Liquidación : " : null, autoenter;
+liqui  : skip;
+
+dnomarch: is (salida != "A") ? null : "Nombre del archivo:";
+nomarch : is (salida != "A") ? null : void, default "contden.txt", not null;

@@ -1,0 +1,27 @@
+%head2(today, pageno, rr_emp, rr_demp, rr_vigd, rr_dvigd, rr_vigh, rr_dvigh, rr_tipinf, rr_fdesde, rr_fhasta) before(report, page)
+[2o[16c                                                                                                                                                  Fecha  : __/__/____
+                                                                                                                                                  Página :       ____.
+                                                                                                                                                          (lasigjd)
+                                                                    Cliente/Objetivo por Vigilador
+                                                                    ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡
+
+  Empresa             :        __.  _________________________________________
+  Vigilador Desde     :   _______.  _________________________________________    Vigilador Hasta     :   _______.  _________________________________________
+  Tipo de información :  _________________________________________ __/__/____ __/__/____
+%encab2(r_vigi, r_dvigi) before(page, report, r_vigi)
+
+  Vigilador : _______. ________________________________________________________________
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡©¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+         Cliente                  Objetivo        Vig Efec Fr  Regimen      Rol        Fecha Asignación   Fec.Franco Nro       Días      H.Ent. H.Sal.         Motivo        
+                                                  P T Prov                            Desde      Hasta                                                     Desasignacion     
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¦¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea2(rr_cli,rr_dcli,rr_obj, rr_dobj, rr_vr, rr_ef, rr_fr, rr_regim, rr_rol, rr_fila, rr_colum, rr_fecasig, rr_fechas, rr_ffranco, rr_nfranco ,rr_dia1, rr_dia2, rr_dia3, rr_dia4, rr_dia5, rr_dia6, rr_dia7, rr_hsent, rr_hssal, rr_motd, rr_dmotd)
+ ______. _________________ __. __________________  _    _  _  _________ __. __. __. __/__/____ __/__/____ __/__/____ __.  _-_-_-_-_-_-_   __:__  __:__ __. _________________ 
+%flin2() after(page, report, r_vigi), group with linea2                                   
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡£¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report                                                                                                                                                                        
+use comerc;
+language"C";
+width=172;
+flength=$FLENLANDCOMP;
+output to terminal;

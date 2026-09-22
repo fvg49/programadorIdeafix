@@ -1,0 +1,10 @@
+#"1. Tablas Generales             " MENU  jopu100
+"2. Clientes y Objetivos         " MENU  jopu200
+"3. Orden de Trabajo             " MENU  jopu300
+"4. Asignación de Vigiladores    " MENU  jopu400
+"5. Parte Diario                 " MENU  jopu500
+"6. Listados de Ausentismos      " MENU  jopu600
+"7. Filiales (Descentralización) " MENU  jopu700
+"8. Auditoria de Asignaciones    " MENU  jopu800
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" SHELL .
+"Z. Configuración            " MENU  opuusr

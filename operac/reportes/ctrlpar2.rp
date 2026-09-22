@@ -1,0 +1,24 @@
+%head(today, pageno, r_vdesde, r_vhasta, r_fdesde,r_fhasta, r_clid, r_clih, r_objd, r_objh) before(report, page)
+[20c\$empresa                                                                                                                                Fecha  : __/__/____
+                                                                                                                                         Página :       ____.
+                                                                                                                                               (ctrlpar2)
+                                                         Listado de Control de Condición de Trabajo
+                                      Vigilador Deste: ________.  Hasta: ________.       De __/__/____ a __/__/____
+                                      Cliente   Desde: _________. Hasta: _________.  Objetivo Desde: ____.   Hasta: ____.
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+               Legajo                 Fecha                   Cliente                        Objetivo                    Puesto               Condicion     
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea(r_nroleg,r_dnroleg,           r_dia,  r_cliente, r_dcliente,               r_objetivo, r_dobjetivo,  r_ptoser,r_puesto,r_dptoser, r_cond, r_descond)
+ ______. ___________________________ __/__/__ _________. _________________________ ____. ___________________ __. ____. ________________ _ _________________ 
+%poslinea()
+                                                                                                                                                            
+%flin() after (report, page)                                                                                                               
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+use comerc;
+language"C";
+topmarg = 0;
+flength=$FLENLANDCOMP;
+width=247;
+

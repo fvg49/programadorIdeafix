@@ -1,0 +1,10 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define COD             (fmfield)  1	/* Long            */
+# define DENOM           (fmfield)  2	/* String          */
+# define ASIG            (fmfield)  3	/* Long            */
+/* Form checksum	*/
+# define FM_CCOSTO_CHKSUM (long)0x0039
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

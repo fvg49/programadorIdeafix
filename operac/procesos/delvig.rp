@@ -1,0 +1,28 @@
+%ztitulo(pageno, today, hour, remp, rdemp, rdeleg, rddeleg, rdelega, rddelega, rfilial, rdfilial, rnrocli, rdescli, rnroobj, rdesobj, rnroobjh, rdesobjh) before (report, page)
+[16c\$empresa                                                                                                       Página: ___.
+
+                               ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                 Vigiladores desasignados el __/__/____ a las __:__:__   
+                               ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+                         
+                         Empresa :          __. ____________________________________
+						 Delegación Comercial  : _____  _________________________________
+						 Delegación Operacional: _____  _________________________________   
+						 Filial Operativa      : ______ _________________________________ 
+						 Cliente         ___,___,___. _________________________________________ 
+                         Objetivo Desde           __. _________________________________________
+                                  Hasta           __. _________________________________________
+
+
+                         ¨¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                            Legajo                 Nombre y Apellido                 Fecha de Egreso  
+                         §¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%linea (rnroleg, rapynom, rfecegr)
+                          _,___,___. ______________________________________________     __/__/____    
+%fin () after (page, report)
+                         ¢¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+use operac;
+language "C";
+flength=$FLENGTH;

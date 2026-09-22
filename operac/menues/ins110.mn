@@ -1,0 +1,4 @@
+"1. Lugar de Pago                      " WCMD llugpag.exe
+#"2. Listado de Clientes por Supervisor " WCMD execform -w -b lsvisor iql -b lsvisor
+#"3. Listado de Subregimen              " WCMD execform -w -b c_subreg iql -b c_subreg
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .

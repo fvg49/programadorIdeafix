@@ -1,0 +1,19 @@
+%titulo (today, rdesde, rhasta) before (report)
+Fecha : __/__/____
+Rotacion de Vigiladores desde __/__/____ __/__/____
+
+CLIENTE\	DESC.CLI.\	OBJETIVO\	DESC.OBJ.\	ALTAS\	BAJAS
+%titcli (rclie, rdclie)
+ ______. ___________________________________________________________________
+%linea (rclie, rdclie,robj, rdobj, raltas, rbajas)
+______.\	______________________________________________________________\	______.\	_________________________________________________________\	____.\	____.
+%totcli (rclie, rdclie, sum(raltas), sum(rbajas))
+[1m TOTAL   ______. ________________________________________  ____.     ____.[0m
+%fin (sum(raltas), sum(rbajas))
+[1m TOTAL GENERAL                                             ____.     ____.[0m
+%report
+use comerc;
+language"C";
+flength=0;
+width = 120;
+output to terminal;

@@ -1,0 +1,37 @@
+
+ Empresa         :        __. ______________________________________
+
+ 
+ Legajo   Desde  :{_________. ____________________________________
+          Hasta  : _________. ____________________________________}
+
+ Fecha    Desde  :{__/__/__
+          Hasta  : __/__/__}  
+
+            [1m__________________________________________________________[0m
+%form
+use operac, sue, bill, comerc;
+language "C";
+window label "Proceso de Generación del Parte", border single;
+confirm end, update;
+ignore delete;
+
+%fields
+emp    : parte., in sue.emps:(descrip), default $emp, not null;
+demp   : sue.emps.descrip, skip;
+
+agrvig : check vigihast >= vigidesd;
+vigidesd: on help in sue.per(emp):(apynom),
+			default 0,
+			not null;
+dvigides: sue.per.apynom, skip;           
+vigihast: on help in sue.per(emp):(apynom),
+			default 0,
+			not null;
+dvigihas: sue.per.apynom, skip;			
+
+agrfec : check fhasta >= fdesde;
+fdesde : parte.dia, default today, not null;
+fhasta : default today, not null;
+
+coment : skip;

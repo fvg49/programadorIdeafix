@@ -1,0 +1,27 @@
+project $NOVIA/reglas.ib;
+
+echo "COMPILANDO PROCESOS";
+
+
+ardptime.ib;
+asige.ib;
+asigh.ib;
+camlpag.ib;
+campres.ib;
+confpar.ib;
+ctrlasis.ib;
+dasiprov.ib;
+delparte.ib;
+delvig.ib;
+espo.ib;
+genhspar.ib;
+genparte.ib;
+genptime.ib;
+gparauto.ib;
+movasi.ib;
+movpue.ib;
+recapar.ib;
+reten.ib;
+revasig.ib;
+
+echo "----- Modulo PROCESOS OK !!! -----";

@@ -1,0 +1,15 @@
+"1. Feriados                        " MENU oph140
+"2. Motivos de Desasignación        " WCMD doform !ADU -b motivd
+"3. Condición de Horas              " WCMD doform !ADU -b condicio
+"4. Motivo de Excepción             " WCMD doform !ADU -b motexc
+"5. Programadores por Objetivo      " WCMD prgxobj.exe !ADU
+"6. Presentismo por Objetivo        " WCMD prexobj.exe !ADU
+"7. Presentismo por Objetivo(Masivo)" WCMD campres.exe !ADU
+"8. Programador por Objetivo(Masivo)" WCMD camprog.exe !ADU
+"9. Lugar de Pago                   " MENU oph120
+"0. Inspección                      " MENU oph130
+"A. Subregimenes                    " WCMD doform !ADU -b subregim
+"B. Listados y Consultas            " MENU oph110
+"C. Feriados Especiales             " MENU coh120
+"D. Roles                           " MENU oph150
+

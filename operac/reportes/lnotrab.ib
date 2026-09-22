@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lnotrab.exe {
+	lnotrab.fm;
+	lnotrab.rp;
+	lnotrab.c : lnotrab.fmh lnotrab.rph;
+
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;		
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+
+}

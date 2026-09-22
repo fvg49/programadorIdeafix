@@ -1,0 +1,84 @@
+
+ Empresa       :          __. _________________________________
+
+ Delegación Comercial  : _____  _________________________________
+
+ Delegación Operacional: _____  _________________________________   
+
+ Filial Operativa      : ______ _________________________________ 
+
+ Desde Cliente :{___,___,___. _________________________________
+       Objetivo:       _,___. _________________________________
+
+ Hasta Cliente : ___,___,___.}_________________________________
+       Objetivo:       _,___. _________________________________
+
+ Período Desde :{__/__/____
+         Hasta : __/__/____}
+
+ Tipo de Servicio : _ __________________________
+
+ Opción   : _ _________________________________________________
+
+ Salida a : _  ______________  Nombre del archivo : ______________
+
+
+            ___________________________________________________
+
+%form
+use operac, bill, sue, comerc, billpro;
+language "C";
+window label "[Listado de Control de Horas de Servicio]",border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s";
+
+%fields
+emp		: in sue.emps:(descrip), default $emp, not null;
+demp	: sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+agrupc	: check clid <= clih;
+clid	: on help manual, default 1, not null;
+dclid	: skip;
+objd    : on help manual, default 1;
+dobjd   : skip;
+clih	: on help manual, default 999999999, not null;
+dclih	: skip;
+objh    : on help manual, default 9999, not null;
+dobjh   : skip;
+
+agrupf	: check fechad <= fechah;
+fechad	: not null, default today;
+fechah	: not null, default today;
+
+objbri  : in ("V": "Vigilancia",
+              "B": "Brigada",
+              "T": "Todos"), not null, default "V", mask ">A";
+dobjbri : is descr(objbri);
+
+opcion  : in ("D": "Detalle por Fecha",
+			  "P": "Detalle por Fecha con Salto de Página por Puesto",
+			  "T": "Totales por Puesto",
+			  "F": "Consolidado por Fecha",
+			  "S": "Consolidado por Semana"),
+		  not null,  default "P", mask "1>A",
+		  is "F" when salida == "A",  autoenter;
+dopcion : is descr(opcion);
+
+salida  : in ("T": "Terminal",
+              "I": "Impresora",
+              "A": "Archivo"),
+          default "I", mask ">A"; 
+dsalida : is descr(salida);
+nomarch	: is (salida != "A") ? null : void, default "lhscont.txt", not null;
+
+coment  : skip;

@@ -1,0 +1,13 @@
+/* Field names	*/
+# define RNROLIQ         ((rpfield)   0) 	/* Num */
+# define REMP            ((rpfield)   1) 	/* Num */
+# define RRAZSOC         ((rpfield)   2) 	/* String */
+# define RFECDES         ((rpfield)   3) 	/* Date */
+# define RFECHAS         ((rpfield)   4) 	/* Date */
+# define RCANTIDAD       ((rpfield)   5) 	/* Num */
+/* Report Checksum	*/
+# define RP_CTRLPASE_CHKSUM ((long) 0x002a)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)
+# define FIN             ((int)   2)

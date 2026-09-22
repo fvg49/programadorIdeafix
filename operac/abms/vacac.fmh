@@ -1,0 +1,32 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define NROLEG          (fmfield)  2	/* Long            */
+# define APYNOM          (fmfield)  3	/* String          */
+# define I_FECING        (fmfield)  4	/* Date            */
+# define I_FECEGR        (fmfield)  5	/* Date            */
+# define I_ACTIVO        (fmfield)  6	/* Integer         */
+# define I_RELAC         (fmfield)  7	/* Integer         */
+# define I_CCOSTO        (fmfield)  8	/* Long            */
+# define PERIODO         (fmfield)  9	/* Integer         */
+# define DIASPER         (fmfield) 10	/* Integer         */
+# define MULTI           (fmfield) 11	/* MULTIPLE        */
+# define FDESDE          (fmfield) 12	/* Date            */
+# define CANTDIAS        (fmfield) 13	/* Integer         */
+# define FHASTA          (fmfield) 14	/* Date            */
+# define I_FECREG        (fmfield) 15	/* Date            */
+# define MODULO          (fmfield) 16	/* Integer         */
+# define TOTALDIA        (fmfield) 17	/* Integer         */
+# define MENSAJE         (fmfield) 18	/* String          */
+/* Form checksum	*/
+# define FM_VACAC_CHKSUM (long)0x0697
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_NO_ACT       0
+# define M_ERR_NO_VIG       1
+# define M_ERR_SUPERPOS     2
+# define M_ERR_FECING       3
+# define M_ERR_FECEGR       4
+# define M_ERR_FECEG        5
+# define M_ERR_PERIODO      6
+/* =========== End of fmh file ============ */

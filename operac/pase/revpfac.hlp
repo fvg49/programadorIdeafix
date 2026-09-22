@@ -1,0 +1,26 @@
+
+                [1;4mREVERSION DEL PASAJE DE HORAS TRABAJADAS A FACTURACION[0m
+
+Este proceso borra las variables de novedad por liquidación-cliente-objetivo. 
+Borra la relación en el parte y retroactivos con la liquidación para el periodo pedido.
+Siempre valida que la liquidación coincida con la ingresada en el form.
+El periodo se pide para no tener que recorrer todo el parte, 
+las fechas default son en base a la liquidación, pueden ser incorrectas.
+
+Si el programa se llama con el parametro "R" no se borran las variables de novedades,
+si la liquidacion esta cerrada igual se puede usar.
+
+[1;4mErrores:[0m
+
+La liquidación debe estar abierta.
+
+[1;4mDatos Técnicos[0m
+
+[1mPrograma:[0m revpfac.exe
+
+[1mProceso:[0m Borra bill|varnov
+         Además borra el campo operac|parte_liqfac y operac|retro_liqfac cuando el 
+         numero de liquidación es el mismo que el ingresado.
+         La fecha que se pide en el form es para no tener que recorrer todo el parte.
+
+

@@ -1,0 +1,26 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define DELEG           (fmfield)  2	/* String          */
+# define DDELEG          (fmfield)  3	/* String          */
+# define FDELEGA         (fmfield)  4	/* String          */
+# define DDELEGA         (fmfield)  5	/* String          */
+# define FFILIAL         (fmfield)  6	/* String          */
+# define DESCRIP         (fmfield)  7	/* String          */
+# define PROGDES         (fmfield)  8	/* Long            */
+# define DPROGDES        (fmfield)  9	/* String          */
+# define PROGHAS         (fmfield) 10	/* Long            */
+# define DPROGHAS        (fmfield) 11	/* String          */
+# define OBJINACT        (fmfield) 12	/* Integer         */
+# define OBJSASIG        (fmfield) 13	/* Integer         */
+# define OBJCSERV        (fmfield) 14	/* Integer         */
+# define FECHA           (fmfield) 15	/* Date            */
+# define SALIDA          (fmfield) 16	/* String          */
+# define DSALIDA         (fmfield) 17	/* String          */
+# define NOMARCH         (fmfield) 18	/* String          */
+# define COMENT          (fmfield) 19	/* String          */
+/* Form checksum	*/
+# define FM_LPRGXOBJ_CHKSUM (long)0x053d
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,21 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+asigh.exe {
+	asigh.fm  ;
+	asigh1.fm ;
+	asigh2.fm ;
+	asigh3.fm ;
+	asigh4.fm ;
+	asigh5.fm ;
+	asigh6.fm ;
+	asigh.c	  ;
+//	$INTERFASELIB.a;
+//	$DENARIUSLIB.a;
+//	$SIRHLIB.a;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

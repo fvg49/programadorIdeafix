@@ -1,0 +1,10 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+genptime.exe {
+	genptime.fm;
+	genptime.c : genptime.fmh operac.sch;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+}

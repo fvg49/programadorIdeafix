@@ -1,0 +1,30 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define OPCION          (fmfield)  2	/* String          */
+# define DOPCION         (fmfield)  3	/* String          */
+# define AGRSUP          (fmfield)  4	/* GROUPED         */
+# define SUPERD          (fmfield)  5	/* Long            */
+# define APYNOMD         (fmfield)  6	/* String          */
+# define SUPERH          (fmfield)  7	/* Long            */
+# define APYNOMH         (fmfield)  8	/* String          */
+# define AGRCLI          (fmfield)  9	/* GROUPED         */
+# define CLIED           (fmfield) 10	/* Long            */
+# define DCLIED          (fmfield) 11	/* String          */
+# define CLIEH           (fmfield) 12	/* Long            */
+# define DCLIEH          (fmfield) 13	/* String          */
+# define AGROBJ          (fmfield) 14	/* GROUPED         */
+# define OBJETD          (fmfield) 15	/* Integer         */
+# define DOBJD           (fmfield) 16	/* String          */
+# define OBJETH          (fmfield) 17	/* Integer         */
+# define DOBJH           (fmfield) 18	/* String          */
+# define FHASTA          (fmfield) 19	/* Date            */
+# define SALIDA          (fmfield) 20	/* String          */
+# define SALDESCR        (fmfield) 21	/* String          */
+/* Form checksum	*/
+# define FM_LPROVENC_CHKSUM (long)0x04be
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_SUP          0
+# define M_ERR_CLIE         1
+/* =========== End of fmh file ============ */

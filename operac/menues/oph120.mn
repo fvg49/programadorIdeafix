@@ -1,0 +1,4 @@
+"1. Lugar de Pago                       " WCMD lugpag.exe !ADU
+"2. Listado de Lugar de Pago            " WCMD llugpag.exe !ADU
+"3. Listado de Objetivos por L. de Pago " WCMD execform -w -b objxopag iql -b objxopag
+"3. Cambio de Lugar de Pago (Masivo)    " WCMD camlpag.exe !ADU

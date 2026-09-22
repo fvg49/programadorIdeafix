@@ -1,0 +1,22 @@
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Horas   Hs.Extras Hs. Extras  Hs. Extras  
+ Normales    50%    100% Fer.  100% Franco  
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¥
+  -__.__   -__.__    -__.__      -__.__     
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form(in ii_dhsnor, in ii_dhs50, in ii_dhs100f, in ii_dhs100fe)
+use operac;
+language "C";
+window label "Detalle de Diferencias de Horas", border single;
+ignore end;
+
+%fields
+ii_dhsnor  : internal num(4,2);
+ii_dhs50   : internal num(4,2);
+ii_dhs100f : internal num(4,2);
+ii_dhs100fe : internal num(4,2);
+
+dnormal	   : is ii_dhsnor;
+dextras1   : is ii_dhs50;
+dextras2   : is ii_dhs100fe;
+dfrancos   : is ii_dhs100f;

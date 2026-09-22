@@ -1,0 +1,17 @@
+/* Field names	*/
+# define RDESDE          ((rpfield)   0) 	/* Date */
+# define RHASTA          ((rpfield)   1) 	/* Date */
+# define RCLIE           ((rpfield)   2) 	/* Num */
+# define RDCLIE          ((rpfield)   3) 	/* String */
+# define ROBJ            ((rpfield)   4) 	/* Num */
+# define RDOBJ           ((rpfield)   5) 	/* String */
+# define RALTAS          ((rpfield)   6) 	/* Num */
+# define RBAJAS          ((rpfield)   7) 	/* Num */
+/* Report Checksum	*/
+# define RP_LROTVIG2_CHKSUM ((long) 0x0034)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define TITCLI          ((int)   1)
+# define LINEA           ((int)   2)
+# define TOTCLI          ((int)   3)
+# define FIN             ((int)   4)

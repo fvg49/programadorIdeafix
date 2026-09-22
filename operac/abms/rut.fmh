@@ -1,0 +1,7 @@
+/* Field names	*/
+# define RUT             (fmfield)  0	/* String          */
+/* Form checksum	*/
+# define FM_RUT_CHKSUM (long)0x0001
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,37 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define I_PAIS          (fmfield)  2	/* Integer         */
+# define TITDELEGD       (fmfield)  3	/* String          */
+# define AGRUPD          (fmfield)  4	/* GROUPED         */
+# define DELEGD          (fmfield)  5	/* String          */
+# define DESC1           (fmfield)  6	/* String          */
+# define TITDELEGH       (fmfield)  7	/* String          */
+# define DELEGH          (fmfield)  8	/* String          */
+# define DESC2           (fmfield)  9	/* String          */
+# define AGRUPF          (fmfield) 10	/* GROUPED         */
+# define FECHAD          (fmfield) 11	/* Date            */
+# define FECHAH          (fmfield) 12	/* Date            */
+# define AGRUPV          (fmfield) 13	/* GROUPED         */
+# define VIGILD          (fmfield) 14	/* Long            */
+# define DVIGILD         (fmfield) 15	/* String          */
+# define VIGILH          (fmfield) 16	/* Long            */
+# define DVIGILH         (fmfield) 17	/* String          */
+# define DETCLI          (fmfield) 18	/* Integer         */
+# define OPCION          (fmfield) 19	/* Integer         */
+# define R_DETALLE       (fmfield) 20	/* String          */
+# define DESCDET         (fmfield) 21	/* String          */
+# define FRETRO          (fmfield) 22	/* Integer         */
+# define OBJBRI          (fmfield) 23	/* String          */
+# define DOBJBRI         (fmfield) 24	/* String          */
+# define TIPTIE          (fmfield) 25	/* String          */
+# define TIPTIED         (fmfield) 26	/* String          */
+# define SALIDA          (fmfield) 27	/* String          */
+# define SALDESCR        (fmfield) 28	/* String          */
+# define NOMARCH         (fmfield) 29	/* String          */
+/* Form checksum	*/
+# define FM_HSVIGDEL_CHKSUM (long)0x0850
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_MAL_FECHA        0
+/* =========== End of fmh file ============ */

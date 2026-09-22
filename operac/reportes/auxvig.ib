@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+auxvig.exe {
+	auxvig.fm;
+    auxvig.rp;
+    auxvig.c	: auxvig.fmh auxvig.rph operac.sch;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;		
+	$BILLPRO/lib/billpro.a;
+	$BILLLIB.a;
+}

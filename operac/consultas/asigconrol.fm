@@ -1,0 +1,17 @@
+
+ Salida por : _________________   
+
+  ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª  
+    Digite __ para confirmar    
+  ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤  
+
+
+%form
+window label "[Listado de Asignacion con Rol]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+
+%fields
+salida  : in ("printer", "terminal", "asigrol delimited"), default "printer", not null;
+dummy   : is help (PROCESAR);

@@ -1,0 +1,58 @@
+
+  Empresa        :     __. ______________________________________________
+
+  Delegación Comercial  : _____  _________________________________
+  Delegación Operacional: _____  _________________________________   
+  Filial Operativa      : ______ _________________________________ 
+
+  Cliente Desde  :{___,___,___. __________________________________________
+          Hasta  : ___,___,___. __________________________________________}
+
+  Objetivo Desde :{ _,___. _______________________________________________
+           Hasta :  _,___. _______________________________________________}
+
+  Modelo de Listado : ____. ________________________________
+
+  Salida por        : _  _________________ ___________________ 
+
+                 ___________________________________________________
+%form
+use comerc, sue, bill, billpro;
+language "c";
+window label "[Variacion de Servicio]", border single;
+display status;
+confirm update, end;
+ignore delete, add, next, prev;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+agrup   : ;
+clid    : on help manual, default 1, not null;
+dclid   : skip;
+clih    : on help manual, default 999999999, not null,
+          >= clid, check after agrup;
+dclih   : skip;
+agrupo  : ;
+objd    : on help manual, default 1, not null;
+dobjd   : skip;
+objh    : on help manual, default 9999, not null;
+dobjh   : skip;
+
+modelo  : in nmodelo:(descrip), default 1;
+dmodelo : nmodelo.descrip, skip;
+
+salida  : in ("T":"Terminal", "I":"Impresora", "A":"Archivo"), default "I", mask ">A", autoenter;
+dsalida : is descr(salida);
+
+nomarch : is ((salida!="A") ? null : void), 
+          not null;
+coment  : skip;

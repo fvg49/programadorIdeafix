@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lsinalta.exe {
+	lsinalta.fm;
+	lsinalta.rp;
+	lsinalta.c;
+
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+ 	$OPERACLIB.a;
+ 	$BRIGADALIB.a;
+ 	$BILLPROLIB.a;
+ 	$BILLLIB.a;
+}

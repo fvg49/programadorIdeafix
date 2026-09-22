@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+vacac.exe {
+	vacac.fm;	
+	vacac.c;
+	vacac.hlp;
+
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+ 	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+}

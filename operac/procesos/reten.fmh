@@ -1,0 +1,27 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define CLIE            (fmfield)  2	/* Long            */
+# define DCLIE           (fmfield)  3	/* String          */
+# define OBJET           (fmfield)  4	/* Integer         */
+# define DOBJ            (fmfield)  5	/* String          */
+# define FECHA           (fmfield)  6	/* Date            */
+# define CLIENTES        (fmfield)  7	/* MULTIPLE        */
+# define NROLEG          (fmfield)  8	/* Long            */
+# define NOMBRE          (fmfield)  9	/* String          */
+# define TELEF           (fmfield) 10	/* String          */
+# define CLU             (fmfield) 11	/* Integer         */
+# define PORTAC          (fmfield) 12	/* Integer         */
+# define ALTAPOL1        (fmfield) 13	/* String          */
+# define ALTAPOL2        (fmfield) 14	/* String          */
+# define ALTAPOL3        (fmfield) 15	/* String          */
+# define ALTAPOL4        (fmfield) 16	/* String          */
+# define CLIASIG         (fmfield) 17	/* Long            */
+# define OBJASIG         (fmfield) 18	/* Integer         */
+# define IMPRIME         (fmfield) 19	/* Integer         */
+# define COMENT          (fmfield) 20	/* String          */
+/* Form checksum	*/
+# define FM_RETEN_CHKSUM (long)0x05ca
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

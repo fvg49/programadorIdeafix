@@ -1,0 +1,19 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define EMPDESC         (fmfield)  1	/* String          */
+# define CLIDES          (fmfield)  2	/* Long            */
+# define DCLIDES         (fmfield)  3	/* String          */
+# define CLIHAS          (fmfield)  4	/* Long            */
+# define DCLIHAS         (fmfield)  5	/* String          */
+# define OBJDES          (fmfield)  6	/* Integer         */
+# define DOBJDES         (fmfield)  7	/* String          */
+# define OBJHAS          (fmfield)  8	/* Integer         */
+# define DOBJHAS         (fmfield)  9	/* String          */
+# define FECBAJA         (fmfield) 10	/* Date            */
+# define EJECUTA         (fmfield) 11	/* Integer         */
+# define SALIDA          (fmfield) 12	/* String          */
+/* Form checksum	*/
+# define FM_ARDPTIME_CHKSUM (long)0x026f
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

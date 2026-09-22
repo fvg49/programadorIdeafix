@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+hsvigdel.exe {
+	hsvigdel.fm;
+    hsvigdel.rp;
+    hsvigdel2.rp;
+    hsvigdel.c	: hsvigdel.fmh hsvigdel.rph operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

@@ -1,0 +1,17 @@
+/* Field names	*/
+# define ANIO            (fmfield)  0	/* Integer         */
+# define COTICI          (fmfield)  1	/* Integer         */
+# define DTIPCIE         (fmfield)  2	/* String          */
+# define PERIOD          (fmfield)  3	/* Integer         */
+# define FECHAD          (fmfield)  4	/* Date            */
+# define FECHAH          (fmfield)  5	/* Date            */
+# define NROLIQ          (fmfield)  6	/* Long            */
+# define SALIDA          (fmfield)  7	/* String          */
+# define DSALIDA         (fmfield)  8	/* String          */
+# define ARCHIVO         (fmfield)  9	/* String          */
+# define COMENTA         (fmfield) 10	/* String          */
+/* Form checksum	*/
+# define FM_CTRLPASE_CHKSUM (long)0x0151
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

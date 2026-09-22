@@ -1,0 +1,18 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DESCRIP         (fmfield)  1	/* String          */
+# define MESCOMPN        (fmfield)  2	/* Integer         */
+# define AGRNOR          (fmfield)  3	/* GROUPED         */
+# define DDESNOR         (fmfield)  4	/* Integer         */
+# define DHASNOR         (fmfield)  5	/* Integer         */
+# define MESCOMPE        (fmfield)  6	/* Integer         */
+# define AGREX           (fmfield)  7	/* GROUPED         */
+# define DDESEX          (fmfield)  8	/* Integer         */
+# define DHASEX          (fmfield)  9	/* Integer         */
+/* Form checksum	*/
+# define FM_PERIODOS_CHKSUM (long)0x01c4
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_DIAS             0
+# define M_ERR_FEC          1
+/* =========== End of fmh file ============ */

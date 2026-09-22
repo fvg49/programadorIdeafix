@@ -1,0 +1,16 @@
+/* Field names	*/
+# define FILTRO          ((rpfield)   0) 	/* Num */
+# define R_LEGAJO        ((rpfield)   1) 	/* Num */
+# define R_APENOM        ((rpfield)   2) 	/* String */
+# define R_CLI           ((rpfield)   3) 	/* Num */
+# define R_DCLI          ((rpfield)   4) 	/* String */
+# define R_OBJ           ((rpfield)   5) 	/* Num */
+# define R_DOBJ          ((rpfield)   6) 	/* String */
+# define R_FECBAJ        ((rpfield)   7) 	/* Date */
+/* Report Checksum	*/
+# define RP_LVIGBAJ_CHKSUM ((long) 0x0043)
+/* Zone names	*/
+# define NOPR            ((int)   0)
+# define HEAD            ((int)   1)
+# define LINEA           ((int)   2)
+# define FINLIN          ((int)   3)

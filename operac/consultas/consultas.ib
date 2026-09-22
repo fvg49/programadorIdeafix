@@ -1,0 +1,26 @@
+project $NOVIA/reglas.ib;
+
+echo "COMPILANDO CONSULTAS";
+
+albajot.fm;
+albajot.sql;
+
+lsvisor.fm;
+lsvisor.sql;
+
+lparcer.fm;
+lparcer.sql;
+lparcer2.sql;
+
+cretro.fm;
+cretro.sql;
+
+objxopag.fm;
+objxopag.sql;
+
+cretro.sql;
+
+parcliob.fm;
+parcliobj.sql;
+
+echo "----- Modulo CONSULTAS OK !!! -----";

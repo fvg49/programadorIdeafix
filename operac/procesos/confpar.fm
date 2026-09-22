@@ -1,0 +1,42 @@
+
+ Empresa        :        __. _______________________________________
+
+ Filial         : ______     _________________________________ 
+
+ Cliente  Desde :{_________. ______________________________________
+          Hasta : _________.}______________________________________
+
+ Objetivo Desde :     {____. ______________________________________
+          Hasta :      ____.}______________________________________
+
+ Fecha    Desde :{__/__/____ 
+          Hasta : __/__/____}  
+          
+ [1m__________________________________________________________________[0m
+
+%form
+use sue, bill, comerc;
+language "C";
+window label "Confirmación de Carga de Horas", border single;
+confirm add, update, end;
+ignore delete;
+
+%fields
+emp    : in sue.emps:(descrip), default $emp, not null;
+demp   : sue.emps.descrip, skip;
+ffilial: on help manual;
+descrip: comerc.filial.descrip, skip; 
+agrcli :;
+clied  : on help manual, not null;
+dclied : skip;
+clieh  : on help manual, not null, >= clied, check after agrcli;
+dclieh : skip;
+agrobj :;
+objetd : on help manual, not null;
+dobjd  : skip;
+objeth : on help manual, check after agrobj, not null;
+dobjh  : skip;
+agrfec :;
+fechad : not null, default today;
+fechah : not null, default today, >= fechad, check after agrfec;
+coment : skip;

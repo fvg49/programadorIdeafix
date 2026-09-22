@@ -1,0 +1,41 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define DELEG           (fmfield)  2	/* String          */
+# define DDELEG          (fmfield)  3	/* String          */
+# define FDELEGA         (fmfield)  4	/* String          */
+# define DDELEGA         (fmfield)  5	/* String          */
+# define FFILIAL         (fmfield)  6	/* String          */
+# define DESCRIP         (fmfield)  7	/* String          */
+# define OPCION          (fmfield)  8	/* String          */
+# define DOPCION         (fmfield)  9	/* String          */
+# define AGRSUP          (fmfield) 10	/* GROUPED         */
+# define NROLEGD         (fmfield) 11	/* Long            */
+# define APYNOMD         (fmfield) 12	/* String          */
+# define NROLEGH         (fmfield) 13	/* Long            */
+# define APYNOMH         (fmfield) 14	/* String          */
+# define AGRCLI          (fmfield) 15	/* GROUPED         */
+# define CLIED           (fmfield) 16	/* Long            */
+# define DCLIED          (fmfield) 17	/* String          */
+# define CLIEH           (fmfield) 18	/* Long            */
+# define DCLIEH          (fmfield) 19	/* String          */
+# define AGROBJ          (fmfield) 20	/* GROUPED         */
+# define OBJETD          (fmfield) 21	/* Integer         */
+# define DOBJD           (fmfield) 22	/* String          */
+# define OBJETH          (fmfield) 23	/* Integer         */
+# define DOBJH           (fmfield) 24	/* String          */
+# define AGRUP           (fmfield) 25	/* GROUPED         */
+# define FDESDE          (fmfield) 26	/* Date            */
+# define FHASTA          (fmfield) 27	/* Date            */
+# define MOSTRA          (fmfield) 28	/* Integer         */
+# define DMOSTR          (fmfield) 29	/* String          */
+# define SALIDA          (fmfield) 30	/* String          */
+# define SALDESCR        (fmfield) 31	/* String          */
+# define DNOMB           (fmfield) 32	/* String          */
+# define NOMARCH         (fmfield) 33	/* String          */
+# define COMENT          (fmfield) 34	/* String          */
+/* Form checksum	*/
+# define FM_LPARTEH_CHKSUM (long)0x0b07
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

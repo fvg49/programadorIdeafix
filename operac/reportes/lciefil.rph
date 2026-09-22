@@ -1,0 +1,25 @@
+/* Field names	*/
+# define RFILDES         ((rpfield)   0) 	/* String */
+# define RDFILDES        ((rpfield)   1) 	/* String */
+# define RFILHAS         ((rpfield)   2) 	/* String */
+# define RDFILHAS        ((rpfield)   3) 	/* String */
+# define RFECHAD         ((rpfield)   4) 	/* Date */
+# define RFECHAH         ((rpfield)   5) 	/* Date */
+# define RFILIAL         ((rpfield)   6) 	/* String */
+# define RDESCRIP        ((rpfield)   7) 	/* String */
+# define RFECCIE         ((rpfield)   8) 	/* Date */
+# define RIDCARGA        ((rpfield)   9) 	/* Num */
+# define RDIDCARGA       ((rpfield)  10) 	/* String */
+# define RFECCARGA       ((rpfield)  11) 	/* Date */
+# define RHORACARGA      ((rpfield)  12) 	/* Time */
+# define RREVERTIDO      ((rpfield)  13) 	/* Bool */
+# define RIDREVER        ((rpfield)  14) 	/* Num */
+# define RDIDREVER       ((rpfield)  15) 	/* String */
+# define RFECREVER       ((rpfield)  16) 	/* Date */
+# define RHORAREVER      ((rpfield)  17) 	/* Time */
+/* Report Checksum	*/
+# define RP_LCIEFIL_CHKSUM ((long) 0x01e4)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ENCAB           ((int)   1)
+# define LINFIL          ((int)   2)

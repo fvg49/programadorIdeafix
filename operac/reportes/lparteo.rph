@@ -1,0 +1,52 @@
+/* Field names	*/
+# define R_CLIE          ((rpfield)   0) 	/* Num */
+# define R_DCLIE         ((rpfield)   1) 	/* String */
+# define R_OBJET         ((rpfield)   2) 	/* Num */
+# define R_DOBJET        ((rpfield)   3) 	/* String */
+# define R_SUPERV        ((rpfield)   4) 	/* Num */
+# define R_DSUP          ((rpfield)   5) 	/* String */
+# define R_FDESDE        ((rpfield)   6) 	/* Date */
+# define R_FHASTA        ((rpfield)   7) 	/* Date */
+# define R_DIA1          ((rpfield)   8) 	/* Date */
+# define R_STD1          ((rpfield)   9) 	/* Num */
+# define R_DIA2          ((rpfield)  10) 	/* Date */
+# define R_STD2          ((rpfield)  11) 	/* Num */
+# define R_DIA3          ((rpfield)  12) 	/* Date */
+# define R_STD3          ((rpfield)  13) 	/* Num */
+# define R_DIA4          ((rpfield)  14) 	/* Date */
+# define R_STD4          ((rpfield)  15) 	/* Num */
+# define R_DIA5          ((rpfield)  16) 	/* Date */
+# define R_STD5          ((rpfield)  17) 	/* Num */
+# define R_LEGAJO        ((rpfield)  18) 	/* Num */
+# define R_APENOM        ((rpfield)  19) 	/* String */
+# define R_PTOSER        ((rpfield)  20) 	/* Num */
+# define R_PUESTO        ((rpfield)  21) 	/* Num */
+# define R_DPTOSER       ((rpfield)  22) 	/* String */
+# define R_REGIM         ((rpfield)  23) 	/* String */
+# define R_HSD1          ((rpfield)  24) 	/* Time */
+# define R_HSH1          ((rpfield)  25) 	/* Time */
+# define R_HSD2          ((rpfield)  26) 	/* Time */
+# define R_HSH2          ((rpfield)  27) 	/* Time */
+# define R_HSD3          ((rpfield)  28) 	/* Time */
+# define R_HSH3          ((rpfield)  29) 	/* Time */
+# define R_HSD4          ((rpfield)  30) 	/* Time */
+# define R_HSH4          ((rpfield)  31) 	/* Time */
+# define R_HSD5          ((rpfield)  32) 	/* Time */
+# define R_HSH5          ((rpfield)  33) 	/* Time */
+# define R_NPCLIE        ((rpfield)  34) 	/* Num */
+# define R_NPDCLIE       ((rpfield)  35) 	/* String */
+# define R_NPOBJET       ((rpfield)  36) 	/* Num */
+# define R_NPDOBJET      ((rpfield)  37) 	/* String */
+# define R_NPSUPERV      ((rpfield)  38) 	/* Num */
+# define R_NPDSUP        ((rpfield)  39) 	/* String */
+/* Report Checksum	*/
+# define RP_LPARTEO_CHKSUM ((long) 0x080a)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ENCAB           ((int)   1)
+# define LINEA           ((int)   2)
+# define FLIN            ((int)   3)
+# define TOTAL           ((int)   4)
+# define OBSERV          ((int)   5)
+# define NOPARTE         ((int)   6)
+# define LNOPARTE        ((int)   7)

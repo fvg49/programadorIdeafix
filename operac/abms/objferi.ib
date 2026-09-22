@@ -1,0 +1,12 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+objferi.exe {
+	objferi.fm;
+	objferi.c;
+ 	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

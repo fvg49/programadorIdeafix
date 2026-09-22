@@ -1,0 +1,34 @@
+ Empresa        : __. _____________________________________________
+
+ Fecha    Desde : {__/__/____
+ Fecha    Hasta :  __/__/____}
+
+ Cantidad de horas minimas __.__
+ 
+ Cliente mayor a _________.
+
+ Borrar de asisten los dias que trabajo  __?
+
+[1m [0m________________________________________
+
+%form
+use comerc, bill, sue;
+language "C";
+window label "[Control Asistencias]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+agrf:;
+fdesde  : default today;
+fhasta  : default today;
+
+cantmin : not null, default 0;
+climin  : not null, default 3000;
+borra   : not null, default false;
+
+coment: skip;
+

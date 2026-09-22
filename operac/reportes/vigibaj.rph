@@ -1,0 +1,11 @@
+/* Field names	*/
+# define R_LEGAJO        ((rpfield)   0) 	/* Num */
+# define R_APENOM        ((rpfield)   1) 	/* String */
+# define R_CLIENTE       ((rpfield)   2) 	/* Num */
+# define R_OBJETIVO      ((rpfield)   3) 	/* Num */
+# define R_FECEGR        ((rpfield)   4) 	/* Date */
+/* Report Checksum	*/
+# define RP_VIGIBAJ_CHKSUM ((long) 0x001b)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)

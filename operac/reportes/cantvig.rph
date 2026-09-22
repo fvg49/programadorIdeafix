@@ -1,0 +1,14 @@
+/* Field names	*/
+# define RCLIE           ((rpfield)   0) 	/* Num */
+# define RDCLIE          ((rpfield)   1) 	/* String */
+# define ROBJ            ((rpfield)   2) 	/* Num */
+# define RDOBJ           ((rpfield)   3) 	/* String */
+# define RCANTVIG        ((rpfield)   4) 	/* Num */
+/* Report Checksum	*/
+# define RP_CANTVIG_CHKSUM ((long) 0x0015)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LINVIG          ((int)   1)
+# define TVIG            ((int)   2)
+# define TOTVIG          ((int)   3)
+# define FIN             ((int)   4)

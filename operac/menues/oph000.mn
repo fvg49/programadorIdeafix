@@ -1,0 +1,8 @@
+"1. Tablas Generales                            " MENU  oph100
+"2. Clientes y Objetivos                        " MENU  oph200
+"3. Orden de Trabajo                            " MENU  oph300
+"4. Asignación de Vigiladores                   " MENU  oph400
+"5. Retenes                                     " MENU  oph500
+"6. Parte Diario                                " MENU  oph600
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡" SHELL .
+"Z. Configuración                               " MENU  usrope

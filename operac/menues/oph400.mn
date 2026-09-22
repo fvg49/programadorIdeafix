@@ -1,0 +1,8 @@
+"1. Consulta de Vigiladores                         " WCMD lvigil.exe
+"2. Asignación de Vigiladores                       " WCMD asigd.exe !ADU
+"3. Generación de Dias Part-Time    			    " WCMD genptime.exe !ADU
+"4. Carga de Vacaciones                             " WCMD vacac.exe !ADU
+"5. Desasignación de Vigiladores de Baja            " WCMD delvig.exe !ADU
+"6. Listados y Consultas                            " MENU ope410
+"7. Listados de Ausentismos                         " MENU asist400
+"8. Auditoria de Asignaciones                       " MENU oph420

@@ -1,0 +1,25 @@
+/* Field names	*/
+# define REMP            ((rpfield)   0) 	/* String */
+# define RSELEC          ((rpfield)   1) 	/* String */
+# define RSELEC1         ((rpfield)   2) 	/* String */
+# define RSELEC2         ((rpfield)   3) 	/* String */
+# define DESNIV          ((rpfield)   4) 	/* String */
+# define HSNOR           ((rpfield)   5) 	/* Num */
+# define HS25            ((rpfield)   6) 	/* Num */
+# define HS35            ((rpfield)   7) 	/* Num */
+# define HSFRA           ((rpfield)   8) 	/* Num */
+# define HSFER           ((rpfield)   9) 	/* Num */
+# define HSNONOC         ((rpfield)  10) 	/* Num */
+# define HS25NOC         ((rpfield)  11) 	/* Num */
+# define HS35NOC         ((rpfield)  12) 	/* Num */
+# define PEGADA          ((rpfield)  13) 	/* Num */
+# define NOCHES          ((rpfield)  14) 	/* Num */
+/* Report Checksum	*/
+# define RP_NUEVO_CHKSUM ((long) 0x0087)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define HEAD1           ((int)   1)
+# define HEAD2           ((int)   2)
+# define HEAD3           ((int)   3)
+# define ZDETA           ((int)   4)
+# define ZCIERRE         ((int)   5)

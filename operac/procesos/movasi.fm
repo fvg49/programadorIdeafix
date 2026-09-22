@@ -1,0 +1,58 @@
+
+   Empresa Origen      : __. ______________________________
+   Empresa Destino     : __. ______________________________
+
+   Fecha de Movimiento :  __/__/____
+
+   Filial Origen(opc.) : ______ 
+
+   Archivo de Entrada  : _________________
+ ¨©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©ª
+ §¥	Legajo                                                 §¥
+ §¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¥
+ §[______. ________________________________________________]¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ §¥                                                        §¥
+ ¢£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¤ 
+  Modo : _. _____________________________________
+  
+  Salida : _ ________________  ___________________
+
+%form()
+use comerc, sue;
+language "C";
+window label "[Migracion de asignaciones entre empresas]", border single;
+confirm add, update, end, ignore;
+ignore delete;
+display status;
+
+%fields
+empo	: in sue.emps:descrip, not null, default $emp;
+dempo	: sue.emps.descrip, skip;
+
+empd	: in sue.emps:descrip, not null, != empo;
+dempd	: sue.emps.descrip, skip;
+
+fecmov  : not null;
+filori	: in comerc.filial:(descrip), default "BA05";
+archie  : ; 
+
+multi0  : rows 1000, display 10;
+nroleg	: in sue.per(empo):(apynom), not null, unique;
+dnroleg :  sue.per.apynom, skip;
+
+modpro : in (1:"Reporte", 2:"Proceso", 3:"Reporte y Proceso"), default 1;
+rmodpro: is descr(modpro);
+
+salida  : in ("T": "Terminal", "I":"Impresora", "A":"Archivo"), mask ">A", autoenter, not null, default "I", is null when modpro=2;
+dsalida : is descr(salida);
+
+archivo : is (salida == "A") ? void : null, not null;
+

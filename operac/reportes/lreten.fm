@@ -1,0 +1,102 @@
+ Empresa  :   __. ______________________________________
+ Cliente  :_____. __________________________________________
+ Objetivo : ____. __________________________________________
+ Fecha    : __/__/____
+
+ Reten Desde :{_______.  ______________________________
+       Hasta : _______.} ______________________________
+
+ Asignados en Cliente Desde:{ _______. ____.  ___________________________________
+                      Hasta:  _______. ____. }___________________________________
+
+ Alta Policial en Prov. Desde :{__.  _____________________________
+                        Hasta : __.} _____________________________
+
+ Asig. Provisoria : _ __________________ Asistencia : _ ____________________
+ Inscriptos en CLU: _ __________________ Portación  : _ ____________________
+
+ Opción : _ __________________ Ordenamiento : _ ______________________
+
+ Salida por : _ ____________________ Nombre del archivo  : ____________
+
+                 ___________________________________________________
+%form
+use operac, comerc, sue, brigada, bill;
+language "C";
+window label "Retenes", border single;
+confirm add, update, end, ignore;
+ignore delete;
+
+%fields
+emp		 : parte., in sue.emps:(descrip), default 1, not null;
+demp	 : sue.emps.descrip, skip;
+cliente	 : parte.cliente, on help manual, not null, default 3000;
+dclie    : skip;
+objet    : parte.objetivo, on help manual, not null, default 1;
+dobjet   : skip;
+fecha	 : parte.dia, default today, not null;
+
+agrret   : ;
+retend   : in sue.per(emp):(apynom), not null;
+dretend  : sue.per.apynom, skip;
+retenh   : in sue.per(emp):(apynom) descending, not null,  >= retend, check after agrret;
+dretenh  : sue.per.apynom, skip;
+
+agrcli   : ;
+clid     : on help manual, not null;
+objd	 : on help manual, not null, default 1;
+dobjd	 : skip;
+clih     : on help manual, not null, >= clid;
+objh	 : on help manual, not null, default 99;
+dobjh	 : skip;
+
+agrprov  : ;
+i_codpais: internal sue.provi.pais, default 1;
+provd	 : in sue.provi(i_codpais):denom;
+dprovd   : sue.provi.denom, skip;
+provh    : in sue.provi(i_codpais):denom, >= provd, skip when provd == null;
+dprovh	 : sue.provi.denom, skip;
+
+provis	 : in ("P":"Provisorio",
+			   "E":"Efectivo",
+			   "T":"Todos "), not null, default "T", mask "1>a", autoenter;
+dprovis	 : is descr(provis);
+
+condtrab :  in ("T":"Trabajo",
+                "V":"Vacaciones",
+                "A":"Ausente",
+                "F":"Franco",
+                "S":"Todos"), default "S", mask "1>a", autoenter;                 
+dcondtrab: is descr(condtrab);
+
+insclu   : in ("C":"Con CLU",
+			   "S":"Sin CLU",
+			   "T":"Todos"), default "T", mask "1>a", autoenter;
+dinsclu  : is descr(insclu);
+
+portac   : in ("P":"Portación",
+			   "S":"Sin Portación",
+			   "T":"Todos"), default "T", mask "1>a", autoenter;
+dportac  : is descr(portac);
+
+opcion   : in ("D":"Diario",
+			   "T":"Total"), not null, default "D", mask "1>a", autoenter;
+dopcion	 : is descr(opcion);
+
+orden 	 : in ("L":"Por Legajo",
+			   "P":"Por Alta Policial",
+			   "E":"Por Asignación Efectiva",
+			   "C":"Por Asignación Provisoria",
+			   "H":"Por Hora de Entrada",
+			   "A":"Por Asistencia"), not null, default "H", mask "1>a", autoenter;
+dorden   : is descr(orden);
+
+salida	 : in ("I": "Impresora",
+		   	   "T": "Terminal",
+		   	   "A": "Archivo"),
+		   not null,
+		   default "I", mask ">A",
+		   autoenter;
+dsalida  : is descr(salida);
+nomarch : is (salida!="A") ? null : void, default "lreten.txt", not null;
+coment   : skip;

@@ -1,0 +1,12 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+gparauto.exe {
+	generacion.c;
+	gparauto.c : operac.sch;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

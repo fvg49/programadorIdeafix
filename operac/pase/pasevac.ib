@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+pasevac.exe {
+	pasevac.fm;	
+	pasevac.rp;	
+	pasevac.c;
+
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+ 	$BILLPROLIB.a;
+ 	$BILLLIB.a;
+}

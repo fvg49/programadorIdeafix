@@ -1,0 +1,49 @@
+
+ Empresa        : __. ____________________________________
+
+ Cliente Desde  :{__,___. ________________________________
+         Hasta  : __,___.}________________________________
+
+ Objetivo Desde :{ _,___. ________________________________
+          Hasta :  _,___.}________________________________
+
+ Provincia      : __. ________________________
+
+ Salida por     : _ _____________ ___________________ _________________
+
+          __________________________________________________________
+%form
+use sue, bill, comerc;
+language "C";
+window label "[Vigiladores sin Altas en Jurisdiccion de Trabajo]", border single;
+ignore ignore, next, prev, delete;
+confirm update, end;
+
+%fields
+emp     : in sue.emps:descrip, not null,
+          is (num($Nroempresa) == 0 or num($Nroempresa) == null) ? void : num($Nroempresa);
+desc    : sue.emps.descrip, skip;
+
+agrupc	: check clid <= clih;
+clid	: in bill.cliente:(razsoc);
+dclid	: bill.cliente.razsoc, skip;
+clih	: in bill.cliente:(razsoc);
+dclih	: bill.cliente.razsoc, skip;
+agrupo	: ;
+objd    : on help in comerc.objetivo by est (emp, true, clid):descrip, default 1;
+dobjd   : comerc.objetivo.descrip, skip;
+objh    : on help in comerc.objetivo by est (emp, true, clih):descrip, default 99;
+dobjh   : comerc.objetivo.descrip, skip;
+
+prov    : on help in sue.provi(1) : denom, is clid != null ? null : void, not null;
+dprov   : sue.provi.denom, skip;
+
+salida  : not null, default "I", mask ">A",
+		  in ("I":"Impresora",
+		  	  "T":"Terminal",
+		  	  "A":"Archivo");
+dsalida : is descr(salida);
+pidarch : is salida = "A" ? "Nombre del Archivo:" : null;
+archivo : is salida = "A" ? void : null, not null;
+
+coment  : skip;

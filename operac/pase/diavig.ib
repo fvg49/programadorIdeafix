@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+BIN="../rbinaux/";
+
+diavig.exe {
+
+	diavig.fm;
+//	diavig.hlp;
+	diavig.c;
+
+	$OPERACLIB.a;
+ 	$COMERCLIB.a;
+ 	$BILLPROLIB.a;
+ 	$BILLLIB.a;
+}

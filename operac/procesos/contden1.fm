@@ -1,0 +1,35 @@
+
+Liquidacion : _______.
+
+Año         :{____. 
+Mes			: __
+Quincena    : _.}
+
+%form(i_emp)
+use webinter;
+language "C";
+window label "[Liquidaciones]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+i_emp   : internal num(2);       
+
+liqui1	: on help in webinter.liquida(i_emp):(cliented,clienteh,objetivod,objetivoh,nrolegd,nrolegh,fechad,fechah), >=1000000;
+agrul	: ;
+ano		: between 2000 and 2050;
+mes		: in("01":"Enero",
+			 "02":"Febrero",
+			 "03":"Marzo",
+			 "04":"Abril",
+			 "05":"Mayo",
+			 "06":"Junio",
+			 "07":"Julio",
+			 "08":"Agosto",
+			 "09":"Septiembre",
+			 "10":"Octubre",
+			 "11":"Noviembre",
+			 "12":"Diciembre");
+quin	: in(1: "Primer Quincena",
+			 2: "Segunda Quincena");
+

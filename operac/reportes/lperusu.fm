@@ -1,0 +1,43 @@
+
+ Empresa     : __. _____________________________________________
+
+ Fecha       :  __/__/____
+
+ Legajo      : ______. __________________________________________
+
+¨Permisos¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                  
+ Procedencia : _. ______________________________________________  
+                                                                   
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤ 
+ Salida      : _ _______________________
+
+ Nombre 
+ Archivo     : ____________________
+
+
+______________________________________________________________
+%form
+use sue;
+language "c";
+window label "Listado Usuario que pueden ver un legajo", border single;
+ignore add, delete, prev, next, ignore;
+confirm update;
+
+%fields
+emp		: in sue.emps:descrip, default $emp, not null;
+demp	: sue.emps.descrip, skip;
+fecha   : default today, not null;
+nroleg  : not null, on help in sue.per(emp):apynom descending, default 00;
+dnroleg : sue.per.apynom, skip;
+procede : in (0:"Todas las Procedencias", 
+              1:"Por asignacion efectiva", 
+              3:"Por Tener Permisos Por Vigilador",
+              4:"Por Pertencer a un Grupos de Filiales"), default 0;
+
+dprocede: is descr (procede);
+
+salida	: in ("T":"Terminal", "I":"Impresora", "A":"Archivo"), default "I", not null, mask ">A";
+dsalida	: is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "lperusu.txt", not null;
+mensaje : is null;

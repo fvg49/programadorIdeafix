@@ -1,0 +1,8 @@
+/* Field names	*/
+# define FECHA           (fmfield)  0	/* Date            */
+# define PROCE           (fmfield)  1	/* String          */
+/* Form checksum	*/
+# define FM_DASIPROV_CHKSUM (long)0x0014
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

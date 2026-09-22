@@ -1,0 +1,20 @@
+/* Field names	*/
+# define MULTDET         (fmfield)  0	/* MULTIPLE        */
+# define FECHA           (fmfield)  1	/* Date            */
+# define HSENTRE         (fmfield)  2	/* Time            */
+# define HSSAL           (fmfield)  3	/* Time            */
+# define HSTOT           (fmfield)  4	/* Long            */
+# define HSNOR           (fmfield)  5	/* Integer         */
+# define HS50            (fmfield)  6	/* Integer         */
+# define HS100F          (fmfield)  7	/* Integer         */
+# define HS100FE         (fmfield)  8	/* Integer         */
+# define TOTAL           (fmfield)  9	/* Long            */
+# define TOTNORM         (fmfield) 10	/* Long            */
+# define TOT50           (fmfield) 11	/* Long            */
+# define TOT100F         (fmfield) 12	/* Long            */
+# define TOT100FE        (fmfield) 13	/* Long            */
+/* Form checksum	*/
+# define FM_CPARDET_CHKSUM (long)0x03a9
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

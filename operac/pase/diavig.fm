@@ -1,0 +1,41 @@
+
+  Empresa     : __. __________________________________________
+
+  Liquidación : _________.  _____________________
+
+  Dia Del Vigilador:  __/__/____ 
+
+  Salida a : _ ______________ Nombre del archivo: ______________
+
+
+  Procesando Legajo ______. ___________________________________
+
+
+
+
+%form
+language "c";
+use  sue;
+window label "[Pasaje de Horas Dia del Vigilador]", border single;
+display status;
+ignore delete, next, prev;
+confirm update, end, ignore;
+
+%fields
+emp     : in sue.emps:descrip, not null, default 37, has after, skip;
+demp    : sue.emps.descrip, skip;
+nroliq  : in sue.liq by empre(emp):(titulo) , has after, not null;
+titulo  : sue.liq.titulo, skip;
+
+fecha   : ;
+
+salida  : in ("A":"Archivo", "D":"Denarius"), default "A";
+dsalida : is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "diavig.txt", not null;
+
+comentario: skip;
+dcomentario: skip;
+
+
+
+

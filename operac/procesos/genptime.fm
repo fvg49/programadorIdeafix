@@ -1,0 +1,34 @@
+
+ Empresa         :       __. ______________________________________
+
+ Vigilador Desde :{________. _____________________________
+           Hasta : ________.}_____________________________
+
+ Fecha     Desde :{__/__/____
+           Hasta : __/__/____}  [1m____________________________________[0m
+
+%form
+use sue;
+language "C";
+window label "[ Proceso de Generación de Horas Part-Time ]", border single;
+confirm end, update;
+ignore delete, prev, next;       
+messages
+	MALF : "La fecha Hasta debe ser mayor o igual a la Fecha  Desde",
+	MALV : "El Nro. de Vigilador Hasta debe ser mayor o igual al Desde";
+
+%fields
+emp    : in sue.emps:(descrip), default $emp, not null;
+demp   : sue.emps.descrip, skip;
+
+agrupv  : check vigild <= vigilh, on error MALV;
+vigild  : in sue.per(emp):apynom;
+dvigild : sue.per.apynom, skip;
+vigilh  : in sue.per(emp):apynom;
+dvigilh : sue.per.apynom, skip;
+
+agrfec : check fhasta >= fdesde, on error MALF;
+fdesde : default today, not null;
+fhasta : default today, not null;
+
+coment : skip;

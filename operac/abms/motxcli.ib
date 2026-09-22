@@ -1,0 +1,12 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+motxcli.exe {
+	motxcli.fm;
+	motxcli.c;
+ 	$COMERCLIB.a;
+	$OPERACLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

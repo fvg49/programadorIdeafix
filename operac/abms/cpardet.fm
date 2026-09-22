@@ -1,0 +1,33 @@
+	¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡ª
+	  Fecha   Hora de Hora  de  Hs.    Hs.    Hs.   Hs.Ex  Hs.Ex   
+	          Entrada  Salida  Total  Norm.   50%   100% F 100% Fe 
+	§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¥
+	[__/__/__  __:__   __:__   ___.__  __.__  __.__  __.__  __.__ ]
+	                                                               
+	                                                               
+	§¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¥
+	  T o t a l e s            ___.__ ___.__ ___.__ ___.__ ___.__  
+	¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¤
+
+%form                                                                 
+use operac, bill, comerc, sue;
+language "C";
+window label "Parte", border single;
+ignore delete;
+
+%fields
+multdet		: rows 150, display 3, ignore delete, ignore add;
+fecha		:;
+hsentre		:;
+hssal		:;
+hstot		:skip;
+hsnor		:;
+hs50		:;
+hs100f		:;
+hs100fe		:;
+
+total		:is sum(hstot);
+totnorm		:is sum(hsnor);
+tot50		:is sum(hs50);
+tot100f		:is sum(hs100f);
+tot100fe	:is sum(hs100fe);

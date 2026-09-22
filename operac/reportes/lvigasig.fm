@@ -1,0 +1,45 @@
+
+   Empresa : __. ________________________________________________
+
+   Delegación Comercial  : _____  _________________________________
+   Delegación Operacional: _____  _________________________________   
+   Filial Operativa      : ______ _________________________________ 
+   
+   Vigilador : _________. _________________________________________
+
+   Fecha     : __/__/____
+
+   Salida    : _ _________________________ Archivo : _________________
+   
+   ___________________________________________________________________
+   
+%form
+use sue, comerc, billpro;
+language "c";
+window label "Consulta de Vigiladores Asignados por Filial", border single;
+display status;
+confirm update, ignore, end;
+ignore add, delete;
+
+%fields
+emp	   : in emps:descrip, default $emp, not null;
+demp   : emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : in comerc.filial: descrip, mask "6>a";
+descrip : comerc.filial.descrip, skip;
+
+vig    : on help in sue.per(emp):(apynom);
+dvigd  : sue.per.apynom,
+		  skip;
+
+fecasig : not null, default today;
+
+salida : in ("I": "Impresora", "T":"Terminal", "A":"Archivo"), not null, default "I", mask ">A";
+dsalida: is descr(salida);
+archivo: is (salida != "A") ? null : void,
+            default "lvigasig.txt";				
+comentario: skip;

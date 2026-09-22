@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+audret.exe {   
+
+
+	audret.fm;
+	audret.c;
+	$OPERACLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+	$IGRALLIB.a;
+}

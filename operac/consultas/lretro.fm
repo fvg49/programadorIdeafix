@@ -1,0 +1,20 @@
+
+ Salida por  : _________________
+
+   ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+     Digite __ para confirmar  
+   ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+
+%form
+use comerc, sue;
+window label "[Listado de Retroactivos]", border single;
+confirm update, end;
+ignore prev, delete, next, add;
+display status;
+
+%fields
+salida  : in ("printer", "terminal", "parcli delimited"), default "printer", not null;
+dummy   : is help (PROCESAR);
+
+
+

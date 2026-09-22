@@ -1,0 +1,33 @@
+project $NOVIA/reglas.ib;
+
+echo "COMPILANDO ABMS";
+
+doforms.ib;
+apromt.ib;
+aprot.ib;
+ciefil.ib;
+cliesp.ib;
+depano.ib;
+feriado.ib;
+filxgrup.ib;
+lugpag.ib;
+//mimp.ib;
+motxcli.ib;
+objferi.ib;
+oretro.ib;
+otoper.ib;
+parteb.ib;
+pervig.ib;
+prexobj.ib;
+prgxobj.ib;
+puestos.ib;
+rechmt.ib;
+revciefil.ib;
+rrol.ib;
+rut.ib;
+supxobj.ib;
+vacac.ib;
+
+echo "----- Modulo ABMS OK !!! -----";
+
+

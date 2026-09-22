@@ -1,0 +1,17 @@
+/* Field names	*/
+# define R_LEGAJO        ((rpfield)   0) 	/* Num */
+# define R_APYNOM        ((rpfield)   1) 	/* String */
+# define R_DIA           ((rpfield)   2) 	/* Date */
+# define R_CLI           ((rpfield)   3) 	/* Num */
+# define R_DCLI          ((rpfield)   4) 	/* String */
+# define R_OBJ           ((rpfield)   5) 	/* Num */
+# define R_DOBJ          ((rpfield)   6) 	/* String */
+# define R_PTOSER        ((rpfield)   7) 	/* Num */
+# define R_PUESTO        ((rpfield)   8) 	/* Num */
+# define R_DPTOSER       ((rpfield)   9) 	/* String */
+/* Report Checksum	*/
+# define RP_PEGADOS_CHKSUM ((long) 0x0055)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)
+# define FIN             ((int)   2)

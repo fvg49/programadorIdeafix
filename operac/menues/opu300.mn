@@ -1,0 +1,4 @@
+"1. Simulador de Horas Trabajadas por Subregimen " WCMD calcsreg.exe
+"2. Orden de Trabajo                             " WCMD ot.exe 3 !ADU
+"3. Listados de OT                               " MENU opu310
+"4. OT de Operaciones (Carga Puestos Internos)   " WCMD otoper.exe

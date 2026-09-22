@@ -1,0 +1,9 @@
+/* Field names	*/
+# define FECD            (fmfield)  0	/* Date            */
+# define FECH            (fmfield)  1	/* Date            */
+# define TEXTO           (fmfield)  2	/* String          */
+/* Form checksum	*/
+# define FM_ESPO_CHKSUM (long)0x0039
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

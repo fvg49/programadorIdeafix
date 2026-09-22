@@ -1,0 +1,48 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRCLIE         (fmfield)  2	/* GROUPED         */
+# define CLID            (fmfield)  3	/* Long            */
+# define DCLID           (fmfield)  4	/* String          */
+# define CLIH            (fmfield)  5	/* Long            */
+# define DCLIH           (fmfield)  6	/* String          */
+# define AGROBJE         (fmfield)  7	/* GROUPED         */
+# define OBJD            (fmfield)  8	/* Integer         */
+# define DOBJD           (fmfield)  9	/* String          */
+# define OBJH            (fmfield) 10	/* Integer         */
+# define DOBJH           (fmfield) 11	/* String          */
+# define AGRUPV          (fmfield) 12	/* GROUPED         */
+# define VIGILD          (fmfield) 13	/* Long            */
+# define DVIGILD         (fmfield) 14	/* String          */
+# define VIGILH          (fmfield) 15	/* Long            */
+# define DVIGILH         (fmfield) 16	/* String          */
+# define ANIO            (fmfield) 17	/* Integer         */
+# define COTICI          (fmfield) 18	/* Integer         */
+# define DTIPCIE         (fmfield) 19	/* String          */
+# define PERIOD          (fmfield) 20	/* Integer         */
+# define FECHAD          (fmfield) 21	/* Date            */
+# define FECHAH          (fmfield) 22	/* Date            */
+# define R_DETALLE       (fmfield) 23	/* Integer         */
+# define DESCDET         (fmfield) 24	/* String          */
+# define FRETRO          (fmfield) 25	/* Integer         */
+# define DFRETRO         (fmfield) 26	/* String          */
+# define TOTALIZ         (fmfield) 27	/* Integer         */
+# define DTOTALIZ        (fmfield) 28	/* String          */
+# define VIGACTIVO       (fmfield) 29	/* Integer         */
+# define GUARDIA         (fmfield) 30	/* Integer         */
+# define DESGUAR         (fmfield) 31	/* String          */
+# define SALIDA          (fmfield) 32	/* String          */
+# define SALDESCR        (fmfield) 33	/* String          */
+# define DCANLIN         (fmfield) 34	/* String          */
+# define CANLIN          (fmfield) 35	/* Integer         */
+# define DLIQUI          (fmfield) 36	/* String          */
+# define LIQUI           (fmfield) 37	/* Long            */
+# define DNOMARCH        (fmfield) 38	/* String          */
+# define NOMARCH         (fmfield) 39	/* String          */
+/* Form checksum	*/
+# define FM_CONTDEN_CHKSUM (long)0x0f41
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_MAL_FECHA        0
+# define M_ERR_CLIE         1
+/* =========== End of fmh file ============ */

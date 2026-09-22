@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lugpag.exe {
+	lugpag.hlp;
+	lugpag.fm;
+	lugpag.c;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+	$OPERACLIB.a;
+}

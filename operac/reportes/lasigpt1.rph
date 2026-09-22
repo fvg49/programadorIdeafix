@@ -1,0 +1,77 @@
+/* Field names	*/
+# define RP_TITULO       ((rpfield)   0) 	/* String */
+# define RP_CEMP         ((rpfield)   1) 	/* Num */
+# define RP_XEMP         ((rpfield)   2) 	/* String */
+# define RP_CCLID        ((rpfield)   3) 	/* Num */
+# define RP_XCLID        ((rpfield)   4) 	/* String */
+# define RP_CCLIH        ((rpfield)   5) 	/* Num */
+# define RP_XCLIH        ((rpfield)   6) 	/* String */
+# define RP_OBJD         ((rpfield)   7) 	/* Num */
+# define RP_XOBJD        ((rpfield)   8) 	/* String */
+# define RP_OBJH         ((rpfield)   9) 	/* Num */
+# define RP_XOBJH        ((rpfield)  10) 	/* String */
+# define RP_VIGD         ((rpfield)  11) 	/* Num */
+# define RP_XVIGD        ((rpfield)  12) 	/* String */
+# define RP_VIGH         ((rpfield)  13) 	/* Num */
+# define RP_XVIGH        ((rpfield)  14) 	/* String */
+# define RP_FD           ((rpfield)  15) 	/* Date */
+# define RP_FH           ((rpfield)  16) 	/* Date */
+# define RP_CCLI         ((rpfield)  17) 	/* Num */
+# define RP_XCLI         ((rpfield)  18) 	/* String */
+# define RP_OBJ          ((rpfield)  19) 	/* Num */
+# define RP_XOBJ         ((rpfield)  20) 	/* String */
+# define RP_LEGAJO       ((rpfield)  21) 	/* Num */
+# define RP_APENOM       ((rpfield)  22) 	/* String */
+# define RP_VR           ((rpfield)  23) 	/* String */
+# define RP_EF           ((rpfield)  24) 	/* String */
+# define RP_PTOSER       ((rpfield)  25) 	/* Num */
+# define RP_DPTOSER      ((rpfield)  26) 	/* String */
+# define RP_REGIM        ((rpfield)  27) 	/* String */
+# define RP_FECASIG      ((rpfield)  28) 	/* Date */
+# define RP_FECHAS       ((rpfield)  29) 	/* Date */
+# define RP_DIA1         ((rpfield)  30) 	/* String */
+# define RP_DIA2         ((rpfield)  31) 	/* String */
+# define RP_DIA3         ((rpfield)  32) 	/* String */
+# define RP_DIA4         ((rpfield)  33) 	/* String */
+# define RP_DIA5         ((rpfield)  34) 	/* String */
+# define RP_DIA6         ((rpfield)  35) 	/* String */
+# define RP_DIA7         ((rpfield)  36) 	/* String */
+# define RP_HSENT        ((rpfield)  37) 	/* Time */
+# define RP_HSSAL        ((rpfield)  38) 	/* Time */
+# define RP_VIG          ((rpfield)  39) 	/* Num */
+# define RP_XVIG         ((rpfield)  40) 	/* String */
+# define RP_FRECUENCIA   ((rpfield)  41) 	/* String */
+# define RP_KHORAS       ((rpfield)  42) 	/* Num */
+# define RP_XTINFO       ((rpfield)  43) 	/* String */
+# define RP_DIASFECHA1   ((rpfield)  44) 	/* Date */
+# define RP_DIASHE1      ((rpfield)  45) 	/* Time */
+# define RP_DIASHS1      ((rpfield)  46) 	/* Time */
+# define RP_DIASFECHA2   ((rpfield)  47) 	/* Date */
+# define RP_DIASHE2      ((rpfield)  48) 	/* Time */
+# define RP_DIASHS2      ((rpfield)  49) 	/* Time */
+# define RP_DIASFECHA3   ((rpfield)  50) 	/* Date */
+# define RP_DIASHE3      ((rpfield)  51) 	/* Time */
+# define RP_DIASHS3      ((rpfield)  52) 	/* Time */
+# define RP_DIASFECHA4   ((rpfield)  53) 	/* Date */
+# define RP_DIASHE4      ((rpfield)  54) 	/* Time */
+# define RP_DIASHS4      ((rpfield)  55) 	/* Time */
+# define RP_DIASFECHA5   ((rpfield)  56) 	/* Date */
+# define RP_DIASHE5      ((rpfield)  57) 	/* Time */
+# define RP_DIASHS5      ((rpfield)  58) 	/* Time */
+/* Report Checksum	*/
+# define RP_LASIGPT1_CHKSUM ((long) 0x1302)
+/* Zone names	*/
+# define LIN_TIPOSVAR1   ((int)   0)
+# define LIN_TIPOSVAR2   ((int)   1)
+# define LIN_TIPOSVAR3   ((int)   2)
+# define LIN_TIPOSVAR4   ((int)   3)
+# define LIN_TIPOSVAR5   ((int)   4)
+# define LIN_TIPOSVAR6   ((int)   5)
+# define LIN_TIPOSVAR7   ((int)   6)
+# define ENCABEZAMIENTO  ((int)   7)
+# define LIN_CLIOBJ      ((int)   8)
+# define LIN_VIGILADOR   ((int)   9)
+# define LIN_DETALLE     ((int)  10)
+# define TITU_DIAS       ((int)  11)
+# define RAYA_SEP        ((int)  12)
+# define LIN_FIN         ((int)  13)

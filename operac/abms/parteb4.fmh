@@ -1,0 +1,15 @@
+/* Field names	*/
+# define I_EMP           (fmfield)  0	/* Integer         */
+# define I_CLIEOT        (fmfield)  1	/* Long            */
+# define I_OBJET         (fmfield)  2	/* Integer         */
+# define I_NROLEG        (fmfield)  3	/* Long            */
+# define AGRUPP          (fmfield)  4	/* GROUPED         */
+# define TIPPTO          (fmfield)  5	/* Integer         */
+# define DTIPPTO         (fmfield)  6	/* String          */
+# define CODINT          (fmfield)  7	/* Integer         */
+# define NROINT          (fmfield)  8	/* Integer         */
+/* Form checksum	*/
+# define FM_PARTEB4_CHKSUM (long)0x00fc
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

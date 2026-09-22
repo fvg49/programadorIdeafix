@@ -1,0 +1,13 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+lprovenc.exe {
+	lprovenc.fm;
+    lprovenc.rp;
+	lprovenc.c;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILLLIB.a;
+}

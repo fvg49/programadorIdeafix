@@ -1,0 +1,69 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡ª
+     Margen Teórico     Clie/Objet  R/E   Fecha y Hora   Usu.Com   Fecha y Hora   Usu.Ope Montaje 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¥
+ Margen Teórico Aprobados por Operaciones                                                         
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¥
+[___ __ ___ ___ ______. _____. ___.  _  __/__/____ __:__ _______ __/__/____ __:__ _______   ___. ]
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¥
+ Margen Teórico Rechazados por Operaciones                                                        
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¥
+[___ __ ___ ___ ______. _____. ___.  _  __/__/____ __:__ _______ __/__/____ __:__ _______        ]
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¤
+%form                         
+use comerc;
+language "C";
+window label "Aprobación de Margen Teórico", border single;
+confirm add, update, ignore, end;
+ignore delete;
+
+%fields
+multi   : rows 100, display 10, ignore delete;
+emp     : skip;
+tipcomp : skip;
+serie   : skip;
+deleg   : skip;
+nroot   : skip;
+cliente : skip;
+objet   : skip;
+tipser  : skip;
+fokvta  : skip;
+hokvta  : skip;
+usucom  : skip;
+fokoper : skip;
+hokoper : skip;
+usuope  : skip;
+plazo   : skip;
+
+multir  : rows 100, display 10, ignore delete;
+empr    : skip;
+tipcompr: skip;
+serier  : skip;
+delegr  : skip;
+nrootr  : skip;
+clienter: skip;
+objetr  : skip;
+tipserr : skip;
+fokvtar : skip;
+hokvtar : skip;
+usucomr : skip;
+fokoperr: skip;
+hokoperr: skip;
+usuoper : skip;

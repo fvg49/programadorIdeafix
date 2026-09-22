@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+hsvigite.exe {
+	hsvigite.fm;
+    hsvigite.rp;
+    hsvigite2.rp;
+    hsvigite.c	: hsvigite.fmh hsvigite.rph operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

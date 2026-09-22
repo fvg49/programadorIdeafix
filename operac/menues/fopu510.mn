@@ -1,0 +1,4 @@
+"1. Control de Horas por Clientes/Objetivo/Puesto/Fecha    " WCMD hscliobj.exe
+"2. Control de Horas por Clientes/Objetivo/Puesto/Vigilador" WCMD hsclileg.exe
+"3. Control de Horas por Vigilador                         " WCMD hsvigil.exe
+"4. Control de Horas de Servicio                           " WCMD lhscont.exe

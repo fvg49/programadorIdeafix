@@ -1,0 +1,29 @@
+%head(r_clied,r_dclied,r_clieh,r_dclieh,today,r_objetd,r_dobjetd,r_objeth,r_dobjeth,hour,r_fdesde,r_fhasta, pageno)
+[16c
+ Cliente  Desde : __,___. _______________________________ Hasta : __,___. _______________________________   Fecha : __/__/____
+ Objetivo Desde :     __. _______________________________ Hasta :     __. _______________________________   Hora  : __:__
+ Fecha del Servicio : __/__/____ al __/__/____                                                              Página: ___. (lparteh)
+%encab0(r_clie,r_dclie,r_objet,r_dobjet, r_superv,r_dsup)
+  [1mCliente    :    __,___. _________________________________________ Objetivo   :  __. _________________________________________[0m
+  Supervisor : _,___,___. ________________________________ 
+%encab1(r_dia1,r_std1)                                                                        
+ ¨<[1mFecha __/__/____[0m>¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡<Std:____.__>¡¡¡ª ¨ Observaciones :  ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+%encab2(r_hdesde,r_hhasta)
+     [1mHora Desde : __:__      Hasta : __:__ [0m                                                                                       
+ §¡Legajo¡©¡¡¡Apellido y Nombre¡¡¡¡©¡¡¡¡¡¡¡¡Puesto¡¡¡¡¡¡¡¡©¡Regimen¡©¡¡Entrada¡©¡¡Salida¡¡¡¥                                      
+%linea(r_legajo,r_apenom,r_ptoser,r_puesto,r_dptoser,r_regim)                                 
+  _______. ________________________ __. ____. ____________ _________                                                              
+%flin()
+ §¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¥                                      
+%flin1()
+ ¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¤ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%total()
+   Total de Hs. Trabajadas Std                                        ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡                                        
+   Total de Hs. No Prestadas                                          ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡                                        
+   Total de Hs. Adicionales                                           ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡                                        
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report                                                                                       
+use comerc;
+language"C";
+topmarg = 0;
+width=131;

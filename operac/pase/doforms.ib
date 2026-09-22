@@ -1,0 +1,4 @@
+project $NOVIA/reglas.ib;
+
+periodos.fm;
+//cierre.fm;

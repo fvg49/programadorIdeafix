@@ -1,0 +1,33 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRUPC          (fmfield)  2	/* GROUPED         */
+# define CLID            (fmfield)  3	/* Long            */
+# define DCLID           (fmfield)  4	/* String          */
+# define OBJD            (fmfield)  5	/* Integer         */
+# define DOBJD           (fmfield)  6	/* String          */
+# define CLIH            (fmfield)  7	/* Long            */
+# define DCLIH           (fmfield)  8	/* String          */
+# define OBJH            (fmfield)  9	/* Integer         */
+# define DOBJH           (fmfield) 10	/* String          */
+# define AGRUPF          (fmfield) 11	/* GROUPED         */
+# define FECHAD          (fmfield) 12	/* Date            */
+# define FECHAH          (fmfield) 13	/* Date            */
+# define OPCION          (fmfield) 14	/* Integer         */
+# define DOPCION         (fmfield) 15	/* String          */
+# define DET             (fmfield) 16	/* String          */
+# define DDET            (fmfield) 17	/* String          */
+# define TIPOBJ          (fmfield) 18	/* String          */
+# define DTIPOBJ         (fmfield) 19	/* String          */
+# define FRETRO          (fmfield) 20	/* Integer         */
+# define FECSTD          (fmfield) 21	/* Date            */
+# define SALIDA          (fmfield) 22	/* String          */
+# define SALDESCR        (fmfield) 23	/* String          */
+# define NOMARCH         (fmfield) 24	/* String          */
+# define COMENT          (fmfield) 25	/* String          */
+/* Form checksum	*/
+# define FM_HSSUCU_CHKSUM (long)0x0753
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_MAL_FECHA        0
+/* =========== End of fmh file ============ */

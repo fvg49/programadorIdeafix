@@ -1,0 +1,14 @@
+/* Field names	*/
+# define FECHA           (fmfield)  0	/* Date            */
+# define DESCRIP         (fmfield)  1	/* String          */
+# define MULTI           (fmfield)  2	/* MULTIPLE        */
+# define AGRUP           (fmfield)  3	/* GROUPED         */
+# define PAIS1           (fmfield)  4	/* Integer         */
+# define DESPAI          (fmfield)  5	/* String          */
+# define PROV            (fmfield)  6	/* Integer         */
+# define DESPROV         (fmfield)  7	/* String          */
+/* Form checksum	*/
+# define FM_FERIADO_CHKSUM (long)0x0095
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

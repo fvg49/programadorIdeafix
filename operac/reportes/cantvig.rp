@@ -1,0 +1,23 @@
+%titulo (today, pageno) before (report, page)
+[16c\$empresa                                                                                          Fecha  : __/__/____
+                                                                                                   Página :         __.
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡ª
+                         CLIENTE                                              OBJETIVO                    CANTIDAD DE 
+                                                                                                          VIGILADORES 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¤
+%linvig (rclie, rdclie, robj, rdobj, rcantvig) no print
+ ______. _______________________________________________   ____. _______________________________________  __,___.__
+%tvig (rclie, rdclie, robj, rdobj, sum(rcantvig)) after(rclie, robj)
+ ______. _______________________________________________   ____. _______________________________________  __,___.__
+%totvig (rclie, rdclie, sum(rcantvig)) after(rclie)
+[1m TOTAL   ______. _______________________________________________                                          __,___.__[0m
+
+%fin (sum(rcantvig)) after(report)
+[1m TOTAL GENERAL                                                                                            __,___.__[0m
+
+%report
+use comerc;
+language"C";
+flength=$FLENCOMP;
+width = 120;
+output to terminal;

@@ -1,0 +1,27 @@
+%titulo (today, pageno) before (report, page)
+[16c[2o\$empresa                                                                                                                                              Fecha : __/__/____    Página : __.
+[10c                                   FORMULARIO DE VARIACIONES DE SERVICIO    [10c
+%titcli(rclie, rdclie, robj, rdobj) before (page, rclie, robj)
+[16c                                                                                                                                                                  ¨¡¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡ª
+ Cliente : ______. _______________________       Objetivo : ____. _____________________________                                                                     ALTA   BAJA   MODIF  
+                                                                                                                                                                  §¡¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¥
+ Fecha de Inicio :   /  /    Hora :                   Fecha de Finalizado :  /  /    Hora :                                                                                              
+                                                                                                                                                                  ¢¡¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡¤
+                                   B A J A  D E  P U E S T O S                                                                   A L T A   D E  P U E S T O S  
+¨¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡ª ¨¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡ª
+ C.Pu          Puesto        Categ   Horario        Días      Régimen  Subreg  D Total Hs. Cant.V. Mov   C.Pu           Puesto         Categ    Horario          Días       Subreg    D  
+§¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¥ §¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¥
+%linpue(r_cantop,r_ptoser,r_dptoser,r_categ,r_hdesde,r_hhasta,r_d1,r_d2,r_d3,r_d4,r_d5,r_d6,r_d7,r_reg,r_subr,r_tipodia,r_hstot,r_cantvig)
+ ___. __. __________________ ____. __:__ __:__ _-_-_-_-_-_-_ ________ ________ _ -_____.__ ____.__                                                           - - - - - -                 
+%finobj(sum(r_hstot), sum(r_cantvig)) after (rclie, robj, page, report)
+¢¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¦¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¤ ¢¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¤
+                                                                                 -_____.__ ____.__ 
+                                                                              ¢¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¤
+ Observaciones : 
+ 
+ 
+%report
+language"C";
+flength = $FLENLANDCOMP; //$FLENLAN;
+width   = 247;
+output to terminal;

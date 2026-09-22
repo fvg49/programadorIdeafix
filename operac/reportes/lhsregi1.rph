@@ -1,0 +1,12 @@
+/* Field names	*/
+# define RREGIM          ((rpfield)   0) 	/* Num */
+# define RFECHAD         ((rpfield)   1) 	/* Date */
+# define RFECHAH         ((rpfield)   2) 	/* Date */
+# define RNROLEG         ((rpfield)   3) 	/* Num */
+# define RNOMBRE         ((rpfield)   4) 	/* String */
+# define RHORAS          ((rpfield)   5) 	/* Num */
+/* Report Checksum	*/
+# define RP_LHSREGI1_CHKSUM ((long) 0x0024)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define LINEA           ((int)   1)

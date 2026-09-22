@@ -1,0 +1,17 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+asigman.exe {
+	asigman.fm;
+	asigman.c;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;
+	$BRIGADA/lib/brigada.a;
+	$BILLPRO/lib/billpro.a;
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+ 	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+}

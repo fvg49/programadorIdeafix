@@ -1,0 +1,41 @@
+%nomuestra(imp_puesto) no print
+__.
+%head(remp, today, pageno, module, rversion) before (page, report)
+[16c_________________________________                                                                              Fecha : __/__/____
+                                                                                                               Página:       ____.
+                                                    CONTROL HORAS DE SERVICIO                                  (_______ _____)
+
+            ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+             Cliente                                            HS NO               SERVICIOS         CONFORMIDAD         
+                      Objetivo                   HS STANDART  PRESTADAS   TOTAL    ADICIONALES          CLIENTE           
+                                 Puesto                                                                                   
+            §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+%zcli(rcli, rdcli) before page
+             _________. ________________________                                                                          
+%zobj(robj, rdobj) before page
+                  ____. ________________________                                                                          
+%zpto(rpto, rdpto) before page, if imp_puesto=1
+                    ____. ______________________                                                                          
+%zfch(rfch, fsvtot, fstnpres, fsttot, fsatot)
+                                     __/__/__      _____.__    _____.__  _____.__    _____.__                             
+%znoprint(svtot, stnpres, sttot, satot) no print
+                                                   _____.__    _____.__  _____.__    _____.__                             
+%ztotpto(rpto, rdpto, sum(svtot), sum(stnpres), sum(sttot), sum(satot))
+                TOTAL ____. ____________________   _____.__    _____.__  _____.__    _____.__                             
+%ztotsem(rsemd, rsemh, sum(svtot), sum(stnpres), sum(sttot), sum(satot))
+                 TOTAL del __/__/__ al __/__/__    _____.__    _____.__  _____.__    _____.__                             
+%ztotobj(robj, rdobj, sum(svtot), sum(stnpres), sum(sttot), sum(satot))
+              TOTAL ____. ______________________   _____.__    _____.__  _____.__    _____.__                             
+                                                                                                                          
+%ztotcli(rcli,rdcli, sum(svtot), sum(stnpres), sum(sttot), sum(satot))
+             TOTAL _________. _________________    _____.__    _____.__  _____.__    _____.__                             
+                                                                                                                          
+%ztotgen(sum(svtot), sum(stnpres), sum(sttot), sum(satot)) after (report)
+             TOTAL GENERAL                         _____.__    _____.__  _____.__    _____.__                             
+%zfin() after (page, report)
+            ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report
+use operac;
+language"C";
+flength= $FLENGTH;
+width= 120; 

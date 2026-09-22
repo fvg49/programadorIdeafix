@@ -1,0 +1,18 @@
+/* Field names	*/
+# define RCLID           ((rpfield)   0) 	/* Num */
+# define RDCLID          ((rpfield)   1) 	/* String */
+# define RCLIH           ((rpfield)   2) 	/* Num */
+# define RDCLIH          ((rpfield)   3) 	/* String */
+# define ROBJD           ((rpfield)   4) 	/* Num */
+# define RDOBJD          ((rpfield)   5) 	/* String */
+# define ROBJH           ((rpfield)   6) 	/* Num */
+# define RDOBJH          ((rpfield)   7) 	/* String */
+# define RFECHAD         ((rpfield)   8) 	/* Date */
+# define RFECHAH         ((rpfield)   9) 	/* Date */
+# define RDETALLE        ((rpfield)  10) 	/* String */
+/* Report Checksum	*/
+# define RP_CTRLFAC_CHKSUM ((long) 0x0087)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define HEAD2           ((int)   1)
+# define LINEA           ((int)   2)

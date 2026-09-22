@@ -1,0 +1,37 @@
+/* Field names	*/
+# define MULTI           (fmfield)  0	/* MULTIPLE        */
+# define EMP             (fmfield)  1	/* String          */
+# define TIPCOMP         (fmfield)  2	/* String          */
+# define SERIE           (fmfield)  3	/* String          */
+# define DELEG           (fmfield)  4	/* String          */
+# define NROOT           (fmfield)  5	/* Long            */
+# define CLIENTE         (fmfield)  6	/* Long            */
+# define OBJET           (fmfield)  7	/* Integer         */
+# define TIPSER          (fmfield)  8	/* String          */
+# define FOKVTA          (fmfield)  9	/* Date            */
+# define HOKVTA          (fmfield) 10	/* Time            */
+# define USUCOM          (fmfield) 11	/* String          */
+# define FOKOPER         (fmfield) 12	/* Date            */
+# define HOKOPER         (fmfield) 13	/* Time            */
+# define USUOPE          (fmfield) 14	/* String          */
+# define PLAZO           (fmfield) 15	/* Integer         */
+# define MULTIR          (fmfield) 16	/* MULTIPLE        */
+# define EMPR            (fmfield) 17	/* String          */
+# define TIPCOMPR        (fmfield) 18	/* String          */
+# define SERIER          (fmfield) 19	/* String          */
+# define DELEGR          (fmfield) 20	/* String          */
+# define NROOTR          (fmfield) 21	/* Long            */
+# define CLIENTER        (fmfield) 22	/* Long            */
+# define OBJETR          (fmfield) 23	/* Integer         */
+# define TIPSERR         (fmfield) 24	/* String          */
+# define FOKVTAR         (fmfield) 25	/* Date            */
+# define HOKVTAR         (fmfield) 26	/* Time            */
+# define USUCOMR         (fmfield) 27	/* String          */
+# define FOKOPERR        (fmfield) 28	/* Date            */
+# define HOKOPERR        (fmfield) 29	/* Time            */
+# define USUOPER         (fmfield) 30	/* String          */
+/* Form checksum	*/
+# define FM_RECHMT_CHKSUM (long)0x1292
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

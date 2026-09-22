@@ -1,0 +1,41 @@
+/* Field names	*/
+# define R_EMP_O         ((rpfield)   0) 	/* Num */
+# define R_EMP_D         ((rpfield)   1) 	/* Num */
+# define R_FECMOV        ((rpfield)   2) 	/* Date */
+# define R_MOVIMIEN      ((rpfield)   3) 	/* Num */
+# define R_ACCION        ((rpfield)   4) 	/* String */
+# define R_EMP           ((rpfield)   5) 	/* Num */
+# define R_CLI           ((rpfield)   6) 	/* Num */
+# define R_DCLI          ((rpfield)   7) 	/* String */
+# define R_OBJ           ((rpfield)   8) 	/* Num */
+# define R_DOBJ          ((rpfield)   9) 	/* String */
+# define R_VR            ((rpfield)  10) 	/* String */
+# define R_EF            ((rpfield)  11) 	/* String */
+# define R_FR            ((rpfield)  12) 	/* String */
+# define R_PTOSER        ((rpfield)  13) 	/* Num */
+# define R_PUESTO        ((rpfield)  14) 	/* Num */
+# define R_DPTOSER       ((rpfield)  15) 	/* String */
+# define R_REGIM         ((rpfield)  16) 	/* String */
+# define R_FECASIG       ((rpfield)  17) 	/* Date */
+# define R_FECHAS        ((rpfield)  18) 	/* Date */
+# define R_FFRANCO       ((rpfield)  19) 	/* Date */
+# define R_NFRANCO       ((rpfield)  20) 	/* Num */
+# define R_DIA1          ((rpfield)  21) 	/* String */
+# define R_DIA2          ((rpfield)  22) 	/* String */
+# define R_DIA3          ((rpfield)  23) 	/* String */
+# define R_DIA4          ((rpfield)  24) 	/* String */
+# define R_DIA5          ((rpfield)  25) 	/* String */
+# define R_DIA6          ((rpfield)  26) 	/* String */
+# define R_DIA7          ((rpfield)  27) 	/* String */
+# define R_HSENT         ((rpfield)  28) 	/* Time */
+# define R_HSSAL         ((rpfield)  29) 	/* Time */
+# define R_MOTD          ((rpfield)  30) 	/* Num */
+# define R_LOG           ((rpfield)  31) 	/* String */
+/* Report Checksum	*/
+# define RP_MOVASI_CHKSUM ((long) 0x0464)
+/* Zone names	*/
+# define HEAD            ((int)   0)
+# define ZENC            ((int)   1)
+# define LINEA           ((int)   2)
+# define FLIN            ((int)   3)
+# define ZLOG            ((int)   4)

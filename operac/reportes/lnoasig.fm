@@ -1,0 +1,43 @@
+
+ Empresa     : __.  ______________________________________________
+
+ Fecha Desde :{__/__/____
+       Hasta : __/__/____}
+
+ Mostrar	 : _. __________________________________
+
+ Considera los Vigiladores de Baja? : __?
+
+ Salida         : _  _________
+ Nombre Archivo : ____________________
+
+   ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+    Procesando Vigilador  : _______. _______________________________ 
+   ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+language "c";
+use operac, sue, bill, comerc;
+window label "[Listado de Vigiladores no Asignados]", border single;
+display status;
+ignore delete, next, prev, add, ignore;
+confirm update, end;
+
+%fields
+emp		: in sue.emps:(descrip), default $emp, not null;
+demp	: sue.emps.descrip,	skip;
+agrfec	: check fdesde < fhasta;
+fdesde	: default today, not null;
+fhasta	: >= fdesde, default today;
+mostrar : in(1: "Sin por lo menos un dia sin asignar",
+             2: "Sin ninguna asignacion"), default 2;
+desc6   : is descr(mostrar);
+baja    : default true;
+salida  : in   ("T":"Terminal",
+				"I":"Impresora",
+				"A":"Archivo"),
+			default "T", mask ">A",	not null;
+desc5   : is descr(salida);
+nomarch : is (salida == "A") ? void : null,	not null;
+procvigi: skip;
+dprocvig: skip;
+

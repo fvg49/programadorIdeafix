@@ -1,0 +1,37 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+partep.exe {
+	partep.fm;
+	partep1.fm;
+	partep2.fm;
+	partep3.fm;
+	partep4.fm;
+	partep5.fm;
+	partep.c;
+
+	$WEBINTER/lib/webinter.a;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;
+	$BRIGADA/lib/brigada.a;
+	$BILLPRO/lib/billpro.a;
+//	$DENARIUSLIB.a;
+//	$DENCOMUNLIB.a;
+ 	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+
+	$WEBINTER/lib/webinter.a;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;
+	$BRIGADA/lib/brigada.a;
+	$BILLPRO/lib/billpro.a;
+//	$DENARIUSLIB.a;
+//	$DENCOMUNLIB.a;
+ 	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+
+}
+

@@ -1,0 +1,26 @@
+/* Field names	*/
+# define NROLIQ          (fmfield)  0	/* Long            */
+# define DESCRI1         (fmfield)  1	/* String          */
+# define I_CONF          (fmfield)  2	/* Integer         */
+# define I_EMP           (fmfield)  3	/* Integer         */
+# define I_FLIQ          (fmfield)  4	/* Date            */
+# define AGRUPA          (fmfield)  5	/* GROUPED         */
+# define CMES            (fmfield)  6	/* Integer         */
+# define CANIO           (fmfield)  7	/* Integer         */
+# define I_NROCIER       (fmfield)  8	/* Integer         */
+# define I_MESC          (fmfield)  9	/* Integer         */
+# define I_ANIOC         (fmfield) 10	/* Integer         */
+# define I_FECIMP        (fmfield) 11	/* Date            */
+# define CERRAD          (fmfield) 12	/* String          */
+# define AGRUFE          (fmfield) 13	/* GROUPED         */
+# define FDNORM          (fmfield) 14	/* Date            */
+# define FHNORM          (fmfield) 15	/* Date            */
+# define FDEXTR          (fmfield) 16	/* Date            */
+# define FHEXTR          (fmfield) 17	/* Date            */
+/* Form checksum	*/
+# define FM_PASEAUR_CHKSUM (long)0x07b1
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_LIQ_CONF         0
+# define M_ERR_PERI_INEX    1
+/* =========== End of fmh file ============ */

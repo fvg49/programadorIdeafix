@@ -1,0 +1,46 @@
+%head(today, pageno, rretro,rfechad, rfechah, rclid, robjd, rdcliobjd, rclih, robjh, rdcliobjh) before (page, report)
+[20c[2o\$empresa																		  																												 Fecha : __/__/____
+																					  																										    Página:       ____.
+                                    Listado de Control de Horas por Clientes/Objetivo/Puesto (Detalle Vigilador)   __? Considera Retroactivos                                                        (hsclileg)
+
+   Desde Fecha  __/__/____  Hasta Fecha  __/__/____
+   Desde Cliente / Objetivo ___,___,___. __,___. _______________________________
+   Hasta Cliente / Objetivo ___,___,___. __,___. _______________________________
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+ Cliente                               1-Estandard Vendido                         2-Estandar Trabajado                            Diferecia 1-2                   Servicios Adicionales                  A Cargo Empresa         
+        Objetivo            §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+              Puesto           Hn       H50     H100     Total      Hn      H50    H100Fran  H100Fer  Total    HNpres     Hn       H50     H100    H100f      Hn       H50     H100     Total     Hn       H50     H100    Total  
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%zparam(cli, obj, pto, leg, pri) no print
+_. _. _. _. _.
+%zcli(rcli, rdcli) if (obj == 1)
+_________. ____________________________ 
+%zobj(robj, rdobj) if (pto == 1)
+	____. ________________________  
+%zpto(rpto, rdpto) if (leg == 1)
+	____. _________________________ 
+
+%zleg(nroleg, dnroleg, fsvhn, fsvh50, fsvh100, fsvtot, fsthn, fsth50, fsth100, fsth100f, fsttot, fstnpres, fdifhn, fdifh50, fdifh100, fdifh100f, fsahn, fsah50, fsah100, fsatot, fsehn, fseh50, fseh100, fsetot)
+_______. ___________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%znoprint(svhn, svh50, svh100, svtot, sthn, sth50, sth100, sth100f, sttot, stnpres, difhn, difh50, difh100, difh100f, sahn, sah50, sah100, satot, sehn, seh50, seh100, setot) no print
+                             _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotpto(rpto, rdpto, sum(svhn), sum(svh50), sum(svh100), sum(svtot), sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sttot), sum(stnpres), sum(difhn), sum(difh50), sum(difh100), sum(difh100f), sum(sahn), sum(sah50), sum(sah100), sum(satot), sum(sehn), sum(seh50), sum(seh100), sum(setot)) //after (rcli, robj, rpto), if (pri != 1 and pto == 1)
+
+TOTAL ____. ________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotobj(robj, rdobj, sum(svhn), sum(svh50), sum(svh100), sum(svtot), sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sttot), sum(stnpres), sum(difhn), sum(difh50), sum(difh100), sum(difh100f), sum(sahn), sum(sah50), sum(sah100), sum(satot), sum(sehn), sum(seh50), sum(seh100), sum(setot)) //after (rcli, robj), if (pri != 1 and obj == 1)
+
+TOTAL ____. ________________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotcli(rcli,rdcli, sum(svhn), sum(svh50), sum(svh100), sum(svtot), sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sttot), sum(stnpres), sum(difhn), sum(difh50), sum(difh100), sum(difh100f), sum(sahn), sum(sah50), sum(sah100), sum(satot), sum(sehn), sum(seh50), sum(seh100), sum(setot)) //after (rcli), if (pri != 1 )
+
+TOTAL _________. ___________ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%ztotgen(sum(svhn), sum(svh50), sum(svh100), sum(svtot), sum(sthn), sum(sth50), sum(sth100), sum(sth100f), sum(sttot), sum(stnpres), sum(difhn), sum(difh50), sum(difh100), sum(difh100f), sum(sahn), sum(sah50), sum(sah100), sum(satot), sum(sehn), sum(seh50), sum(seh100), sum(setot)) after (report)
+
+TOTAL GENERAL                _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ _____.__ 
+%report                 
+use operac;
+language"C";
+output to terminal;
+flength=43;
+width=247;
+topmarg = 0;

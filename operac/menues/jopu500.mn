@@ -1,0 +1,6 @@
+#"1. Generación del Parte Diario    " WCMD genparte.exe 1
+#"2. Confirmación del Parte Diario  " WCMD confpar.exe
+#"3. Carga del Parte Diario por Día " WCMD partep.exe 
+"3. Listado de Presentismo         " WCMD lpresen.exe
+"4. Listados y Consultas           " MENU jopu510 
+"5. Auditoria Control de Horas     " MENU jopu520

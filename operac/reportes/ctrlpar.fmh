@@ -1,0 +1,26 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define AGRCLI          (fmfield)  2	/* GROUPED         */
+# define CLIED           (fmfield)  3	/* Long            */
+# define DCLIED          (fmfield)  4	/* String          */
+# define CLIEH           (fmfield)  5	/* Long            */
+# define DCLIEH          (fmfield)  6	/* String          */
+# define AGROBJ          (fmfield)  7	/* GROUPED         */
+# define OBJETD          (fmfield)  8	/* Integer         */
+# define DOBJD           (fmfield)  9	/* String          */
+# define OBJETH          (fmfield) 10	/* Integer         */
+# define DOBJH           (fmfield) 11	/* String          */
+# define AGRUP           (fmfield) 12	/* GROUPED         */
+# define FDESDE          (fmfield) 13	/* Date            */
+# define FHASTA          (fmfield) 14	/* Date            */
+# define VERHS           (fmfield) 15	/* Integer         */
+# define SALIDA          (fmfield) 16	/* String          */
+# define DSALIDA         (fmfield) 17	/* String          */
+# define NOMARCH         (fmfield) 18	/* String          */
+# define COMENT          (fmfield) 19	/* String          */
+/* Form checksum	*/
+# define FM_CTRLPAR_CHKSUM (long)0x050e
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+prgxobj.exe {
+	prgxobj.fm;
+    prgxobj.c	: prgxobj.fmh comerc.sch;
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+	$COMERC/lib/comerc.a;
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

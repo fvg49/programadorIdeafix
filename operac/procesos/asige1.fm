@@ -1,0 +1,187 @@
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡ª
+ Fec.Asig      Puesto     Regimen  D    Rol    Horas Frecu       Días       Fra Fec.Fnco  DF H.Ent. H.Sal.  PT  
+                                               PTime                                                            
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¥
+ __/__/__ {{{____. ____.} ________ _ __. _. _. ____. _ ___ {_-_-_-_-_-_-_}} __? __/__/__ __. {__:__ __:__}} _ _ 
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¤
+%form(i_efect, i_existe, i_vigilad, i_fecini1, i_fecfin1, i_chgefec)
+language "c";
+use operac;
+window label "Horarios", border single;
+ignore delete, end, update;
+messages
+		FECHA	: "La Fecha del Franco debe ser mayor o igual\n a la Fecha de Asignación %.1D",
+		ERHOR	: "El Rango de horas debe estar entre %.1T y %.1T",
+		NOTRABPUE : "El día seleccionado no se trabaja en el puesto.",
+		OBLIG	: "El dato es obligatorio.",
+		MODIFIC : "Se ha modificado solamente la fecha de asignación, este no es un cambio válido.",
+		PARTE   : "El empleado tiene parte generado y cargado. Imposible modificarlo.",
+		CHGEFEC : "No es una fecha válida para la reasignación del efectivo, ya que existen partes \ncargados con fechas posteriores.",
+		FECING  : "La Fecha de Asignación debe ser mayor o igual a la Fecha de Ingreso: %.1D";
+%fields
+i_efect		: internal char(1);
+i_existe	: internal bool;
+i_vigilad	: internal char(1);
+i_fecini1   : internal date;
+i_fecfin1	: internal date;
+i_chgefec	: internal bool;
+
+i_exispar	: internal bool, default false;
+i_nodesconto: internal bool, default true;
+i_cantasig  : internal num(2), default 0;
+
+fecha		: asig.fecasig, not null,   
+				manual subform(asige3(fecha, i_finicio, i_ffinal, i_exispar, i_efect, i_existe, 
+				i_vigilad, i_fechas)),
+				has after, display only when i_efect == "P" and i_existe == true;
+i_fechas	: internal date;
+agrtot		: has after, skip when i_efect = "P" and i_existe == true;
+agrasig		: has after;
+agrpuesto	: has after;
+tippto		: asig.ptoser, on help manual, not null;
+
+codint		: asig.puesto, on help manual, not null,
+//				in puestos(i_clieot,i_objet,tippto):(puesto,hinicio,hfinal,dia1,dia2,dia3,dia4,dia5,dia6,dia7,regim),
+				has after;
+i_nroint	: internal num(4);
+i_vigi		: internal operac.puestos.vigi,    operac.puestos.vigi;
+i_cantvig	: internal operac.puestos.cantvig, operac.puestos.cantvig;
+i_categ		: internal operac.puestos.puesto,  operac.puestos.puesto;
+i_horent	: internal operac.puestos.hinicio, operac.puestos.hinicio;
+i_horsal	: internal operac.puestos.hfinal,  operac.puestos.hfinal;
+i_dia1		: internal operac.puestos.dia1,    operac.puestos.dia1;
+i_dia2		: internal operac.puestos.dia2,    operac.puestos.dia2;
+i_dia3		: internal operac.puestos.dia3,    operac.puestos.dia3;
+i_dia4		: internal operac.puestos.dia4,    operac.puestos.dia4;
+i_dia5		: internal operac.puestos.dia5,    operac.puestos.dia5;
+i_dia6		: internal operac.puestos.dia6,    operac.puestos.dia6;
+i_dia7		: internal operac.puestos.dia7,    operac.puestos.dia7;
+
+i_finicio	: internal operac.puestos.finicio, operac.puestos.finicio;
+i_ffinal	: internal operac.puestos.ffinal,  operac.puestos.ffinal;
+
+i_horapt	: internal operac.puestos.horapt,  operac.puestos.horapt;
+i_codfrec	: internal operac.puestos.codfrec, operac.puestos.codfrec;
+
+i_modif		: internal bool, default false; // marca para saber si modifico algun campo para borrar los
+											// partes y mandar al ASIGH en caso de que sea el periodo
+											// de asignacion.
+i_fchdes    : internal date; // valor de la fecha desde de asignacion en caso de modificacion.
+i_fchhas    : internal date; // valor de la fecha hasta (provisorios) para modificacion y borrado de partes.
+
+regim		: has before, skip when i_efect == "P" ;
+tipodia     : asig., skip;
+
+codrol      : asig., in rol:descrip;
+fila        : asig., on help manual,is (codrol == null) ? null , not null;
+colum       : asig., in rrol(codrol, fila): (valor),is (codrol == null) ? null ,not null;
+
+horapt		: is i_horapt;
+codfrec		: is i_codfrec;
+dcodfrec	: skip;
+
+agrupd		: not null;
+
+dia1		: asig., mask ">a", is i_vigilad == "P" and horapt != null ? i_dia1 : void,
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check (dia1 == i_dia1 or dia1 == i_dia2 or dia1 == i_dia3 or dia1 == i_dia4 or
+			  		 dia1 == i_dia5 or dia1 == i_dia6 or dia1 == i_dia7); 
+dia2		: asig., mask ">a", skip when i_vigilad == "P" and horapt != null,
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check ((dia2 == i_dia1 or dia2 == i_dia2 or dia2 == i_dia3 or dia2 == i_dia4 or
+			  		  dia2 == i_dia5 or dia2 == i_dia6 or dia2 == i_dia7) and
+			  		  dia2 != dia1);
+dia3		: asig., mask ">a", skip when i_vigilad == "P" and horapt != null, 
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check ((dia3 == i_dia1 or dia3 == i_dia2 or dia3 == i_dia3 or dia3 == i_dia4 or
+			  		  dia3 == i_dia5 or dia3 == i_dia6 or dia3 == i_dia7) and
+			  		  dia3 != dia2 and dia3 != dia1);
+dia4		: asig., mask ">a", skip when i_vigilad == "P" and horapt != null, 
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check ((dia4 == i_dia1 or dia4 == i_dia2 or dia4 == i_dia3 or dia4 == i_dia4 or
+			  		  dia4 == i_dia5 or dia4 == i_dia6 or dia4 == i_dia7) and 
+			  		  dia4 != dia3 and dia4 != dia2 and dia4 != dia1);
+dia5		: asig., mask ">a", skip when i_vigilad == "P" and horapt != null, 
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check ((dia5 == i_dia1 or dia5 == i_dia2 or dia5 == i_dia3 or dia5 == i_dia4 or
+			  		  dia5 == i_dia5 or dia5 == i_dia6 or dia5 == i_dia7) and
+			  		  dia5 != dia4 and dia5 != dia3 and dia5 != dia2 and dia5 != dia1);
+dia6		: asig., mask ">a", skip when i_vigilad == "P" and horapt != null, 
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check ((dia6 == i_dia1 or dia6 == i_dia2 or dia6 == i_dia3 or dia6 == i_dia4 or
+			   		  dia6 == i_dia5 or dia6 == i_dia6 or dia6 == i_dia7) and
+			  		  dia6 != dia5 and dia6 != dia4 and dia6 != dia3 and dia6 != dia2 and dia6 != dia1);
+dia7		: asig., mask ">a", skip when i_vigilad == "P" and horapt != null,
+								in ("L":"Lunes",
+									"M":"Martes",
+									"X":"Miércoles",
+									"J":"Jueves",
+								 	"V":"Viernes",
+									"S":"Sábado",
+									"D":"Domingo",
+									"P":"Part Time"),
+			  check ((dia7 == i_dia1 or dia7 == i_dia2 or dia7 == i_dia3 or dia7 == i_dia4 or
+			  		  dia7 == i_dia5 or dia7 == i_dia6 or dia7 == i_dia7) and
+			  		  dia7 != dia6 and dia7 != dia5 and dia7 != dia4 and dia7 != dia3 and
+			  		  dia7 != dia2 and dia7 != dia1);
+francero	: asig.francero, skip when (regim != "4x2x12" and regim != "4x3x12" and regim != "4x1x8")  or i_efect == "P" or codrol!=null;
+fecfra		: asig.ffranco, 
+				is (i_efect == "P" ? fecfra : ((i_vigilad == "P") ? null : void)), 
+				not null,
+				has after;
+numfran     : asig.numfran, skip when i_efect == "P" or i_vigilad == "P" or codrol != null;
+agrhoras	: has after;
+horent		: asig.hsent, default i_horent, is i_vigilad == "P" and horapt != null
+																	 ? i_horent : void, !="23:59";
+
+horsal		: asig.hssal, default i_horsal, is i_vigilad == "P" and horapt != null 
+																	 ? i_horsal : void; //, !="00:00";
+
+subfptime	: display only, is ((i_vigilad != "P") ? null : void),	has after,
+			  manual subform(asige5(fecha, i_fechas, horapt));
+
+motivo1      : skip when i_modif == false or i_existe == false,
+			 manual  subform(asige6(i_fecini1, i_fecfin1));
+

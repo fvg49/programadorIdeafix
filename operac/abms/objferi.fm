@@ -1,0 +1,35 @@
+
+      Empresa :     __.  _____________________________
+      Cliente : __,___.| _____________________________
+
+ ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+            O b j e t i v o s           Considera Feriados 
+                                        en Calculo de Hs.? 
+ §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+ [ __. ________________________________         _?        ]
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+                                                           
+ ¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form                                   
+use comerc, bill, sue;                
+language "C";
+window label "[Objetivo/Feriados para Calculo de Hs]", border single;
+confirm add, update, ignore, end, delete;
+ignore prev, next;
+
+%fields
+emp     : in sue.emps:descrip, not null, default $emp;
+demp    : sue.emps.descrip, skip;
+clie    : in bill.cliente:(razsoc), not null;
+dclie   : bill.cliente.razsoc, skip;
+multis  : rows 100, display 10;
+objet   : in comerc.objetivo by est(emp, 1, clie):descrip, not null, unique;
+dobjet  : objetivo.descrip, skip;
+consfer : objetivo.;

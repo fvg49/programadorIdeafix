@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+vigibaj.exe {
+	vigibaj.fm;
+    vigibaj.rp;
+    vigibaj.c : vigibaj.fmh vigibaj.rph operac.sch;
+}

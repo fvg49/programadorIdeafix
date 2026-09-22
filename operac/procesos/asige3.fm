@@ -1,0 +1,22 @@
+                                 
+			 Fecha Hasta : __/__/____				
+
+%form(in i_fecdesde, in i_ffinicio, in i_fffinal, in i_exispar1, in i_efect2, in i_existe2, in i_vigi2, out fechas)
+use operac;
+language "c";
+window label "Vigilador Provisorio", border single;
+ignore end, ignore;
+%fields
+i_fecdesde	: internal date;
+i_ffinicio	: internal date;
+i_fffinal	: internal date;                      
+
+i_exispar1  : internal bool;
+i_efect2 	: internal bool;
+i_existe2	: internal bool;
+i_vigi2		: internal char(1);
+
+fechas		: asig.,        
+				is ( i_vigi2 != "P" and (i_exispar1 == true or (i_efect2 == "P" and i_existe2 == true) ) ? fechas : void),
+				not null,
+				has after;

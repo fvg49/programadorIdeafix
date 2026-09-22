@@ -1,0 +1,29 @@
+/* Field names	*/
+# define I_FECASIG       (fmfield)  0	/* Date            */
+# define I_FECHAH        (fmfield)  1	/* Date            */
+# define CANTH           (fmfield)  2	/* Long            */
+# define I_CANTMULT      (fmfield)  3	/* Integer         */
+# define I_HORENT1       (fmfield)  4	/* Time            */
+# define I_HORSAL1       (fmfield)  5	/* Time            */
+# define I_RANGO         (fmfield)  6	/* String          */
+# define I_FECHA         (fmfield)  7	/* String          */
+# define I_MENSAJE       (fmfield)  8	/* String          */
+# define MULTDIAS        (fmfield)  9	/* MULTIPLE        */
+# define AGRDIAS         (fmfield) 10	/* GROUPED         */
+# define DIA             (fmfield) 11	/* Date            */
+# define I_DIASTR        (fmfield) 12	/* String          */
+# define I_ERRHOR        (fmfield) 13	/* String          */
+# define AGRHS           (fmfield) 14	/* GROUPED         */
+# define HENT            (fmfield) 15	/* Time            */
+# define HSAL            (fmfield) 16	/* Time            */
+# define HSXDIA          (fmfield) 17	/* Integer         */
+# define CANTHS          (fmfield) 18	/* Long            */
+/* Form checksum	*/
+# define FM_ASIGE5_CHKSUM (long)0x082d
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_FECPT            0
+# define M_ERRHORAS         1
+# define M_FALTANH          2
+# define M_FRECUEN          3
+/* =========== End of fmh file ============ */

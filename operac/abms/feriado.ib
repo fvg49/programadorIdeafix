@@ -1,0 +1,7 @@
+project $NOVIA/reglas.ib;
+
+feriado.exe {
+	feriado.fm;	
+	feriado.c;
+} 
+

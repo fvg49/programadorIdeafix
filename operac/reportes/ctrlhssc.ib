@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+ctrlhssc.exe {
+	ctrlhssc.fm;
+	ctrlhssc.c : ctrlhssc.fmh operac.sch comerc.sch;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+	$DENARIUSLIB.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+}

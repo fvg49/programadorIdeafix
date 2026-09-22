@@ -1,0 +1,51 @@
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+  Empresa  :   __. ______________________________________                         
+  Cliente  :_____. __________________________________________                     
+  Objetivo : ____. __________________________________________                     
+  Fecha    : __/__/____  |                                                        
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡©¡¡¡¡¡¡ª
+  Legajo       Apellido y Nombre        Telef   CLU Port.   Alta   Cliente Objet. 
+                                                          Policial Asigna. Asig.  
+§¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¦¡¡¡¡¡¡¥
+[_______. ___________________________ _________ __?  __?  _ _ _ _  ______. ____. ]
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡£¡¡¡¡¡¡¤
+                                Imprime : ___?
+
+                 ___________________________________________________
+%form
+use operac, comerc, sue, brigada, bill, billpro;
+language "C";
+window label "Consulta de Asignación de Retenes", border single;
+confirm add, update, end;
+ignore delete;
+
+%fields
+emp      : in sue.emps:(descrip), default $emp, not null;
+demp     : sue.emps.descrip, skip;
+clie     : on help manual, not null, default 3000;
+dclie    : skip;
+objet    : on help manual, not null, default 1;
+dobj     : skip;
+fecha    : default today, not null;
+
+clientes : rows 140, display 7, ignore delete;
+nroleg   : skip;
+nombre   : skip;
+telef    : skip;
+clu      : brigada.cvigipol.clu, skip;
+portac   : brigada.cvigipol.portacion, skip;
+altapol1 : billpro.provxdiv.codprov, skip;
+altapol2 : billpro.provxdiv.codprov, skip;
+altapol3 : billpro.provxdiv.codprov, skip;
+altapol4 : billpro.provxdiv.codprov, skip;
+cliasig  : asig.cliente;
+objasig  : asig.objetivo;
+imprime  : not null, default false;
+coment   : skip;

@@ -1,0 +1,19 @@
+/* Field names	*/
+# define EMPRE           (fmfield)  0	/* Integer         */
+# define EMPDESCR        (fmfield)  1	/* String          */
+# define AGRUP1          (fmfield)  2	/* GROUPED         */
+# define CODD            (fmfield)  3	/* Integer         */
+# define DESC1           (fmfield)  4	/* String          */
+# define CODH            (fmfield)  5	/* Integer         */
+# define DESC2           (fmfield)  6	/* String          */
+# define AGRUP2          (fmfield)  7	/* GROUPED         */
+# define FECHAD          (fmfield)  8	/* Date            */
+# define FECHAH          (fmfield)  9	/* Date            */
+# define SALIDA          (fmfield) 10	/* String          */
+# define DSALIDA         (fmfield) 11	/* String          */
+# define NOM_ARCHI       (fmfield) 12	/* String          */
+/* Form checksum	*/
+# define FM_ASIST215_CHKSUM (long)0x0217
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

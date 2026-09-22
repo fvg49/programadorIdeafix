@@ -1,0 +1,10 @@
+"1. Consulta de Vigiladores                         " WCMD lvigil.exe
+#"2. Asig. de Vigiladores por Vigilador             " WCMD asigl.exe
+#"2. Asignación de Vigiladores                       " WCMD asigd.exe
+#"3. Asig. de Vigiladores con Parámetros de busqueda " WCMD asigv.exe
+#"3. Generación de Dias Part-Time    			    " WCMD genptime.exe
+#"4. Carga de Vacaciones                             " WCMD vacac.exe
+#"5. Desasignación de Vigiladores Provisorios       " WCMD dasiprov.exe
+"2. Listados y Consultas                            " MENU ope410
+"3. Listados de Ausentismos                         " MENU opu600
+"¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡"	SHELL .

@@ -1,0 +1,18 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+pfacnew.exe {
+	pfacnew.hlp;
+	pfacnew.fm;
+	pfacnew.rp;
+	observa.c;
+    pfacnew.c : pfacnew.fmh pfacnew.rph operac.sch;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;		
+ 	$BILLPRO/lib/billpro.a;
+  	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+
+}

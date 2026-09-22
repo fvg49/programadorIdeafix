@@ -1,0 +1,36 @@
+/* Field names	*/
+# define EMP             (fmfield)  0	/* Integer         */
+# define DEMP            (fmfield)  1	/* String          */
+# define DELEG           (fmfield)  2	/* String          */
+# define DDELEG          (fmfield)  3	/* String          */
+# define FDELEGA         (fmfield)  4	/* String          */
+# define DDELEGA         (fmfield)  5	/* String          */
+# define FFILIAL         (fmfield)  6	/* String          */
+# define DESCRIP         (fmfield)  7	/* String          */
+# define OPCION          (fmfield)  8	/* String          */
+# define DOPCION         (fmfield)  9	/* String          */
+# define AGRSUP          (fmfield) 10	/* GROUPED         */
+# define SUPERD          (fmfield) 11	/* Long            */
+# define APYNOMD         (fmfield) 12	/* String          */
+# define SUPERH          (fmfield) 13	/* Long            */
+# define APYNOMH         (fmfield) 14	/* String          */
+# define AGRCLIE         (fmfield) 15	/* GROUPED         */
+# define CLID            (fmfield) 16	/* Long            */
+# define DCLID           (fmfield) 17	/* String          */
+# define CLIH            (fmfield) 18	/* Long            */
+# define DCLIH           (fmfield) 19	/* String          */
+# define AGROBJE         (fmfield) 20	/* GROUPED         */
+# define OBJD            (fmfield) 21	/* Integer         */
+# define DOBJD           (fmfield) 22	/* String          */
+# define OBJH            (fmfield) 23	/* Integer         */
+# define DOBJH           (fmfield) 24	/* String          */
+# define SALIDA          (fmfield) 25	/* String          */
+# define DESC5           (fmfield) 26	/* String          */
+# define ARCHIVO         (fmfield) 27	/* String          */
+# define COMENT          (fmfield) 28	/* String          */
+/* Form checksum	*/
+# define FM_LVIGXPTO_CHKSUM (long)0x0570
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ERR_CLIE         0
+/* =========== End of fmh file ============ */

@@ -1,0 +1,9 @@
+/* Field names	*/
+# define MULTICONT       (fmfield)  0	/* MULTIPLE        */
+# define NROCONT         (fmfield)  1	/* Long            */
+# define DIREC           (fmfield)  2	/* String          */
+/* Form checksum	*/
+# define FM_SUBCONT_CHKSUM (long)0x0018
+/* Subform names	*/
+/* Symbol names for messages */
+/* =========== End of fmh file ============ */

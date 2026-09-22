@@ -1,0 +1,56 @@
+
+  Empresa         :       __. ____________________________________
+
+  Vigilador Desde :{________. _________________________________________
+            Hasta : ________.}_________________________________________
+
+  Período Desde   :{__/__/____
+          Hasta   : __/__/____}
+
+  Salida a : _ ______________
+  
+  _____________________ _
+  
+  _____________________  ______________
+
+%form
+use operac, comerc, sue, bill;
+language "C";
+window label "[Listado de Horas por Vigilador]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s",
+		ERR_CLIE : "El Cliente Desde debe ser menor o igual al Cliente Hasta";
+
+
+%fields
+emp     : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+
+agrupv  : check vigild <= vigilh;
+vigild  : on help in sue.per(emp):apynom, is 1 when salida="P", default 1, not null;
+dvigild : sue.per.apynom, skip;
+vigilh  : on help in sue.per(emp):apynom descending, is 999999 when salida="P", default 999999, not null;
+dvigilh : sue.per.apynom, skip;
+
+agrupf  : check fechad <= fechah;
+fechad  : skip when salida="P", not null, default today -15;
+fechah  : not null, default today;
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo",
+              "P": "Pase"),
+            not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+
+dliqui : is (salida != "P") ? null : "Liquidación : ";
+liqui  : is (salida != "P") ? null : void,  manual subform contden1(emp);
+
+dnomarch: is (salida != "A") ? null : "Nombre del archivo:";
+nomarch : is (salida != "A") ? null : void, default "ausent.txt", not null;
+
+
+

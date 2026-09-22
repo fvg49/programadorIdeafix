@@ -1,0 +1,41 @@
+ 
+ Empresa       :   __. ______________________________________________
+
+ Cliente Desde :_____. ______________________________________________
+         Hasta :_____. ______________________________________________
+
+ Objetivo Desde:   __. ______________________________________________
+          Hasta:   __. ______________________________________________
+
+ Fecha         : __/__/__
+
+ Ejecuta       : __?
+ 
+ Archivo de 
+ Salida        : _____________ .txt
+
+%form()
+use operac, bill, comerc, sue;
+language "C";
+window label "[Arregla, diasptime]", border single;
+confirm add, update, end, ignore;
+ignore delete;
+display status;
+
+%fields
+emp       : asig., in sue.emps:(descrip), default $Nroempresa;
+empdesc   : sue.emps.descrip, skip;
+
+clides    : in bill.cliente:(razsoc), has after;
+dclides   : bill.cliente.razsoc, skip;
+clihas    : in bill.cliente:(razsoc), has after, >= clides, default clides;
+dclihas   : bill.cliente.razsoc, skip;
+
+objdes     : on help in comerc.objetivo by emp(emp,clides):descrip, skip when clides=null;
+dobjdes    : comerc.objetivo.descrip, skip;
+objhas     : on help in comerc.objetivo by emp(emp,clihas):descrip, >=objdes, skip when clides=null, default objdes;
+dobjhas    : comerc.objetivo.descrip, skip;
+
+fecbaja    : default today; 
+ejecuta    : on help in(true, false), default false;
+salida     : default "ardptime", not null;

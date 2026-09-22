@@ -1,0 +1,39 @@
+%titulo (pageno, rempre, today, hour, module) before (page, report)
+[16c[8i
+                                                           Página :        _.
+___________________________________                        Fecha  : __/__/___
+                                                           Hora   :     __:__
+                                                                    (________)
+
+								Listado de Inasistencias
+
+%leg(rnroleg, rapynom) before (rnroleg)
+                                                                              
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                                                                            
+  Legajo : _______.#  Apellido y Nombre: __________________________________ 
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¥
+    Fecha        Tipo.Aus.    Descripción de Ausencia     Valor    Justif.  
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¥
+%linea(rfecha,rcodaus,rdescraus,rtiempo, rjustif)                          
+   __/__/____     ____.     __________________________   ___.__       __    
+%finlinea  (sum (rtiempo)) group with linea , after(rnroleg)                                  
+ ¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¥
+  Total de Ausencias : _,___.__                                             
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%report                                                                        
+//$RCSfile: asist20a.rp,v $ $Revision: 1.1.1.1 $ $Date: 1999/05/13 17:26:26 $
+use asist, sue;                                                                
+language "C";                                                                  
+flength=$FLENGTH;                                                              
+width = 130;                                                                   
+                                                                               
+%fields                                                                        
+rempre    : sue.emps.descrip;
+rnroleg   : check digit "-";
+rapynom   : sue.per.apynom;
+rfecha    : ;
+rcodaus   : ;
+rdescraus : ;
+rtiempo   : ;
+rjustif   : ;

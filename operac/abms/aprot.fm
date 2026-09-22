@@ -1,0 +1,72 @@
+
+ Empresa  :    __.  ____________________________________________________
+
+ Nro. OT  : ________.
+
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡ª
+      Orden de Trabajo      ABM   Cliente/Objet Fecha    Aprueba      Tipo  de   
+                                                                      Servicio   
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¥
+[____ ___ ___ ___ ________.  _   _____. ___. __/__/__  _. _________ _ __________]
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+                                                                                 
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form                         
+use sue, comerc;
+language "C";
+window label "Aprobación de OT", border single;
+confirm add, update, ignore, end;
+ignore delete;
+
+%fields
+nroemp	: in sue.emps:descrip, not null, default $emp;
+demp	: sue.emps.descrip, skip;
+posot   : ;
+multi   : rows 2000, display 10, ignore delete;
+emp     : skip;
+tipcomp : skip;
+serie   : skip;
+deleg   : skip;
+nroot   : skip;
+abm     : skip;
+
+i_emp   : internal num(2);
+i_tipcomp: internal num(4);
+i_serie : internal num(4);
+cliente : skip;
+objet   : skip;
+fecreg  : skip;
+aprueba : in (0: "Pendiente",
+		      1: "Aprueba",
+		      2: "Rechaza") ,
+		  default 0, manual subform(motrech);
+daprueb : is descr(aprueba);
+tipser  : skip;
+dtipser : skip;
+
+
+/*
+i_ptoser: internal num(4);
+i_categ : internal num(4);
+i_horent: internal time;
+i_horsal: internal time;
+i_dia1  : internal char(1);
+i_dia2  : internal char(1);
+i_dia3  : internal char(1);
+i_dia4  : internal char(1);
+i_dia5  : internal char(1);
+i_dia6  : internal char(1);
+i_dia7  : internal char(1);
+i_regim : internal char(8);
+i_cantpue: internal num(4);
+i_cantvig: internal num(4,2);
+i_cond  : internal char(1);
+*/
+

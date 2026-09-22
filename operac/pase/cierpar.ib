@@ -1,0 +1,11 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+cierpar.exe {
+	cierpar.fm;
+	cierpar.c : cierpar.fmh;
+
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

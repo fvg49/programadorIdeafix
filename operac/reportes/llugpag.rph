@@ -1,0 +1,20 @@
+/* Field names	*/
+# define RCLID           ((rpfield)   0) 	/* Num */
+# define RNOMBRED        ((rpfield)   1) 	/* String */
+# define ROBJD           ((rpfield)   2) 	/* Num */
+# define RDOBJD          ((rpfield)   3) 	/* String */
+# define RCLIH           ((rpfield)   4) 	/* Num */
+# define RNOMBREH        ((rpfield)   5) 	/* String */
+# define ROBJH           ((rpfield)   6) 	/* Num */
+# define RDOBJH          ((rpfield)   7) 	/* String */
+# define RCLIE           ((rpfield)   8) 	/* Num */
+# define RNOMBRE         ((rpfield)   9) 	/* String */
+# define ROBJ            ((rpfield)  10) 	/* Num */
+# define RDOBJ           ((rpfield)  11) 	/* String */
+# define ROFPAG          ((rpfield)  12) 	/* Num */
+# define RDOFPAG         ((rpfield)  13) 	/* String */
+/* Report Checksum	*/
+# define RP_LLUGPAG_CHKSUM ((long) 0x00a1)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LINEA           ((int)   1)

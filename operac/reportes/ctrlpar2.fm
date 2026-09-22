@@ -1,0 +1,76 @@
+
+  Empresa         :     __. ____________________________________
+
+  Listar por      :      _. ____________________________________
+
+  Cliente  Desde  : {_________. _________________________________________
+           Hasta  :  _________.}_________________________________________
+
+  Objetivo Desde  :  {____. _________________________________________
+           Hasta  :   ____.}_________________________________________
+
+  Vigilador Desde :{______. _____________________________
+            Hasta : ______.}_____________________________
+
+  Período Desde   :{__/__/____
+          Hasta   : __/__/____}
+
+  Salida a  : _ ______________     Nombre del archivo: ______________
+
+                    _________________________________________________
+
+%form
+use operac, comerc, sue, bill, billpro;
+language "C";
+window label "[Listado de Control de Condición de Trabajo]", border single;
+confirm update, ignore, end;
+ignore add, delete;
+
+messages
+		MAL_FECHA : "La fecha ingresada es %s debe ser %s",
+		ERR_CLIE  : "El Cliente Desde debe ser menor o igual al Cliente Hasta";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+listapor: in   (1 : "Cliente/Objetivo",
+				2 : "Vigilador"),
+			not null,
+			has after;
+dlispor	: is descr(listapor);
+
+
+agrclie : check (clied <= clieh), on error ERR_CLIE;
+clied   : on help manual, default 1, not null, is (listapor == 1) ? void : null;
+dclid   : skip;
+clieh   : on help manual, default 999999999, not null, is (listapor == 1) ? void : null;
+dclih   : skip;
+
+agrobje : ;
+objetd  : on help manual, default 1, not null,
+			is (listapor == 1) ? void : null;
+dobjd   : skip;
+objeth  : on help manual, default 9999, not null,
+			is (listapor == 1) ? void : null;
+dobjh   : skip;
+
+agrupv  : check vigild <= vigilh;
+vigild  : on help manual, has after,is (listapor == 2) ? void : null, default 0;
+dvigild : sue.per.apynom, skip;
+vigilh  : on help manual, has after, is (listapor == 2) ? void : null,default 99999;
+dvigilh : sue.per.apynom, skip;
+
+agrupf  : check fdesde <= fhasta;
+fdesde  : default today;
+fhasta  : default today;
+
+salida  : in ("I": "Impresora",
+              "T": "Terminal",
+              "A": "Archivo"),
+            not null, default "I", mask ">A", autoenter;
+saldescr: is descr(salida);
+nomarch : is (salida != "A") ? null : void, default "ctrlpar2.txt", not null;
+
+coment  : skip;
+

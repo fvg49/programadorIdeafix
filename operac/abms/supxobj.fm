@@ -1,0 +1,36 @@
+	Empresa	   :        __.  ______________________________________
+    Supervisor : _,___,___.| ______________________________________
+    
+¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+   		      Cliente                                Objetivo                
+§¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥
+[{___,___,___. _______________________ __.} ________________________________]
+                                 	                                         
+                                 	                                         
+                                 	   	                                     
+                                 	                                         
+                                 	                                         
+                                 	                                         
+                                 	                                         
+                                 	                                         
+                                 	                                         
+¢¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%form
+use comerc,  sue, bill;
+language "C";
+window label "[Supervisores por Objetivos]", border single;
+confirm add, update, ignore, end;
+ignore delete, next, prev;
+
+%fields
+emp		: in sue.emps:descrip, default 1, not null;
+demp	: sue.emps.descrip, skip;
+superv	: objetivo.svisor, in sue.per(emp):(nroleg,apynom);
+dsuperv	: sue.per.apynom, skip;
+
+multis	: rows 500, display 10;
+agrup	: unique;	
+clie	: in bill.cliente:(razsoc), not null;
+dclie	: bill.cliente.razsoc, skip;
+objet	: in comerc.objetivo by est(emp, 1, clie):descrip, not null;
+dobjet	: objetivo.descrip, skip;

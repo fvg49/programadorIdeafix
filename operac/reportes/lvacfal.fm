@@ -1,0 +1,40 @@
+
+ Empresa : __. ______________________________________
+
+ Vigilador Desde :{______. ______________________________
+           Hasta : ______.}______________________________
+
+ Periodo : _,___.
+
+ Salida  :     _ _________  ____________________
+
+
+	__________________________________________________
+
+%form
+use sue;
+language "c";
+window label "[Listado de Periodos de Vacaciones Faltantes]", border single;
+ignore add, delete, prev, next, ignore;
+confirm update;
+
+%fields
+emp     : in sue.emps:descrip, default $emp;
+demp    : sue.emps.descrip, skip;
+
+agrleg  : ;
+nrolegd : on help in per(emp):apynom, not null, default 1;
+apynomd : per.apynom, skip;
+nrolegh : on help in per(emp):apynom descending, check after agrleg, not null, default 999999; 
+apynomh : per.apynom, skip;
+
+periodo : > 1998;
+
+salida  : in ("T":"Terminal",
+              "I":"Impresora",
+              "A":"Archivo"),
+          default "T", mask ">A", not null;
+dsalida : is descr(salida);
+nomarch : is (salida == "A") ? void : null, not null;
+mensaje: skip;
+

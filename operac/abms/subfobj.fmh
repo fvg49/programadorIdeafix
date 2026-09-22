@@ -1,0 +1,15 @@
+/* Field names	*/
+# define I_CLIE          (fmfield)  0	/* Long            */
+# define MULTOBJ         (fmfield)  1	/* MULTIPLE        */
+# define OBJET           (fmfield)  2	/* Integer         */
+# define I_INTERN        (fmfield)  3	/* Long            */
+# define DESCOBJ         (fmfield)  4	/* String          */
+# define ESTAD           (fmfield)  5	/* String          */
+# define DESTAD          (fmfield)  6	/* String          */
+/* Form checksum	*/
+# define FM_SUBFOBJ_CHKSUM (long)0x0056
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_ESTADO           0
+# define M_OBJET            1
+/* =========== End of fmh file ============ */

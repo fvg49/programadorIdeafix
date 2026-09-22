@@ -1,0 +1,85 @@
+  Empresa                  : __. ______________________________________________
+
+  Delegación Comercial  : _____  _________________________________
+  Delegación Operacional: _____  _________________________________   
+  Filial Operativa      : ______ _________________________________ 
+
+  Opción                   :  _  __________________
+  __________________ Desde :{___,___. _________________________________________
+                     Hasta : ___,___. _________________________________________}
+
+  Cliente      Desde : {___,___,___. __________________________________________
+               Hasta :  ___,___,___. __________________________________________}
+  Objetivo     Desde :  {_,___. _______________________________________________
+               Hasta :   _,___. _______________________________________________}
+
+  Considera Fecha de Inicio de la OT : __?  ______________ __/__/____ 
+  Considera Objetivos Contratados    : __? 
+  Solo Ot Aprobadas                  : __?
+
+  Salida por     : _ _________________ ___________________ ____________
+                            _______________________________________________
+%form
+use comerc, sue, bill, billpro;
+language "c";
+window label "[Cantidad de Vigiladores Vendidos]", border single;
+display status;
+confirm update, end;
+ignore delete, add, next, prev;
+messages
+		ERR_CLIE : "El Cliente Desde debe ser menor o igual al Cliente Hasta";
+
+%fields
+emp     : in sue.emps:(descrip), default $emp, not null;
+demp    : sue.emps.descrip, skip;
+
+deleg   : in billpro.delega : descrip, mask "5>a";
+ddeleg  : billpro.delega.descrip, skip;
+fdelega : in billpro.delega: descrip, mask "5>a";
+ddelega : billpro.delega.descrip, skip;
+ffilial : on help manual;
+descrip : comerc.filial.descrip, skip;
+
+opcion  : in ("C":"Cliente/Objetivo", "P":"Presentismo", "R":"Programador"), not null, default "C", mask "1>A";
+dopcion : is descr(opcion);
+dopcion1: is descr(opcion);
+
+agrsup  : check (presd <= presh), skip when opcion == "C";
+presd   : in sue.per(emp):apynom, is (opcion != "C") ? void : null, not null;
+apynomd : sue.per.apynom, skip;
+presh   : in sue.per(emp):apynom descending, is (opcion != "C") ? void : null, not null;
+apynomh : sue.per.apynom, skip;
+
+agrup   : check (clid <= clih), skip when opcion != "C", on error ERR_CLIE;
+clid    : on help manual, default 1, not null,
+          is (opcion == "C") ? void : null;
+dclid   : skip;
+clih    : on help manual, default 999999999, not null,
+          is (opcion == "C") ? void : null;
+dclih   : bill.cliente.razsoc, skip;
+
+agrupo  : skip when opcion != "C";
+objd    : on help manual, default 1, not null,
+          is (opcion == "C") ? void : null;
+dobjd   : skip;
+objh    : on help manual, default 9999, not null,
+          is (opcion == "C") ? void : null;
+dobjh   : skip;
+
+fecini  : not null, default false;
+dfecha  : is (fecini = false ? null:"Fecha Inicio :");
+fecha   : default today , is (fecini = false ? null:void), not null;
+
+objcont : not null, default false;
+otaprob : not null, default false;
+
+salida  : in ("A": "Archivo",
+              "T":"Terminal",
+              "I":"Impresora",
+              "R":"Assist",
+              "D":"Datawarehouse"), default "I", mask ">A", autoenter; 
+dsalida : is descr(salida);
+nomarch : is (salida="A" or salida="R")? "Nombre del Archivo:" : null, not null;
+archivo : is (salida="A" or salida="R")? void :  null, not null;
+
+comentario: skip;

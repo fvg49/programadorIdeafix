@@ -1,0 +1,9 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+dupues.exe {
+//	dupues.hlp;
+	dupues.fm;
+	dupues.c;
+}

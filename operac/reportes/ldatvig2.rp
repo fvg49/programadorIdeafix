@@ -1,0 +1,20 @@
+%head(today) before (report)
+
+Datos de Vigiladores Fecha  : __/__/____                                                                                    (ldatvig)
+
+%encab(r_cli, r_dcli, r_presen, r_dpresen, r_obj, r_dobj, r_program, r_dprogram)
+
+
+Cliente     : _________.  _________________________________________
+Presentismo : _,___,___. _________________________________________
+Objetivo    :      ____.  _________________________________________
+Programador : _,___,___. _________________________________________
+Legajo\	Apellido y Nombre\	Tipo Doc\	Documento\	Fec.Nac.\	Domicilio\	Localidad\	Provincia\	Telefono\	Franquero\	Regimen\	H. Entrada\	H. Salida\	Alta Policial\	Inscripto en Portacion\	Fecha Venc\	Inscripto en CLU\	Fecha Venc
+%linvig(rlegajo, rapenom,          rtipdoc, rnrodoc, rfecnac,   rcalle,                         rlocal,                      rprovi,       rtel, rfr, rregim, rhent, rhsal, raltap1, raltap2, raltap3, raltap4, rport, rfvenport, rclu, rfvenclu)
+_______.\	________________________\	____\	___,___,___.\	__/__/____\	________________________________\	____________________\	_____________\	______________\	_\	________\	__:__\	__:__\	_ _ _ _\	__?\	__/__/____\	__?\	__/__/____
+%report
+language"C";
+topmarg = 0;
+flength= 0;
+width=200;
+output to terminal;

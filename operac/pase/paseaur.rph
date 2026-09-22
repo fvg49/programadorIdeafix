@@ -1,0 +1,8 @@
+/* Field names	*/
+# define EMPRE           ((rpfield)   0) 	/* String */
+# define DESCRIP         ((rpfield)   1) 	/* String */
+/* Report Checksum	*/
+# define RP_PASEAUR_CHKSUM ((long) 0x0006)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define LINEA           ((int)   1)

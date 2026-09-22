@@ -1,0 +1,20 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+pervig.exe {
+
+	pervig.fm;
+	pervig1.fm;
+   	pervig.c;
+   	pervig.hlp;
+	$OPERAC/lib/operac.a;
+	$OPERAC/lib/exceplib.a;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$DENARIUSLIB.a;
+	$DENCOMUNLIB.a;
+ 	$BILL/lib/bill.a;
+  	$IGRALLIB.a;
+
+}

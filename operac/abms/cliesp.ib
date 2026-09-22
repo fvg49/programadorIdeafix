@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+cliesp.exe {
+	cliesp.hlp;
+	cliesp.fm;
+	cliesp.c;
+
+	$COMERC/lib/comerc.a;		
+	$OPERAC/lib/operac.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+}

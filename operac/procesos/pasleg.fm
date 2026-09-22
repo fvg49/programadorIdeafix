@@ -1,0 +1,16 @@
+
+
+
+    Nombre de Archivo: ________________________________________      
+
+
+
+%form
+use sue;
+language "C";
+window label "Pase de Legajos a Denarius", border single;
+confirm update, end;
+ignore delete;
+
+%fields
+nomarc: not null, default "legajos.txt";

@@ -1,0 +1,17 @@
+
+   Fecha Desde : __/__/____
+   Fecha Hasta : __/__/____
+ 
+
+   _____________________________________
+
+%form                                                                               
+language "c";
+window label "[Monto de Esporádicos]", border single;
+display status;
+confirm update;
+
+%fields
+fecd : not null;
+fech : not null;
+texto: skip;

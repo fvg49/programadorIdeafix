@@ -1,0 +1,37 @@
+Empresa : __. ________________________________
+Codigo  : ____. ________________________________
+Fecha consulta : __/__/____ |
+
+Renglon       Valor vigente                              Fecha       Activo
+[____.       __________________________________________________   __/__/____  _?]
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+
+%form
+use comgral, sue;
+window label "[Parametros de Novia por Empresa y Codigo]", border single;
+display status;
+confirm add, update, end, ignore;
+ignore delete;
+
+%fields
+emp       : depano., on help in sue.emps:(descrip), not null;
+demp      : sue.emps.descrip, skip;
+cod       : depano., in parnov(emp):descrip, not null;
+dcod      : parnov.descrip, skip;
+feccon    : not null;
+
+multi     : rows 500, display 10, ignore delete;
+renglon   : depano.nroren, on help manual,
+			 manual subform depanoh(emp, cod, renglon);
+valor     : depano.valor;
+fecvig    : depano.fecvig;
+activo    : depano.act;

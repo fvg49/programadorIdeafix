@@ -1,0 +1,64 @@
+
+   Empresa              : __. ___________________________________
+
+  Rangos de Impresión
+
+   Legajos       desde  :{_,___,___.# ___________________________________
+                 hasta  : _,___,___.#}___________________________________
+   Fechas        desde  : {__/__/____
+                 hasta  :  __/__/____}
+   Tipos de Ausencia   
+                 desde  : {____. _________________________
+                 hasta  :  ____.}_________________________   
+  
+  Reporte Detallado ? (S/N) : _  
+  Salida a: _ ______________________  _________________________________
+%form 
+//$RCSfile: asist201.fm,v $ $Revision: 1.1.1.1 $ $Date: 1999/05/13 17:26:26 $
+language "C";
+use sue, asist;
+confirm add, delete, update, end;
+ignore ignore;
+display status;
+window label "[ I] Partes Diarios de Inasistencias", border single;
+msgtable  DCAMPOS("DCAMPOS");
+
+%fields
+empre    : in sue.emps:descrip,
+		   is (num($Nroempresa) == 0 or num($Nroempresa) == null)     
+           ? void : (empre == null) ? 	num($Nroempresa) : empre;
+empdescr : sue.emps.descrip,
+           skip ;
+agrup1   : ;
+legd     : on help in sue.per(empre):apynom,
+           default 1, check digit "-";
+desc1    : sue.per.apynom, skip;
+legh     : on help in sue.per(empre):apynom,
+           default 9999999,
+           >= legd,
+           check after agrup1,
+		   on error (DCAMPOS ("COMPAR", "DESDE")) , check digit "-";
+desc2    : sue.per.apynom, skip;
+agrup2   : ;
+fechad   : default today;
+fechah   : default today,
+           check (fechah >= fechad and fechah <= today),
+           check after agrup2 ,
+           on error (this > today) ? DCAMPOS ("COMPAR", "FECHACT"):
+           DCAMPOS ("COMPAR", "DESDE");
+agrup3   : ;
+ausd     : on help in asist.inasist:descrinas,
+           default 1;
+desc3    : asist.inasist.descrinas, skip;
+aush     : on help in asist.inasist:descrinas,
+           default 9999,
+           >=ausd,
+           check after agrup3,
+           on error  DCAMPOS ("COMPAR", "DESDE");
+desc4    : asist.inasist.descrinas, skip;
+detallado: in ("S": "Si" , "N": "No"),
+           default "S" , mask ">A";
+salida   : mask ">A", in ("I":"Impresora","T":"Terminal","A":"Archivo"),
+			default "T";
+dsalida  : is descr(salida);
+nom_archi: is (salida == "A") ? void : null, not null;

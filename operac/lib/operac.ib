@@ -1,0 +1,6 @@
+project $NOVIA/reglas.ib;
+
+operac.a {
+	operac.c;
+}
+

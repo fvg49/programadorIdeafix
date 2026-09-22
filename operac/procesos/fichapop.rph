@@ -1,0 +1,27 @@
+/* Field names	*/
+# define R_EMPRESA       ((rpfield)   0) 	/* Num */
+# define R_CLIENTEDESDE  ((rpfield)   1) 	/* Num */
+# define R_OBJETIVODESDE ((rpfield)   2) 	/* Num */
+# define R_CLIENTEHASTA  ((rpfield)   3) 	/* Num */
+# define R_OBJETIVOHASTA ((rpfield)   4) 	/* Num */
+# define R_FECHADESDE    ((rpfield)   5) 	/* Date */
+# define R_FECHAHASTA    ((rpfield)   6) 	/* Date */
+# define R_CODIGOCENTRO  ((rpfield)   7) 	/* String */
+# define R_CODIGOCLIENTE ((rpfield)   8) 	/* Num */
+# define R_CODIGOEMPLEADO ((rpfield)   9) 	/* String */
+# define R_CODIGOGRUPOCLIENTE ((rpfield)  10) 	/* String */
+# define R_CODIGOPUNTOSERVICIO ((rpfield)  11) 	/* String */
+# define R_CODIGOSERVICIO ((rpfield)  12) 	/* String */
+# define R_DIAINICIO     ((rpfield)  13) 	/* String */
+# define R_DIAFIN        ((rpfield)  14) 	/* String */
+# define R_OPERACION     ((rpfield)  15) 	/* String */
+# define R_TIPOCUAD      ((rpfield)  16) 	/* String */
+# define R_ORIGEN        ((rpfield)  17) 	/* String */
+/* Report Checksum	*/
+# define RP_FICHAPOP_CHKSUM ((long) 0x014b)
+/* Zone names	*/
+# define TITULO          ((int)   0)
+# define ENCAB           ((int)   1)
+# define FICHAJE         ((int)   2)
+# define FICHADAS        ((int)   3)
+# define FICHADASFIN     ((int)   4)

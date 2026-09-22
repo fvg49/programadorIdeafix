@@ -1,0 +1,145 @@
+  Empresa : ____. _____________________________
+  Cliente : __,___. _____________________________  Objetivo : __. _______________________________
+  Fecha de Inicio : __/__/____ |
+¨¡±¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥ P U E S T O   O R I G I N A L §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+§¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡©¡¡¡¡¡¥
+ Modif?   Puesto  Categ   Fecha    Fecha   Hora  Hora      Días      Regimen D F Can Cant. Puesto Mimp? 
+                  Vigil  Inicio    Final  Inici Final                            Pue Pers. Padre        
+§¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¦¡¡¡¡¡¥
+ [ __?  __. ____. ____. __/__/__ __/__/__ __:__ __:__ _-_-_-_-_-_-_ ________ _ _ __. __.__  ____.  __?] 
+                                                                                                        
+                                                                                                        
+                                                                                                        
+                                                                                                        
+¢¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡£¡£¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡£¡¡¡¡¡¤
+      ¨¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¥ P U E S T O    N U E V O §¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+      §¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡©¡©¡©¡¡¡¡©¡¡¡¡¡¥
+       Motivo Puesto    Categ   Fecha    Fecha   Hora Hora       Días      Regimen D F Cant Cant. 
+              Padre     Vigil  Inicio    Final  Inici Final                            Pto. Pers. 
+      §¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¦¡¡¡¡¡¡¡¡¡¡¡¡¡¦¡¡¡¡¡¡¡¡¦¡¦¡¦¡¡¡¡¦¡¡¡¡¡¥
+      [ ____. __. ____. ____. __/__/__ __/__/__ __:__ __:__ _-_-_-_-_-_-_ ________ _ _  __. __.__]
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+      ¢¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡£¡£¡£¡¡¡¡£¡¡¡¡¡¤
+%form                         
+use  operac, bill, comerc, sue;
+language "C";
+window label "[Movimientos por Improductividad]", border single;
+confirm add, update, ignore, end;
+ignore delete;
+
+%fields
+emp	    : in sue.emps:(descrip), default $emp;
+demp    : sue.emps.descrip, skip;
+clie	: in bill.cliente:(razsoc), not null;
+dclie	: bill.cliente.razsoc, skip;
+objet	: in comerc.objetivo by est(emp, true, clie):descrip, not null;
+dobj	: comerc.objetivo.descrip, skip;
+fechot  : not null;
+
+multi   : rows 500, display 5, ignore insert, ignore delete;
+modif   : in (true, false), default false;
+tippto  : puestos. , skip;
+codint  : puestos. , skip;
+puesto  : puestos. , skip;
+finicio : puestos. , skip;
+ffinal  : puestos. , skip when (mimp=false or modif=true);
+hinicio : puestos. , skip;
+hfinal  : puestos. , skip;
+dia1    : puestos. , skip;
+dia2    : puestos. , skip;
+dia3    : puestos. , skip;
+dia4    : puestos. , skip; 
+dia5    : puestos. , skip;
+dia6    : puestos. , skip;
+dia7    : puestos. , skip;
+regim   : puestos. , skip;
+tipodia : puestos. , skip;
+codfrec : puestos. , skip;
+cantpue : puestos. , skip;
+cantvig : puestos. , skip;
+padreint: puestos. ,skip;
+mimp    : skip, default false; 
+
+multid  : rows 500, display 5;
+codmot  : puestos.codmot ,in mohsim:(descrip), not null;
+tipptod : puestos.tippto ,skip;
+codintd : puestos.padreint ,skip;
+puestod : puestos.puesto ,skip;
+finiciod: puestos.finicio, not null ;
+ffinald : puestos.ffinal;
+hiniciod: puestos.hinicio;
+hfinald : puestos.hfinal;
+dia1d   : puestos.dia1 , in ("L":"Lunes",
+						     "M":"Martes",
+							 "X":"Miércoles",
+							 "J":"Jueves",
+							 "V":"Viernes",
+							 "S":"Sábado",
+							 "D":"Domingo"),
+		  check (dia1d!=dia2d and dia1d!=dia3d and dia1d!=dia4d 
+		     and dia1d!=dia5d and dia1d!=dia6d and dia1d!=dia7d); 
+
+dia2d   : puestos.dia2 , in ("L":"Lunes",
+							 "M":"Martes",
+							 "X":"Miércoles",
+							 "J":"Jueves",
+							 "V":"Viernes",
+							 "S":"Sábado",
+							 "D":"Domingo"),
+		  check (dia2d!=dia1d and dia2d!=dia3d and dia2d!=dia4d 
+		     and dia2d!=dia5d and dia2d!=dia6d and dia2d!=dia7d);
+dia3d   : puestos.dia3, in ("L":"Lunes",
+							"M":"Martes",
+							"X":"Miércoles",
+							"J":"Jueves",
+							"V":"Viernes",
+							"S":"Sábado",
+							"D":"Domingo"),
+		  check (dia3d!=dia1d and dia3d!=dia2d and dia3d!=dia4d 
+		     and dia3d!=dia5d and dia3d!=dia6d and dia3d!=dia7d);
+dia4d   : puestos.dia4, in ("L":"Lunes",
+							"M":"Martes",
+							"X":"Miércoles",
+							"J":"Jueves",
+							"V":"Viernes",
+							"S":"Sábado",
+							"D":"Domingo"),
+		  check (dia4d!=dia1d and dia4d!=dia2d and dia4d!=dia3d 
+		     and dia4d!=dia5d and dia4d!=dia6d and dia4d!=dia7d);
+dia5d   : puestos.dia5 , in ("L":"Lunes",
+							 "M":"Martes",
+							 "X":"Miércoles",
+							 "J":"Jueves",
+							 "V":"Viernes",
+							 "S":"Sábado",
+							 "D":"Domingo"),
+		  check (dia5d!=dia1d and dia5d!=dia2d and dia5d!=dia3d 
+		     and dia5d!=dia4d and dia5d!=dia6d and dia5d!=dia7d);
+dia6d   : puestos.dia6 , in ("L":"Lunes",
+							 "M":"Martes",
+							 "X":"Miércoles",
+							 "J":"Jueves",
+							 "V":"Viernes",
+							 "S":"Sábado",
+							 "D":"Domingo"),
+		  check (dia6d!=dia1d and dia6d!=dia2d and dia6d!=dia3d 
+		     and dia6d!=dia4d and dia6d!=dia5d and dia6d!=dia7d);
+dia7d   : puestos.dia7 , in ("L":"Lunes",
+							 "M":"Martes",
+							 "X":"Miércoles",
+							 "J":"Jueves",
+							 "V":"Viernes",
+							 "S":"Sábado",
+							 "D":"Domingo"),
+		  check (dia7d!=dia1d and dia7d!=dia2d and dia7d!=dia3d 
+		     and dia7d!=dia4d and dia7d!=dia5d and dia7d!=dia6d);
+regimd  : puestos.regim , in comerc.regimen by emp(emp, false): descrip, not null ;
+tipodiad: puestos.tipodia ,skip;
+codfrecd: puestos.codfrec ,skip;
+cantpued: puestos.cantpue;
+cantvigd: puestos.cantvig;
+
+

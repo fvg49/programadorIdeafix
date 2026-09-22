@@ -1,0 +1,8 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+rut.exe {
+	rut.fm;
+	rut.c;
+}

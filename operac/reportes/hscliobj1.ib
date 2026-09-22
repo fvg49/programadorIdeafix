@@ -1,0 +1,14 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+hscliobj1.exe {
+	hscliobj.fm;
+    hscliobj1.rp;
+    hscliobj1.c	: hscliobj.fmh hscliobj1.rph operac.sch;
+	$OPERACLIB.a;
+	$EXCEPLIB.a;
+	$COMERCLIB.a;
+	$BILLPROLIB.a;
+	$BILLLIB.a;
+}

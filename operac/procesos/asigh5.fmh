@@ -1,0 +1,36 @@
+/* Field names	*/
+# define I_EMPR          (fmfield)  0	/* Integer         */
+# define I_CLIEOTR       (fmfield)  1	/* Long            */
+# define I_OBJETI        (fmfield)  2	/* Integer         */
+# define I_NROLEGA       (fmfield)  3	/* Long            */
+# define I_FECASIG       (fmfield)  4	/* Date            */
+# define I_FECHAH        (fmfield)  5	/* Date            */
+# define I_VIGILA        (fmfield)  6	/* String          */
+# define I_NOMB          (fmfield)  7	/* String          */
+# define CANTH           (fmfield)  8	/* Long            */
+# define I_FPROVORI1     (fmfield)  9	/* Date            */
+# define I_CANTMULT      (fmfield) 10	/* Integer         */
+# define I_HORENT1       (fmfield) 11	/* Time            */
+# define I_HORSAL1       (fmfield) 12	/* Time            */
+# define I_RANGO         (fmfield) 13	/* String          */
+# define I_FECHA         (fmfield) 14	/* String          */
+# define I_MENSAJE       (fmfield) 15	/* String          */
+# define MULTDIAS        (fmfield) 16	/* MULTIPLE        */
+# define AGRDIAS         (fmfield) 17	/* GROUPED         */
+# define DIA             (fmfield) 18	/* Date            */
+# define I_DIASTR        (fmfield) 19	/* String          */
+# define I_ERRHOR        (fmfield) 20	/* String          */
+# define AGRHS           (fmfield) 21	/* GROUPED         */
+# define HENT            (fmfield) 22	/* Time            */
+# define HSAL            (fmfield) 23	/* Time            */
+# define HSXDIA          (fmfield) 24	/* Integer         */
+# define CANTHS          (fmfield) 25	/* Long            */
+/* Form checksum	*/
+# define FM_ASIGH5_CHKSUM (long)0x0eba
+/* Subform names	*/
+/* Symbol names for messages */
+# define M_FECPT            0
+# define M_ERRHORAS         1
+# define M_FALTANH          2
+# define M_FRECUEN          3
+/* =========== End of fmh file ============ */

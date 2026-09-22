@@ -1,0 +1,16 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+cantvig.exe {
+	cantvig.fm;
+	cantvig.rp;
+	cantvig2.rp;
+	cantvig.c : cantvig.fmh cantvig.rph comerc.sch bill.sch;
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$OPERAC/lib/operac.a;
+	$IGRALLIB.a;
+
+}

@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+puestos.exe {
+	puestos.fm;
+	puestos.c : puestos.fmh;
+
+	$COMERC/lib/comerc.a;
+   	$OPERAC/lib/operac.a;
+	$COMERC/lib/comerc.a;
+   	$OPERAC/lib/operac.a;
+	$BILLPROLIB.a;
+	$BILL/lib/bill.a;
+}

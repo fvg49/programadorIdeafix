@@ -1,0 +1,15 @@
+%head(today, pageno) before (report, page)
+[16c                                                                                                   Fecha  : __/__/____
+                                                                                                   Página :       ____.
+                                                                                                        (vigibaj)
+                                                 Vigiladores de Baja
+
+                    ¨¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡©¡¡¡¡¡¡¡¡¡¡¡¡¡¡ª
+                      Legajo        Apellido y Nombre        Cliente / Objetivo   Fecha Egreso  
+                    ¢¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡£¡¡¡¡¡¡¡¡¡¡¡¡¡¡¤
+%linea(r_legajo, r_apenom, r_cliente, r_objetivo, r_fecegr)
+                     _______. _____________________________  _____.       __.      __/__/____
+%report
+language "C";
+flength = $FLENGTH;
+output to terminal;

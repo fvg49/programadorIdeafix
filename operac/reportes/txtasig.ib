@@ -1,0 +1,15 @@
+project $NOVIA/reglas.ib;
+
+BIN="../rbinaux/";
+
+txtasig.exe {
+	txtasig.fm;
+	txtasig.c;
+
+	$COMERC/lib/comerc.a;
+	$BILLPRO/lib/billpro.a;
+	$BILL/lib/bill.a;
+	$OPERAC/lib/operac.a;
+	$BRIGADA/lib/brigada.a;
+	$IGRALLIB.a;
+}

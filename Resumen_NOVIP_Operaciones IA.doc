@@ -1,0 +1,96 @@
+{\rtf1\ansi\deff0\ansicpg1252
+{\fonttbl{\f0\fswiss Arial;}{\f1\froman Times New Roman;}}
+\paperw11907\paperh16840\margl1440\margr1440\margt1200\margb1200
+\viewkind4\uc1
+\pard\qc\b\f0\fs36 Resumen funcional y t\'e9cnico de NOVIP - Operaciones\par
+\pard\qc\b0\fs22 An\'e1lisis basado en la documentaci\'f3n de IdeaFIX, los fuentes del m\'f3dulo operac y el documento de integraciones\par
+\pard\qc\fs20 Fecha: 14/09/2026\par
+\pard\sa240\par
+\pard\b\fs28 1. Objetivo del documento\par
+\pard\b0\fs22 Este documento resume qu\'e9 hace el m\'f3dulo de Operaciones de NOVIP, c\'f3mo est\'e1 organizado, cu\'e1les son sus entidades principales y en qu\'e9 punto del circuito del negocio interviene. El resumen surge de la lectura del manual de programaci\'f3n de IdeaFIX, de los fuentes del directorio operac y del archivo Integraciones NOVIP.pdf.\par
+\pard\sa180\par
+\pard\b\fs28 2. IdeaFIX y CFIX\par
+\pard\b0\fs22 IdeaFIX utiliza CFIX, un superconjunto de C orientado al desarrollo de aplicaciones empresariales. El lenguaje combina C con bibliotecas para acceso a bases de datos, formularios, reportes, ventanas, fechas, horas y manejo de errores.\par
+\pard\li360\fi-180\b0\bullet\tab Los esquemas se activan mediante OpenSchema.\par
+\pard\li360\fi-180\bullet\tab Las tablas tienen descriptores, buffers, campos e indices.\par
+\pard\li360\fi-180\bullet\tab Los registros se consultan con GetRecord y se modifican con funciones Set y PutRecord.\par
+\pard\li360\fi-180\bullet\tab Los formularios se definen en archivos FDL, principalmente .fm y .fmh, y se ejecutan con DoForm.\par
+\pard\li360\fi-180\bullet\tab Los reportes se definen mediante RDL y se manejan con descriptores y buffers de reporte.\par
+\pard\li360\fi-180\bullet\tab Los programas interactivos suelen comenzar con wcmd.\par
+\pard\li360\fi-180\bullet\tab Los archivos .ib funcionan como agrupadores de compilacion de modulos y submodulos.\par
+\pard\li0\fi0\sa180\par
+\pard\b\fs28 3. Arquitectura de operac\par
+\pard\b0\fs22 El archivo operac.ib compila el modulo a partir de cinco grupos principales:\par
+\pard\li360\fi-180\bullet\tab lib: funciones comunes y reglas reutilizables.\par
+\pard\li360\fi-180\bullet\tab abms: altas, bajas, modificaciones y mantenimiento de maestros.\par
+\pard\li360\fi-180\bullet\tab procesos: operaciones de negocio, movimientos, calculos y procesos batch.\par
+\pard\li360\fi-180\bullet\tab reportes: listados, controles e informes operativos.\par
+\pard\li360\fi-180\bullet\tab menues: navegacion de la aplicacion.\par
+\pard\li0\fi0\par
+\pard\fs22 El archivo operac.c contiene logica transversal para comprobar asignaciones, validar vigencias, determinar si una persona trabaja en una fecha, resolver francos, controlar casos part-time y consultar asignaciones vigentes o historicas.\par
+\pard\sa180\par
+\pard\b\fs28 4. Funcion principal del modulo\par
+\pard\b0\fs22 NOVIP Operaciones convierte la contratacion de un servicio en una operacion concreta y controlable. El modulo administra los puestos que deben cubrirse, asigna vigiladores, registra la actividad diaria, calcula horas, controla excepciones, cierra la operacion y prepara informacion para liquidacion y facturacion.\par
+\pard\sa120\par
+\pard\b Flujo general:\b0\par
+\pard\li360\fi-180\bullet\tab Contratacion comercial y definicion del servicio.\par
+\pard\li360\fi-180\bullet\tab Definicion de cliente, objetivo y puesto.\par
+\pard\li360\fi-180\bullet\tab Asignacion de vigiladores, horarios, francos y reemplazos.\par
+\pard\li360\fi-180\bullet\tab Generacion y correccion del parte diario.\par
+\pard\li360\fi-180\bullet\tab Controles de horas, ausencias, vigencias y diferencias.\par
+\pard\li360\fi-180\bullet\tab Confirmacion y cierre operativo.\par
+\pard\li360\fi-180\bullet\tab Pase de datos a facturacion, liquidacion o sistemas relacionados.\par
+\pard\li0\fi0\sa180\par
+\pard\b\fs28 5. Entidades principales\par
+\pard\b0\fs22 Las principales tablas definidas en operac/include/opedef.h son:\par
+\pard\li360\fi-180\bullet\tab PUESTOS: define el puesto de servicio, cliente, objetivo, horario, dias, regimen, frecuencia, cantidad de vigiladores y vigencia.\par
+\pard\li360\fi-180\bullet\tab ASIG: contiene las asignaciones vigentes de vigiladores a puestos. Incluye fechas, horarios, dias trabajados, franco, reemplazo, rol y tipo de asignacion.\par
+\pard\li360\fi-180\bullet\tab ASIGH: conserva el historico de asignaciones, altas, bajas, motivos y reemplazos.\par
+\pard\li360\fi-180\bullet\tab PARTE: registra el trabajo diario con entrada, salida, horas normales, horas al 50 por ciento, horas al 100 por ciento, confirmacion y estado.\par
+\pard\li360\fi-180\bullet\tab RETRO: registra informacion retroactiva y horas que pueden impactar en liquidacion o facturacion.\par
+\pard\li360\fi-180\bullet\tab VACAC: administra vacaciones, cantidad de dias, fechas y estado de pase.\par
+\pard\li360\fi-180\bullet\tab FRECUEN: mantiene frecuencias utilizadas por esquemas de trabajo part-time.\par
+\pard\li0\fi0\sa180\par
+\pard\b\fs28 6. Funcionalidades\par
+\pard\b0\fs22 El modulo incluye, entre otras, las siguientes funciones:\par
+\pard\li360\fi-180\bullet\tab Mantenimiento de puestos, servicios, objetivos, roles, feriados, motivos, vacaciones y parametros operativos.\par
+\pard\li360\fi-180\bullet\tab Alta y baja de asignaciones de vigiladores.\par
+\pard\li360\fi-180\bullet\tab Asignaciones efectivas, provisorias, part-time, retenes y reemplazos.\par
+\pard\li360\fi-180\bullet\tab Movimientos de vigiladores entre puestos y clientes.\par
+\pard\li360\fi-180\bullet\tab Reversion de asignaciones y correccion de movimientos.\par
+\pard\li360\fi-180\bullet\tab Generacion automatica de partes diarios.\par
+\pard\li360\fi-180\bullet\tab Confirmacion, modificacion y control de partes.\par
+\pard\li360\fi-180\bullet\tab Calculo de horas normales, nocturnas, extraordinarias y especiales.\par
+\pard\li360\fi-180\bullet\tab Control de ausentismo, francos, feriados y excepciones.\par
+\pard\li360\fi-180\bullet\tab Deteccion de vigiladores sin parte o sin asignacion.\par
+\pard\li360\fi-180\bullet\tab Reportes por vigilador, cliente, objetivo, puesto, fecha, horas y rol.\par
+\pard\li360\fi-180\bullet\tab Cierres operativos y cierres para facturacion.\par
+\pard\li360\fi-180\bullet\tab Pase y control de informacion hacia facturacion, liquidacion y recursos humanos.\par
+\pard\li0\fi0\sa180\par
+\pard\b\fs28 7. Integraciones y posicion en el negocio\par
+\pard\b0\fs22 NOVIP Operaciones no funciona de manera aislada. Los fuentes muestran aperturas y dependencias con varios esquemas del sistema:\par
+\pard\li360\fi-180\bullet\tab comerc: clientes, objetivos, ordenes de trabajo, servicios y filiales.\par
+\pard\li360\fi-180\bullet\tab sue: legajos, empleados y datos del personal.\par
+\pard\li360\fi-180\bullet\tab bill y billpro: clientes, datos comerciales y facturacion.\par
+\pard\li360\fi-180\bullet\tab asist: asistencia y datos vinculados al trabajo realizado.\par
+\pard\li360\fi-180\bullet\tab brigada y aurcus: informacion complementaria del personal y de la operacion.\par
+\pard\li360\fi-180\bullet\tab webinter: integraciones con procesos externos.\par
+\pard\li0\fi0\par
+\pard\fs22 En el circuito general, Operaciones se ubica entre la definicion comercial del servicio y los procesos de liquidacion o facturacion. Su responsabilidad es demostrar que el servicio vendido fue organizado, cubierto y realizado, dejando evidencia mediante asignaciones, partes, horas, controles y cierres.\par
+\pard\sa180\par
+\pard\b\fs28 8. Pase, cierres y facturacion\par
+\pard\b0\fs22 El subdirectorio pase concentra programas que preparan y controlan la salida de la informacion operativa. Entre los nombres relevantes se encuentran pasefac, ctrlpase, cierfac, cierpar, cieroper, pfacnew, revpfac y pasevac.\par
+\pard\fs22 El cierre marca una frontera importante: antes del cierre pueden existir correcciones y movimientos; despues del cierre, las modificaciones quedan restringidas o deben realizarse mediante procesos de reversa y control.\par
+\pard\sa180\par
+\pard\b\fs28 9. Reportes y controles\par
+\pard\b0\fs22 Los reportes cumplen dos funciones: informar y controlar. El modulo dispone de listados de asignaciones, partes, horas, vigiladores, ausencias, puestos vigentes o vencidos, roles, francos, retroactivos y diferencias. Estos reportes permiten detectar inconsistencias antes de confirmar o cerrar la informacion.\par
+\pard\sa180\par
+\pard\b\fs28 10. Consideraciones y limites del analisis\par
+\pard\b0\fs22 El resumen se elaboro a partir de fuentes, formularios, menus, proyectos .ib, documentacion de IdeaFIX, el paquete repomix-output.md y el diagrama de integraciones. Los directorios SCCS, old, logs, binarios y objetos compilados fueron considerados principalmente como historial o artefactos.\par
+\pard\fs22 Para validar una modificacion en produccion todavia seria necesario compilar y ejecutar en el ambiente real de IdeaFIX, donde esten disponibles el compilador CFIX, las bibliotecas, los esquemas y los datos de prueba.\par
+\pard\sa180\par
+\pard\b\fs28 11. Conclusion\par
+\pard\b0\fs22 NOVIP Operaciones es el modulo que administra la ejecucion diaria de los servicios de seguridad. Recibe la definicion comercial del servicio, la transforma en puestos y asignaciones, registra la actividad real mediante partes, calcula y controla horas, gestiona excepciones, realiza cierres y entrega informacion confiable a los procesos de liquidacion y facturacion.\par
+\pard\sa240\par
+\pard\qc\i\fs20 Documento generado a partir del analisis tecnico-funcional del repositorio NOVIP.\par
+}
